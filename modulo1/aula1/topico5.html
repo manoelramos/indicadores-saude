@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=yes" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="robots" content="noindex" />
+	<meta name="author" content="Fiocruz, Campus Virtual" />
+	<meta name="description" content="Curso Introdução à Análise de Dados para pesquisa no SUS" />
+	<meta name="keywords" content="Fiocruz Curso Introdução à Análise de Dados para pesquisa no SUS" />
+
+	<!-- Facebook Open Graph -->
+	<meta property="og:url" content="https://mooc.campusvirtual.fiocruz.br/rea/introducao-analise-dados-sus" />
+	<meta property="og:title" content="Campus Virtual Fiocruz | Curso Introdução à Análise de Dados para pesquisa no SUS" />
+	<meta property="og:description" content="Curso Introdução à Análise de Dados para pesquisa no SUS" />
+	<meta property="og:image" content="" />
+	<meta property="og:image:width" content="1080" />
+	<meta property="og:image:height" content="1080" />
+	<meta property="og:type" content="website" />
+
+	<!-- Twitter Cards -->
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:title" content="Campus Virtual Fiocruz | Curso Introdução à Análise de Dados para pesquisa no SUS" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:description" content="" />
+	<meta name="twitter:image:src" content="" />
+
+	<!-- Favicons and Touch Icons -->
+	<link rel="apple-touch-icon" sizes="57x57" href="../../media/icons/apple-icon-57x57.png" />
+	<link rel="apple-touch-icon" sizes="60x60" href="../../media/icons/apple-icon-60x60.png" />
+	<link rel="apple-touch-icon" sizes="72x72" href="../../media/icons/apple-icon-72x72.png" />
+	<link rel="apple-touch-icon" sizes="76x76" href="../../media/icons/apple-icon-76x76.png" />
+	<link rel="apple-touch-icon" sizes="114x114" href="../../media/icons/apple-icon-114x114.png" />
+	<link rel="apple-touch-icon" sizes="120x120" href="../../media/icons/apple-icon-120x120.png" />
+	<link rel="apple-touch-icon" sizes="144x144" href="../../media/icons/apple-icon-144x144.png" />
+	<link rel="apple-touch-icon" sizes="152x152" href="../../media/icons/apple-icon-152x152.png" />
+	<link rel="apple-touch-icon" sizes="180x180" href="../../media/icons/apple-icon-180x180.png" />
+
+	<link rel="icon" type="image/png" sizes="192x192" href="../../media/icons/android-icon-192x192.png" />
+	<link rel="icon" type="image/png" sizes="32x32" href="../../media/icons/favicon-32x32.png" />
+	<link rel="icon" type="image/png" sizes="96x96" href="../../media/icons/favicon-96x96.png" />
+	<link rel="icon" type="image/png" sizes="16x16" href="../../media/icons/favicon-16x16.png" />
+	<link rel="manifest" href="../media/icons/manifest.json" />
+
+	<meta name="msapplication-TileColor" content="#ffffff" />
+	<meta name="msapplication-TileImage" content="../../media/icons/ms-icon-144x144.png" />
+	<!-- <meta name="theme-color" content="#003066" /> -->
+	<meta name="theme-color" content="#001833" />
+
+	<title>Curso Introdução à Análise de Dados para pesquisa no SUS | Mod 1 | Aula 1</title>
+
+	<!-- Bootstrap CSS 5.1.3 -->
+	<link rel="stylesheet" href="../../source/bootstrap-5.1.3/css/bootstrap.min.css" />
+
+	<!-- Project CSS -->
+	<link rel="stylesheet" href="../../assets/css/style.css" />
+</head>
+
+<body>
+	<header class="header">
+		<div class="mobile-toggle-open">
+			<a class="mobile-toggle__button" tabindex="0" role="button">
+				<span class="icon material-symbols-rounded">read_more</span>
+			</a>
+		</div>
+		<div class="brand">
+			<img class="img-fluid logo-black" src="../../media/logos/header-fiocruz-campus-virtual.png" alt="Campus Virtual Fiocruz" />
+		</div>
+		<div class="title">
+			<h1>Introdução à Análise de Dados para pesquisa no SUS</h1>
+		</div>
+		<ul class="nav nav-pills">
+			<li class="nav-item"><a href="../../index.html" class="nav-link">Início</a></li>
+			<li class="nav-item"><a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#modal-creditos">Créditos</a></li>
+		</ul>
+	</header>
+	<div class="main">
+		<div class="sidebar" role="navigation">
+			<div class="sidebar__inner" style="position: relative">
+				<div class="sidebar__group d-lg-none">
+					<div class="sidebar__group-item">
+						<div class="sidebar__header">
+							<span>Curso</span>
+							<a class="mobile-toggle-close" tabindex="0" role="button"><span class="icon material-symbols-rounded">read_more</span></a>
+						</div>
+					</div>
+					<div class="sidebar__group-item">
+						<div class="sidebar__title">
+							<h1>Introdução à Análise de Dados para pesquisa no SUS</h1>
+						</div>
+					</div>
+					<div class="sidebar__group-item">
+						<ul class="nav">
+							<li class="nav-item">
+								<a href="../../index.html" class="nav-link" tabindex="0"><span class="icon material-symbols-rounded" aria-hidden="true">home</span>Início</a>
+							</li>
+							<li class="nav-item">
+								<a href="#" class="nav-link" tabindex="0" data-bs-toggle="modal" data-bs-target="#modal-creditos"><span class="icon material-symbols-rounded" aria-hidden="true"> format_list_bulleted</span>Créditos</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="sidebar__group">
+					<div class="sidebar__group-item">
+						<div class="dropend">
+							<button id="dropdown-modulos" type="button" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside" data-bs-offset="0,30">
+								<span class="icon material-symbols-rounded" aria-hidden="true">grid_view</span>
+								<span class="label">Módulos</span>
+							</button>
+							<ul class="dropdown-menu" aria-labelledby="dropdown-modulos">
+								<li class="d-lg-none dropdown-menu__header">
+									<a class="dropdown-menu__back-button" tabindex="0" role="button"><span class="icon material-symbols-rounded">chevron_left</span> Voltar</a>
+									<a class="mobile-toggle-close" tabindex="0" role="button"><span class="icon material-symbols-rounded">read_more</span></a>
+								</li>
+								<li class="dropdown-menu__item">
+									<a class="dropdown-menu__item-link" tabindex="0" role="link" href="../../modulo1/aula1/topico1.html"><strong>Módulo 1</strong><br />A informação no SUS</a>
+								</li>
+								<li class="dropdown-menu__item">
+									<a class="dropdown-menu__item-link" tabindex="0" role="link" href="../../modulo2/aula1/topico1.html"><strong>Módulo 2</strong><br />Fontes de Dados Socioeconômicos e Demográficos: subsídios para a Saúde</a>
+								</li>
+								<li class="dropdown-menu__item">
+									<!--<span class="dropdown-menu__item-link"><strong>Módulo 3</strong><br />Modelos estatísticos <strong class="em-breve">(em breve)</strong></span>-->
+									<a class="dropdown-menu__item-link" tabindex="0" role="link" href="../../modulo3/aula1/topico1.html"><strong>Módulo 3</strong><br />Sistemas de Informação em Saúde</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="divider">
+					<hr />
+				</div>
+				<div class="sidebar__group">
+					<div class="sidebar__group-item">
+						<span class="text module">Módulo <br class="d-none d-lg-block" /><span>1</span></span>
+					</div>
+					<div class="sidebar__group-item">
+						<div class="dropend">
+							<button type="button" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside" data-bs-offset="0,30">
+								<span class="icon material-symbols-rounded" aria-hidden="true">apps</span>
+								<span class="label">Conteúdo</span>
+							</button>
+							<ul class="dropdown-menu">
+								<li class="d-lg-none dropdown-menu__header">
+									<a class="dropdown-menu__back-button" tabindex="0" role="button"><span class="icon material-symbols-rounded">chevron_left</span> Voltar</a>
+									<a class="mobile-toggle-close" tabindex="0" role="button"><span class="icon material-symbols-rounded">read_more</span></a>
+								</li>
+								<li class="dropdown-menu__title">
+									<span class="label">Módulo 1</span>
+									<span class="title">A informação no SUS</span>
+								</li>
+
+								<li class="dropdown-menu__item">
+									<a class="dropdown-menu__item-link" tabindex="0" role="link" href="../aula1/topico1.html"><strong>Aula 1: </strong>Introdução à Informação em Saúde no SUS</a>
+								</li>
+								<li class="dropdown-menu__item">
+									<a class="dropdown-menu__item-link" tabindex="0" role="link" href="../aula2/topico1.html"><strong>Aula 2: </strong>A Política Nacional de Informação e Informática em Saúde (PNIIS)</a>
+								</li>
+
+								<li class="dropdown-menu__item">
+										<a class="dropdown-menu__item-link" tabindex="0" role="link" href="../atividade.html"><strong>Atividade</strong></a>
+								</li>
+
+								<li class="dropdown-menu__item">
+									<a class="dropdown-menu__item-link" tabindex="0" role="link" href="../encerramento.html"><strong>Resumo do módulo</strong></a>
+								</li>
+
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="divider">
+					<hr />
+				</div>
+				<div class="sidebar__group">
+					<div class="sidebar__group-item">
+						<span class="text class">Aula 1</span>
+					</div>
+					<div class="sidebar__group-item">
+						<div class="dropend">
+							<button type="button" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside" data-bs-offset="0,30">
+								<span class="icon material-symbols-rounded" aria-hidden="true"> format_list_bulleted</span>
+								<span class="label">Tópicos</span>
+							</button>
+							<ul class="dropdown-menu">
+								<li class="d-lg-none dropdown-menu__header">
+									<a class="dropdown-menu__back-button" tabindex="0" role="button"><span class="icon material-symbols-rounded">chevron_left</span> Voltar</a>
+									<a class="mobile-toggle-close" tabindex="0" role="button"><span class="icon material-symbols-rounded">read_more</span></a>
+								</li>
+								<li class="dropdown-menu__title">
+									<span class="label">Aula 1</span>
+									<span class="title">Introdução à Lógica de Programação</span>
+								</li>
+								<li class="dropdown-menu__item">
+									<nav class="topic-list">
+										<a href="topico1.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico concluído" status="visited"> <span class="material-symbols-rounded"></span>Sobre esta aula</a>
+
+										<a href="topico2.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico concluído" status="visited"> <span class="material-symbols-rounded"></span>Introdução</a>
+
+										<a href="topico3.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico concluído" status="visited"><span class="material-symbols-rounded"></span>Diferença entre dado, informação e conhecimento</a>
+
+										<a href="topico4.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico concluído" status="visited"><span class="material-symbols-rounded"></span>Informação para a saúde</a>
+
+									</nav>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="divider">
+					<hr />
+				</div>
+				<div class="sidebar__group extra">
+					<div class="sidebar__group-item">
+						<button type="button" class="" data-bs-toggle="modal" data-bs-target="#modal-bibliografiaMod1">
+							<span class="icon material-symbols-rounded" aria-hidden="true"> menu_book</span>
+							<span class="label">Bibliografia</span>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="content">
+			<div id="page-title">
+				<div class="container">
+					<div class="row align-items-center hstify-content-center justify-content-xxl-start ms-lg-5">
+						<div class="col-12 col-md-10 col-lg-11">
+							<h2 class="title">
+								<span class="label">Módulo 1 | Aula 1</span>
+								<br />
+								Introdução à Lógica de Programação
+							</h2>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="page-content" class="">
+				<!-- Inserir o conteúdo aqui -->
+				<section>
+					<div class="container">
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<div class="heading__block">
+									<span class="small">Tópico 5</span>
+									<h3 class="heading__title">Laços de repetição</h3>
+								</div>
+
+								<p>Laços, também chamados de <em>loops</em>, são estruturas que permitem a repetição de um determinado trecho de código, facilitando o trabalho de programação ao evitar repetições manuais. Existem diversos tipos de laços nas diferentes linguagens de programação. Alguns autores mencionam até seis formas de laços, mas a maioria das linguagens costuma implementar cerca de três dessas formas, ou até menos.</p>
+
+								<p>Os laços podem ser definidos de diferentes formas. Abordaremos dois tipos. O primeiro é o laço chamado de pré-teste, que executa as ações do bloco repetido somente após validar uma condição. Um exemplo é o laço <span class="color-tertiary-dark"><strong>enquanto</strong></span>, ou <span class="color-tertiary-dark"><strong>while</strong></span> em inglês, que segue a seguinte estrutura:</p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<!-- SINTAXE -->
+								<div class="code-container aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="600">
+									<div class="heading__block">
+										<h5 class="heading__title">Sintaxe</h5>
+									</div>
+									<pre aria-label="Exemplo de código">
+										<code>
+											<span class="comment">// Laço ENQUANTO - estrutura de repetição com pré-teste</span>
+
+											<span class="keyword">ENQUANTO</span> (<span class="variable">condição</span>) <span class="keyword">FAÇA</span> {
+											   <span class="variable">instruções executadas enquanto a condição é verdadeira</span> 
+											} <span class="keyword">FIM_ENQUANTO</span>
+										</code>
+									</pre>
+
+									<!-- <button class="copy-btn" aria-label="Copiar código para a área de transferência">Copiar</button> -->
+								</div>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<p><strong>Exemplo:</strong></p>
+
+								<p>Temos uma lista de 100 pacientes e seus pesos e alturas, precisamos calcular  o Índice de Massa Corporal (IMC) de cada um deles e verificar se estão dentro da faixa saudável.</p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<!-- EXEMPLO DE APLICAÇÃO -->
+								<div class="code-container aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="600">
+									<div class="heading__block">
+										<h5 class="heading__title">Exemplo de aplicação</h5>
+									</div>
+									<pre aria-label="Exemplo de código">
+										<code>
+											<span class="comment">// Laço ENQUANTO (pré-teste) - calcula IMC de 100 pacientes</span>
+
+											<span class="variable">N</span> <span class="operator">=</span> <span class="number">100</span>
+											<span class="variable">contador</span> <span class="operator">=</span> <span class="number">1</span>
+
+											<span class="keyword">ENQUANTO</span> (<span class="variable">contador</span> <span class="operator">&lt;=</span> <span class="variable">N</span>) <span class="keyword">faça</span> {
+											   <span class="function">calcula o IMC e mostra na tela se está ou não dentro da faixa saudável</span>
+											   <span class="variable">contador</span> <span class="operator">=</span> <span class="variable">contador</span> <span class="operator">+</span> <span class="number">1</span>
+											} <span class="keyword">fim_enquanto</span>
+										</code>
+									</pre>
+
+									<!-- <button class="copy-btn" aria-label="Copiar código para a área de transferência">Copiar</button> -->
+								</div>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<p>O código acima seria executado pela primeira vez com a condição: “100 é maior do que 1?” Como a resposta é sim, o IMC é calculado, o resultado é exibido, o contador é incrementado em 1, e a condição é verificada novamente: “100 é maior do que 2?” Novamente sim, e o mesmo procedimento é executado para o segundo paciente. No caso do paciente número 100, a condição seria: “100 é maior ou igual a 100?” A resposta continua sendo sim, então o procedimento é realizado. Na próxima execução, a condição seria “100 é maior do que 101?”, o que retorna falso, encerrando o laço, e o código seguiria para a primeira instrução após o laço.</p>
+
+								<p>Outra opção é o laço de pós-teste, que tem como finalidade garantir a execução do bloco de código pelo menos uma vez. Ao final da primeira execução, é verificada uma condição lógica: se for verdadeira, o laço continua; caso contrário, a execução é automaticamente encerrada</p>
+
+								<p>O comando para esse caso é o <span class="color-tertiary-dark"><strong>repita / até</strong></span> que observe que a condição fica ao final, sendo preciso o bloco de código ser executado ao menos uma vez.</p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<!-- SINTAXE -->
+								<div class="code-container aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="600">
+									<div class="heading__block">
+										<h5 class="heading__title">Sintaxe</h5>
+									</div>
+									<pre aria-label="Exemplo de código">
+										<code>
+											<span class="comment">// Laço REPITA-ATÉ - estrutura de repetição com pré-teste</span>
+
+											<span class="keyword">REPITA</span> {
+											   <span class="variable">bloco de código</span> 
+											} <span class="keyword">ATÉ_QUE</span> (<span class="variable">condição</span>)
+										</code>
+									</pre>
+
+									<!-- <button class="copy-btn" aria-label="Copiar código para a área de transferência">Copiar</button> -->
+								</div>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<p>Considere que estamos realizando a modelagem de um caso de predição, com a meta de que o erro seja menor do que um valor Y. Durante a modelagem, temos diversos parâmetros que podem ser ajustados e queremos testá-los até que o erro seja inferior a Y. Nesse caso, o laço de pós-teste seria mais adequado, pois precisamos executar a predição pelo menos uma vez. Se, na primeira execução, o erro for menor do que o valor desejado, o processo pode ser encerrado. Caso contrário, continuaremos ajustando os parâmetros e testando a predição até que o erro seja menor do que Y.</p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5 pb-5">
+								<!-- EXEMPLO DE APLICAÇÃO -->
+								<div class="code-container aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="600">
+									<div class="heading__block">
+										<h5 class="heading__title">Exemplo de aplicação</h5>
+									</div>
+									<pre aria-label="Exemplo de código">
+										<code>
+											<span class="comment">// Laço REPITA-ATÉ (pós-teste) - ajusta modelo até erro &lt; valor desejado</span>
+
+											<span class="keyword">REPITA</span>
+											   <span class="variable">X</span> <span class="operator">=</span> <span class="function">criar parâmetros</span>
+											   <span class="function">executar a predição nos dados usando os parâmetros X</span>
+											   <span class="variable">Y</span> <span class="operator">=</span> <span class="function">modelo</span>(<span class="variable">X</span>)
+											<span class="keyword">até_que</span> (<span class="variable">Y</span> <span class="operator">&lt;</span> <span class="variable">valor_desejado</span>)
+
+											<span class="comment">// Executa pelo menos uma vez antes de testar a condição</span>
+										</code>
+									</pre>
+
+									<!-- <button class="copy-btn" aria-label="Copiar código para a área de transferência">Copiar</button> -->
+								</div>
+							</div>
+						</div>
+
+						
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<div class="heading__block">
+									<h4 class="heading__title">Estrutura de dados</h4>
+								</div>
+
+								<p>Até agora exploramos técnicas básicas sobre lógica de programação, como variáveis, tipos de dados, operadores, estruturas de decisão e laços de repetição. Essas técnicas permitem compreender a construção de algoritmos. Utilizamos variáveis simples, que permitem armazenar apenas um valor por vez. No entanto, esse método exigiria a criação de um grande número de variáveis durante o desenvolvimento de um algoritmo. A partir de agora, vamos explorar formas de agrupar dados do mesmo tipo em uma única variável. Falaremos sobre estruturas de dados homogêneas, que também são conhecidas por outros nomes, como vetores, matrizes, arrays, entre outros.</p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<div class="heading__block">
+									<p class="h5 heading__title">Vetor</p>
+								</div>
+
+								<p>Vetores são uma forma simples de armazenar vários valores do mesmo tipo utilizando apenas uma variável. Vamos voltar ao exemplo da gaveta: dentro de uma gaveta temos pequenos compartimentos menores, subdividindo-a em 20 espaços, onde podemos guardar nossos acessórios. Chamaremos essa gaveta de “A”. Dentro de “A”, temos indexadores que representam as posições, como <span class="color-tertiary-dark"><strong>A[1], A[2], A[3], A[4], até A[20]</strong></span>. Em cada um desses espaços podemos armazenar uma informação diferente, <strong>mas todas devem ser do mesmo tipo</strong>, como apenas números, apenas textos ou apenas valores lógicos. Note que, mesmo assim, criamos apenas uma variável do tipo vetor, que nos permite armazenar 20 valores neste exemplo. </p>
+
+								<p>Podemos criar vetores de qualquer tamanho necessário, desde que o computador tenha memória RAM suficiente para isso.</p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<figure class="lightbox aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
+									<img class="img-fluid mx-auto d-block mb-3" src="../../media/modulo1/aula1-img5.jpg" alt="Imagem aleatória de exmplo" title="Fonte: Freepik">
+									<figcaption class="figure-caption fonte">Fonte: Freepik</figcaption>
+								</figure>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5 pb-5">
+								<p>Vetores possuem apenas uma dimensão (uma linha com várias colunas ou uma coluna com várias linhas). No entanto, podemos ter estruturas com mais de uma linha e coluna, chamadas matrizes. No exemplo da imagem da gaveta de talheres, cada tipo de talher (colheres, garfos, facas) está organizado em linha, como se fossem vetores, ou seja, uma sequência de elementos do mesmo tipo. </p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<div class="heading__block">
+									<p class="h5 heading__title">Matriz</p>
+								</div>
+
+								<p>Matrizes são estruturas de dados bidimensionais utilizadas para organizar e manipular informações. Diferente dos vetores, que possuem apenas uma dimensão, as matrizes têm tanto linhas quanto colunas, permitindo o armazenamento de dados em uma grade. Essa estrutura é útil quando precisamos representar tabelas ou qualquer conjunto de informações que requerem organização em duas dimensões. Cada elemento de uma matriz pode ser acessado por sua posição específica, definida pelos índices de linha e coluna, facilitando operações como iteração, busca e modificação de dados.</p>
+
+								<p>Supondo que temos a seguinte matriz:</p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<!-- SINTAXE -->
+								<div class="code-container aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="600">
+									<div class="heading__block">
+										<h5 class="heading__title">Sintaxe</h5>
+									</div>
+									<pre aria-label="Exemplo de código">
+										<code>
+											<span class="comment">// Declaração de matriz bidimensional</span>
+
+											<span class="variable">m</span> <span class="operator">=</span> [<span class="variable">a</span>, <span class="variable">b</span>]
+											    [<span class="variable">c</span>, <span class="variable">d</span>]
+										</code>
+									</pre>
+
+									<!-- <button class="copy-btn" aria-label="Copiar código para a área de transferência">Copiar</button> -->
+								</div>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<p>Levando em conta que esse índice começa de 1, podemos acessar a posição de <span class="color-tertiary-dark"><strong>b</strong></span> usando os seguintes index: 1 para a primeira linha e 2 para a segunda coluna.</p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<!-- SINTAXE -->
+								<div class="code-container aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="600">
+									<div class="heading__block">
+										<h5 class="heading__title">Sintaxe</h5>
+									</div>
+									<pre aria-label="Exemplo de código">
+										<code>
+											<span class="comment">// Acessando posições específicas em uma matriz</span>
+
+											<span class="variable">posição</span> <span class="operator">=</span> <span class="variable">m</span>[<span class="number">1</span>, <span class="number">2</span>]
+										</code>
+									</pre>
+
+									<!-- <button class="copy-btn" aria-label="Copiar código para a área de transferência">Copiar</button> -->
+								</div>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5 pb-5">
+								<p>É comum o uso de laços de repetição para preenchimento ou manipulação de vetores e matrizes.</p>
+
+								<p>Voltando ao exemplo da gaveta de talheres, se imaginarmos a gaveta vista de cima, com várias fileiras (linhas) e colunas, cada posição ocupada por um tipo de talher em determinada quantidade, temos uma matriz, por meio da qual podemos acessar os dados por linha e coluna.</p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<div class="heading__block">
+									<p class="h5 heading__title">Função</p>
+								</div>
+
+								<p>Funções são blocos de códigos reutilizáveis que podem realizar operações computacionais específicas, como entrada, processamento e saída. A ideia de utilizar funções é que, de maneira geral, problemas complexos exigem algoritmos complexos  e o uso de funções pode ajudar a quebrar um problema complexo em vários problemas mais simples (dividir para conquistar). Esse tipo de estrutura usa o conceito de modularidade, que é a divisão de um algoritmo em partes menores, e tem vários benefícios, como:</p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<!-- Accordion -->
+								<div class="accordion accordion-flush aos-init aos-animate" id="aula1-accordion2" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
+									<div class="accordion-item">
+										<h5 class="accordion-header" id="heading1-item1">
+											<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1-item1" aria-expanded="true" aria-controls="collapse1-item1">Reutilização</button>
+										</h5>
+										<div id="collapse1-item1" class="accordion-collapse collapse" aria-labelledby="heading1-item1" data-bs-parent="">
+											<div class="accordion-body">
+												<p>Quando uma função é definida, ela pode ser usada <span class="color-tertiary-dark"><strong>N</strong></span> vezes em várias partes do algoritmo sem precisar duplicar o código.</p>
+											</div>
+										</div>
+									</div>
+
+									<div class="accordion-item">
+										<h5 class="accordion-header" id="heading1-item2">
+											<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1-item2" aria-expanded="false" aria-controls="collapse1-item2">Organização</button>
+										</h5>
+										<div id="collapse1-item2" class="accordion-collapse collapse" aria-labelledby="heading1-item2" data-bs-parent="">
+											<div class="accordion-body">
+												<p>O uso de funções pode deixar o código mais fácil de entender e melhorar a legibilidade, já que cada bloco faz uma tarefa específica.</p>
+											</div>
+										</div>
+									</div>
+
+									<div class="accordion-item">
+										<h5 class="accordion-header" id="heading1-item3">
+											<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1-item3" aria-expanded="false" aria-controls="collapse1-item3">Manutenção</button>
+										</h5>
+										<div id="collapse1-item3" class="accordion-collapse collapse" aria-labelledby="heading1-item3" data-bs-parent="">
+											<div class="accordion-body">
+												<p>Se você usa uma função várias vezes e precisa alterar, só é necessário alterar em um local, sem a necessidade de modificar várias partes do código.</p>
+											</div>
+										</div>
+									</div>
+
+									<div class="accordion-item">
+										<h5 class="accordion-header" id="heading1-item4">
+											<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1-item4" aria-expanded="false" aria-controls="collapse1-item4">Colaboração</button>
+										</h5>
+										<div id="collapse1-item4" class="accordion-collapse collapse" aria-labelledby="heading1-item4" data-bs-parent="">
+											<div class="accordion-body">
+												<p>Em projetos maiores, diferentes programadores podem trabalhar em funções diferentes de forma independente, facilitando o trabalho.</p>
+											</div>
+										</div>
+									</div>
+
+									<div class="accordion-item">
+										<h5 class="accordion-header" id="heading1-item5">
+											<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1-item5" aria-expanded="false" aria-controls="collapse1-item5">Testabilidade</button>
+										</h5>
+										<div id="collapse1-item5" class="accordion-collapse collapse" aria-labelledby="heading1-item5" data-bs-parent="">
+											<div class="accordion-body">
+												<p>Usando funções podemos testar o funcionamento da função individualmente, permitindo que bugs sejam identificados mais rapidamente.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<p>Uma função tem um início e fim, é identificada por um nome, que é como essa função vai ser utilizada por todo o código. Para usar uma função é preciso escrevê-la antes da sua chamada. </p>
+
+								<p>Uma função pode ter parâmetros, que são os dados de entrada, e a função pode ou não retornar um resultado. No exemplo a seguir definimos 2 parâmetros de entrada, e usamos a palavra especial para retornar um valor chamada de retorno, a <strong>sintaxe é <span class="color-tertiary-dark"><strong>retorno [variável]</strong></span>.</p></strong>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<!-- SINTAXE -->
+								<div class="code-container aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="600">
+									<div class="heading__block">
+										<h5 class="heading__title">Sintaxe</h5>
+									</div>
+									<pre aria-label="Exemplo de código">
+										<code>
+											<span class="comment">// Definição e uso de funções</span>
+											<span class="keyword">função</span> <span class="function">somar</span>(<span class="variable">A</span>, <span class="variable">B</span>) {
+											   <span class="keyword">retorno</span> <span class="variable">A</span> <span class="operator">+</span> <span class="variable">B</span>  <span class="comment">// retorna a soma de A e B</span>
+											}
+
+											<span class="comment">// Chamando a função</span>
+											<span class="variable">resultado</span> <span class="operator">=</span> <span class="function">somar</span>(<span class="number">1</span>, <span class="number">3</span>)
+											<span class="function">mostrar</span>(<span class="variable">resultado</span>)  <span class="comment">// 4</span>
+
+											<span class="variable">resultado</span> <span class="operator">=</span> <span class="function">somar</span>(<span class="number">100</span>, <span class="number">200</span>)
+											<span class="function">mostrar</span>(<span class="variable">resultado</span>)  <span class="comment">// 300</span>
+										</code>
+									</pre>
+
+									<!-- <button class="copy-btn" aria-label="Copiar código para a área de transferência">Copiar</button> -->
+								</div>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<p>Observe que, no primeiro exemplo anterior, enviamos para a função <strong>somar</strong> os números 1 e 3, que chamaremos de argumentos, enquanto eles serão atribuídos de forma correspondente aos parâmetros A e B que foram definidos na <strong>função somar</strong>. Quando estamos no âmbito de uma função, as variáveis passam a ter um contexto local, ou seja, os parâmetros dentro de uma função só existem dentro daquela função e não são visíveis ao código principal, enquanto às variáveis que ficam fora da função, e dentro do código principal, chamamos de variáveis de <strong>contexto global</strong>. Vamos a um exemplo.</p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<!-- SINTAXE -->
+								<div class="code-container aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="600">
+									<div class="heading__block">
+										<h5 class="heading__title">Sintaxe</h5>
+									</div>
+									<pre aria-label="Exemplo de código">
+										<code>
+											<span class="comment">// Escopo de variáveis - variáveis globais e locais</span>
+
+											<span class="variable">A</span> <span class="operator">=</span> <span class="number">100</span>  <span class="comment">// Variável global</span>
+
+											<span class="comment">// Função com parâmetro chamado A (diferente do A global)</span>
+											<span class="keyword">função</span> <span class="function">multiplicar</span>(<span class="variable">A</span>, <span class="variable">multiplicador</span>) {
+											   <span class="variable">produto</span> <span class="operator">=</span> <span class="variable">A</span> <span class="operator">*</span> <span class="variable">multiplicador</span>  <span class="comment">// Usa o A do parâmetro, não o A global</span>
+											   <span class="keyword">retorno</span> <span class="variable">produto</span>
+											}
+
+											<span class="variable">resposta</span> <span class="operator">=</span> <span class="function">multiplicar</span>(<span class="number">5</span>, <span class="number">3</span>)  <span class="comment">// Passa 5 como parâmetro A e 3 como multiplicador</span>
+
+											<span class="function">mostrar</span>(<span class="variable">A</span>)        <span class="comment">// 100 (A global permanece 100)</span>
+											<span class="function">mostrar</span>(<span class="variable">resposta</span>) <span class="comment">// 15 (usou A = 5 como parâmetro, então 5 * 3 = 15)</span>
+
+											<span class="comment">// O A dentro da função (parâmetro) é diferente do A fora (global)
+											// Mesmo tendo o mesmo nome, são variáveis independentes</span>
+										</code>
+									</pre>
+
+									<!-- <button class="copy-btn" aria-label="Copiar código para a área de transferência">Copiar</button> -->
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+
+			<!-- Navegação da aula -->
+			<section>
+				<div class="container">
+					<div class="row justify-content-center">
+						<div class="col-12 col-md-10 col-lg-8">
+							<div class="page-nav d-flex justify-content-evenly">
+								<a class="fio-button fio-button-primary" href="topico4.html" rel="prev"><span class="material-symbols-rounded" aria-hidden="true">west</span> Tópico Anterior</a>
+								<a class="fio-button fio-button-primary" href="topico6.html" rel="next">Próximo tópico <span class="material-symbols-rounded" aria-hidden="true">east</span></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+
+		<footer>
+				<div class="container-fluid">
+					<div class="row justify-content-center align-items-center linha-de-marcas">
+						<div class="col-12 col-md-auto">
+							<ul class="logos">
+								<!-- <li class="realizacao"> -->
+								<li>
+									<img class="img-fluid logo1" src="../../media/logos/logo-cidacs.svg" alt="Logo do Centro de Integração de Dados e Conhecimentos para Saúde" height="" />
+								</li>
+
+								<li>
+									<img class="img-fluid logo2" src="../../media/logos/logo-cvf.svg" alt="Logo do Campus Virtual Fiocruz" height="" />
+								</li>
+
+								<li>
+									<img class="img-fluid logo3" src="../../media/logos/logo-fiocruz.svg" alt="Logo da Fiocruz" height="" />
+								</li>
+							</ul>
+						</div>
+
+						<div class="col-12 col-md-auto">
+							<ul class="logos principais align-self-end">
+								<li>
+									<img class="img-fluid logo4" src="../../media/logos/logo-sus-digital-cor.svg" alt="Logo do SUS Digital" height="" />
+								</li>
+
+								<li>
+									<img class="img-fluid logo5 d-none d-md-block" src="../../media/logos/logo-ms-gov-federal.svg" alt="Logos SUS 35 anos, Ministério da Saúde e Governo Federal" height="" />
+								</li>
+
+								<li>
+									<img class="img-fluid logo6 d-block d-md-none" src="../../media/logos/logo-ms-gov-federal-mobile.svg" alt="Logos SUS 35 anos, Ministério da Saúde e Governo Federal" height="" />
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+		</footer>
+	</div>
+
+	<!--  Bootstrap JS and Popper -->
+	<script src="../../source/bootstrap-5.1.3/js/bootstrap.bundle.min.js"></script>
+
+	<!-- Sticky Sidebar -->
+	<script type="text/javascript" src="../../assets/js/ResizeSensor.js"></script>
+	<script type="text/javascript" src="../../assets/js/sticky-sidebar.js"></script>
+	<script type="text/javascript" src="../../assets/js/sidebar.js"></script>
+	<script type="text/javascript" src="../../assets/js/exercise.js"></script>
+
+	<script type="text/javascript">
+		var sidebar = new StickySidebar('.sidebar', {
+			topSpacing: 0,
+			bottomSpacing: 0,
+			containerSelector: '.main',
+			innerWrapperSelector: '.sidebar__inner',
+			minWidth: 991,
+		});
+	</script>
+
+	<!-- Code -->
+	<script src="../../assets/js/code.js"></script>
+
+	<!-- Swiper -->
+	<script src="../../assets/js/swiper-bundle.min.js"></script>
+	<script src="../../assets/js/swiper-init.js"></script>
+
+	<script type="text/javascript" src="../../assets/js/scripts.js"></script>
+	<script type="text/javascript" src="../../assets/js/custom-anime.js"></script>
+	<script type="text/javascript" src="../../source/animate/aos/dist/aos.js"></script>
+
+	<!-- Timeline horizontal -->
+	<script src="../../assets/js/timeline-horizontal/util.js"></script>
+	<!-- util functions included in the CodyHouse framework -->
+	<script src="../../assets/js/timeline-horizontal/swipe-content.js"></script>
+	<!-- A Vanilla JavaScript plugin to detect touch interactions -->
+	<script src="../../assets/js/timeline-horizontal/main.js"></script>
+	<!-- Start the Timeline -->
+	<script>
+		document.getElementsByTagName('html')[0].className += ' js';
+	</script>
+
+	<script>
+		AOS.init();
+	</script>
+</body>
+
+</html>

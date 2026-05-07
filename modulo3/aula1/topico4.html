@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=yes" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="robots" content="noindex" />
+	<meta name="author" content="Fiocruz, Campus Virtual" />
+	<meta name="description" content="Curso Introdução à Análise de Dados para pesquisa no SUS" />
+	<meta name="keywords" content="Fiocruz Curso Introdução à Análise de Dados para pesquisa no SUS" />
+
+	<!-- Facebook Open Graph -->
+	<meta property="og:url" content="https://mooc.campusvirtual.fiocruz.br/rea/introducao-analise-dados-sus" />
+	<meta property="og:title" content="Campus Virtual Fiocruz | Curso Introdução à Análise de Dados para pesquisa no SUS" />
+	<meta property="og:description" content="Curso Introdução à Análise de Dados para pesquisa no SUS" />
+	<meta property="og:image" content="" />
+	<meta property="og:image:width" content="1080" />
+	<meta property="og:image:height" content="1080" />
+	<meta property="og:type" content="website" />
+
+	<!-- Twitter Cards -->
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:title" content="Campus Virtual Fiocruz | Curso Introdução à Análise de Dados para pesquisa no SUS" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:description" content="" />
+	<meta name="twitter:image:src" content="" />
+
+	<!-- Favicons and Touch Icons -->
+	<link rel="apple-touch-icon" sizes="57x57" href="../../media/icons/apple-icon-57x57.png" />
+	<link rel="apple-touch-icon" sizes="60x60" href="../../media/icons/apple-icon-60x60.png" />
+	<link rel="apple-touch-icon" sizes="72x72" href="../../media/icons/apple-icon-72x72.png" />
+	<link rel="apple-touch-icon" sizes="76x76" href="../../media/icons/apple-icon-76x76.png" />
+	<link rel="apple-touch-icon" sizes="114x114" href="../../media/icons/apple-icon-114x114.png" />
+	<link rel="apple-touch-icon" sizes="120x120" href="../../media/icons/apple-icon-120x120.png" />
+	<link rel="apple-touch-icon" sizes="144x144" href="../../media/icons/apple-icon-144x144.png" />
+	<link rel="apple-touch-icon" sizes="152x152" href="../../media/icons/apple-icon-152x152.png" />
+	<link rel="apple-touch-icon" sizes="180x180" href="../../media/icons/apple-icon-180x180.png" />
+
+	<link rel="icon" type="image/png" sizes="192x192" href="../../media/icons/android-icon-192x192.png" />
+	<link rel="icon" type="image/png" sizes="32x32" href="../../media/icons/favicon-32x32.png" />
+	<link rel="icon" type="image/png" sizes="96x96" href="../../media/icons/favicon-96x96.png" />
+	<link rel="icon" type="image/png" sizes="16x16" href="../../media/icons/favicon-16x16.png" />
+	<link rel="manifest" href="../media/icons/manifest.json" />
+
+	<meta name="msapplication-TileColor" content="#ffffff" />
+	<meta name="msapplication-TileImage" content="../../media/icons/ms-icon-144x144.png" />
+	<!-- <meta name="theme-color" content="#003066" /> -->
+	<meta name="theme-color" content="#001833" />
+
+	<title>Curso Introdução à Análise de Dados para pesquisa no SUS | Mod 3 | Aula 1</title>
+
+	<!-- Bootstrap CSS 5.1.3 -->
+	<link rel="stylesheet" href="../../source/bootstrap-5.1.3/css/bootstrap.min.css" />
+
+	<!-- Project CSS -->
+	<link rel="stylesheet" href="../../assets/css/style.css" />
+</head>
+
+<body>
+	<header class="header">
+		<div class="mobile-toggle-open">
+			<a class="mobile-toggle__button" tabindex="0" role="button">
+				<span class="icon material-symbols-rounded">read_more</span>
+			</a>
+		</div>
+		<div class="brand">
+			<img class="img-fluid logo-black" src="../../media/logos/header-fiocruz-campus-virtual.png" alt="Campus Virtual Fiocruz" />
+		</div>
+		<div class="title">
+			<h1>Introdução à Análise de Dados para pesquisa no SUS</h1>
+		</div>
+		<ul class="nav nav-pills">
+			<li class="nav-item"><a href="../../index.html" class="nav-link">Início</a></li>
+			<li class="nav-item"><a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#modal-creditos">Créditos</a></li>
+		</ul>
+	</header>
+	<div class="main">
+		<div class="sidebar" role="navigation">
+			<div class="sidebar__inner" style="position: relative">
+				<div class="sidebar__group d-lg-none">
+					<div class="sidebar__group-item">
+						<div class="sidebar__header">
+							<span>Curso</span>
+							<a class="mobile-toggle-close" tabindex="0" role="button"><span class="icon material-symbols-rounded">read_more</span></a>
+						</div>
+					</div>
+					<div class="sidebar__group-item">
+						<div class="sidebar__title">
+							<h1>Introdução à Análise de Dados para pesquisa no SUS</h1>
+						</div>
+					</div>
+					<div class="sidebar__group-item">
+						<ul class="nav">
+							<li class="nav-item">
+								<a href="../../index.html" class="nav-link" tabindex="0"><span class="icon material-symbols-rounded" aria-hidden="true">home</span>Início</a>
+							</li>
+							<li class="nav-item">
+								<a href="#" class="nav-link" tabindex="0" data-bs-toggle="modal" data-bs-target="#modal-creditos"><span class="icon material-symbols-rounded" aria-hidden="true"> format_list_bulleted</span>Créditos</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="sidebar__group">
+					<div class="sidebar__group-item">
+						<div class="dropend">
+							<button id="dropdown-modulos" type="button" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside" data-bs-offset="0,30">
+								<span class="icon material-symbols-rounded" aria-hidden="true">grid_view</span>
+								<span class="label">Módulos</span>
+							</button>
+							<ul class="dropdown-menu" aria-labelledby="dropdown-modulos">
+								<li class="d-lg-none dropdown-menu__header">
+									<a class="dropdown-menu__back-button" tabindex="0" role="button"><span class="icon material-symbols-rounded">chevron_left</span> Voltar</a>
+									<a class="mobile-toggle-close" tabindex="0" role="button"><span class="icon material-symbols-rounded">read_more</span></a>
+								</li>
+								<li class="dropdown-menu__item">
+									<a class="dropdown-menu__item-link" tabindex="0" role="link" href="../../modulo1/aula1/topico1.html"><strong>Módulo 1</strong><br />A informação no SUS</a>
+								</li>
+								<li class="dropdown-menu__item">
+									<a class="dropdown-menu__item-link" tabindex="0" role="link" href="../../modulo2/aula1/topico1.html"><strong>Módulo 2</strong><br />Fontes de Dados Socioeconômicos e Demográficos: subsídios para a Saúde</a> 
+								</li>
+								<li class="dropdown-menu__item">
+									<!--<span class="dropdown-menu__item-link"><strong>Módulo 3</strong><br />Modelos estatísticos <strong class="em-breve">(em breve)</strong></span>-->
+									<a class="dropdown-menu__item-link" tabindex="0" role="link" href="../../modulo3/aula1/topico1.html"><strong>Módulo 3</strong><br />Sistemas de Informação em Saúde</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="divider">
+					<hr />
+				</div>
+				<div class="sidebar__group">
+					<div class="sidebar__group-item">
+						<span class="text module">Módulo <br class="d-none d-lg-block" /><span>3</span></span>
+					</div>
+					<div class="sidebar__group-item">
+						<div class="dropend">
+							<button type="button" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside" data-bs-offset="0,30">
+								<span class="icon material-symbols-rounded" aria-hidden="true">apps</span>
+								<span class="label">Conteúdo</span>
+							</button>
+							<ul class="dropdown-menu">
+								<li class="d-lg-none dropdown-menu__header">
+									<a class="dropdown-menu__back-button" tabindex="0" role="button"><span class="icon material-symbols-rounded">chevron_left</span> Voltar</a>
+									<a class="mobile-toggle-close" tabindex="0" role="button"><span class="icon material-symbols-rounded">read_more</span></a>
+								</li>
+								<li class="dropdown-menu__title">
+									<span class="label">Módulo 3</span>
+									<span class="title">Modelos estatísticos</span>
+								</li>
+
+								<li class="dropdown-menu__item">
+									<a class="dropdown-menu__item-link" tabindex="0" role="link" href="../aula1/topico1.html"><strong>Aula 1: </strong>Inferência Estatística</a>
+								</li>
+								<li class="dropdown-menu__item">
+									<a class="dropdown-menu__item-link" tabindex="0" role="link" href="../aula2/topico1.html"><strong>Aula 2: </strong>Modelos Estatísticos: lineares e não lineares</a>
+								</li>
+								<li class="dropdown-menu__item">
+									<a class="dropdown-menu__item-link" tabindex="0" role="link" href="../aula3/topico1.html"><strong>Aula 3: </strong>Dados com estruturas de dependência: multiníveis, séries temporais e espaciais e sobrevida</a>
+								</li>
+								<li class="dropdown-menu__item">
+									<a class="dropdown-menu__item-link" tabindex="0" role="link" href="../aula4/topico1.html"><strong>Aula 4: </strong>Aplicação dos modelos estatísticos</a>
+								</li>
+
+								<li class="dropdown-menu__item">
+									<a class="dropdown-menu__item-link" tabindex="0" role="link" href="../atividade.html"><strong>Atividade</strong></a>
+								</li>
+
+								<li class="dropdown-menu__item">
+									<a class="dropdown-menu__item-link" tabindex="0" role="link" href="../encerramento.html"><strong>Resumo do módulo</strong></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="divider">
+					<hr />
+				</div>
+				<div class="sidebar__group">
+					<div class="sidebar__group-item">
+						<span class="text class">Aula 1</span>
+					</div>
+					<div class="sidebar__group-item">
+						<div class="dropend">
+							<button type="button" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside" data-bs-offset="0,30">
+								<span class="icon material-symbols-rounded" aria-hidden="true"> format_list_bulleted</span>
+								<span class="label">Tópicos</span>
+							</button>
+							<ul class="dropdown-menu">
+								<li class="d-lg-none dropdown-menu__header">
+									<a class="dropdown-menu__back-button" tabindex="0" role="button"><span class="icon material-symbols-rounded">chevron_left</span> Voltar</a>
+									<a class="mobile-toggle-close" tabindex="0" role="button"><span class="icon material-symbols-rounded">read_more</span></a>
+								</li>
+								<li class="dropdown-menu__title">
+									<span class="label">Aula 1</span>
+									<span class="title">Inferência Estatística</span>
+								</li>
+								<li class="dropdown-menu__item">
+									<nav class="topic-list">
+										<a href="topico1.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico concluído" status="visited"> <span class="material-symbols-rounded"></span>Introdução</a>
+
+										<a href="topico2.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico concluído" status="visited"> <span class="material-symbols-rounded"></span>Intervalo de Confiança</a>
+
+										<a href="topico3.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico concluído" status="visited"><span class="material-symbols-rounded"></span>Fundamentos do teste de hipóteses</a>
+
+										<a href="topico4.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico concluído" status="visited"><span class="material-symbols-rounded"></span>Teste de hipóteses para média</a>
+
+										<a href="topico5.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico não concluído"><span class="material-symbols-rounded"></span>Teste de hipóteses para proporção</a>
+									</nav>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="divider">
+					<hr />
+				</div>
+				<div class="sidebar__group extra">
+					<div class="sidebar__group-item">
+						<button type="button" class="" data-bs-toggle="modal" data-bs-target="#modal-bibliografiaMod3">
+							<span class="icon material-symbols-rounded" aria-hidden="true"> menu_book</span>
+							<span class="label">Bibliografia</span>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="content">
+			<div id="page-title">
+				<div class="container">
+					<div class="row align-items-center hstify-content-center justify-content-xxl-start ms-lg-5">
+						<div class="col-12 col-md-10 col-lg-11">
+							<h2 class="title">
+								<span class="label">Módulo 3 | Aula 1</span>
+								<br />
+								Inferência Estatística
+							</h2>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="page-content" class="">
+				<!-- Inserir o conteúdo aqui -->
+				<section>
+					<div class="container">
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5 pb-5">
+								<div class="heading__block">
+									<span class="small">Tópico 4</span>
+									<h3 class="heading__title">Teste de hipóteses para média</h3>
+								</div>
+
+								<p>Quando se trata de comparar a média de uma amostra com a média de uma população, ou entre duas amostras, o teste de hipótese para a média é frequentemente utilizado. Existem diferentes tipos de testes de hipótese para a média, dependendo da situação. Veja a seguir.</p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<div class="heading__block">
+									<h4 class="heading__title">Teste t de Student para uma amostra</h4>
+								</div>
+
+								<p>Usado quando queremos testar se a média de uma única amostra é igual a um valor conhecido ou específico. É usado quando a distribuição da amostra é normal e o desvio-padrão da população é desconhecido. O objetivo é testar se a média de uma amostra é significativamente diferente de um valor específico (média populacional conhecida). </p>
+
+								<p>As etapas para realização do teste de hipóteses para a média de uma única amostra são:</p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<!-- Lista Ordenada -->
+								<div class="list">
+									<ol class="list-group list-group-numbered"> 
+										<li class="list-group-item aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">Enunciar as hipóteses H<sub>0</sub> e H<sub>1</sub>:
+											<p>H<sub>0</sub>: μ = μ<sub>0</sub></p>
+											<p>H<sub>1</sub>: μ ≠ μ<sub>0</sub></p>
+
+											<p>Em que μ0 é a média populacional hipotética conhecida. As hipóteses enunciadas acima correspondem a hipóteses de um teste bilateral. Outras possibilidades são: H<sub>1</sub>: μ &gt; μ<sub>0</sub> (teste unilateral à direita) ou H<sub>1</sub>: μ &lt; μ<sub>0</sub> (teste unilateral à esquerda).</p>
+										
+										</li>
+
+										<li class="list-group-item aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">Determinar um nível de significância (α) aceitável: usualmente α = 5%.</li>
+
+										<li class="list-group-item aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" data-aos-delay="100">Determinar a região crítica: usando a tabela da distribuição t de <span class="color-tertiary-dark"><strong>Student</strong></span> com n-1 graus de liberdade ou um software estatístico, determine o valor crítico para o nível de significância escolhido.</li>
+
+										<li class="list-group-item aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" data-aos-delay="200">Calcular o valor da Estatística de Teste: para o teste t de uma amostra, a estatística de teste é calculada como:
+
+										<math class="my-5" display="block" style="color:#000; font-size:24px;">
+											<mi>t</mi>
+											<mo>=</mo>
+											<mfrac>
+												<mrow>
+												<mo>(</mo>
+												<mover>
+													<mi>X</mi>
+													<mo>¯</mo>
+												</mover>
+												<mo>-</mo>
+												<msub>
+													<mi>&#x03BC;</mi>
+													<mn>0</mn>
+												</msub>
+												<mo>)</mo>
+												</mrow>
+												<mrow>
+												<mi>s</mi>
+												<mo>/</mo>
+												<msqrt>
+													<mi>n</mi>
+												</msqrt>
+												</mrow>
+											</mfrac>
+										</math>
+
+										<p>Em que s é o desvio-padrão amostral, n é o tamanho da amostra, μ<sub>0</sub> é um valor hipotético para μ e t é chamado estatística de teste. </p>
+										</li>
+
+										<li class="list-group-item aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" data-aos-delay="100">Tomar a decisão com base na região crítica ou do p-valor. O p-valor é apresentado nas saídas dos softwares estatísticos. No R, o comando para realização do teste t de <span class="color-tertiary-dark"><strong>Student</strong></span> é  <span class="color-tertiary-dark"><strong>t.test.</strong></span></li>
+									</ol>
+								</div>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<!-- NA PRÁTICA -->
+								<div class="box-cor aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="600">
+									<div class="box-cor__base">
+										<div class="base-header">
+											<h4>Na Prática!</h4>
+										</div>
+										<div class="base-body">
+											<p>Suponha que estamos interessados em verificar se, em média, a população de estudantes de pós-graduação está acima do peso, ou seja, média de IMC maior do que 25Kg/m<sup>2</sup>. Uma amostra de tamanho 50 da população forneceu uma média de 26,4Kg/m2 e desvio-padrão de 4Kg/m<sup>2</sup>.  </p>
+
+											<!-- Lista Ordenada -->
+											<div class="list">
+												<ol class="list-group list-group-numbered"> 
+													<li class="list-group-item">Formule as hipóteses:
+														<p>H<sub>0</sub>: μ = 25</p>
+														<p>H<sub>1</sub>: μ &gt; 25</p>
+													</li>
+
+													<li class="list-group-item">Nível de significância: 5%</li>
+
+													<li class="list-group-item">Região crítica: para α=0,05 e 49 graus de liberdade (n−1), o valor crítico de t é aproximadamente 1,68 (baseado na tabela t). </li>
+
+													<li class="list-group-item">Cálculo da estatística t:
+
+													<math class="my-5" display="block" style="color:#000; font-size:24px;">
+														<mi>t</mi>
+														<mo>=</mo>
+														<mfrac>
+															<mrow>
+															<mn>26,4</mn>
+															<mo>-</mo>
+															<mn>25</mn>
+															</mrow>
+															<mrow>
+															<mn>4</mn>
+															<mo>/</mo>
+															<msqrt>
+																<mn>50</mn>
+															</msqrt>
+															</mrow>
+														</mfrac>
+														<mo>=</mo>
+														<mn>2,47</mn>
+													</math>
+													</li>
+
+													<li class="list-group-item">Como o teste é unilateral à direita, rejeita-se H<sub>0</sub> para valores da estatística de teste maiores do que 1,68. Nesse caso, rejeitamos H<sub>0</sub>, ou seja, os alunos de pós-graduação estão, em média, acima do peso.
+													
+													<figure class="lightbox aos-init aos-animate mt-5" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
+														<img class="img-fluid mx-auto d-block mb-3" src="../../media/modulo3/aula1-img15.png" alt="" title="Fonte: Elaborado pelo autor (2025).">
+														<figcaption class="figure-caption fonte">Fonte: Elaborado pelo autor (2025).</figcaption>
+													</figure>
+													
+													</li>
+												</ol>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5 pb-5">
+								<!-- FAÇA VOCÊ MESMO -->
+								<div class="faca-voce-mesmo aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
+									<div class="olho-de-texto my-5">
+										<div class="heading__block">
+											<h5 class="heading__title">Faça você mesmo!</h5>
+										</div>
+										<p>É hora de praticar! No script <strong>modulo3aula1_atividades.R</strong> (Atividade 3), aplique o teste t para uma amostra em dados de peso de recém-nascidos, testando se a média difere de 3200g (referência nacional).</p>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<div class="heading__block">
+									<h4 class="heading__title">Teste t de Student para duas amostras independentes</h4>
+								</div>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<p>Usado a fim de comparar as médias de duas amostras independentes para determinar se existe uma diferença significativa entre elas. Esse teste pode assumir que as variâncias das duas populações são iguais ou diferentes.</p>
+
+								<!-- Lista Ordenada -->
+								<div class="list">
+									<ol class="list-group list-group-numbered"> 
+										<li class="list-group-item aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">Enunciar as hipóteses H<sub>0</sub> e H<sub>1</sub>:
+											<p>H<sub>0</sub>: μ = μ<sub>2</sub></p>
+											<p>H<sub>1</sub>: μ ≠ μ<sub>2</sub></p>
+
+											<p>Em que μ<sub>1</sub> é a média populacional do grupo 1 e μ<sub>2</sub> é a média populacional do grupo 2. A estatística de teste considera a diferença das médias amostrais dos grupos 1 e 2 com desvio-padrão amostral diferente para as duas situações: variâncias populacionais iguais ou diferentes.</p>
+										</li>
+									</ol>
+								</div>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5 pb-5">
+								<!-- NA PRÁTICA -->
+								<div class="box-cor aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="600">
+									<div class="box-cor__base">
+										<div class="base-header">
+											<h4>Na Prática!</h4>
+										</div>
+										<div class="base-body">
+											<p>Suponha que estamos interessados em saber se a média de IMC é diferente em estudantes do sexo masculino e feminino: seja μ<sub>1</sub> a média populacional de IMC do sexo masculino e μ<sub>2</sub> a média populacional de IMC do sexo feminino. Podemos assumir independência entre os grupos, então o teste t para amostras independentes é adequado para responder à pergunta.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<!-- Saiba Mais -->
+								<div class="saiba-mais">
+									<div class="row aos-init aos-animate" data-aos="fade-left" data-aos-easing="ease-out" data-aos-duration="600">
+										<div class="col-12 d-flex justify-content-center">
+											<button class="saiba-mais fio-button button-md fio-button-secondary collapsed" type="collapsed" data-bs-toggle="collapse" data-bs-target="#saiba-mais1" aria-expanded="false" aria-controls="saiba-mais1"><span class="icone material-symbols-rounded" aria-hidden="true"></span> Você sabia?</button>
+										</div>
+
+										<div class="col-12">
+											<div class="mt-3 collapse" id="saiba-mais1">
+												<p>Para saber mais sobre o teste para duas amostras independentes, <a href='https://youtu.be/RYR2-xbYbxU?si=hh74ZOc76h8y44bT' target='_blank' rel='noopener noreferrer'>assista este vídeo.</a>.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5 pb-5">
+								<!-- FAÇA VOCÊ MESMO -->
+								<div class="faca-voce-mesmo aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
+									<div class="olho-de-texto my-5">
+										<div class="heading__block">
+											<h5 class="heading__title">Faça você mesmo!</h5>
+										</div>
+										<p>É hora de praticar! No script <strong>modulo3aula1_atividades.R</strong> (Atividade 4), compare dois métodos de medição de colesterol usando o teste t para duas amostras independentes.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<div class="heading__block">
+									<h4 class="heading__title">Teste t de Student para duas amostras pareadas</h4>
+								</div>
+
+								<p>Utilizado quando se quer comparar duas médias de amostras dependentes, ou seja, as mesmas amostras são testadas duas vezes, como antes e depois de um tratamento. As hipóteses são as mesmas do teste t para duas amostras independentes, com μ1 e μ2 representando, por exemplo, as médias populacionais antes e depois do tratamento. A estatística de teste considera a média e o desvio-padrão da diferença entre as medidas dos grupos 1 e 2.</p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5 pb-5">
+								<!-- NA PRÁTICA -->
+								<div class="box-cor aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="600">
+									<div class="box-cor__base">
+										<div class="base-header">
+											<h4>Na Prática!</h4>
+										</div>
+										<div class="base-body">
+											<p>Suponha que estamos interessados em saber se a média de IMC no início do curso de pós-graduação é menor do que a média de IMC no final do curso: seja μ<sub>1</sub> a média populacional de IMC no início do curso e μ<sub>2</sub> a média populacional de IMC no final do curso. Nesse caso, podemos formular as seguintes hipóteses: H<sub>0</sub>: μ<sub>1</sub> = μ<sub>2</sub>; H<sub>1</sub>: μ<sub>1</sub> &lt; μ<sub>2</sub>. Como os mesmos estudantes tiveram suas medidas registradas no início e no final do curso, então o teste t para amostras pareadas é adequado para responder à pergunta.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5 pb-5">
+								<!-- Saiba Mais -->
+								<div class="saiba-mais">
+									<div class="row aos-init aos-animate" data-aos="fade-left" data-aos-easing="ease-out" data-aos-duration="600">
+										<div class="col-12 d-flex justify-content-center">
+											<button class="saiba-mais fio-button button-md fio-button-secondary collapsed" type="collapsed" data-bs-toggle="collapse" data-bs-target="#saiba-mais2" aria-expanded="false" aria-controls="saiba-mais2"><span class="icone material-symbols-rounded" aria-hidden="true"></span> Você sabia?</button>
+										</div>
+
+										<div class="col-12">
+											<div class="mt-3 collapse" id="saiba-mais2">
+												<p>Para saber mais sobre o teste para duas amostras pareadas, <a href='https://youtu.be/-kKBZyz7h9Q?si=yxHqcIf7mWGq00SO' target='_blank' rel='noopener noreferrer'>assista este vídeo.</a>.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<div class="heading__block">
+									<h4 class="heading__title">Teste para comparação de médias populacionais de 3 ou mais grupos</h4>
+								</div>
+
+								<p>A análise de variância (ANOVA) é uma técnica estatística usada para comparar as médias de três ou mais grupos com o objetivo de determinar se há diferenças estatisticamente significativas entre eles. A ANOVA testa a hipótese nula de que todas as médias dos grupos são iguais. Se a ANOVA indica que existem diferenças significativas entre os grupos, isso sugere que pelo menos um grupo tem uma média diferente dos outros. A ANOVA compara a variabilidade entre os grupos com a variabilidade dentro deles.</p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<!-- NA PRÁTICA -->
+								<div class="box-cor aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="600">
+									<div class="box-cor__base">
+										<div class="base-header">
+											<h4>Na Prática!</h4>
+										</div>
+										<div class="base-body">
+											<p>Suponha que estamos interessados em saber a média de IMC é diferente em estudantes pretos, pardos e brancos. Como temos três grupos de comparação, a ANOVA é adequada para responder à pergunta.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8">
+								<!-- FAÇA VOCÊ MESMO -->
+								<div class="faca-voce-mesmo aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
+									<div class="olho-de-texto my-5">
+										<div class="heading__block">
+											<h5 class="heading__title">Faça você mesmo!</h5>
+										</div>
+										<p>É hora de praticar! No script <strong>modulo3aula1_atividades.R</strong>. (Atividade 5), use ANOVA para comparar a pressão arterial entre três faixas etárias (Jovem, Adulto, Idoso) e aplique o teste de Tukey para identificar quais grupos diferem.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+
+			<!-- Navegação da aula -->
+			<section>
+				<div class="container">
+					<div class="row justify-content-center">
+						<div class="col-12 col-md-10 col-lg-8">
+							<div class="page-nav d-flex justify-content-evenly">
+								<a class="fio-button fio-button-primary" href="topico3.html" rel="prev"><span class="material-symbols-rounded" aria-hidden="true">west</span> Tópico Anterior</a>
+								<a class="fio-button fio-button-primary" href="topico5.html" rel="next">Próximo Tópico <span class="material-symbols-rounded" aria-hidden="true">east</span></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+
+		<footer>
+				<div class="container-fluid">
+					<div class="row justify-content-center align-items-center linha-de-marcas">
+						<div class="col-12 col-md-auto">
+							<ul class="logos">
+								<!-- <li class="realizacao"> -->
+								<li>
+									<img class="img-fluid logo1" src="../../media/logos/logo-cidacs.svg" alt="Logo do Centro de Integração de Dados e Conhecimentos para Saúde" height="" />
+								</li>
+
+								<li>
+									<img class="img-fluid logo2" src="../../media/logos/logo-cvf.svg" alt="Logo do Campus Virtual Fiocruz" height="" />
+								</li>
+
+								<li>
+									<img class="img-fluid logo3" src="../../media/logos/logo-fiocruz.svg" alt="Logo da Fiocruz" height="" />
+								</li>
+							</ul>
+						</div>
+
+						<div class="col-12 col-md-auto">
+							<ul class="logos principais align-self-end">
+								<li>
+									<img class="img-fluid logo4" src="../../media/logos/logo-sus-digital-cor.svg" alt="Logo do SUS Digital" height="" />
+								</li>
+
+								<li>
+									<img class="img-fluid logo5 d-none d-md-block" src="../../media/logos/logo-ms-gov-federal.svg" alt="Logos SUS 35 anos, Ministério da Saúde e Governo Federal" height="" />
+								</li>
+
+								<li>
+									<img class="img-fluid logo6 d-block d-md-none" src="../../media/logos/logo-ms-gov-federal-mobile.svg" alt="Logos SUS 35 anos, Ministério da Saúde e Governo Federal" height="" />
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+		</footer>
+	</div>
+
+	<!--  Bootstrap JS and Popper -->
+	<script src="../../source/bootstrap-5.1.3/js/bootstrap.bundle.min.js"></script>
+
+	<!-- Sticky Sidebar -->
+	<script type="text/javascript" src="../../assets/js/ResizeSensor.js"></script>
+	<script type="text/javascript" src="../../assets/js/sticky-sidebar.js"></script>
+	<script type="text/javascript" src="../../assets/js/sidebar.js"></script>
+
+	<script type="text/javascript">
+		var sidebar = new StickySidebar('.sidebar', {
+			topSpacing: 0,
+			bottomSpacing: 0,
+			containerSelector: '.main',
+			innerWrapperSelector: '.sidebar__inner',
+			minWidth: 991,
+		});
+	</script>
+
+	<!-- Code -->
+	<script src="../../assets/js/code.js"></script>
+
+	<!-- Swiper -->
+	<script src="../../assets/js/swiper-bundle.min.js"></script>
+	<script src="../../assets/js/swiper-init.js"></script>
+
+	<script type="text/javascript" src="../../assets/js/scripts.js"></script>
+	<script type="text/javascript" src="../../assets/js/custom-anime.js"></script>
+	<script type="text/javascript" src="../../source/animate/aos/dist/aos.js"></script>
+
+	<!-- Timeline horizontal -->
+	<script src="../../assets/js/timeline-horizontal/util.js"></script>
+	<!-- util functions included in the CodyHouse framework -->
+	<script src="../../assets/js/timeline-horizontal/swipe-content.js"></script>
+	<!-- A Vanilla JavaScript plugin to detect touch interactions -->
+	<script src="../../assets/js/timeline-horizontal/main.js"></script>
+	<!-- Start the Timeline -->
+	<script>
+		document.getElementsByTagName('html')[0].className += ' js';
+	</script>
+
+	<script>
+		AOS.init();
+	</script>
+</body>
+
+</html>

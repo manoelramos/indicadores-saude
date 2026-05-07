@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=yes" />
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="robots" content="noindex" />
+		<meta name="author" content="Fiocruz, Campus Virtual" />
+		<meta name="description" content="Curso Introdução à Análise de Dados para pesquisa no SUS" />
+		<meta name="keywords" content="Fiocruz Curso Introdução à Análise de Dados para pesquisa no SUS" />
+
+		<!-- Facebook Open Graph -->
+		<meta property="og:url" content="https://mooc.campusvirtual.fiocruz.br/rea/introducao-analise-dados-sus" />
+		<meta property="og:title" content="Campus Virtual Fiocruz | Curso Introdução à Análise de Dados para pesquisa no SUS" />
+		<meta property="og:description" content="Curso Introdução à Análise de Dados para pesquisa no SUS" />
+		<meta property="og:image" content="" />
+		<meta property="og:image:width" content="1080" />
+		<meta property="og:image:height" content="1080" />
+		<meta property="og:type" content="website" />
+
+		<!-- Twitter Cards -->
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:title" content="Campus Virtual Fiocruz | Curso Introdução à Análise de Dados para pesquisa no SUS" />
+		<meta name="twitter:url" content="" />
+		<meta name="twitter:description" content="" />
+		<meta name="twitter:image:src" content="" />
+
+		<!-- Favicons and Touch Icons -->
+		<link rel="apple-touch-icon" sizes="57x57" href="../../media/icons/apple-icon-57x57.png" />
+		<link rel="apple-touch-icon" sizes="60x60" href="../../media/icons/apple-icon-60x60.png" />
+		<link rel="apple-touch-icon" sizes="72x72" href="../../media/icons/apple-icon-72x72.png" />
+		<link rel="apple-touch-icon" sizes="76x76" href="../../media/icons/apple-icon-76x76.png" />
+		<link rel="apple-touch-icon" sizes="114x114" href="../../media/icons/apple-icon-114x114.png" />
+		<link rel="apple-touch-icon" sizes="120x120" href="../../media/icons/apple-icon-120x120.png" />
+		<link rel="apple-touch-icon" sizes="144x144" href="../../media/icons/apple-icon-144x144.png" />
+		<link rel="apple-touch-icon" sizes="152x152" href="../../media/icons/apple-icon-152x152.png" />
+		<link rel="apple-touch-icon" sizes="180x180" href="../../media/icons/apple-icon-180x180.png" />
+
+		<link rel="icon" type="image/png" sizes="192x192" href="../../media/icons/android-icon-192x192.png" />
+		<link rel="icon" type="image/png" sizes="32x32" href="../../media/icons/favicon-32x32.png" />
+		<link rel="icon" type="image/png" sizes="96x96" href="../../media/icons/favicon-96x96.png" />
+		<link rel="icon" type="image/png" sizes="16x16" href="../../media/icons/favicon-16x16.png" />
+		<link rel="manifest" href="../media/icons/manifest.json" />
+
+		<meta name="msapplication-TileColor" content="#ffffff" />
+		<meta name="msapplication-TileImage" content="../../media/icons/ms-icon-144x144.png" />
+		<!-- <meta name="theme-color" content="#003066" /> -->
+		<meta name="theme-color" content="#001833" />
+
+		<title>Curso Introdução à Análise de Dados para pesquisa no SUS | Mod 3 | Aula 1</title>
+
+		<!-- Bootstrap CSS 5.1.3 -->
+		<link rel="stylesheet" href="../../source/bootstrap-5.1.3/css/bootstrap.min.css" />
+
+		<!-- Project CSS -->
+		<link rel="stylesheet" href="../../assets/css/style.css" />
+	</head>
+
+	<body>
+		<header class="header">
+			<div class="mobile-toggle-open">
+				<a class="mobile-toggle__button" tabindex="0" role="button">
+					<span class="icon material-symbols-rounded">read_more</span>
+				</a>
+			</div>
+			<div class="brand">
+				<img class="img-fluid logo-black" src="../../media/logos/header-fiocruz-campus-virtual.png" alt="Campus Virtual Fiocruz" />
+			</div>
+			<div class="title">
+				<h1>Introdução à Análise de Dados para pesquisa no SUS</h1>
+			</div>
+			<ul class="nav nav-pills">
+				<li class="nav-item"><a href="../../index.html" class="nav-link">Início</a></li>
+				<li class="nav-item"><a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#modal-creditos">Créditos</a></li>
+			</ul>
+		</header>
+		<div class="main">
+			<div class="sidebar" role="navigation">
+				<div class="sidebar__inner" style="position: relative">
+					<div class="sidebar__group d-lg-none">
+						<div class="sidebar__group-item">
+							<div class="sidebar__header">
+								<span>Curso</span>
+								<a class="mobile-toggle-close" tabindex="0" role="button"><span class="icon material-symbols-rounded">read_more</span></a>
+							</div>
+						</div>
+						<div class="sidebar__group-item">
+							<div class="sidebar__title">
+								<h1>Introdução à Análise de Dados para pesquisa no SUS</h1>
+							</div>
+						</div>
+						<div class="sidebar__group-item">
+							<ul class="nav">
+								<li class="nav-item">
+									<a href="../../index.html" class="nav-link" tabindex="0"><span class="icon material-symbols-rounded" aria-hidden="true">home</span>Início</a>
+								</li>
+								<li class="nav-item">
+									<a href="#" class="nav-link" tabindex="0" data-bs-toggle="modal" data-bs-target="#modal-creditos"><span class="icon material-symbols-rounded" aria-hidden="true"> format_list_bulleted</span>Créditos</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="sidebar__group">
+						<div class="sidebar__group-item">
+							<div class="dropend">
+								<button id="dropdown-modulos" type="button" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside" data-bs-offset="0,30">
+									<span class="icon material-symbols-rounded" aria-hidden="true">grid_view</span>
+									<span class="label">Módulos</span>
+								</button>
+								<ul class="dropdown-menu" aria-labelledby="dropdown-modulos">
+									<li class="d-lg-none dropdown-menu__header">
+										<a class="dropdown-menu__back-button" tabindex="0" role="button"><span class="icon material-symbols-rounded">chevron_left</span> Voltar</a>
+										<a class="mobile-toggle-close" tabindex="0" role="button"><span class="icon material-symbols-rounded">read_more</span></a>
+									</li>
+									<li class="dropdown-menu__item">
+										<a class="dropdown-menu__item-link" tabindex="0" role="link" href="../../modulo1/aula1/topico1.html"><strong>Módulo 1</strong><br />A informação no SUS</a>
+									</li>
+									<li class="dropdown-menu__item">
+										<a class="dropdown-menu__item-link" tabindex="0" role="link" href="../../modulo2/aula1/topico1.html"><strong>Módulo 2</strong><br />Fontes de Dados Socioeconômicos e Demográficos: subsídios para a Saúde</a>
+									</li>
+									<li class="dropdown-menu__item">
+										<a class="dropdown-menu__item-link" tabindex="0" role="link" href="../../modulo3/aula1/topico1.html"><strong>Módulo 3</strong><br />Sistemas de Informação em Saúde</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="divider">
+						<hr />
+					</div>
+					<div class="sidebar__group">
+						<div class="sidebar__group-item">
+							<span class="text module">Módulo <br class="d-none d-lg-block" /><span>3</span></span>
+						</div>
+						<div class="sidebar__group-item">
+							<div class="dropend">
+								<button type="button" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside" data-bs-offset="0,30">
+									<span class="icon material-symbols-rounded" aria-hidden="true">apps</span>
+									<span class="label">Conteúdo</span>
+								</button>
+								<ul class="dropdown-menu">
+									<li class="d-lg-none dropdown-menu__header">
+										<a class="dropdown-menu__back-button" tabindex="0" role="button"><span class="icon material-symbols-rounded">chevron_left</span> Voltar</a>
+										<a class="mobile-toggle-close" tabindex="0" role="button"><span class="icon material-symbols-rounded">read_more</span></a>
+									</li>
+									<li class="dropdown-menu__title">
+										<span class="label">Módulo 3</span>
+										<span class="title">Modelos estatísticos</span>
+									</li>
+
+									<li class="dropdown-menu__item">
+										<a class="dropdown-menu__item-link" tabindex="0" role="link" href="../aula1/topico1.html"><strong>Aula 1: </strong>Inferência Estatística</a>
+									</li>
+									<li class="dropdown-menu__item">
+										<a class="dropdown-menu__item-link" tabindex="0" role="link" href="../aula2/topico1.html"><strong>Aula 2: </strong>Modelos Estatísticos: lineares e não lineares</a>
+									</li>
+									<li class="dropdown-menu__item">
+										<a class="dropdown-menu__item-link" tabindex="0" role="link" href="../aula3/topico1.html"><strong>Aula 3: </strong>Dados com estruturas de dependência: multiníveis, séries temporais e espaciais e sobrevida</a>
+									</li>
+									<li class="dropdown-menu__item">
+										<a class="dropdown-menu__item-link" tabindex="0" role="link" href="../aula4/topico1.html"><strong>Aula 4: </strong>Aplicação dos modelos estatísticos</a>
+									</li>
+
+									<li class="dropdown-menu__item">
+										<a class="dropdown-menu__item-link" tabindex="0" role="link" href="../atividade.html"><strong>Atividade</strong></a>
+									</li>
+
+									<li class="dropdown-menu__item">
+										<a class="dropdown-menu__item-link" tabindex="0" role="link" href="../encerramento.html"><strong>Resumo do módulo</strong></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="divider">
+						<hr />
+					</div>
+					<div class="sidebar__group">
+						<div class="sidebar__group-item">
+							<span class="text class">Aula 1</span>
+						</div>
+						<div class="sidebar__group-item">
+							<div class="dropend">
+								<button type="button" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside" data-bs-offset="0,30">
+									<span class="icon material-symbols-rounded" aria-hidden="true"> format_list_bulleted</span>
+									<span class="label">Tópicos</span>
+								</button>
+								<ul class="dropdown-menu">
+									<li class="d-lg-none dropdown-menu__header">
+										<a class="dropdown-menu__back-button" tabindex="0" role="button"><span class="icon material-symbols-rounded">chevron_left</span> Voltar</a>
+										<a class="mobile-toggle-close" tabindex="0" role="button"><span class="icon material-symbols-rounded">read_more</span></a>
+									</li>
+									<li class="dropdown-menu__title">
+										<span class="label">Aula 1</span>
+										<span class="title">Inferência Estatística</span>
+									</li>
+									<li class="dropdown-menu__item">
+										<nav class="topic-list">
+											<a href="topico1.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico concluído" status="visited"> <span class="material-symbols-rounded"></span>Introdução</a>
+
+											<a href="topico2.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico não concluído"> <span class="material-symbols-rounded"></span>Intervalo de Confiança</a>
+
+											<a href="topico3.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico não concluído"><span class="material-symbols-rounded"></span>Fundamentos do teste de hipóteses</a>
+
+											<a href="topico4.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico não concluído"><span class="material-symbols-rounded"></span>Teste de hipóteses para média</a>
+
+											<a href="topico5.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico não concluído"><span class="material-symbols-rounded"></span>Teste de hipóteses para proporção</a>
+										</nav>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="divider">
+						<hr />
+					</div>
+					<div class="sidebar__group extra">
+						<div class="sidebar__group-item">
+							<button type="button" class="" data-bs-toggle="modal" data-bs-target="#modal-bibliografiaMod3">
+								<span class="icon material-symbols-rounded" aria-hidden="true"> menu_book</span>
+								<span class="label">Bibliografia</span>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="content">
+				<div id="page-title">
+					<div class="container">
+						<div class="row align-items-center hstify-content-center justify-content-xxl-start ms-lg-5">
+							<div class="col-12 col-md-10 col-lg-11">
+								<h2 class="title">
+									<span class="label">Módulo 3 | Aula 1</span>
+									<br />
+									Inferência Estatística
+								</h2>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div id="page-content" class="">
+					<!-- Inserir o conteúdo aqui -->
+					<section>
+						<div class="container">
+							<div class="row justify-content-center">
+								<div class="col-12 col-md-10 col-lg-8 mb-5">
+									<div class="heading__block">
+										<span class="small">Tópico 1</span>
+										<h3 class="heading__title">Introdução</h3>
+									</div>
+									<p>A inferência estatística é um conjunto de técnicas que tem como objetivo estudar a população a partir de informações obtidas por uma amostra, ou seja, estamos interessados em fazer inferência para a população a partir de uma amostra. A figura a seguir ilustra o conceito de inferência estatística.</p>
+								</div>
+							</div>
+
+							<div class="row justify-content-center">
+								<div class="col-12 col-md-10 col-lg-8 mb-5">
+									<figure class="lightbox aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
+										<img class="img-fluid mx-auto d-block mb-3" src="../../media/modulo3/aula1-img1.png" alt="" title="Fonte: Freepik">
+										<figcaption class="figure-caption fonte">Fonte: https://www.questionpro.com/blog/pt-br/diferenca-entre-populacao-e-amostra/. Acesso em: 30 jul. 2025.</figcaption>
+									</figure>
+							</div>
+
+							<div class="row justify-content-center">
+								<div class="col-12 col-md-10 col-lg-8 mb-5">
+									<p>Para exemplificar o conceito, considere que estamos interessados em estudar a prevalência (proporção) de hipertensão arterial em adultos no município do Rio de Janeiro. Para tanto, selecionamos uma amostra de adultos moradores do município e perguntamos se eles têm ou não esse diagnóstico. Em seguida, calculamos a prevalência de hipertensão arterial da amostra. <strong>O objetivo é generalizar o resultado obtido na amostra para a população.</strong></p>
+
+									<p>Algumas questões que surgem são:</p>
+								</div>
+							</div>
+
+							<div class="row justify-content-center">
+								<div class="col-12 col-md-8 col-lg-6 mb-5">
+									<p class="text-muted text-center"><span class="material-symbols-rounded" style="transform: rotateX(180deg)">pan_tool_alt</span> <span class="d-none d-lg-inline-block">Clique</span><span class="d-inline-block d-lg-none">Toque</span> e arraste os cards para conhecê-los.</p>
+
+									<!-- Swipper Effect Card -->
+									<div class="swiper swiper--effect-card card">
+										<div class="swiper-wrapper">
+											<div class="swiper-slide">
+												
+												<div class="card-header">
+													<span class="h6">Questão 1</span>
+												</div>
+
+												<div class="card-body">
+													<p><strong>De que forma podemos selecionar essa amostra?</strong></p>
+												</div>
+											</div>
+
+											<div class="swiper-slide">
+												
+
+												<div class="card-header">
+													<span class="h6">Questão 2</span>
+												</div>
+
+												<div class="card-body">
+													<p><strong>Amostras diferentes utilizando o mesmo procedimento conterão as mesmas informações?</strong></p>
+												</div>
+											</div>
+
+											<div class="swiper-slide">
+												
+
+												<div class="card-header">
+													<span class="h6">Questão 3</span>
+												</div>
+
+												<div class="card-body">
+													<p><strong>Será que os resultados dessa amostra podem ser generalizados para a população de interesse?</strong></p>
+												</div>
+											</div>
+										</div>
+										<div class="swiper-pagination swiper-pagination3"></div>
+									</div>
+								</div>
+							</div>
+
+							<div class="row justify-content-center">
+								<div class="col-12 col-md-10 col-lg-8 mb-5">
+									<p>Ao longo desta aula vamos refletir sobre essas questões e como podemos chegar ao resultado de uma amostragem. </p>
+
+									<p>Então, vamos iniciar pensando <strong>de que forma podemos selecionar essa amostra</strong>? As técnicas de amostragem podem ser classificadas em probabilística e não probabilística.</p>
+								</div>
+							</div>
+
+							<div class="row justify-content-center">
+								<div class="col-12 col-md-10 col-lg-8 mb-5">
+									<!-- Saiba Mais -->
+									<div class="saiba-mais">
+										<div class="row aos-init aos-animate" data-aos="fade-left" data-aos-easing="ease-out" data-aos-duration="600">
+											<div class="col-12 d-flex justify-content-center">
+												<button class="saiba-mais fio-button button-md fio-button-secondary collapsed" type="collapsed" data-bs-toggle="collapse" data-bs-target="#saiba-mais1" aria-expanded="false" aria-controls="saiba-mais1"><span class="icone material-symbols-rounded" aria-hidden="true"></span> Você sabia?</button>
+											</div>
+
+											<div class="col-12">
+												<div class="mt-3 collapse" id="saiba-mais1">
+
+													<div class="heading__block">
+														<p class="h6 heading__title">A amostra probabilística se subdivide em:</p>
+													</div>
+
+													<!-- Lista Não-Ordenada -->
+													<div class="list">
+														<ul class="list-group">
+															<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">Amostragem aleatória simples.</li>
+
+															<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" data-aos-delay="100" >Amostragem aleatória estratificada.</li>
+
+															<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" data-aos-delay="200">Amostragem aleatória por conglomerado.</li>
+
+															<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" data-aos-delay="300">Amostragem aleatória sistemática.</li>
+														</ul>
+													</div>
+
+													<p>Exemplos de amostragem não probabilística incluem amostragem por conveniência, amostragem em bola de neve, amostragem intencional etc. O cálculo do tamanho da amostra depende da técnica de amostragem escolhida. Essas técnicas não são objetos desta aula. </p>
+
+													<p>Para saber mais, <a href='https://bookdown.org/luisfca/docs/tipos-de-amostragem.html' target='_blank' rel='noopener noreferrer'>acesse este site</a>.</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="row justify-content-center">
+								<div class="col-12 col-md-10 col-lg-8 mb-5">
+									<p>Para responder à segunda pergunta, se amostras diferentes utilizando o mesmo procedimento conterão as mesmas informações, devemos considerar o seguinte: selecionamos 10 amostras probabilísticas de mesmo tamanho e, para cada amostra, podemos calcular a proporção de adultos com hipertensão arterial. Parece intuitivo assumir que os resultados serão diferentes, uma vez que cada amostra será composta por pessoas diferentes. Assim, cada uma delas terá uma prevalência de hipertensão arterial diferente. Podemos dizer que, devido à natureza aleatória envolvida no procedimento de amostragem, não podemos garantir que as amostras forneçam os mesmos resultados. Apesar de diferentes, podemos ter resultados próximos ou iguais nas diversas amostras.</p>
+
+									<p>A tabela a seguir apresenta a prevalência de hipertensão arterial (HA) em 10 amostras de tamanho <span class="color-tertiary-dark"><strong>n=1000</strong></span>. Para que a generalização do resultado obtido a partir da amostra seja válida para a população, a amostra precisa ser representativa, ou seja, precisa representar bem a população de interesse.</p>
+								</div>
+							</div>
+
+							<div class="row justify-content-center">
+								<div class="col-12 col-md-10 col-lg-10 mb-5">
+									<!-- Tabela -->
+									<div class="table-responsive aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
+										<table class="table table-bordered">
+											<thead>
+												<tr class="text-center">
+													<th>Amostra</th>
+													<th>1</th>
+													<th>2</th>
+													<th>3</th>
+													<th>4</th>
+													<th>5</th>
+													<th>6</th>
+													<th>7</th>
+													<th>8</th>
+													<th>9</th>
+													<th>10</th>
+												</tr>
+											</thead>
+
+											<tbody>
+												<tr class="text-center">
+													<td><strong>Prevalência de HA</strong></td>
+													<td>0,35</td>
+													<td>0,39</td>
+													<td>0,34</td>
+													<td>0,40</td>
+													<td>0,35</td>
+													<td>0,31</td>
+													<td>0,38</td>
+													<td>0,36</td>
+													<td>0,39</td>
+													<td>0,37</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+
+							<div class="row justify-content-center">
+								<div class="col-12 col-md-10 col-lg-8 mb-5">
+									<p>Antes de avançarmos, vamos definir alguns conceitos importantes:</p>
+								</div>
+							</div>
+
+							<div class="row justify-content-center">
+								<div class="col-12 col-md-10 col-lg-8 mb-5">
+									<!-- Lista Não-Ordenada -->
+									<div class="list">
+										<ul class="list-group">
+											<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200"><strong>Parâmetros</strong> são quantidades desconhecidas da população sobre as quais temos interesse, usualmente representadas por letras gregas tais como μ, σ, θ, entre outras.</li>
+
+											<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" data-aos-delay="100"><strong>Estimador</strong> é a combinação de elementos da amostra, construída com a finalidade de representar, ou estimar, um parâmetro de interesse na população.</li>
+
+											<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" data-aos-delay="200"><strong>Estimativa</strong> é o valor numérico obtido pelo estimador em uma certa amostra.</li>
+											
+										</ul>
+									</div>
+								</div>
+							</div>
+
+							<div class="row justify-content-center">
+								<div class="col-12 col-md-10 col-lg-8 mb-5">
+									<p>Agora, vamos analisar os dois exemplos a seguir: </p>
+								</div>
+							</div>
+
+							<div class="row justify-content-center">
+								<div class="col-12 col-md-10 col-lg-8 mb-5">
+									<!-- Abas -->
+									<div class="aba">
+										<ul class="nav nav-pills nav-fill" id="pills-tab" role="tablist">
+											<li class="nav-item" role="presentation">
+												<button class="nav-link active" id="pills-aba1-tab" data-bs-toggle="pill" data-bs-target="#pills-aba1" type="button" role="tab" aria-controls="pills-aba1" aria-selected="true">Exemplo 1</button>
+											</li>
+											<li class="nav-item" role="presentation">
+												<button class="nav-link" id="pills-aba2-tab" data-bs-toggle="pill" data-bs-target="#pills-aba2" type="button" role="tab" aria-controls="pills-aba2" aria-selected="false">Exemplo 2</button>
+											</li>
+										</ul>
+										<div class="tab-content p-0" id="pills-tabContent">
+											<!-- Aba 1 -->
+											<div class="tab-pane fade show active" id="pills-aba1" role="tabpanel" aria-labelledby="pills-aba1-tab">
+												<div class="tab-pane-content">
+													<!-- Texto à direita com Imagem  -->
+													<div class="row justify-content-center d-lg-block">
+														<!-- Imagem -->
+														<div class="col-md-8 col-lg-3 float-lg-start me-lg-4 px-0 order-1 order-lg-2">
+															<figure>
+																<img class="img-fluid mx-auto d-block mb-3" src="../../media/modulo3/aula1-img5.png" alt="" title="Fonte: Freepik">
+																<figcaption class="figure-caption fonte">Fonte: Freepik</figcaption>
+															</figure>
+														</div>
+						
+														<!-- Texto -->
+														<div class="order-2 order-lg-1">
+															<p>A obesidade é um importante fator de risco para diversos desfechos em saúde. Estamos interessados na média do Índice de Massa Corporal (IMC) de adultos de 18 a 59 anos, moradores do município do Rio de Janeiro. Uma amostra aleatória da população da cidade será selecionada e perguntamos o peso e a altura delas. Em seguida, vamos calcular o IMC, que é dado pela razão entre peso e altura ao quadrado. Nesse caso, temos o parâmetro de interesse, que é a média da população do Rio de Janeiro com idade entre 18 e 59 anos. O parâmetro de interesse é o IMC médio, representado por μ. Após a obtenção dos dados da amostra, precisamos definir o estimador que vai representar o parâmetro de interesse. Nesse caso, é intuitivo pensar que a média amostral é um estimador razoável para a média populacional. Finalmente, a estimativa será o valor numérico da média da amostra selecionada. Por exemplo, 25,7Kg/m2.</p>
+														</div>
+													</div>
+												</div>
+											</div>
+
+											<!-- Aba 2-->
+											<div class="tab-pane fade" id="pills-aba2" role="tabpanel" aria-labelledby="pills-aba2-tab">
+												<div class="tab-pane-content">
+													<!-- Texto à direita com Imagem  -->
+													<div class="row justify-content-center d-lg-block">
+														<!-- Imagem -->
+														<div class="col-md-8 col-lg-3 float-lg-start me-lg-4 px-0 order-1 order-lg-2">
+															<figure>
+																<img class="img-fluid mx-auto d-block mb-3" src="../../media/modulo3/aula1-img6.png" alt="" title="Fonte: Freepik">
+																<figcaption class="figure-caption fonte">Fonte: Freepik</figcaption>
+															</figure>
+														</div>
+						
+														<!-- Texto -->
+														<div class="order-2 order-lg-1">
+															<p>O consumo regular de frutas é um marcador de alimentação saudável. Suponha que estamos interessados em conhecer a proporção de adultos na população brasileira que consome frutas regularmente. Considere que o consumo regular de frutas é definido pelo consumo diário de três ou mais porções de fruta. A população de interesse é formada por adultos brasileiros. Uma amostra aleatória da população brasileira será selecionada e elas vão responder se consomem frutas regularmente. O parâmetro de interesse é a proporção de consumo regular de frutas, representado por p. Nesse caso, é intuitivo considerar como estimador a proporção amostral de consumo regular de frutas, e a estimativa o valor numérico da proporção em uma dada amostra. Por exemplo, p=0,48.</p>
+														</div>
+													</div>
+												</div>
+											</div>
+		
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="row justify-content-center">
+								<div class="col-12 col-md-10 col-lg-8 mb-5">
+									<p>No primeiro exemplo apresentado, a variável de interesse é uma variável numérica, IMC, e, no segundo exemplo, a variável de interesse é categórica, consumo regular de frutas (sim/não). Os estimadores escolhidos para representar o parâmetro populacional de interesse foram, respectivamente, média e proporção. Os estimadores, além de serem intuitivos, têm boas propriedades estatísticas, ambos são não viciados e consistentes. Um estimador é dito não viciado se o seu valor esperado coincide com o parâmetro de interesse, e consistente se à medida que o tamanho da amostra aumenta, além de não viciado, a variância tende a zero.  </p>
+
+									<p>A figura a seguir exemplifica as propriedades de um estimador. </p>
+								</div>
+							</div>
+
+							<div class="row justify-content-center">
+								<div class="col-12 col-md-10 col-lg-8 mb-5">
+									<figure class="lightbox aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
+										<img class="img-fluid mx-auto d-block mb-3" src="../../media/modulo3/aula1-img7.png" alt="" title="Fonte: Campus Virtual Fiocruz">
+										<figcaption class="figure-caption fonte">Fonte: Campus Virtual Fiocruz, a partir de <a href='https://chemistrywithwiley.com/accuracy-and-precision/' target='_blank' rel='noopener noreferrer'>Chemistry with Wiley</a>. Acesso em: 30 jul. 2025.</figcaption>
+									</figure>
+							</div>
+
+							<div class="row justify-content-center">
+								<div class="col-12 col-md-10 col-lg-8 mb-5">
+									<p>Suponha que a média populacional de IMC da população adulta do Rio de Janeiro seja conhecida e igual a μ =26Kg/m2. Ao selecionarmos uma amostra de tamanho n=100 dessa população, obtemos uma média amostral igual a 26,4Kg/m2. Já vimos que, se selecionarmos outra amostra de mesmo tamanho, podemos obter um resultado diferente. Isso significa que a cada vez que uma amostra é selecionada, teremos outros valores, ou seja, existe variabilidade entre as estimativas de diferentes amostras. Por consequência, essas estimativas também têm uma incerteza associada, que pode ser medida pelo desvio-padrão, que ganha um nome especial de “erro padrão”. A figura a seguir ilustra a distribuição das 500 médias de tamanho 100 obtidas (a). A média das médias obtida foi igual a 25,99 e o desvio-padrão das médias (erro padrão) igual a 0,19.  Se aumentarmos o tamanho da amostra para n=1000, obteremos uma média igual a 26 e erro padrão igual a 0,05 (b). Esse resultado indica que a média amostral é um estimador não viciado e consistente. O histograma apresenta a distribuição amostral da médi, e, em alguns casos, é possível conhecer a distribuição de probabilidade teórica desse estimador. No caso da média, essa distribuição de probabilidades é conhecida analiticamente.</p>
+								</div>
+							</div>
+
+							<div class="row justify-content-center">
+								<div class="col-12 col-md-10 col-lg-8 mb-5">
+									<figure class="lightbox aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
+										<img class="img-fluid mx-auto d-block mb-3" src="../../media/modulo3/aula1-img8.png" alt="" title="Fonte: Freepik">
+										<figcaption class="figure-caption fonte">Fonte: Campus Virtual Fiocruz, a partir do autor (2025)</figcaption>
+									</figure>
+							</div>
+
+							<div class="row justify-content-center">
+								<div class="col-12 col-md-10 col-lg-8 mb-5">
+									<p>O processo de inferência para a população (parâmetro) pode ser realizado a partir de uma amostra utilizando-se uma estimação pontual, intervalar ou teste de hipóteses. Uma estimativa pontual é um valor único calculado a partir de dados amostrais que tentam estimar um parâmetro desconhecido da população. Uma estimativa intervalar é um intervalo de valores calculado a partir de dados amostrais, que fornece uma faixa dentro da qual se espera que o parâmetro populacional verdadeiro, média ou proporção, esteja com um determinado nível de confiança. Para o cálculo do intervalo de confiança e construção de teste de hipótese, utilizamos um importante teorema da inferência estatística, o <a class="" tabindex="0" role="button" data-bs-toggle="popover" data-bs-trigger="focus" title="" data-bs-html='true' data-bs-content="<p>O Teorema Central do Limite (TCL) é um conceito fundamental em estatística que afirma que, sob certas condições, a distribuição da média de uma amostra aleatória de uma população tende a uma distribuição normal, independentemente da distribuição da população original, à medida que o tamanho da amostra aumenta.</p>" data-bs-original-title="Teorema Central do Limite">Teorema Central do Limite</a>.</p>
+
+									<p>Sejam X<sub>1</sub>, X<sub>2</sub>, ..., X<sub>n</sub> variáveis aleatórias independentes e identicamente distribuídas com média μ e variância &sigma;<sup>2</sup>. Para uma amostra suficientemente grande, a média amostral tende a seguir uma distribuição Normal, independentemente da distribuição original da variável com média μ e variância dada por &sigma;<sup>2</sup>/n. Então, podemos ter uma variável original com distribuição muito diferente da normal, mas, se tomarmos várias amostras grandes dessa distribuição e então fizermos um histograma das médias amostrais, a forma se parecerá com uma curva Normal. A aproximação para a Normal melhora à medida que o tamanho amostral cresce.</p>
+
+									<p>A figura a seguir apresenta o histograma de uma distribuição populacional assimétrica à direita e o histograma das médias amostrais para amostras de tamanho n=5, 30 e 100 selecionadas dessa população. Observamos que, independentemente da forma da distribuição da população, a distribuição amostral da média se aproxima da distribuição normal à medida que o tamanho da amostra cresce.</p>
+								</div>
+							</div>
+
+							<div class="row justify-content-center">
+								<div class="col-12 col-md-10 col-lg-8 mb-5">
+									<figure class="lightbox aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
+										<img class="img-fluid mx-auto d-block mb-3" src="../../media/modulo3/aula1-img9.png" alt="" title="Fonte: Freepik">
+										<figcaption class="figure-caption fonte">Fonte: Campus Virtual Fiocruz, a partir do autor (2025)</figcaption>
+									</figure>
+								</div>
+							</div>
+
+							<div class="row justify-content-center">
+								<div class="col-12 col-md-10 col-lg-8">
+									<!-- FAÇA VOCÊ MESMO -->
+									<div class="faca-voce-mesmo aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
+										<div class="olho-de-texto my-5">
+											<div class="heading__block">
+												<h5 class="heading__title">Faça você mesmo!</h5>
+											</div>
+											<p>É hora de praticar! No script <strong>modulo3aula1_atividades.R</strong> (Atividade 1), simule o Teorema Central do Limite gerando 500 amostras e observe como as médias amostrais se distribuem normalmente, independente da distribuição original.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+				</div>
+
+				<!-- Navegação da aula -->
+				<section>
+					<div class="container">
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8">
+								<div class="page-nav d-flex justify-content-evenly">
+									<a class="fio-button fio-button-primary" href="topico2.html" rel="next">Próximo tópico <span class="material-symbols-rounded" aria-hidden="true">east</span></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+
+			<footer>
+				<div class="container-fluid">
+					<div class="row justify-content-center align-items-center linha-de-marcas">
+						<div class="col-12 col-md-auto">
+							<ul class="logos">
+								<!-- <li class="realizacao"> -->
+								<li>
+									<img class="img-fluid logo1" src="../../media/logos/logo-cidacs.svg" alt="Logo do Centro de Integração de Dados e Conhecimentos para Saúde" height="" />
+								</li>
+
+								<li>
+									<img class="img-fluid logo2" src="../../media/logos/logo-cvf.svg" alt="Logo do Campus Virtual Fiocruz" height="" />
+								</li>
+
+								<li>
+									<img class="img-fluid logo3" src="../../media/logos/logo-fiocruz.svg" alt="Logo da Fiocruz" height="" />
+								</li>
+							</ul>
+						</div>
+
+						<div class="col-12 col-md-auto">
+							<ul class="logos principais align-self-end">
+								<li>
+									<img class="img-fluid logo4" src="../../media/logos/logo-sus-digital-cor.svg" alt="Logo do SUS Digital" height="" />
+								</li>
+
+								<li>
+									<img class="img-fluid logo5 d-none d-md-block" src="../../media/logos/logo-ms-gov-federal.svg" alt="Logos SUS 35 anos, Ministério da Saúde e Governo Federal" height="" />
+								</li>
+
+								<li>
+									<img class="img-fluid logo6 d-block d-md-none" src="../../media/logos/logo-ms-gov-federal-mobile.svg" alt="Logos SUS 35 anos, Ministério da Saúde e Governo Federal" height="" />
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+
+		<!--  Bootstrap JS and Popper -->
+		<script src="../../source/bootstrap-5.1.3/js/bootstrap.bundle.min.js"></script>
+
+		<!-- Sticky Sidebar -->
+		<script type="text/javascript" src="../../assets/js/ResizeSensor.js"></script>
+		<script type="text/javascript" src="../../assets/js/sticky-sidebar.js"></script>
+		<script type="text/javascript" src="../../assets/js/sidebar.js"></script>
+
+		<script type="text/javascript">
+			var sidebar = new StickySidebar('.sidebar', {
+				topSpacing: 0,
+				bottomSpacing: 0,
+				containerSelector: '.main',
+				innerWrapperSelector: '.sidebar__inner',
+				minWidth: 991,
+			});
+		</script>
+
+		<!-- Swiper -->
+		<script src="../../assets/js/swiper-bundle.min.js"></script>
+		<script src="../../assets/js/swiper-init.js"></script>
+
+		<script type="text/javascript" src="../../assets/js/scripts.js"></script>
+		<script type="text/javascript" src="../../assets/js/custom-anime.js"></script>
+		<script type="text/javascript" src="../../source/animate/aos/dist/aos.js"></script>
+
+		<!-- Timeline horizontal -->
+		<script src="../../assets/js/timeline-horizontal/util.js"></script>
+		<!-- util functions included in the CodyHouse framework -->
+		<script src="../../assets/js/timeline-horizontal/swipe-content.js"></script>
+		<!-- A Vanilla JavaScript plugin to detect touch interactions -->
+		<script src="../../assets/js/timeline-horizontal/main.js"></script>
+		<!-- Start the Timeline -->
+		<script>
+			document.getElementsByTagName('html')[0].className += ' js';
+		</script>
+
+		<script>
+			AOS.init();
+		</script>
+	</body>
+</html>

@@ -1,0 +1,204 @@
+/* --- SWIPER --- */
+
+/* Importamos todos os arquivos CSS referentes à estrutura do slider Swiper*/
+@import "swiper-module/a11y.min.css";
+@import "swiper-module/effect-cards.min.css";
+@import "swiper-module/effect-creative.min.css";
+@import "swiper-module/effect-cube.min.css";
+@import "swiper-module/effect-fade.min.css";
+@import "swiper-module/effect-flip.min.css";
+@import "swiper-module/free-mode.min.css";
+@import "swiper-module/grid.min.css";
+@import "swiper-module/navigation.min.css";
+@import "swiper-module/pagination.min.css";
+@import "swiper-module/scrollbar.min.css";
+@import "swiper-module/virtual.min.css";
+@import "swiper-module/zoom.min.css";
+
+
+.swiper {
+    --_swiper-header-background: var(--fio-sys-color-primary-dark);
+    --_swiper-header-padding: var(--fio-sys-size-padding-md) calc(var(--fio-sys-size-padding-xl) * 1.5);
+    --_swiper-border-radius: var(--_card-border-radius);
+
+    --_swiper-background: var(--_card-background);
+    --_swiper-border-color: var(--_card-border-color);
+    --_swiper-border-width: var(--_card-border-width);
+    --swiper-box-shadow: var(--_card-shadow);
+
+    width: 100%;
+    height: auto;
+}
+.swiper .swiper-slide {
+    background-color: var(--_swiper-background);
+    height: auto !important;
+}
+
+.swiper .card-header {
+    background-color: var(--_swiper-header-background);
+    border-radius: 0 !important;
+    margin-bottom: 0 !important;
+    padding: var(--_swiper-header-padding);
+}
+
+.swiper .swiper-slide .card-body {
+    padding:var(--fio-sys-size-padding-xl) var(--fio-sys-size-padding-lg);
+}
+
+.swiper .swiper-button-next,
+.swiper .swiper-button-prev {
+    background-color: var(--fio-sys-color-accent-light);
+    border-radius: var(--fio-sys-size-radius-full);
+    color: var(--fio-sys-color-primary-dark);
+    padding: var(--fio-sys-size-padding-md);
+}
+
+.swiper .swiper-button-next:after, 
+.swiper .swiper-button-prev:after {
+    font-size: var(--fio-sys-typography-size-1);
+    color: var(--fio-sys-color-accent-medium-contrast);
+}
+
+/* SWIPER NAVIGATION */
+.swiper--navigation .swiper-slide .card-body {
+    padding:calc(var(--fio-sys-size-padding-xl) * 1.5);
+}
+
+/*SWIPER VERTICAL*/
+.swiper--vertical {
+    max-height: 30rem !important;
+    /* max-height: 800px; */
+}
+
+@media (min-width: 1200px) {
+    .swiper--vertical {
+        max-height: 18rem !important;
+        /* max-height: 800px; */
+    }
+}
+
+@media (min-width: 1300px) {
+    .swiper--vertical {
+        max-height: 20rem !important;
+        /* max-height: 800px; */
+    }
+}
+
+@media (min-width: 1400px) {
+    .swiper--vertical {
+        max-height: 25rem !important;
+        /* max-height: 800px; */
+    }
+}
+
+@media (min-width: 1900px) {
+    .swiper--vertical {
+        max-height: 30rem !important;
+        /* max-height: 800px; */
+    }
+}
+
+/*SWIPER EFFECT CARD*/
+
+.swiper--effect-card.card {
+    background:transparent;
+    border: none;
+    box-shadow: none;
+}
+
+.swiper--effect-card.card .swiper-slide {
+    background-color: var(--_swiper-background);
+	border-color: var(--_swiper-border-color);
+	border-width: var(--_swiper-border-width);
+    border-radius: var(--_swiper-border-radius);
+    box-shadow: var(--swiper-box-shadow);   
+}
+
+.swiper--effect-card .swiper-slide .card-body {
+    --_scrollbar-foreground: #999;
+    --_scrollbar-background: #333;
+  
+    max-height: 330px;
+    overflow-y: auto;
+    mask-image: linear-gradient(to top, transparent, black),
+        linear-gradient(to left, transparent 17px, black 17px);
+    mask-size: 100% 20000px;
+    mask-position: left bottom;
+    -webkit-mask-image: linear-gradient(to top, transparent, black),
+        linear-gradient(to left, transparent 17px, black 17px);
+    -webkit-mask-size: 100% 20000px;
+    -webkit-mask-position: left bottom;
+    transition: mask-position 0.3s, -webkit-mask-position 0.3s;
+    /* padding-bottom: var(--fio-sys-size-padding-xxl); */
+    /* margin-bottom: var(--fio-sys-size-padding-xxl); */
+
+    /* Foreground, Background */
+    scrollbar-color: var(--_scrollbar-foreground) var(--_scrollbar-background);
+}
+
+.swiper--effect-card .swiper-slide .card-body:hover {
+     -webkit-mask-position: left top;
+}
+
+.swiper--effect-card .swiper-slide .card-body::-webkit-scrollbar {
+    width: 10px; /* Mostly for vertical scrollbars */
+    height: 10px; /* Mostly for horizontal scrollbars */
+} 
+
+.swiper--effect-card .swiper-slide .card-body::-webkit-scrollbar-thumb { /* Foreground */
+  background: var(--_scrollbar-foreground);
+}
+.swiper--_effect-card .swiper-slide .card-body::-webkit-scrollbar-track { /* Background */
+  background: var(--_scrollbar-background);
+}
+
+/* Swiper Effect Card com Flipcard dentro */
+.swiper--effect-card.swiper-flipcard .swiper-slide {
+    background-color:transparent; 
+    box-shadow:none; 
+    overflow:visible;
+}
+
+.swiper--effect-card.swiper-flipcard .swiper-slide .card-body {
+    padding-bottom: var(--fio-sys-size-padding-sm);
+}
+
+/* .swiper--effect-card .swiper-slide:nth-child(1n) {
+    background-color: rgb(206, 17, 17);
+}
+
+.swiper--effect-card .swiper-slide:nth-child(2n) {
+    background-color: rgb(0, 140, 255);
+}
+
+.swiper--effect-card .swiper-slide:nth-child(3n) {
+     background-color: rgb(10, 184, 111);
+}
+
+.swiper--effect-card .swiper-slide:nth-child(4n) {
+    background-color: rgb(211, 122, 7);
+}
+
+.swiper--effect-card .swiper-slide:nth-child(5n) {
+    background-color: rgb(118, 163, 12);
+}
+
+.swiper--effect-card .swiper-slide:nth-child(6n) {
+    background-color: rgb(180, 10, 47);
+}
+
+.swiper--effect-card .swiper-slide:nth-child(7n) {
+    background-color: rgb(35, 99, 19);
+}
+
+.swiper--effect-card .swiper-slide:nth-child(8n) {
+    background-color: rgb(0, 68, 255);
+}
+
+.swiper--effect-card .swiper-slide:nth-child(9n) {
+    background-color: rgb(218, 12, 218);
+}
+
+.swiper--effect-card .swiper-slide:nth-child(10n) {
+    background-color: rgb(54, 94, 77);
+ } */

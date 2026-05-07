@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=yes" />
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="robots" content="noindex" />
+		<meta name="author" content="Fiocruz, Campus Virtual" />
+		<title>Curso Fontes de Dados | Mod 2 | Aula 3</title>
+		<link rel="stylesheet" href="../../source/bootstrap-5.1.3/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="../../assets/css/style.css" />
+	</head>
+	<body>
+		<header class="header">
+			<div class="mobile-toggle-open">
+				<a class="mobile-toggle__button" tabindex="0" role="button">
+					<span class="icon material-symbols-rounded">read_more</span>
+				</a>
+			</div>
+			<div class="brand">
+				<img class="img-fluid logo-black" src="../../media/logos/header-fiocruz-campus-virtual.png" alt="Campus Virtual Fiocruz" />
+			</div>
+			<div class="title">
+				<h1>Fontes de Dados e Sistemas de Informação para o SUS</h1>
+			</div>
+			<ul class="nav nav-pills">
+				<li class="nav-item"><a href="../../index.html" class="nav-link">Início</a></li>
+				<li class="nav-item"><a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#modal-creditos">Créditos</a></li>
+			</ul>
+		</header>
+		<div class="main">
+			<div class="sidebar" role="navigation">
+				<div class="sidebar__inner" style="position: relative">
+					<div class="sidebar__group d-lg-none">
+						<div class="sidebar__group-item">
+							<div class="sidebar__header">
+								<span>Curso</span>
+								<a class="mobile-toggle-close" tabindex="0" role="button"><span class="icon material-symbols-rounded">read_more</span></a>
+							</div>
+						</div>
+						<div class="sidebar__group-item">
+							<div class="sidebar__title">
+								<h1>Fontes de Dados e Sistemas de Informação para o SUS</h1>
+							</div>
+						</div>
+						<div class="sidebar__group-item">
+							<ul class="nav">
+								<li class="nav-item">
+									<a href="../../index.html" class="nav-link" tabindex="0"><span class="icon material-symbols-rounded" aria-hidden="true">home</span>Início</a>
+								</li>
+								<li class="nav-item">
+									<a href="#" class="nav-link" tabindex="0" data-bs-toggle="modal" data-bs-target="#modal-creditos"><span class="icon material-symbols-rounded" aria-hidden="true"> format_list_bulleted</span>Créditos</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="sidebar__group">
+						<div class="sidebar__group-item">
+							<div class="dropend">
+								<button id="dropdown-modulos" type="button" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside" data-bs-offset="0,30">
+									<span class="icon material-symbols-rounded" aria-hidden="true">grid_view</span>
+									<span class="label">Módulos</span>
+								</button>
+								<ul class="dropdown-menu" aria-labelledby="dropdown-modulos">
+									<li class="d-lg-none dropdown-menu__header">
+										<a class="dropdown-menu__back-button" tabindex="0" role="button"><span class="icon material-symbols-rounded">chevron_left</span> Voltar</a>
+										<a class="mobile-toggle-close" tabindex="0" role="button"><span class="icon material-symbols-rounded">read_more</span></a>
+									</li>
+									<li class="dropdown-menu__item">
+										<a class="dropdown-menu__item-link" tabindex="0" role="link" href="../../modulo1/aula1/topico1.html"><strong>Módulo 1</strong><br />A informação no SUS</a>
+									</li>
+									<li class="dropdown-menu__item">
+										<a class="dropdown-menu__item-link" tabindex="0" role="link" href="../../modulo2/aula1/topico1.html"><strong>Módulo 2</strong><br />Fontes de Dados Socioeconômicos e Demográficos: subsídios para a Saúde</a>
+									</li>
+									<li class="dropdown-menu__item">
+										<a class="dropdown-menu__item-link" tabindex="0" role="link" href="../../modulo3/aula1/topico1.html"><strong>Módulo 3</strong><br />Sistemas de Informação em Saúde</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="divider"><hr /></div>
+					<div class="sidebar__group">
+						<div class="sidebar__group-item">
+							<span class="text module">Módulo <br class="d-none d-lg-block" /><span>2</span></span>
+						</div>
+						<div class="sidebar__group-item">
+							<div class="dropend">
+								<button type="button" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside" data-bs-offset="0,30">
+									<span class="icon material-symbols-rounded" aria-hidden="true">apps</span>
+									<span class="label">Conteúdo</span>
+								</button>
+								<ul class="dropdown-menu">
+									<li class="d-lg-none dropdown-menu__header">
+										<a class="dropdown-menu__back-button" tabindex="0" role="button"><span class="icon material-symbols-rounded">chevron_left</span> Voltar</a>
+										<a class="mobile-toggle-close" tabindex="0" role="button"><span class="icon material-symbols-rounded">read_more</span></a>
+									</li>
+									<li class="dropdown-menu__title">
+										<span class="label">Módulo 2</span>
+										<span class="title">Fontes de Dados Socioeconômicos e Demográficos: subsídios para a Saúde</span>
+									</li>
+									<li class="dropdown-menu__item">
+										<a class="dropdown-menu__item-link" tabindex="0" role="link" href="../aula1/topico1.html"><strong>Aula 1: </strong>Importância para a Saúde Pública e principais instituições produtoras de dados populacionais no Brasil</a>
+									</li>
+									<li class="dropdown-menu__item">
+										<a class="dropdown-menu__item-link" tabindex="0" role="link" href="../aula2/topico1.html"><strong>Aula 2: </strong>Dados populacionais e o Censo Demográfico</a>
+									</li>
+									<li class="dropdown-menu__item">
+										<a class="dropdown-menu__item-link" tabindex="0" role="link" href="topico1.html"><strong>Aula 3: </strong>Introdução às pesquisas amostrais e principais fontes de dados</a>
+									</li>
+									<li class="dropdown-menu__item">
+										<a class="dropdown-menu__item-link" tabindex="0" role="link" href="../atividade.html"><strong>Atividade</strong></a>
+									</li>
+									<li class="dropdown-menu__item">
+										<a class="dropdown-menu__item-link" tabindex="0" role="link" href="../encerramento.html"><strong>Resumo do módulo</strong></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="divider"><hr /></div>
+					<div class="sidebar__group">
+						<div class="sidebar__group-item">
+							<span class="text class">Aula 3</span>
+						</div>
+						<div class="sidebar__group-item">
+							<div class="dropend">
+								<button type="button" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside" data-bs-offset="0,30">
+									<span class="icon material-symbols-rounded" aria-hidden="true"> format_list_bulleted</span>
+									<span class="label">Tópicos</span>
+								</button>
+								<ul class="dropdown-menu">
+									<li class="d-lg-none dropdown-menu__header">
+										<a class="dropdown-menu__back-button" tabindex="0" role="button"><span class="icon material-symbols-rounded">chevron_left</span> Voltar</a>
+										<a class="mobile-toggle-close" tabindex="0" role="button"><span class="icon material-symbols-rounded">read_more</span></a>
+									</li>
+									<li class="dropdown-menu__title">
+										<span class="label">Aula 3</span>
+										<span class="title">Introdução às pesquisas amostrais e principais fontes de dados</span>
+									</li>
+									<li class="dropdown-menu__item">
+										<nav class="topic-list">
+													<a href="topico1.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico concluído" status="visited"> <span class="material-symbols-rounded"></span>Sobre esta aula</a>
+
+													<a href="topico2.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico atual" status="visited"> <span class="material-symbols-rounded"></span>Conceitos Fundamentais</a>
+
+													<a href="topico3.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico não concluído"> <span class="material-symbols-rounded"></span>Principais Pesquisas Amostrais no Brasil</a>
+
+													<a href="topico4.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico não concluído"> <span class="material-symbols-rounded"></span>Referências</a>
+										</nav>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="divider"><hr /></div>
+					<div class="sidebar__group extra">
+						<div class="sidebar__group-item">
+							<button type="button" class="" data-bs-toggle="modal" data-bs-target="#modal-bibliografiaMod2">
+								<span class="icon material-symbols-rounded" aria-hidden="true"> menu_book</span>
+								<span class="label">Bibliografia</span>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="content">
+				<div id="page-title">
+					<div class="container">
+						<div class="row align-items-center hstify-content-center justify-content-xxl-start ms-lg-5">
+							<div class="col-12 col-md-10 col-lg-11">
+								<h2 class="title">
+									<span class="label">Módulo 2 | Aula 3</span>
+									<br />
+									Introdução às pesquisas amostrais e principais fontes de dados
+								</h2>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="page-content" class="">
+
+					<section><div class="container"><div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-5">
+						<div class="heading__block"><span class="small">Tópico 2</span><h3 class="heading__title">Conceitos Fundamentais</h3></div>
+						<p>A compreensão das pesquisas amostrais é fundamental para produzir informações confiáveis e representativas, sobretudo quando a realização de um censo é inviável. Ao selecionar um subconjunto da população por métodos estatísticos rigorosos, essas pesquisas permitem gerar estimativas válidas e análises da população como um todo.</p>
+						<p>Conceitos como população-alvo, amostra, unidade de análise, amostragem probabilística e erros amostrais orientam todas as etapas do processo e asseguram a qualidade das inferências. Dominar esses fundamentos é essencial para construir indicadores consistentes e apoiar a tomada de decisões baseada em evidências na área da saúde.</p>
+
+						<div class="heading__block mt-4"><p class="h6 heading__title">O que é uma pesquisa amostral?</p></div>
+						<p>Uma pesquisa amostral é um tipo de estudo em que os dados são coletados apenas de uma parte representativa da população, chamada amostra, em vez de envolver todos os indivíduos do grupo de interesse (o que seria um censo). Para que os resultados sejam válidos, a amostra deve ser cuidadosamente planejada e selecionada por métodos estatísticos, de modo que suas características reflitam as da população total.</p>
+						<figure class="mt-4 mb-4">
+							<img class="img-fluid rounded" src="../../media/modulo2/mod2-a3-pesquisa-amostral-populacao.png" alt="Cena em miniatura de pedestres em faixa de travessia, evocando a diversidade da população e a ideia de amostra representativa." />
+						</figure>
+						<p>A principal vantagem das pesquisas amostrais é obter informações de forma mais rápida, econômica e operacionalmente viável, sem perda significativa de precisão. Quando bem planejadas, possibilitam estimar indicadores populacionais, identificar padrões, monitorar tendências e subsidiar decisões em diversas áreas com alto grau de confiabilidade.</p>
+
+						<div class="heading__block mt-4"><p class="h6 heading__title">Conceitos-chave</p></div>
+						<p><strong>População-alvo</strong> é o conjunto total de elementos que se deseja estudar, enquanto <strong>amostra</strong> corresponde a um subconjunto desses elementos, selecionado para representar a população de forma fiel. O processo utilizado para escolher quem fará parte da amostra é chamado de <strong>amostragem</strong>, que pode seguir diferentes métodos, especialmente os probabilísticos, nos quais todos os indivíduos têm chance conhecida de serem selecionados.</p>
+						<p>A partir dos dados coletados nessa amostra, realizam-se <strong>inferências estatísticas</strong>, ou seja, conjunto de métodos que permitem tirar conclusões, estimar parâmetros ou testar hipóteses sobre uma população maior. Assim, população-alvo, amostra, amostragem e inferência formam a base das pesquisas amostrais, permitindo análises válidas mesmo quando não é possível investigar todos os indivíduos da população-alvo.</p>
+
+						<p class="mb-2">Figura 1: Inserir o título da figura.</p>
+						<figure class="mt-0 mb-4">
+							<img class="img-fluid rounded" src="../../media/modulo2/mod2-a3-populacao-amostra-inferencia.png" alt="Diagrama: População e Amostra ligadas por setas de amostragem (população para amostra) e inferência (amostra para população)." />
+						</figure>
+						<p>O tamanho da amostra, a representatividade populacional e o desenho amostral constituem dimensões interdependentes na construção de uma pesquisa robusta.</p>
+						<div class="accordion accordion-flush mt-3" id="m2a3-acc-conceitos">
+							<div class="accordion-item">
+								<h5 class="accordion-header" id="m2a3-c-h1"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#m2a3-c-c1" aria-expanded="false" aria-controls="m2a3-c-c1">Tamanho da amostra</button></h5>
+								<div id="m2a3-c-c1" class="accordion-collapse collapse" aria-labelledby="m2a3-c-h1"><div class="accordion-body"><p class="mb-0">Corresponde ao número de unidades selecionadas da população para compor o estudo. Influencia diretamente a precisão das estimativas, o poder estatístico e a capacidade de generalização dos resultados.</p></div></div>
+							</div>
+							<div class="accordion-item">
+								<h5 class="accordion-header" id="m2a3-c-h2"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#m2a3-c-c2" aria-expanded="false" aria-controls="m2a3-c-c2">Desenho amostral</button></h5>
+								<div id="m2a3-c-c2" class="accordion-collapse collapse" aria-labelledby="m2a3-c-h2"><div class="accordion-body"><p class="mb-0">É a estrutura metodológica que orienta como a amostra será selecionada, definindo procedimentos, critérios e etapas para equilibrar representatividade, viabilidade operacional e controle de vieses.</p></div></div>
+							</div>
+							<div class="accordion-item">
+								<h5 class="accordion-header" id="m2a3-c-h3"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#m2a3-c-c3" aria-expanded="false" aria-controls="m2a3-c-c3">Representatividade</button></h5>
+								<div id="m2a3-c-c3" class="accordion-collapse collapse" aria-labelledby="m2a3-c-h3"><div class="accordion-body"><p class="mb-0">Refere-se ao grau em que a amostra reflete de forma fiel as características essenciais da população-alvo, permitindo generalizações mais seguras.</p></div></div>
+							</div>
+						</div>
+
+						<div class="box mt-6" data-box="Importante">
+							<div class="card">
+								<div class="card-header"><span class="icone material-symbols-rounded" aria-hidden="true"></span><span class="label">Importante</span></div>
+								<div class="card-body">
+									<p class="mb-0">O rigor metodológico resulta da combinação equilibrada entre um desenho amostral coerente, uma seleção que assegure representatividade e um tamanho de amostra suficiente para sustentar inferências estatísticas confiáveis.</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="heading__block mt-5"><p class="h6 heading__title">Tipos de amostragem</p></div>
+						<p>Desenho amostral é o processo usado para seleção das unidades amostrais com o objetivo de se obter uma amostra representativa da população-alvo. Existem diversas técnicas para a seleção de uma amostra da população-alvo, que se dividem em técnicas de amostragem probabilísticas e não probabilísticas.</p>
+						<div class="accordion accordion-flush mt-3" id="m2a3-acc-tipos">
+							<div class="accordion-item">
+								<h5 class="accordion-header" id="m2a3-t-h1"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#m2a3-t-c1" aria-expanded="false" aria-controls="m2a3-t-c1"><span aria-hidden="true">➤ </span>Amostragem probabilística</button></h5>
+								<div id="m2a3-t-c1" class="accordion-collapse collapse" aria-labelledby="m2a3-t-h1">
+									<div class="accordion-body">
+										<p>Quando cada indivíduo da população tem uma probabilidade conhecida e não nula de ser selecionado na amostra, o que permite a generalização dos resultados para a população-alvo.</p>
+										<p>São vários os métodos de amostragem probabilística, sendo os mais utilizados:</p>
+										<p class="mb-3"><strong>Amostragem Aleatória Simples (AAS):</strong> cada membro da população tem uma chance igual e independente de ser selecionado. A população é enumerada, atribuindo-se um número a cada pessoa e estas podem ser selecionadas por sorteio, utilizando-se uma tabela de números aleatórios ou por meio de aplicativos estatísticos quando existe uma lista populacional informatizada.</p>
+										<p class="mb-3"><strong>Amostragem Sistemática:</strong> obedece-se a um sistema para a seleção das unidades. A população é enumerada, atribuindo-se um número a cada pessoa, e o total da população é dividido pelo tamanho da amostra para obtenção do intervalo sistemático. Escolhe-se um número aleatoriamente no primeiro intervalo. A seleção dos demais é feita a partir do sistema periódico (número inicial + intervalo; número inicial + 2 intervalos; e assim por diante). Cada membro da população tem uma chance igual de seleção, mas a escolha de um indivíduo não é independente do outro.</p>
+										<p class="mb-3"><strong>Amostragem Estratificada:</strong> consiste em dividir a população em subgrupos homogêneos para determinadas características e selecionar uma amostra em cada um deles, separadamente. Esses subgrupos não se interceptam e totalizam a população. Cada uma das subdivisões populacionais é denominada de estrato. Esse tipo de amostragem é recomendado quando se deseja obter estimativas com certa precisão para cada uma das subdivisões.</p>
+										<p class="mb-0"><strong>Amostragem por Conglomerados (Clusters):</strong> a unidade amostral é um conjunto de elementos da população. Devido às dificuldades de custo e de obtenção de listas dos elementos da população, a aplicação da amostragem por conglomerados é muito frequente em inquéritos de base populacional. Nesse tipo de amostragem, em inquéritos domiciliares, podem ser usados vários estágios de seleção, tais como setores censitários (divisão geográfica da população à época do censo demográfico), domicílios em cada setor censitário e indivíduo selecionado em cada domicílio.</p>
+									</div>
+								</div>
+							</div>
+							<div class="accordion-item">
+								<h5 class="accordion-header" id="m2a3-t-h2"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#m2a3-t-c2" aria-expanded="false" aria-controls="m2a3-t-c2"><span aria-hidden="true">➤ </span>Amostragem não probabilística</button></h5>
+								<div id="m2a3-t-c2" class="accordion-collapse collapse" aria-labelledby="m2a3-t-h2">
+									<div class="accordion-body">
+										<p><strong>Amostragem não probabilística</strong> – Quando a probabilidade de seleção do indivíduo não é conhecida ou membros da população têm probabilidade nula de serem selecionados.</p>
+										<p>Entre os métodos mais utilizados, temos:</p>
+										<p class="mb-3"><strong>Amostragem por Conveniência:</strong> os participantes são escolhidos pela facilidade de acesso, sendo rápida e de baixo custo. Contudo, por não garantir representatividade, pode gerar vieses e limitações nas conclusões, sendo mais adequada para estudos exploratórios ou situações em que métodos probabilísticos não são viáveis.</p>
+										<p class="mb-3"><strong>Amostragem por Quotas:</strong> divide-se a população-alvo em categorias de interesse e, dentro dessas categorias, seleciona-se um determinado número de pessoas até alcançar a quota previamente estabelecida dentro de cada categoria. Embora seja rápida e prática, a seleção dentro de cada categoria não é aleatória, o que pode gerar vieses e limita a generalização dos resultados.</p>
+										<p class="mb-3"><strong>Amostragem Bola de Neve:</strong> é um método não probabilístico usado para acessar populações de difícil acesso. O processo começa com alguns participantes iniciais que, após responderem, indicam novas pessoas que também atendem aos critérios do estudo, formando uma cadeia de recrutamento. Embora facilite alcançar grupos invisíveis, o método pode gerar vieses, pois os participantes tendem a indicar pessoas semelhantes a si, selecionando quem está mais acessível.</p>
+										<p class="mb-3"><strong>Amostragem por Julgamento (ou Intencional):</strong> o pesquisador escolhe participantes que considera mais adequados ao estudo, com base em critérios subjetivos. Embora útil para acessar perfis específicos e aprofundar determinados temas, pode gerar vieses e não permite generalizações para a população.</p>
+										<p class="mb-0"><strong>Amostragem Voluntária (ou Acidental):</strong> os participantes são incluídos por estarem disponíveis ou por se oferecerem espontaneamente. Embora seja rápida e de baixo custo, tende a gerar vieses e não garante representatividade, sendo mais indicada para estudos exploratórios ou para obter percepções iniciais.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="heading__block mt-5"><p class="h6 heading__title">Desenhos complexos de amostragem</p></div>
+						<p>O desenho amostral na maioria das pesquisas não é composto apenas por um único tipo de técnica de amostragem, mas sim de uma combinação de vários métodos probabilísticos, seja por restrições orçamentárias e/ou por limites de tempo associados à coleta de uma grande quantidade de informações ao longo de um território geográfico grande. Essa combinação de várias técnicas probabilísticas de amostragem para seleção de uma amostra representativa da população-alvo é chamada de <strong>Desenho Complexo de Amostragem</strong>.</p>
+						<p>Os Desenhos Complexos de Amostragem são utilizados para aumentar a eficiência, a precisão e a viabilidade operacional de pesquisas que envolvem populações grandes, heterogêneas ou geograficamente distribuídas. Métodos como amostragem em conglomerados, estratificada ou em múltiplos estágios permitem captar melhor a estrutura real da população, reduzir vieses e garantir que subgrupos relevantes estejam adequadamente representados. Além disso, desenhos complexos geralmente diminuem custos e tempo de coleta, uma vez que possibilitam selecionar unidades em etapas e concentrar o trabalho de campo em áreas ou grupos específicos. Em síntese, utilizam-se desenhos amostrais complexos para equilibrar precisão estatística, representatividade e viabilidade logística, especialmente quando métodos simples seriam impraticáveis ou menos eficientes.</p>
+						<p>E, resultante desse processo, a preocupação subsequente é a análise de dados provenientes de amostras complexas (Bernal <em>et al.</em>, 2017; Gindi <em>et al.</em>, 2014; IBGE, 2017; Silva, 2004; Souza <em>et al.</em>, 2015; Szwarcwald; Damacena, 2008; Vasconcellos <em>et al.</em>, 2005). A inferência estatística, em sua abordagem clássica, se fundamenta na Amostragem Aleatória Simples — método que requer que cada membro da população tenha uma chance igual e independente de ser selecionado —, o que produz incorreções comprometendo os resultados e as conclusões da pesquisa amostral coletada a partir de um Desenho Complexo de Amostragem (Souza; Silva, 2003).</p>
+						<p>Para solucionar esse problema, a inferência estatística precisa levar em consideração o desenho amostral, ou seja, qual combinação de técnicas de amostragem foi utilizada para a seleção da amostra e assim corrigir os efeitos e produzir resultados fidedignos da população-alvo (Pessoa; Nascimento Silva, 1998; Szwarcwald; Damacena, 2008).</p>
+						<p class="mb-0">No caso de amostras complexas, é preciso ponderar os dados atribuindo pesos a cada indivíduo selecionado. A estimação para a população-alvo baseada no plano amostral é fundamentada na ponderação de cada elemento da amostra, proporcional ao inverso de sua probabilidade de seleção. O fator de expansão é estimado pelo inverso da probabilidade de seleção de cada elemento da amostra e provê estimativas para a população total. Já o peso provê estimativas para a amostra e é calculado pelo fator de expansão multiplicado por n/N, em que n é o tamanho da amostra e N é o tamanho da população. A amostra ponderada pelo peso é usada para estimar médias e proporções e realizar inferência estatística (Pessoa; Nascimento Silva, 1998).</p>
+
+						<div class="box mt-5" data-box="Saiba Mais">
+							<div class="card">
+								<div class="card-header"><span class="icone material-symbols-rounded" aria-hidden="true"></span><span class="label">Saiba Mais</span></div>
+								<div class="card-body">
+									<p class="mb-3">Quer saber mais sobre Desenho Complexo de Amostragem e como corrigir os efeitos do desenho do plano amostral? Acesse o link!</p>
+									<p class="mb-0"><a href="https://www.scielo.br/j/rbepid/a/pyRFNmvpvmZxx6BxTVpCzgy/?format=pdf&amp;lang=pt" target="_blank" rel="noopener noreferrer">Artigo em PDF no SciELO</a></p>
+								</div>
+							</div>
+						</div>
+
+						<div class="heading__block mt-5"><p class="h6 heading__title">Importância das pesquisas amostrais para a Saúde Pública</p></div>
+						<p>Especificamente, na área da saúde, as pesquisas amostrais são denominadas de <strong>Inquéritos de Saúde</strong>. Esse tipo de estudo é considerado como estudos transversais, ou seja, coleta informações simultaneamente de cada indivíduo da amostra em um específico ponto de tempo, oferecendo um “retrato” da situação de saúde ou característica investigada. Permitem estimar prevalências e identificar associações, porém não estabelecem causalidade, pois analisam exposições e desfechos em um único momento e não acompanham os indivíduos ao longo do tempo.</p>
+						<figure class="mt-4 mb-4">
+							<img class="img-fluid rounded" src="../../media/modulo2/mod2-a3-saiba-mais-populacao-miniaturas.png" alt="Miniaturas de pessoas diversas sobre superfície clara, evocando população e variedade em estudos com inquéritos de saúde." />
+						</figure>
+						<p>Os inquéritos de saúde têm grande importância porque permitem coletar informações que não estão disponíveis nos Sistemas de Informação em Saúde, os quais, em geral, registram apenas eventos relacionados à utilização dos serviços — como internações, óbitos, atendimentos ou notificações. Diferentemente desses sistemas, os inquéritos possibilitam captar dados diretamente da população sobre comportamentos, condições subjetivas de saúde, fatores de risco e proteção, sintomas não diagnosticados, acesso percebido, barreiras ao uso dos serviços e satisfação com o cuidado recebido. Também permitem investigar dimensões sociais, econômicas e ambientais que influenciam a saúde, mas que não são registradas rotineiramente.</p>
+						<p>Dessa forma, os inquéritos preenchem lacunas essenciais, proporcionando uma visão mais completa e contextualizada do estado de saúde da população e subsidiando o planejamento e a avaliação de políticas públicas de forma mais precisa e eficaz. (Viacava F., 2002; Szwarcwald <em>et al.</em>, 2014; Damacena <em>et al.</em>, 2015; Szwarcwald <em>et al.</em>, 2021; Stopa <em>et al.</em>, 2022).</p>
+						<p>Adicionalmente, a coleta de diferentes aspectos relacionados à saúde em uma única ocasião possibilita a exploração das relações entre as diversas dimensões da saúde. Especificamente, a análise dos problemas de saúde junto às características demográficas e socioeconômicas é fundamental para o monitoramento das desigualdades em saúde.</p>
+						<p class="mb-0">Normalmente, a coleta de informações a partir dos inquéritos de saúde é realizada por meio de questionários autopreenchidos ou por entrevistas. Algumas pesquisas incluem a realização de outros tipos de coleta, como exames físicos, medições de peso e altura, e coleta de material biológico, como sangue e urina.</p>
+
+						<div class="heading__block mt-5"><p class="h6 heading__title">Tipos de inquéritos de saúde</p></div>
+						<p>Existem diferentes tipos de Inquéritos de Saúde, cada um com suas próprias características e meios de realização. A saber:</p>
+
+						<div class="row justify-content-center mt-3 mb-2">
+							<div class="col-12 col-md-6 mb-4">
+								<div class="flipcard">
+									<div class="flip-card">
+										<input type="checkbox" id="flipcard-m2a3-inq-1" class="more" aria-hidden="true" />
+										<div class="flip-card-inner">
+											<div class="card shadow flip-card-front fundo1">
+												<div class="h-100 bg-transparent border-0 text-center">
+													<div class="card-body justify-content-center d-flex flex-column">
+														<span class="h5 card-title">Inquéritos domiciliares</span>
+													</div>
+													<div class="card-footer text-white">
+														<div class="card-btn">
+															<label for="flipcard-m2a3-inq-1" class="fio-button fio-button-primary" aria-hidden="true">
+																<img src="../../media/templates/flipcard-icon-dark.svg" alt="Ícone de flipcard" width="36" />
+																Confira
+															</label>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="card flip-card-back">
+												<div class="h-100 bg-transparent border-0 text-center">
+													<div class="card-body justify-content-center d-flex flex-column">
+														<span class="h5">Inquéritos domiciliares</span>
+														<div class="scrollable text-start">
+															<p class="mb-0">Realizados por intermédio de entrevistas ou questionários conduzidos nos domicílios das pessoas. Geralmente, abrangem vários tópicos relacionados à saúde, incluindo doenças, condições de saúde, comportamentos de risco ou de proteção à saúde, acesso a serviços de saúde, entre outros.</p>
+														</div>
+													</div>
+													<div class="card-footer">
+														<div class="card-btn">
+															<label for="flipcard-m2a3-inq-1" class="fio-button fio-button-secondary return" aria-hidden="true">
+																<span class="material-symbols-rounded">arrow_back</span>
+															</label>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-12 col-md-6 mb-4">
+								<div class="flipcard">
+									<div class="flip-card">
+										<input type="checkbox" id="flipcard-m2a3-inq-2" class="more" aria-hidden="true" />
+										<div class="flip-card-inner">
+											<div class="card shadow flip-card-front fundo1">
+												<div class="h-100 bg-transparent border-0 text-center">
+													<div class="card-body justify-content-center d-flex flex-column">
+														<span class="h5 card-title">Inquéritos telefônicos</span>
+													</div>
+													<div class="card-footer text-white">
+														<div class="card-btn">
+															<label for="flipcard-m2a3-inq-2" class="fio-button fio-button-primary" aria-hidden="true">
+																<img src="../../media/templates/flipcard-icon-dark.svg" alt="Ícone de flipcard" width="36" />
+																Confira
+															</label>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="card flip-card-back">
+												<div class="h-100 bg-transparent border-0 text-center">
+													<div class="card-body justify-content-center d-flex flex-column">
+														<span class="h5">Inquéritos telefônicos</span>
+														<div class="scrollable text-start">
+															<p class="mb-0">Realizados por meio de entrevistas telefônicas, permitindo alcançar uma grande amostra da população de forma rápida e econômica. Podem abordar uma variedade de tópicos de saúde e geralmente têm duração mais curta em comparação com os inquéritos domiciliares.</p>
+														</div>
+													</div>
+													<div class="card-footer">
+														<div class="card-btn">
+															<label for="flipcard-m2a3-inq-2" class="fio-button fio-button-secondary return" aria-hidden="true">
+																<span class="material-symbols-rounded">arrow_back</span>
+															</label>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-12 col-md-6 mb-4">
+								<div class="flipcard">
+									<div class="flip-card">
+										<input type="checkbox" id="flipcard-m2a3-inq-3" class="more" aria-hidden="true" />
+										<div class="flip-card-inner">
+											<div class="card shadow flip-card-front fundo1">
+												<div class="h-100 bg-transparent border-0 text-center">
+													<div class="card-body justify-content-center d-flex flex-column">
+														<span class="h5 card-title">Inquéritos virtuais</span>
+													</div>
+													<div class="card-footer text-white">
+														<div class="card-btn">
+															<label for="flipcard-m2a3-inq-3" class="fio-button fio-button-primary" aria-hidden="true">
+																<img src="../../media/templates/flipcard-icon-dark.svg" alt="Ícone de flipcard" width="36" />
+																Confira
+															</label>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="card flip-card-back">
+												<div class="h-100 bg-transparent border-0 text-center">
+													<div class="card-body justify-content-center d-flex flex-column">
+														<span class="h5">Inquéritos virtuais</span>
+														<div class="scrollable text-start">
+															<p class="mb-0">Cada vez mais comuns com o aumento do acesso à internet, esses inquéritos são aplicados de forma online a partir de redes sociais ou websites e podem cobrir uma ampla gama de questões de saúde. Eles oferecem conveniência tanto para os pesquisadores quanto para os participantes, mas é importante considerar questões de representatividade da amostra, pois apenas indivíduos com acesso à internet são aptos para participar desses inquéritos.</p>
+														</div>
+													</div>
+													<div class="card-footer">
+														<div class="card-btn">
+															<label for="flipcard-m2a3-inq-3" class="fio-button fio-button-secondary return" aria-hidden="true">
+																<span class="material-symbols-rounded">arrow_back</span>
+															</label>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-12 col-md-6 mb-4">
+								<div class="flipcard">
+									<div class="flip-card">
+										<input type="checkbox" id="flipcard-m2a3-inq-4" class="more" aria-hidden="true" />
+										<div class="flip-card-inner">
+											<div class="card shadow flip-card-front fundo1">
+												<div class="h-100 bg-transparent border-0 text-center">
+													<div class="card-body justify-content-center d-flex flex-column">
+														<span class="h5 card-title">Inquéritos em localidades específicas</span>
+													</div>
+													<div class="card-footer text-white">
+														<div class="card-btn">
+															<label for="flipcard-m2a3-inq-4" class="fio-button fio-button-primary" aria-hidden="true">
+																<img src="../../media/templates/flipcard-icon-dark.svg" alt="Ícone de flipcard" width="36" />
+																Confira
+															</label>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="card flip-card-back">
+												<div class="h-100 bg-transparent border-0 text-center">
+													<div class="card-body justify-content-center d-flex flex-column">
+														<span class="h5">Inquéritos em localidades específicas</span>
+														<div class="scrollable text-start">
+															<p class="mb-0">Caracterizam-se por coletar informações em locais específicos, como escolas, serviços de saúde, comunidades, entre outros. Esses inquéritos abordam questões relacionadas à saúde para as populações específicas que frequentam esses locais.</p>
+														</div>
+													</div>
+													<div class="card-footer">
+														<div class="card-btn">
+															<label for="flipcard-m2a3-inq-4" class="fio-button fio-button-secondary return" aria-hidden="true">
+																<span class="material-symbols-rounded">arrow_back</span>
+															</label>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<p class="mt-4 mb-0">Cada tipo de inquérito tem suas próprias vantagens, desafios e aplicações específicas, e a escolha do método mais adequado dependerá dos objetivos da pesquisa, da população-alvo e dos recursos disponíveis, e se mostram importantes em diversos aspectos.</p>
+
+						<div class="accordion accordion-flush mt-5" id="m2a3-t2-acc-importancia">
+							<div class="accordion-item">
+								<h5 class="accordion-header" id="m2a3-t2-imp-h1"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#m2a3-t2-imp-c1" aria-expanded="false" aria-controls="m2a3-t2-imp-c1"><span aria-hidden="true">➤ </span>Monitoramento da saúde da população</button></h5>
+								<div id="m2a3-t2-imp-c1" class="accordion-collapse collapse" aria-labelledby="m2a3-t2-imp-h1"><div class="accordion-body"><p class="mb-0">Permitem monitorar as tendências de saúde ao longo do tempo, identificando padrões e mudanças na prevalência de doenças, condições de saúde e fatores de risco. Essencial para a formulação e avaliação de políticas de Saúde Pública.</p></div></div>
+							</div>
+							<div class="accordion-item">
+								<h5 class="accordion-header" id="m2a3-t2-imp-h2"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#m2a3-t2-imp-c2" aria-expanded="false" aria-controls="m2a3-t2-imp-c2"><span aria-hidden="true">➤ </span>Identificação de disparidades de saúde</button></h5>
+								<div id="m2a3-t2-imp-c2" class="accordion-collapse collapse" aria-labelledby="m2a3-t2-imp-h2"><div class="accordion-body"><p class="mb-0">Ao examinar os dados por diferentes grupos demográficos, como idade, sexo, etnia, nível socioeconômico, entre outros, os inquéritos de saúde podem revelar disparidades que precisam ser abordadas para garantir equidade no acesso aos cuidados de saúde.</p></div></div>
+							</div>
+							<div class="accordion-item">
+								<h5 class="accordion-header" id="m2a3-t2-imp-h3"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#m2a3-t2-imp-c3" aria-expanded="false" aria-controls="m2a3-t2-imp-c3"><span aria-hidden="true">➤ </span>Avaliação de programas de saúde</button></h5>
+								<div id="m2a3-t2-imp-c3" class="accordion-collapse collapse" aria-labelledby="m2a3-t2-imp-h3"><div class="accordion-body"><p class="mb-0">Permitem avaliar políticas públicas e intervenções de saúde, fornecendo informações sobre seu impacto na saúde da população.</p></div></div>
+							</div>
+							<div class="accordion-item">
+								<h5 class="accordion-header" id="m2a3-t2-imp-h4"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#m2a3-t2-imp-c4" aria-expanded="false" aria-controls="m2a3-t2-imp-c4"><span aria-hidden="true">➤ </span>Detecção precoce de problemas de saúde emergentes</button></h5>
+								<div id="m2a3-t2-imp-c4" class="accordion-collapse collapse" aria-labelledby="m2a3-t2-imp-h4"><div class="accordion-body"><p class="mb-0">Ao identificar emergências de Saúde Pública ou tendência crescente de certos problemas de saúde na população, os inquéritos podem subsidiar as ações de saúde de forma ágil, sobretudo a partir de pesquisas realizadas pela internet ou por telefone.</p></div></div>
+							</div>
+							<div class="accordion-item">
+								<h5 class="accordion-header" id="m2a3-t2-imp-h5"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#m2a3-t2-imp-c5" aria-expanded="false" aria-controls="m2a3-t2-imp-c5"><span aria-hidden="true">➤ </span>Planejamento de serviços de saúde</button></h5>
+								<div id="m2a3-t2-imp-c5" class="accordion-collapse collapse" aria-labelledby="m2a3-t2-imp-h5"><div class="accordion-body"><p class="mb-0">Fornecem dados essenciais para o planejamento e alocação de recursos em serviços de saúde, permitindo que os sistemas de saúde atendam às necessidades específicas da população.</p></div></div>
+							</div>
+						</div>
+
+						<div class="box mt-4" data-box="Importante">
+							<div class="card">
+								<div class="card-header"><span class="icone material-symbols-rounded" aria-hidden="true"></span><span class="label">Importante!</span></div>
+								<div class="card-body">
+									<p class="mb-0">Em resumo, os Inquéritos de Saúde desempenham papel essencial na compreensão da saúde de uma população, na identificação de áreas prioritárias para intervenção, contribuindo para o desenvolvimento de políticas e programas de saúde com base em evidências.</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="heading__block mt-5"><p class="h6 heading__title">Principais etapas de um Inquérito de Saúde</p></div>
+						<p class="mb-0">As principais etapas para a realização de um Inquérito de Saúde geralmente incluem:</p>
+
+						<div class="accordion accordion-flush mt-3" id="m2a3-t2-acc-etapas">
+							<div class="accordion-item">
+								<h5 class="accordion-header" id="m2a3-t2-et-h1"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#m2a3-t2-et-c1" aria-expanded="false" aria-controls="m2a3-t2-et-c1"><span aria-hidden="true">➤ </span>Planejamento e desenho do estudo</button></h5>
+								<div id="m2a3-t2-et-c1" class="accordion-collapse collapse" aria-labelledby="m2a3-t2-et-h1"><div class="accordion-body"><p class="mb-0">Definição dos objetivos do inquérito, seleção da amostra representativa da população-alvo, escolha dos métodos de coleta de dados e desenvolvimento dos instrumentos de pesquisa, como questionários, equipamentos para a realização de medidas físicas e para a coleta de material biológico.</p></div></div>
+							</div>
+							<div class="accordion-item">
+								<h5 class="accordion-header" id="m2a3-t2-et-h2"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#m2a3-t2-et-c2" aria-expanded="false" aria-controls="m2a3-t2-et-c2"><span aria-hidden="true">➤ </span>Aprovações éticas</button></h5>
+								<div id="m2a3-t2-et-c2" class="accordion-collapse collapse" aria-labelledby="m2a3-t2-et-h2"><div class="accordion-body"><p class="mb-0">Obtenção de aprovações éticas das comissões de ética (local e/ou nacional) é uma etapa obrigatória, uma vez que a pesquisa de saúde será conduzida com seres humanos.</p></div></div>
+							</div>
+							<div class="accordion-item">
+								<h5 class="accordion-header" id="m2a3-t2-et-h3"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#m2a3-t2-et-c3" aria-expanded="false" aria-controls="m2a3-t2-et-c3"><span aria-hidden="true">➤ </span>Planejamento da logística da pesquisa</button></h5>
+								<div id="m2a3-t2-et-c3" class="accordion-collapse collapse" aria-labelledby="m2a3-t2-et-h3"><div class="accordion-body"><p class="mb-0">Para garantir a adequada implementação do inquérito, incluindo recursos humanos, financeiros e materiais.</p></div></div>
+							</div>
+							<div class="accordion-item">
+								<h5 class="accordion-header" id="m2a3-t2-et-h4"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#m2a3-t2-et-c4" aria-expanded="false" aria-controls="m2a3-t2-et-c4"><span aria-hidden="true">➤ </span>Treinamento dos entrevistadores</button></h5>
+								<div id="m2a3-t2-et-c4" class="accordion-collapse collapse" aria-labelledby="m2a3-t2-et-h4"><div class="accordion-body"><p class="mb-0">Capacitação dos entrevistadores sobre os procedimentos do estudo, técnicas de entrevista e padrões éticos para garantir a consistência e a qualidade na coleta de dados.</p></div></div>
+							</div>
+							<div class="accordion-item">
+								<h5 class="accordion-header" id="m2a3-t2-et-h5"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#m2a3-t2-et-c5" aria-expanded="false" aria-controls="m2a3-t2-et-c5"><span aria-hidden="true">➤ </span>Organização do trabalho de campo e supervisão do pessoal de campo</button></h5>
+								<div id="m2a3-t2-et-c5" class="accordion-collapse collapse" aria-labelledby="m2a3-t2-et-h5"><div class="accordion-body"><p class="mb-0">Realização da logística do trabalho de campo, alocação das equipes por área a ser pesquisada e dos supervisores de campo.</p></div></div>
+							</div>
+							<div class="accordion-item">
+								<h5 class="accordion-header" id="m2a3-t2-et-h6"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#m2a3-t2-et-c6" aria-expanded="false" aria-controls="m2a3-t2-et-c6"><span aria-hidden="true">➤ </span>Coleta de dados</button></h5>
+								<div id="m2a3-t2-et-c6" class="accordion-collapse collapse" aria-labelledby="m2a3-t2-et-h6"><div class="accordion-body"><p class="mb-0">Realização das entrevistas, aplicação dos questionários e, se necessário, realização de exames físicos e coleta de amostras biológicas, conforme planejado no desenho do estudo.</p></div></div>
+							</div>
+							<div class="accordion-item">
+								<h5 class="accordion-header" id="m2a3-t2-et-h7"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#m2a3-t2-et-c7" aria-expanded="false" aria-controls="m2a3-t2-et-c7"><span aria-hidden="true">➤ </span>Processamento e análise dos dados</button></h5>
+								<div id="m2a3-t2-et-c7" class="accordion-collapse collapse" aria-labelledby="m2a3-t2-et-h7"><div class="accordion-body"><p class="mb-0">Entrada dos dados coletados em bancos de dados, verificação da qualidade dos dados, codificação (se aplicável) e análise estatística para identificar padrões, associações e conclusões relevantes.</p></div></div>
+							</div>
+							<div class="accordion-item">
+								<h5 class="accordion-header" id="m2a3-t2-et-h8"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#m2a3-t2-et-c8" aria-expanded="false" aria-controls="m2a3-t2-et-c8"><span aria-hidden="true">➤ </span>Interpretação dos resultados e elaboração de relatórios</button></h5>
+								<div id="m2a3-t2-et-c8" class="accordion-collapse collapse" aria-labelledby="m2a3-t2-et-h8"><div class="accordion-body"><p class="mb-0">Análise dos resultados obtidos, interpretação dos achados do estudo e elaboração de relatórios técnicos ou científicos para divulgação dos resultados.</p></div></div>
+							</div>
+							<div class="accordion-item">
+								<h5 class="accordion-header" id="m2a3-t2-et-h9"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#m2a3-t2-et-c9" aria-expanded="false" aria-controls="m2a3-t2-et-c9"><span aria-hidden="true">➤ </span>Disseminação dos resultados</button></h5>
+								<div id="m2a3-t2-et-c9" class="accordion-collapse collapse" aria-labelledby="m2a3-t2-et-h9"><div class="accordion-body"><p class="mb-0">Compartilhamento dos resultados do inquérito com a comunidade científica, gestores e pesquisadores de saúde, e a população geral, visando informar sobre os fatores de risco e proteção à saúde para melhorar a qualidade de vida e a esperança de vida saudável.</p></div></div>
+							</div>
+						</div>
+
+						<div class="box mt-5" data-box="Saiba Mais">
+							<div class="card">
+								<div class="card-header"><span class="icone material-symbols-rounded" aria-hidden="true"></span><span class="label">Saiba Mais!</span></div>
+								<div class="card-body">
+									<p class="mb-3">Quer conhecer o planejamento de um dos principais Inquéritos de Saúde realizados no Brasil? Acesse o link!</p>
+									<p class="mb-0"><a href="https://www.scielo.br/j/ress/a/VR9ywgYVr56TDqsd4vhQ9zc/?format=pdf&amp;lang=pt" target="_blank" rel="noopener noreferrer">Artigo em PDF no SciELO (RESS)</a></p>
+								</div>
+							</div>
+						</div>
+
+						<div class="box mt-8" data-box="Importante">
+							<div class="card">
+								<div class="card-header"><span class="icone material-symbols-rounded" aria-hidden="true"></span><span class="label">Importante!</span></div>
+								<div class="card-body">
+									<p class="mb-0">Os inquéritos de saúde apresentam limitações importantes, como a coleta simultânea de informações sobre morbidade e fatores de risco, dificultando o estabelecimento de relações temporais. Também podem gerar vieses, pois a morbidade percebida depende do acesso ao diagnóstico, e casos mais graves ficam de fora quando as pessoas estão hospitalizadas ou morrem. Além disso, seu alcance costuma ser regional ou estadual, o que, no Brasil, limita o uso dos dados para políticas municipais devido ao tamanho e custo das amostras. Esses inquéritos ainda excluem grupos vulneráveis, como idosos institucionalizados, pessoas em situação de rua e populações marginalizadas, justamente aquelas com maior dificuldade de acesso aos serviços de saúde.</p>
+								</div>
+							</div>
+						</div>
+					</div></div></div></section>
+				</div>
+				<section>
+					<div class="container">
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8">
+								<div class="page-nav d-flex justify-content-evenly">
+									<a class="fio-button fio-button-primary" href="topico1.html" rel="prev"><span class="material-symbols-rounded" aria-hidden="true">west</span> Tópico anterior</a>
+									<a class="fio-button fio-button-primary" href="topico3.html" rel="next">Próximo tópico <span class="material-symbols-rounded" aria-hidden="true">east</span></a>
+</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+			<footer>
+				<div class="container-fluid">
+					<div class="row justify-content-center align-items-center linha-de-marcas">
+						<div class="col-12 col-md-auto">
+							<ul class="logos">
+								<li><img class="img-fluid logo3" src="../../media/logos/logo-fiocruz.svg" alt="Logo da Fiocruz" /></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+		<script src="../../source/bootstrap-5.1.3/js/bootstrap.bundle.min.js"></script>
+		<script type="text/javascript" src="../../assets/js/ResizeSensor.js"></script>
+		<script type="text/javascript" src="../../assets/js/sticky-sidebar.js"></script>
+		<script type="text/javascript" src="../../assets/js/sidebar.js"></script>
+		<script type="text/javascript">
+			var sidebar = new StickySidebar(".sidebar", {
+				topSpacing: 0,
+				bottomSpacing: 0,
+				containerSelector: ".main",
+				innerWrapperSelector: ".sidebar__inner",
+				minWidth: 991,
+			});
+		</script>
+		<script type="text/javascript" src="../../assets/js/scripts.js"></script>
+	</body>
+</html>

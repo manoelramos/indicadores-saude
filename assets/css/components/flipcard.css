@@ -237,7 +237,7 @@
 .flipcard .flip-card .flip-card-back .scrollable {
 	text-align: left;
 	overflow-y: auto;
-	font-size: 1rem;
+	font-size: var(--fio-sys-typography-size-0);
 	padding-right: 10px;
 	height: auto;
 }

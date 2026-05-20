@@ -154,6 +154,16 @@ p:last-child {
 	margin-bottom: 0;
 }
 
+#page-content ul,
+#page-content ul li {
+	color: var(--fio-sys-color-neutral-extra-dark);
+	font-family: var(--fio-sys-typography-family-primary-regular);
+	font-size: var(--fio-sys-typography-size-0);
+	font-weight: var(--fio-sys-typography-weight-normal);
+	letter-spacing: var(--fio-sys-typography-spacing-normal);
+	line-height: var(--fio-sys-typography-height-150);
+}
+
 small,
 .small {
 	display: block;

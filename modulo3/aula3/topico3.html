@@ -1,981 +1,264 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-	<head>
-		<!-- Required meta tags -->
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=yes" />
-		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-		<meta name="robots" content="noindex" />
-		<meta name="author" content="Fiocruz, Campus Virtual" />
-		<meta name="description" content="Curso Introdução à Análise de Dados para pesquisa no SUS" />
-		<meta name="keywords" content="Fiocruz Curso Introdução à Análise de Dados para pesquisa no SUS" />
-
-		<!-- Facebook Open Graph -->
-		<meta property="og:url" content="https://mooc.campusvirtual.fiocruz.br/rea/introducao-analise-dados-sus" />
-		<meta property="og:title" content="Campus Virtual Fiocruz | Curso Introdução à Análise de Dados para pesquisa no SUS" />
-		<meta property="og:description" content="Curso Introdução à Análise de Dados para pesquisa no SUS" />
-		<meta property="og:image" content="" />
-		<meta property="og:image:width" content="1080" />
-		<meta property="og:image:height" content="1080" />
-		<meta property="og:type" content="website" />
-
-		<!-- Twitter Cards -->
-		<meta name="twitter:card" content="summary_large_image" />
-		<meta name="twitter:title" content="Campus Virtual Fiocruz | Curso Introdução à Análise de Dados para pesquisa no SUS" />
-		<meta name="twitter:url" content="" />
-		<meta name="twitter:description" content="" />
-		<meta name="twitter:image:src" content="" />
-
-		<!-- Favicons and Touch Icons -->
-		<link rel="apple-touch-icon" sizes="57x57" href="../../media/icons/apple-icon-57x57.png" />
-		<link rel="apple-touch-icon" sizes="60x60" href="../../media/icons/apple-icon-60x60.png" />
-		<link rel="apple-touch-icon" sizes="72x72" href="../../media/icons/apple-icon-72x72.png" />
-		<link rel="apple-touch-icon" sizes="76x76" href="../../media/icons/apple-icon-76x76.png" />
-		<link rel="apple-touch-icon" sizes="114x114" href="../../media/icons/apple-icon-114x114.png" />
-		<link rel="apple-touch-icon" sizes="120x120" href="../../media/icons/apple-icon-120x120.png" />
-		<link rel="apple-touch-icon" sizes="144x144" href="../../media/icons/apple-icon-144x144.png" />
-		<link rel="apple-touch-icon" sizes="152x152" href="../../media/icons/apple-icon-152x152.png" />
-		<link rel="apple-touch-icon" sizes="180x180" href="../../media/icons/apple-icon-180x180.png" />
-
-		<link rel="icon" type="image/png" sizes="192x192" href="../../media/icons/android-icon-192x192.png" />
-		<link rel="icon" type="image/png" sizes="32x32" href="../../media/icons/favicon-32x32.png" />
-		<link rel="icon" type="image/png" sizes="96x96" href="../../media/icons/favicon-96x96.png" />
-		<link rel="icon" type="image/png" sizes="16x16" href="../../media/icons/favicon-16x16.png" />
-		<link rel="manifest" href="../media/icons/manifest.json" />
-
-		<meta name="msapplication-TileColor" content="#ffffff" />
-		<meta name="msapplication-TileImage" content="../../media/icons/ms-icon-144x144.png" />
-		<!-- <meta name="theme-color" content="#003066" /> -->
-		<meta name="theme-color" content="#001833" />
-
-		<title>Curso Introdução à Análise de Dados para pesquisa no SUS | Mod 3 | Aula 3</title>
-
-		<!-- Bootstrap CSS 5.1.3 -->
-		<link rel="stylesheet" href="../../source/bootstrap-5.1.3/css/bootstrap.min.css" />
-
-		<!-- Project CSS -->
-		<link rel="stylesheet" href="../../assets/css/style.css" />
-	</head>
-
-	<body>
-		<header class="header">
-			<div class="mobile-toggle-open">
-				<a class="mobile-toggle__button" tabindex="0" role="button">
-					<span class="icon material-symbols-rounded">read_more</span>
-				</a>
-			</div>
-			<div class="brand">
-				<img class="img-fluid logo-black" src="../../media/logos/header-fiocruz-campus-virtual.png" alt="Campus Virtual Fiocruz" />
-			</div>
-			<div class="title">
-				<h1>Introdução à Análise de Dados para pesquisa no SUS</h1>
-			</div>
-			<ul class="nav nav-pills">
-				<li class="nav-item"><a href="../../index.html" class="nav-link">Início</a></li>
-				<li class="nav-item"><a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#modal-creditos">Créditos</a></li>
-			</ul>
-		</header>
-		<div class="main">
-			<div class="sidebar" role="navigation">
-				<div class="sidebar__inner">
-					<div class="sidebar__group d-lg-none">
-						<div class="sidebar__group-item">
-							<div class="sidebar__header">
-								<span>Curso</span>
-								<a class="mobile-toggle-close" tabindex="0" role="button"><span class="icon material-symbols-rounded">read_more</span></a>
-							</div>
-						</div>
-						<div class="sidebar__group-item">
-							<div class="sidebar__title">
-								<h1>Introdução à Análise de Dados para pesquisa no SUS</h1>
-							</div>
-						</div>
-						<div class="sidebar__group-item">
-							<ul class="nav">
-								<li class="nav-item">
-									<a href="../../index.html" class="nav-link" tabindex="0"><span class="icon material-symbols-rounded" aria-hidden="true">home</span>Início</a>
-								</li>
-								<li class="nav-item">
-									<a href="#" class="nav-link" tabindex="0" data-bs-toggle="modal" data-bs-target="#modal-creditos"><span class="icon material-symbols-rounded" aria-hidden="true"> format_list_bulleted</span>Créditos</a>
-								</li>
-							</ul>
-						</div>
-					</div>
-
-					<div class="sidebar__group">
-						<div class="sidebar__group-item">
-							<div class="dropend">
-								<button id="dropdown-modulos" type="button" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside" data-bs-offset="0,30">
-									<span class="icon material-symbols-rounded" aria-hidden="true">grid_view</span>
-									<span class="label">Módulos</span>
-								</button>
-								<ul class="dropdown-menu" aria-labelledby="dropdown-modulos">
-									<li class="d-lg-none dropdown-menu__header">
-										<a class="dropdown-menu__back-button" tabindex="0" role="button"><span class="icon material-symbols-rounded">chevron_left</span> Voltar</a>
-										<a class="mobile-toggle-close" tabindex="0" role="button"><span class="icon material-symbols-rounded">read_more</span></a>
-									</li>
-									<li class="dropdown-menu__item">
-										<a class="dropdown-menu__item-link" tabindex="0" role="link" href="../../modulo1/aula1/topico1.html"><strong>Módulo 1</strong><br />A informação no SUS</a>
-									</li>
-									<li class="dropdown-menu__item">
-										<a class="dropdown-menu__item-link" tabindex="0" role="link" href="../../modulo2/aula1/topico1.html"><strong>Módulo 2</strong><br />Fontes de Dados Socioeconômicos e Demográficos: subsídios para a Saúde</a>
-									</li>
-									<li class="dropdown-menu__item">
-										<a class="dropdown-menu__item-link" tabindex="0" role="link" href="../../modulo3/aula1/topico1.html"><strong>Módulo 3</strong><br />Sistemas de Informação em Saúde</a>
-									</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<div class="divider">
-						<hr />
-					</div>
-					<div class="sidebar__group">
-						<div class="sidebar__group-item">
-							<span class="text module">Módulo <br class="d-none d-lg-block" /><span>3</span></span>
-						</div>
-						<div class="sidebar__group-item">
-							<div class="dropend">
-								<button type="button" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside" data-bs-offset="0,30">
-									<span class="icon material-symbols-rounded" aria-hidden="true">apps</span>
-									<span class="label">Conteúdo</span>
-								</button>
-								<ul class="dropdown-menu">
-									<li class="d-lg-none dropdown-menu__header">
-										<a class="dropdown-menu__back-button" tabindex="0" role="button"><span class="icon material-symbols-rounded">chevron_left</span> Voltar</a>
-										<a class="mobile-toggle-close" tabindex="0" role="button"><span class="icon material-symbols-rounded">read_more</span></a>
-									</li>
-									<li class="dropdown-menu__title">
-										<span class="label">Módulo 3</span>
-										<span class="title">Modelos estatísticos</span>
-									</li>
-
-									<li class="dropdown-menu__item">
-										<a class="dropdown-menu__item-link" tabindex="0" role="link" href="../aula1/topico1.html"><strong>Aula 1: </strong>Inferência Estatística</a>
-									</li>
-									<li class="dropdown-menu__item">
-										<a class="dropdown-menu__item-link" tabindex="0" role="link" href="../aula2/topico1.html"><strong>Aula 2: </strong>Modelos Estatísticos: lineares e não lineares</a>
-									</li>
-									<li class="dropdown-menu__item">
-										<a class="dropdown-menu__item-link" tabindex="0" role="link" href="../aula3/topico1.html"><strong>Aula 3: </strong>Dados com estruturas de dependência: multiníveis, séries temporais e espaciais e sobrevida</a>
-									</li>
-									<li class="dropdown-menu__item">
-										<a class="dropdown-menu__item-link" tabindex="0" role="link" href="../aula4/topico1.html"><strong>Aula 4: </strong>Aplicação dos modelos estatísticos</a>
-									</li>
-
-									<li class="dropdown-menu__item">
-										<a class="dropdown-menu__item-link" tabindex="0" role="link" href="../atividade.html"><strong>Atividade</strong></a>
-									</li>
-
-									<li class="dropdown-menu__item">
-										<a class="dropdown-menu__item-link" tabindex="0" role="link" href="../encerramento.html"><strong>Resumo do módulo</strong></a>
-									</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<div class="divider">
-						<hr />
-					</div>
-					<div class="sidebar__group">
-						<div class="sidebar__group-item">
-							<span class="text class">Aula 3</span>
-						</div>
-						<div class="sidebar__group-item">
-							<div class="dropend">
-								<button type="button" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside" data-bs-offset="0,30">
-									<span class="icon material-symbols-rounded" aria-hidden="true"> format_list_bulleted</span>
-									<span class="label">Tópicos</span>
-								</button>
-								<ul class="dropdown-menu">
-									<li class="d-lg-none dropdown-menu__header">
-										<a class="dropdown-menu__back-button" tabindex="0" role="button"><span class="icon material-symbols-rounded">chevron_left</span> Voltar</a>
-										<a class="mobile-toggle-close" tabindex="0" role="button"><span class="icon material-symbols-rounded">read_more</span></a>
-									</li>
-									<li class="dropdown-menu__title">
-										<span class="label">Aula 3</span>
-										<span class="title">Dados com estruturas de dependência: multiníveis, séries temporais e espaciais e sobrevida</span>
-									</li>
-									<li class="dropdown-menu__item">
-										<nav class="topic-list">
-											<a href="topico1.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico concluído" status="visited"> <span class="material-symbols-rounded"></span>Introdução</a>
-											<a href="topico2.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico concluído" status="visited"> <span class="material-symbols-rounded"></span>Modelos Multiníveis</a>
-											<a href="topico3.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico concluído" status="visited"><span class="material-symbols-rounded"></span>Modelos de Séries Temporais</a>
-											<a href="topico4.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico não concluído"><span class="material-symbols-rounded"></span>Modelos de Sobrevivência</a>
-										</nav>
-									</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<div class="divider">
-						<hr />
-					</div>
-					<div class="sidebar__group extra">
-						<div class="sidebar__group-item">
-							<button type="button" class="" data-bs-toggle="modal" data-bs-target="#modal-bibliografiaMod3">
-								<span class="icon material-symbols-rounded" aria-hidden="true"> menu_book</span>
-								<span class="label">Bibliografia</span>
-							</button>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="content">
-				<div id="page-title">
-					<div class="container">
-						<div class="row align-items-center hstify-content-center justify-content-xxl-start ms-lg-5">
-							<div class="col-12 col-md-10 col-lg-11">
-								<h2 class="title">
-									<span class="label">Módulo 3 | Aula 3</span>
-									<br />
-									Dados com estruturas de dependência: multiníveis, séries temporais e espaciais e sobrevida
-								</h2>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div id="page-content" class="">
-					<!-- Inserir o conteúdo aqui -->
-					<section>
-						<div class="container">
-							<div class="row justify-content-center">
-								<div class="col-12 col-md-10 col-lg-8 mb-5">
-									<div class="heading__block">
-										<span class="small">Tópico 3</span>
-										<h3 class="heading__title">Modelos de Séries Temporais</h3>
-									</div>
-								</div>
-							</div>
-
-							<div class="row justify-content-center">
-								<div class="col-12 col-md-10 col-lg-8 mb-5">
-									<p>A modelagem de séries temporais é voltada para dados coletados em intervalos de tempo regulares como dias, semanas, meses ou anos, com o objetivo de identificar padrões, tendências e sazonalidades ao longo do tempo. Para profissionais de saúde, isso pode ser muito útil para monitorar e prever variáveis de saúde, como epidemias sazonais, taxa de internação nos hospitais, uso de medicamentos ou número de atendimentos em hospitais.</p>
-									<p>A análise de séries temporais tem como finalidade entender como a variável de interesse se comporta ao longo do tempo, permitindo identificar padrões temporais como:</p>
-								</div>
-							</div>
-
-							<div class="row justify-content-center">
-								<div class="col-12 col-md-10 col-lg-8 mb-5">
-									<div class="swiper swiper--navigation card swiper-initialized swiper-horizontal swiper-backface-hidden card--in">
-										<!-- Additional required wrapper -->
-										<div class="swiper-wrapper" id="swiper-wrapper-1ab5610c8e94af34b" aria-live="polite">
-											<!-- Slides -->
-											<div class="swiper-slide swiper-slide-active" role="group" aria-label="1 / 4" style="width: 856px">
-												<div class="card-thumb">
-													<img src="../../media/modulo3/aula3-img2.jpg" alt="" title="Fonte: Wei (2006)." />
-												</div>
-
-												<div class="card-header">
-													<span class="h6">Tendência</span>
-												</div>
-
-												<div class="card-body">
-													<p>Definida como uma mudança (aumento ou diminuição) contínua da série analisada em longo prazo, podendo ser linear ou não linear. Exemplo: produção anual de tabaco nos Estados Unidos em libras, 1871-1984.</p>
-												</div>
-											</div>
-
-											<div class="swiper-slide swiper-slide-next" role="group" aria-label="2 / 4" style="width: 856px">
-												<div class="card-thumb">
-													<img src="../../media/modulo3/aula3-img3.jpg" alt="" title="Fonte: Marques; Toledo et al. (2017)." />
-												</div>
-
-												<div class="card-header">
-													<span class="h6">Sazonalidade</span>
-												</div>
-
-												<div class="card-body">
-													<p>São padrões em que a série temporal cresce e então decresce em intervalos regulares. Exemplo: casos de dengue e buscas pela doença no Google.</p>
-												</div>
-											</div>
-
-											<div class="swiper-slide" role="group" aria-label="3 / 4" style="width: 856px">
-												<div class="card-thumb">
-													<img src="../../media/modulo3/aula3-img4.jpg" alt="" title="Fonte: https://ogre51.medium.com. Acesso em: 30 jul. 2025." />
-												</div>
-
-												<div class="card-header">
-													<span class="h6">Ciclos</span>
-												</div>
-
-												<div class="card-body">
-													<p>Padrões que se repetem, mas em intervalos irregulares e mais longos. Exemplo: ciclos econômicos impactando desfechos de saúde pública. A figura a seguir ilustra uma série temporal com tendência, sazonalidade e ciclos.</p>
-												</div>
-											</div>
-
-											<div class="swiper-slide" role="group" aria-label="4 / 4" style="width: 856px">
-												<div class="card-thumb">
-													<img src="../../media/modulo3/aula3-img5.jpg" alt="" title="Fonte: https://en.wikipedia.org. Acesso em: 30 jul. 2025." />
-												</div>
-
-												<div class="card-header">
-													<span class="h6">Ruído</span>
-												</div>
-
-												<div class="card-body">
-													<p>Variações imprevisíveis que não seguem nenhum padrão. A figura adiante ilustra o comportamento de um ruído aleatório.</p>
-												</div>
-											</div>
-										</div>
-
-										<!-- If we need pagination -->
-										<div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal"><span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button" aria-label="Go to slide 1" aria-current="true"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 2"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 3"></span></div>
-
-										<!-- If we need navigation buttons -->
-										<div class="swiper-button-prev swiper-button-disabled" tabindex="-1" role="button" aria-label="Previous slide" aria-controls="swiper-wrapper-1ab5610c8e94af34b" aria-disabled="true"></div>
-										<div class="swiper-button-next" tabindex="0" role="button" aria-label="Next slide" aria-controls="swiper-wrapper-1ab5610c8e94af34b" aria-disabled="false"></div>
-
-										<!-- If we need scrollbar -->
-										<!-- <div class="swiper-scrollbar"></div> -->
-										<span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
-									</div>
-								</div>
-							</div>
-
-							<div class="row justify-content-center">
-								<div class="col-12 col-md-10 col-lg-8 mb-5">
-									<p>Esses padrões, entretanto, não se apresentam necessariamente de forma isolada. Normalmente, uma série temporal apresenta um ou mais dos padrões mencionados. Uma forma interessante de se avaliar quais padrões as séries temporais apresentam é decompô-las em tenência, sazonalidade, ciclo e ruído, como na figura a seguir.</p>
-								</div>
-							</div>
-
-							<div class="row justify-content-center">
-								<div class="col-12 col-md-10 col-lg-8 mb-5">
-									<figure class="lightbox aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
-										<img class="img-fluid rounded mx-auto d-block mb-3" src="../../media/modulo3/aula3-img6.jpg" alt="Decomposição da série temporal em tendência, sazonalidade, ciclos e ruído" title="Fonte: Bock et al. (2021)." />
-										<figcaption class="figure-caption">Fonte: Bock <em>et al.</em> (2021).</figcaption>
-									</figure>
-								</div>
-							</div>
-
-							<div class="row justify-content-center">
-								<div class="col-12 col-md-10 col-lg-8 mb-5">
-									<p>Um conceito importante na modelagem de séries temporais é o de <em>estacionariedade</em>. Um processo é dito <em>estacionário</em> se propriedades estatísticas da série (como média, variância) permanecem constantes ao longo do tempo. Essa estabilidade é fundamental por garantir a consistência das estimativas estatísticas e que testes estatísticos e intervalos de confiança permaneçam válidos, já que a distribuição de erros e parâmetros não muda ao longo do tempo.</p>
-									<p>Nesse momento você deve estar se perguntando: mas uma série com tendência (por exemplo) não tem média constante? Logo, isso significa que eu não consigo modelá-la usando séries temporais? A resposta é “não”: você precisará “tratar” essa série (tomando diferenças, por exemplo) para, então, ser possível sua modelagem. Então, calma! Temos modelos de séries temporais com essa etapa já construída dentro deles, como veremos mais à frente (modelos ARIMA).</p>
-									<p>Veja agora, os modelos clássicos usados para séries temporais.</p>
-								</div>
-							</div>
-
-							<div class="row justify-content-center mt-5">
-								<div class="col-12 col-md-10 col-lg-8 mb-5">
-									<div class="heading__block">
-										<h4 class="heading__title">Modelo de médias móveis</h4>
-									</div>
-								</div>
-							</div>
-
-							<div class="row justify-content-center">
-								<div class="col-12 col-md-10 col-lg-8 mb-5">
-									<p>Modelo linear em que o valor atual de uma série temporal é definido como uma combinação linear dos erros passados (ruído aleatório) mais um termo de média. É denotado por MA(q), pois q é a quantidade de dias passados usados na suavização dos dados. Pode ser formulado como:</p>
-
-									<math xmlns="www.w3.org" display="block" style="font-size: 20px; color: #000">
-										<msub>
-											<mi>Z</mi>
-											<mi>t</mi>
-										</msub>
-										<mo>=</mo>
-										<mi>&mu;</mi>
-										<mo>+</mo>
-										<msub>
-											<mi>a</mi>
-											<mi>t</mi>
-										</msub>
-										<mo>-</mo>
-										<msub>
-											<mi>&theta;</mi>
-											<mn>1</mn>
-										</msub>
-										<msub>
-											<mi>a</mi>
-											<mrow>
-												<mi>t</mi>
-												<mo>-</mo>
-												<mn>1</mn>
-											</mrow>
-										</msub>
-										<mo>-</mo>
-										<mo>&#x22EF;</mo>
-										<mo>-</mo>
-										<msub>
-											<mi>&theta;</mi>
-											<mi>q</mi>
-										</msub>
-										<msub>
-											<mi>a</mi>
-											<mrow>
-												<mi>t</mi>
-												<mo>-</mo>
-												<mi>q</mi>
-											</mrow>
-										</msub>
-									</math>
-								</div>
-
-								
-							</div>
-
-							<div class="row justify-content-center">
-								<div class="col-12 col-md-10 col-lg-8 mb-5">
-									<!-- EXEMPLO -->
-									<div class="code-container aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="600">
-										<div class="heading__block">
-											<h5 class="heading__title">Exemplo</h5>
-										</div>
-										<p class="mt-5">Modelo MA(1) gerador da série simulada na figura abaixo:</p>
-
-										<math xmlns="www.w3.org" display="block" style="font-size: 20px; color: #000">
-											<msub>
-												<mi>Z</mi>
-												<mi>t</mi>
-											</msub>
-											<mo>=</mo>
-											<msub>
-												<mi>a</mi>
-												<mi>t</mi>
-											</msub>
-											<mo>-</mo>
-											<mn>0,8</mn>
-											<msub>
-												<mi>a</mi>
-												<mrow>
-													<mi>t</mi>
-													<mo>-</mo>
-													<mn>1</mn>
-												</mrow>
-											</msub>
-										</math>
-
-										<figure class="lightbox aos-init aos-animate mt-5" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
-											<img class="img-fluid rounded mx-auto d-block mb-3" src="../../media/modulo3/aula3-img7.jpg" alt="Gráfico de uma série simulada de acordo com o MA(1)" title="Fonte: Morettin; Toloi (2004)." />
-											<figcaption class="figure-caption">Fonte: Morettin; Toloi (2004).</figcaption>
-										</figure>
-									</div>
-								</div>
-							</div>
-
-							<div class="row justify-content-center mt-5">
-								<div class="col-12 col-md-10 col-lg-8 mb-5">
-									<div class="heading__block">
-										<h4 class="heading__title">Modelo Autorregressivo</h4>
-									</div>
-								</div>
-							</div>
-
-							<div class="row justify-content-center">
-								<div class="col-12 col-md-10 col-lg-8 mb-5">
-									<p>É um modelo em que o valor atual de uma série temporal é explicado como uma combinação linear dos valores passados dessa mesma série. É denotado por AR(p), em que p é a quantidade de dias passados usados na modelagem. Pode ser formulado como:</p>
-
-									<math xmlns="www.w3.org" display="block" style="font-size: 20px; color: #000">
-										<msub>
-											<mi>Z</mi>
-											<mi>t</mi>
-										</msub>
-										<mo>=</mo>
-										<msub>
-											<mi>&phi;</mi>
-											<mn>1</mn>
-										</msub>
-										<msub>
-											<mi>Z</mi>
-											<mrow>
-												<mi>t</mi>
-												<mo>-</mo>
-												<mn>1</mn>
-											</mrow>
-										</msub>
-										<mo>+</mo>
-										<mo>&#x22EF;</mo>
-										<mo>+</mo>
-										<msub>
-											<mi>&phi;</mi>
-											<mi>p</mi>
-										</msub>
-										<msub>
-											<mi>Z</mi>
-											<mrow>
-												<mi>t</mi>
-												<mo>-</mo>
-												<mi>p</mi>
-											</mrow>
-										</msub>
-										<mo>+</mo>
-										<msub>
-											<mi>a</mi>
-											<mi>t</mi>
-										</msub>
-									</math>
-								</div>
-
-								<div class="col-12 col-md-10 col-lg-8 mb-5">
-									<p>Em que:</p>
-
-									<!-- Lista Não-Ordenada -->
-									<div class="list">
-										<ul class="list-group">
-											<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">
-												<em>Z<sub>t</sub></em> é a série temporal no tempo, <em>t.&mu;</em>é a média da série.
-											</li>
-											<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" data-aos-delay="100">
-												<em>&phi;<sub>p</sub></em> é o peso estimado de <em>Z<sub>t-p</sub></em>
-											</li>
-											<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" data-aos-delay="200">
-												<em>a<sub>t</sub></em> é o erro no tempo <em>t</em>, de média zero e variância <em>&sigma;<sub>a</sub><sup>2</sup></em>
-											</li>
-											<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" data-aos-delay="200">
-												<em>&theta;<sub>q</sub></em> é o peso estimado de <em>a<sub>t-q</sub></em
-												>.
-											</li>
-										</ul>
-									</div>
-								</div>
-							</div>
-
-							<div class="row justify-content-center">
-								<div class="col-12 col-md-10 col-lg-8 mb-5">
-									<!-- EXEMPLO -->
-									<div class="code-container aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="600">
-										<div class="heading__block">
-											<h5 class="heading__title">Exemplo</h5>
-										</div>
-										<p class="mt-5">Modelo AR(1) gerador da série simulada na figura a seguir:</p>
-
-										<math xmlns="www.w3.org" display="block" style="font-size: 20px; color: #000">
-											<msub>
-												<mi>Z</mi>
-												<mi>t</mi>
-											</msub>
-											<mo>=</mo>
-											<mn>0,8</mn>
-											<msub>
-												<mi>Z</mi>
-												<mrow>
-													<mi>t</mi>
-													<mo>-</mo>
-													<mn>1</mn>
-												</mrow>
-											</msub>
-											<mo>+</mo>
-											<msub>
-												<mi>a</mi>
-												<mi>t</mi>
-											</msub>
-										</math>
-
-										<figure class="lightbox aos-init aos-animate mt-5" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
-											<img class="img-fluid rounded mx-auto d-block mb-3" src="../../media/modulo3/aula3-img8.jpg" alt="Gráfico de uma série simulada de acordo com o AR(1)" title="Fonte: Morettin; Toloi (2004)." />
-											<figcaption class="figure-caption">Fonte: Morettin; Toloi (2004).</figcaption>
-										</figure>
-									</div>
-								</div>
-							</div>
-
-							<div class="row justify-content-center mt-5">
-								<div class="col-12 col-md-10 col-lg-8 mb-5">
-									<div class="heading__block">
-										<h4 class="heading__title">Modelo Autorregressivo de médias móveis</h4>
-									</div>
-								</div>
-							</div>
-
-							<div class="row justify-content-center">
-								<div class="col-12 col-md-10 col-lg-8 mb-5">
-									<p>É a combinação dos dois apresentados anteriormente. Denotado por ARMA(p,q), é formulado como sendo:</p>
-
-									<math xmlns="www.w3.org" display="block" style="font-size: 20px; color: #000">
-										<msub>
-											<mi>Z</mi>
-											<mi>t</mi>
-										</msub>
-										<mo>=</mo>
-										<msub>
-											<mi>&phi;</mi>
-											<mn>1</mn>
-										</msub>
-										<msub>
-											<mi>Z</mi>
-											<mrow>
-												<mi>t</mi>
-												<mo>-</mo>
-												<mn>1</mn>
-											</mrow>
-										</msub>
-										<mo>+</mo>
-										<mo>&#x22EF;</mo>
-										<mo>+</mo>
-										<msub>
-											<mi>&phi;</mi>
-											<mi>p</mi>
-										</msub>
-										<msub>
-											<mi>Z</mi>
-											<mrow>
-												<mi>t</mi>
-												<mo>-</mo>
-												<mi>p</mi>
-											</mrow>
-										</msub>
-										<mo>+</mo>
-										<msub>
-											<mi>a</mi>
-											<mi>t</mi>
-										</msub>
-										<mo>-</mo>
-										<msub>
-											<mi>&theta;</mi>
-											<mn>1</mn>
-										</msub>
-										<msub>
-											<mi>a</mi>
-											<mrow>
-												<mi>t</mi>
-												<mo>-</mo>
-												<mn>1</mn>
-											</mrow>
-										</msub>
-										<mo>-</mo>
-										<mo>&#x22EF;</mo>
-										<mo>-</mo>
-										<msub>
-											<mi>&theta;</mi>
-											<mi>q</mi>
-										</msub>
-										<msub>
-											<mi>a</mi>
-											<mrow>
-												<mi>t</mi>
-												<mo>-</mo>
-												<mi>q</mi>
-											</mrow>
-										</msub>
-									</math>
-								</div>
-
-								<div class="col-12 col-md-10 col-lg-8 mb-5">
-									<p>Em que os parâmetros têm a mesma interpretação dos modelos MA(q) e AR(p).</p>
-								</div>
-							</div>
-
-							<div class="row justify-content-center">
-								<div class="col-12 col-md-10 col-lg-8 mb-5">
-									<!-- EXEMPLO -->
-									<div class="code-container aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="600">
-										<div class="heading__block">
-											<h5 class="heading__title">Exemplo</h5>
-										</div>
-										<p class="mt-5">Modelo ARMA(1,1) gerador da série simulada na figura:</p>
-
-										<math xmlns="www.w3.org" display="block" style="font-size: 20px; color: #000">
-											<msub>
-												<mi>Z</mi>
-												<mi>t</mi>
-											</msub>
-											<mo>=</mo>
-											<mn>0,8</mn>
-											<msub>
-												<mi>Z</mi>
-												<mrow>
-													<mi>t</mi>
-													<mo>-</mo>
-													<mn>1</mn>
-												</mrow>
-											</msub>
-											<mo>+</mo>
-											<msub>
-												<mi>a</mi>
-												<mi>t</mi>
-											</msub>
-											<mo>-</mo>
-											<mn>0,3</mn>
-											<msub>
-												<mi>a</mi>
-												<mrow>
-													<mi>t</mi>
-													<mo>-</mo>
-													<mn>1</mn>
-												</mrow>
-											</msub>
-										</math>
-
-										<figure class="lightbox aos-init aos-animate mt-5" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
-											<img class="img-fluid rounded mx-auto d-block mb-3" src="../../media/modulo3/aula3-img9.jpg" alt="Gráfico de uma série simulada de acordo com o ARMA(1,1)" title="Fonte: Morettin; Toloi (2004)." />
-											<figcaption class="figure-caption">Fonte: Morettin; Toloi (2004).</figcaption>
-										</figure>
-									</div>
-								</div>
-							</div>
-
-							<div class="row justify-content-center mt-5">
-								<div class="col-12 col-md-10 col-lg-8 mb-5">
-									<div class="heading__block">
-										<h4 class="heading__title">Modelo Autorregressivo de médias móveis integrado</h4>
-									</div>
-								</div>
-							</div>
-
-							<div class="row justify-content-center">
-								<div class="col-12 col-md-10 col-lg-8 mb-5">
-									<p>São modelos usados para séries temporais com tendências. Enquanto a parte autorregressiva (AR) continua capturando a dependência linear com os valores passados da própria série, a parte de médias móveis (MA) captura a dependência com os erros passados (resíduos) da série. A integração (I) torna a série estacionária ao diferenciar os valores (subtrair os valores passados) para remover tendências e garantir que tenha uma média constante. Denotado por ARIMA(p,d,q), é formulado como sendo:</p>
-
-									<math xmlns="www.w3.org" display="block" style="font-size: 20px; color: #000">
-										<msub>
-											<mi>Z</mi>
-											<mi>t</mi>
-										</msub>
-										<mo>=</mo>
-										<msub>
-											<mi>&phi;</mi>
-											<mn>1</mn>
-										</msub>
-										<msub>
-											<mi>Z</mi>
-											<mrow>
-												<mi>t</mi>
-												<mo>-</mo>
-												<mn>1</mn>
-											</mrow>
-										</msub>
-										<mo>+</mo>
-										<mo>&#x22EF;</mo>
-										<mo>+</mo>
-										<msub>
-											<mi>&phi;</mi>
-											<mrow>
-												<mi>p</mi>
-												<mo>+</mo>
-												<mi>d</mi>
-											</mrow>
-										</msub>
-										<msub>
-											<mi>Z</mi>
-											<mrow>
-												<mi>t</mi>
-												<mo>-</mo>
-												<mi>p</mi>
-												<mo>+</mo>
-												<mi>d</mi>
-											</mrow>
-										</msub>
-										<mo>+</mo>
-										<msub>
-											<mi>a</mi>
-											<mi>t</mi>
-										</msub>
-										<mo>-</mo>
-										<msub>
-											<mi>&theta;</mi>
-											<mn>1</mn>
-										</msub>
-										<msub>
-											<mi>a</mi>
-											<mrow>
-												<mi>t</mi>
-												<mo>-</mo>
-												<mn>1</mn>
-											</mrow>
-										</msub>
-										<mo>-</mo>
-										<mo>&#x22EF;</mo>
-										<mo>-</mo>
-										<msub>
-											<mi>&theta;</mi>
-											<mi>q</mi>
-										</msub>
-										<msub>
-											<mi>a</mi>
-											<mrow>
-												<mi>t</mi>
-												<mo>-</mo>
-												<mi>q</mi>
-											</mrow>
-										</msub>
-									</math>
-								</div>
-
-								<div class="col-12 col-md-10 col-lg-8 mb-5">
-									<p>
-										Em que os parâmetros têm a mesma interpretação dos modelos MA(q) e AR(p), sendo que os termos são relativos à parte autorregressiva, e d é o grau de diferenciação, ou seja, o número de vezes em que os dados tiveram valores anteriores subtraídos. Em resumo, se precisamos diferenciar a série <em>Z<sub>t</sub></em> uma vez para torná-la estacionária, estamos lidando com um processo integrado de ordem 1 ou, alternativamente, um processo I(1), ou um ARIMA com d=1.
-									</p>
-								</div>
-							</div>
-
-							<div class="row justify-content-center">
-								<div class="col-12 col-md-10 col-lg-8 mb-5">
-									<!-- EXEMPLO -->
-									<div class="code-container aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="600">
-										<div class="heading__block">
-											<h5 class="heading__title">Exemplo</h5>
-										</div>
-										<p class="mt-5">ARIMA(1,1,0) com <em>&phi;</em> = 0,8, ARIMA(0,1,1) com <em>&theta;</em> = 0,3, e ARIMA(1,1,1) com <em>&phi;</em> = 0,8 e <em>&theta;</em> = 0,3, geradores das séries simuladas na figura abaixo:</p>
-
-										<figure class="lightbox aos-init aos-animate mt-5" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
-											<img class="img-fluid rounded mx-auto d-block mb-3" src="../../media/modulo3/aula3-img10.jpg" alt="Gráficos de séries simuladas de acordo com: ARIMA(1,1,0), ARIMA(0,1,1) e ARIMA(1,1,1)" title="Fonte: Morettin; Toloi (2004)." />
-											<figcaption class="figure-caption">Fonte: Morettin; Toloi (2004).</figcaption>
-										</figure>
-									</div>
-								</div>
-							</div>
-
-							<div class="row justify-content-center">
-								<div class="col-12 col-md-10 col-lg-8 mb-5">
-									<p>A essa altura vocês já devem ter notado que o céu é o limite. Podemos incluir facetas das séries a serem modeladas até que, delas, sobre apenas um ruído aleatório. Para não nos alongar no tema, fechamos apresentando os modelos com sazonalidade.</p>
-								</div>
-							</div>
-
-							<div class="row justify-content-center mt-5">
-								<div class="col-12 col-md-10 col-lg-8 mb-5">
-									<div class="heading__block">
-										<h4 class="heading__title">Modelo Autorregressivo de médias móveis integrado sazonal</h4>
-									</div>
-								</div>
-							</div>
-
-							<div class="row justify-content-center">
-								<div class="col-12 col-md-10 col-lg-8 mb-5">
-									<p>O modelo SARIMA (Autorregressivo de médias móveis integrado sazonal) é uma extensão do modelo ARIMA, incluindo componentes sazonais. É denotado por SARIMA(p, d, q)(P, D, Q)m, em que:</p>
-									<p>p: Ordem da parte autorregressiva (AR).</p>
-									<p>d: Ordem da diferenciação para tornar a série estacionária.</p>
-									<p>q: Ordem da média móvel (MA).</p>
-									<p>P: Ordem autorregressiva sazonal.</p>
-									<p>D: Ordem da diferenciação sazonal.</p>
-									<p>Q: Ordem da média móvel sazonal.</p>
-									<p>m: Período da sazonalidade (ex.: 12 para dados mensais).</p>
-									<p>Os componentes autorregressivos e de médias móveis são aplicados tanto na parte "não sazonal" quanto na parte sazonal, o que permite capturar variações cíclicas recorrentes e previsíveis nos dados ao longo de um intervalo regular (por exemplo, meses, trimestres ou anos).</p>
-								</div>
-							</div>
-
-							<div class="row justify-content-center">
-								<div class="col-12 col-md-10 col-lg-8 mb-5">
-									<!-- EXEMPLO -->
-									<div class="code-container aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="600">
-										<div class="heading__block">
-											<h5 class="heading__title">Exemplo</h5>
-										</div>
-										<p class="mt-5">Decomposição da série de incidência de morbidade por febre hemorrágica com síndrome renal na China: (A) A série real observada; (B) Tendência; (C) Variação sazonal; (D) Componente irregular. Conforme ilustrado, houve um traço sazonal pronunciado na série de morbidade.</p>
-										<p>Modelo estimado para a série: SARIMA(0,1,3)(1,1,0)<sub>12</sub>.</p>
-
-										<figure class="lightbox aos-init aos-animate mt-5" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
-											<img class="img-fluid rounded mx-auto d-block mb-3" src="../../media/modulo3/aula3-img11.jpg" alt="Gráficos de séries simuladas de acordo com: ARIMA(1,1,0), ARIMA(0,1,1) e ARIMA(1,1,1)" title="Fonte: Wang et al. (2020)." />
-											<figcaption class="figure-caption">Fonte: Wang <em>et al.</em> (2020).</figcaption>
-										</figure>
-									</div>
-								</div>
-							</div>
-
-							<div class="row justify-content-center">
-								<div class="col-12 col-md-10 col-lg-8">
-									<!-- FAÇA VOCÊ MESMO -->
-									<div class="faca-voce-mesmo aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
-										<div class="olho-de-texto my-5">
-											<div class="heading__block">
-												<h5 class="heading__title">Faça você mesmo!</h5>
-											</div>
-											<p>É hora de praticar! No script <strong>modulo3aula3_atividades.R</strong> (Atividade 2), decomponha uma série temporal de casos de síndrome gripal em tendência, sazonalidade e ruído. Ajuste um modelo ARIMA e faça previsões para as próximas semanas.</p>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</section>
-				</div>
-
-				<!-- Navegação da aula -->
-				<section>
-					<div class="container">
-						<div class="row justify-content-center">
-							<div class="col-12 col-md-10 col-lg-8">
-								<div class="page-nav d-flex justify-content-evenly">
-									<a class="fio-button fio-button-primary" href="topico2.html" rel="prev"><span class="material-symbols-rounded">west</span> Tópico anterior</a>
-									<a class="fio-button fio-button-primary" href="topico4.html" rel="next">Próximo tópico <span class="material-symbols-rounded" aria-hidden="true">east</span></a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
-			</div>
-
-			<footer>
-				<div class="container-fluid">
-					<div class="row justify-content-center align-items-center linha-de-marcas">
-						<div class="col-12 col-md-auto">
-							<ul class="logos">
-								<!-- <li class="realizacao"> -->
-								<li>
-									<img class="img-fluid logo1" src="../../media/logos/logo-cidacs.svg" alt="Logo do Centro de Integração de Dados e Conhecimentos para Saúde" height="" />
-								</li>
-
-								<li>
-									<img class="img-fluid logo2" src="../../media/logos/logo-cvf.svg" alt="Logo do Campus Virtual Fiocruz" height="" />
-								</li>
-
-								<li>
-									<img class="img-fluid logo3" src="../../media/logos/logo-fiocruz.svg" alt="Logo da Fiocruz" height="" />
-								</li>
-							</ul>
-						</div>
-
-						<div class="col-12 col-md-auto">
-							<ul class="logos principais align-self-end">
-								<li>
-									<img class="img-fluid logo4" src="../../media/logos/logo-sus-digital-cor.svg" alt="Logo do SUS Digital" height="" />
-								</li>
-
-								<li>
-									<img class="img-fluid logo5 d-none d-md-block" src="../../media/logos/logo-ms-gov-federal.svg" alt="Logos SUS 35 anos, Ministério da Saúde e Governo Federal" height="" />
-								</li>
-
-								<li>
-									<img class="img-fluid logo6 d-block d-md-none" src="../../media/logos/logo-ms-gov-federal-mobile.svg" alt="Logos SUS 35 anos, Ministério da Saúde e Governo Federal" height="" />
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</footer>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=yes" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="robots" content="noindex" />
+	<meta name="author" content="Fiocruz, Campus Virtual" />
+	<meta name="description" content="Curso Introdução à Análise de Dados para pesquisa no SUS" />
+	<link rel="apple-touch-icon" sizes="180x180" href="../../media/icons/apple-icon-180x180.png" />
+	<link rel="icon" type="image/png" sizes="32x32" href="../../media/icons/favicon-32x32.png" />
+	<link rel="manifest" href="../media/icons/manifest.json" />
+	<meta name="theme-color" content="#001833" />
+	<title>Curso Introdução à Análise de Dados para pesquisa no SUS | Mod 3 | Aula 3</title>
+	<link rel="stylesheet" href="../../source/bootstrap-5.1.3/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="../../assets/css/style.css" />
+</head>
+<body>
+	<header class="header">
+		<div class="mobile-toggle-open">
+			<a class="mobile-toggle__button" tabindex="0" role="button"><span class="icon material-symbols-rounded">read_more</span></a>
 		</div>
-
-		<!--  Bootstrap JS and Popper -->
-		<script src="../../source/bootstrap-5.1.3/js/bootstrap.bundle.min.js"></script>
-
-		<!-- Sticky Sidebar -->
-		<script type="text/javascript" src="../../assets/js/ResizeSensor.js"></script>
-		<script type="text/javascript" src="../../assets/js/sticky-sidebar.js"></script>
-		<script type="text/javascript" src="../../assets/js/sidebar.js"></script>
-
-		<script type="text/javascript">
-			var sidebar = new StickySidebar(".sidebar", {
-				topSpacing: 0,
-				bottomSpacing: 0,
-				containerSelector: ".main",
-				innerWrapperSelector: ".sidebar__inner",
-				minWidth: 991,
-			});
-		</script>
-
-		<!-- Code -->
-		<script src="../../assets/js/code.js"></script>
-
-		<!-- Swiper -->
-		<script src="../../assets/js/swiper-bundle.min.js"></script>
-		<script src="../../assets/js/swiper-init.js"></script>
-
-		<script type="text/javascript" src="../../assets/js/scripts.js"></script>
-		<script type="text/javascript" src="../../assets/js/custom-anime.js"></script>
-		<script type="text/javascript" src="../../source/animate/aos/dist/aos.js"></script>
-
-		<!-- Timeline horizontal -->
-		<script src="../../assets/js/timeline-horizontal/util.js"></script>
-		<!-- util functions included in the CodyHouse framework -->
-		<script src="../../assets/js/timeline-horizontal/swipe-content.js"></script>
-		<!-- A Vanilla JavaScript plugin to detect touch interactions -->
-		<script src="../../assets/js/timeline-horizontal/main.js"></script>
-		<!-- Start the Timeline -->
-		<script>
-			document.getElementsByTagName("html")[0].className += " js";
-		</script>
-
-		<script>
-			AOS.init();
-		</script>
-	</body>
+		<div class="brand">
+			<img class="img-fluid logo-black" src="../../media/logos/header-fiocruz-campus-virtual.png" alt="Campus Virtual Fiocruz" />
+		</div>
+		<div class="title"><h1>Introdução à Análise de Dados para pesquisa no SUS</h1></div>
+		<ul class="nav nav-pills">
+			<li class="nav-item"><a href="../../index.html" class="nav-link">Início</a></li>
+			<li class="nav-item"><a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#modal-creditos">Créditos</a></li>
+		</ul>
+	</header>
+	<div class="main">
+		<div class="sidebar" role="navigation">
+			<div class="sidebar__inner" style="position: relative">
+				<div class="sidebar__group d-lg-none">
+					<div class="sidebar__group-item">
+						<div class="sidebar__header">
+							<span>Curso</span>
+							<a class="mobile-toggle-close" tabindex="0" role="button"><span class="icon material-symbols-rounded">read_more</span></a>
+						</div>
+					</div>
+					<div class="sidebar__group-item"><div class="sidebar__title"><h1>Introdução à Análise de Dados para pesquisa no SUS</h1></div></div>
+					<div class="sidebar__group-item">
+						<ul class="nav">
+							<li class="nav-item"><a href="../../index.html" class="nav-link" tabindex="0"><span class="icon material-symbols-rounded" aria-hidden="true">home</span>Início</a></li>
+							<li class="nav-item"><a href="#" class="nav-link" tabindex="0" data-bs-toggle="modal" data-bs-target="#modal-creditos"><span class="icon material-symbols-rounded" aria-hidden="true">format_list_bulleted</span>Créditos</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="sidebar__group">
+					<div class="sidebar__group-item">
+						<div class="dropend">
+							<button id="dropdown-modulos" type="button" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside" data-bs-offset="0,30">
+								<span class="icon material-symbols-rounded" aria-hidden="true">grid_view</span><span class="label">Módulos</span>
+							</button>
+							<ul class="dropdown-menu" aria-labelledby="dropdown-modulos">
+								<li class="d-lg-none dropdown-menu__header">
+									<a class="dropdown-menu__back-button" tabindex="0" role="button"><span class="icon material-symbols-rounded">chevron_left</span> Voltar</a>
+									<a class="mobile-toggle-close" tabindex="0" role="button"><span class="icon material-symbols-rounded">read_more</span></a>
+								</li>
+								<li class="dropdown-menu__item"><a class="dropdown-menu__item-link" tabindex="0" role="link" href="../../modulo1/aula1/topico1.html"><strong>Módulo 1</strong><br />A informação no SUS</a></li>
+								<li class="dropdown-menu__item"><a class="dropdown-menu__item-link" tabindex="0" role="link" href="../../modulo2/aula1/topico1.html"><strong>Módulo 2</strong><br />Fontes de Dados Socioeconômicos e Demográficos: subsídios para a Saúde</a></li>
+								<li class="dropdown-menu__item"><a class="dropdown-menu__item-link" tabindex="0" role="link" href="../../modulo3/aula1/topico1.html"><strong>Módulo 3</strong><br />Sistemas de Informação em Saúde</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="divider"><hr /></div>
+				<div class="sidebar__group">
+					<div class="sidebar__group-item"><span class="text module">Módulo <br class="d-none d-lg-block" /><span>3</span></span></div>
+					<div class="sidebar__group-item">
+						<div class="dropend">
+							<button type="button" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside" data-bs-offset="0,30">
+								<span class="icon material-symbols-rounded" aria-hidden="true">apps</span><span class="label">Conteúdo</span>
+							</button>
+							<ul class="dropdown-menu">
+								<li class="d-lg-none dropdown-menu__header">
+									<a class="dropdown-menu__back-button" tabindex="0" role="button"><span class="icon material-symbols-rounded">chevron_left</span> Voltar</a>
+									<a class="mobile-toggle-close" tabindex="0" role="button"><span class="icon material-symbols-rounded">read_more</span></a>
+								</li>
+								<li class="dropdown-menu__title"><span class="label">Módulo 3</span><span class="title">Sistemas de Informação em Saúde</span></li>
+								<li class="dropdown-menu__item"><a class="dropdown-menu__item-link" tabindex="0" role="link" href="../aula1/topico1.html"><strong>Aula 1: </strong>Introdução aos Sistemas de Informação em Saúde e Sistemas de Informações de Estatísticas Vitais</a></li>
+								<li class="dropdown-menu__item"><a class="dropdown-menu__item-link" tabindex="0" role="link" href="../aula2/topico1.html"><strong>Aula 2: </strong>Sistemas de Informações de Produção</a></li>
+								<li class="dropdown-menu__item"><a class="dropdown-menu__item-link" tabindex="0" role="link" href="../aula3/topico1.html"><strong>Aula 3: </strong>Sistemas de Informações Epidemiológicas</a></li>
+								<li class="dropdown-menu__item"><a class="dropdown-menu__item-link" tabindex="0" role="link" href="../aula4/topico1.html"><strong>Aula 4: </strong>Sistemas de Informações de Gestão, Infraestrutura e Orçamento</a></li>
+								<li class="dropdown-menu__item"><a class="dropdown-menu__item-link" tabindex="0" role="link" href="../aula5/topico1.html"><strong>Aula 5: </strong>Acesso aos dados de Saúde</a></li>
+								<li class="dropdown-menu__item"><a class="dropdown-menu__item-link" tabindex="0" role="link" href="../atividade.html"><strong>Atividade</strong></a></li>
+								<li class="dropdown-menu__item"><a class="dropdown-menu__item-link" tabindex="0" role="link" href="../encerramento.html"><strong>Resumo do módulo</strong></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="divider"><hr /></div>
+				<div class="sidebar__group">
+					<div class="sidebar__group-item"><span class="text class">Aula 3</span></div>
+					<div class="sidebar__group-item">
+						<div class="dropend">
+							<button type="button" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside" data-bs-offset="0,30">
+								<span class="icon material-symbols-rounded" aria-hidden="true">format_list_bulleted</span><span class="label">Tópicos</span>
+							</button>
+							<ul class="dropdown-menu">
+								<li class="d-lg-none dropdown-menu__header">
+									<a class="dropdown-menu__back-button" tabindex="0" role="button"><span class="icon material-symbols-rounded">chevron_left</span> Voltar</a>
+									<a class="mobile-toggle-close" tabindex="0" role="button"><span class="icon material-symbols-rounded">read_more</span></a>
+								</li>
+								<li class="dropdown-menu__title"><span class="label">Aula 3</span><span class="title">Sistemas de Informações Epidemiológicas</span></li>
+								<li class="dropdown-menu__item">
+									<nav class="topic-list">
+							<a href="topico1.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico concluído" status="visited"><span class="material-symbols-rounded"></span>Sobre esta aula</a>
+							<a href="topico2.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico concluído" status="visited"><span class="material-symbols-rounded"></span>Introdução aos SIS epidemiológicos</a>
+							<a href="topico3.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico não concluído" ><span class="material-symbols-rounded"></span>SINAN</a>
+							<a href="topico4.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico não concluído" ><span class="material-symbols-rounded"></span>SIVEP Gripe e SIVEP Malária</a>
+							<a href="topico5.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico não concluído" ><span class="material-symbols-rounded"></span>Referências</a>
+									</nav>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="divider"><hr /></div>
+				<div class="sidebar__group extra">
+					<div class="sidebar__group-item">
+						<button type="button" class="" data-bs-toggle="modal" data-bs-target="#modal-bibliografiaMod3">
+							<span class="icon material-symbols-rounded" aria-hidden="true">menu_book</span><span class="label">Bibliografia</span>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="content">
+			<div id="page-title"><div class="container"><div class="row align-items-center hstify-content-center justify-content-xxl-start ms-lg-5"><div class="col-12 col-md-10 col-lg-11"><h2 class="title"><span class="label">Módulo 3 | Aula 3</span><br />Sistemas de Informações Epidemiológicas</h2></div></div></div></div>
+			<div id="page-content" class="">
+				<section><div class="container">
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-5"><div class="heading__block"><span class="small">Tópico 3</span><h3 class="heading__title">Sistema de Informações de Agravos de Notificação (SINAN)</h3></div></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-5"><p>O Sistema de Informação de Agravos de Notificação (SINAN) é uma ferramenta essencial do SUS para a vigilância epidemiológica no Brasil. Seu objetivo principal é coletar, transmitir e disseminar dados sobre doenças e agravos de notificação compulsória, ou seja, problemas de saúde que devem ser obrigatoriamente informados às autoridades de saúde. Sua utilização efetiva permite o diagnóstico dinâmico da ocorrência de eventos na população, fornecendo subsídios para identificar riscos e auxiliar no planejamento da saúde, na definição de prioridades de intervenção e na avaliação de impactos (Ministério da Saúde, 2007).</p></div></div><div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-5"><figure class="lightbox aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600"><img class="img-fluid mx-auto d-block mb-3 rounded" src="../../media/modulo3/aula3-topico3-sinan.png" alt="Equipe de saúde com jaleco e estetoscópio utilizando notebook e tablet em ambiente clínico." loading="lazy" /></figure></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-5"><p>Profissionais de saúde e responsáveis por serviços de saúde públicos e privados são legalmente obrigados a notificar a suspeita ou confirmação de doenças listadas pelo Ministério da Saúde.</p></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-5"><p>A Lista Nacional de Notificação Compulsória de Doenças, Agravos e Eventos de Saúde Pública teve sua última atualização consolidada pela Portaria GM/MS nº 5.201, de 15 de agosto de 2024. Essa lista é atualizada periodicamente, conforme necessário. A última atualização, por exemplo, trouxe foco inédito e ampliado para questões relacionadas à Saúde do Trabalhador.</p></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-5"><p><strong>Saúde do Trabalhador e Transmissão Vertical:</strong></p></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-5"><p>Confira as atualizações na Lista Nacional de Notificação Compulsória de Doenças, Agravos e Eventos de Saúde Pública</p></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-5"><div class="accordion accordion-flush" id="m3a3-sinan-lista"><div class="accordion-item"><h5 class="accordion-header" id="m3a3-sl1-h"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#m3a3-sl1-c" aria-expanded="false">Saúde do Trabalhador</button></h5><div id="m3a3-sl1-c" class="accordion-collapse collapse" data-bs-parent="#m3a3-sinan-lista"><div class="accordion-body"><ul class='mb-0'><li>Câncer relacionado ao trabalho.</li><li>Dermatoses ocupacionais.</li><li>Distúrbio de voz relacionado ao trabalho.</li><li>LER/DORT (Lesões por Esforços Repetitivos).</li><li>Perda auditiva (PAIR) relacionada ao trabalho.</li><li>Pneumoconioses (ex.: silicose, asbestose).</li><li>Transtornos mentais relacionados ao trabalho.</li></ul></div></div></div><div class="accordion-item"><h5 class="accordion-header" id="m3a3-sl2-h"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#m3a3-sl2-c" aria-expanded="false">Transmissão Vertical</button></h5><div id="m3a3-sl2-c" class="accordion-collapse collapse" data-bs-parent="#m3a3-sinan-lista"><div class="accordion-body"><ul class='mb-0'><li>HTLV (Gestante/Parturiente/Puérpera e Criança exposta).</li><li>Hepatite B (Gestante/Parturiente/Puérpera e Criança exposta).</li></ul></div></div></div></div></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-5">
+<div class="box" data-box="Você sabia?">
+<div class="card">
+<div class="card-header"><span class="icone material-symbols-rounded" aria-hidden="true"></span><span class="label">Você sabia?</span></div>
+<div class="card-body">
+<p class="mb-0">As doenças e agravos de Saúde do Trabalhador deixaram de ser monitoradas apenas em unidades sentinela e passaram a ser de notificação universal. Ou seja, qualquer unidade de saúde (pública ou privada) deve notificar se houver suspeita de nexo causal com o trabalho. O fluxo de dados notificado segue uma transmissão vertical e hierarquizada: das unidades para o município, do município para o estado e do estado para o nível federal. Além desse fluxo periódico, existem agravos de notificação imediata que exigem comunicação às autoridades sanitárias em até 24 horas após a suspeita inicial, devido à sua gravidade ou risco de disseminação (Ministério da Saúde, 2007). É importante destacar que cada agravo tem um tempo específico de notificação. Confira a seguir os prazos para os principais agravos da lista.</p>
+</div>
+</div>
+</div>
+</div></div>
+<div class="row justify-content-center">
+<div class="col-12 col-md-10 col-lg-8">
+<div class="row g-4 mb-5">
+<div class="col-12 col-md-6">
+<div class="flipcard"><div class="flip-card"><input type="checkbox" id="m3a3sinanfc1" class="more" aria-hidden="true" /><div class="flip-card-inner"><div class="card shadow flip-card-front fundo1"><div class="h-100 bg-transparent border-0 text-center"><div class="card-body justify-content-center d-flex flex-column"><span class="h5 card-title">Doenças de notificação imediata (até 24h)</span></div><div class="card-footer text-white"><div class="card-btn"><label for="m3a3sinanfc1" class="fio-button fio-button-primary" aria-hidden="true"><img src="../../media/templates/flipcard-icon-dark.svg" alt="" width="36" /> Confira</label></div></div></div></div><div class="card flip-card-back"><div class="h-100 bg-transparent border-0 text-center"><div class="card-body justify-content-center d-flex flex-column"><span class="h5">Doenças de notificação imediata (até 24h)</span><div class="scrollable text-start"><p class="small mb-2">Emergências de Saúde Pública</p><ul class="mb-0 text-start"><li>Botulismo.</li><li>Cólera.</li><li>Febre Amarela & Febre do Nilo Ocidental.</li><li>Raiva Humana e acidente com animal potencialmente transmissor.</li><li>Sarampo e Rubéola.</li><li>Síndrome Respiratória Aguda Grave (SRAG) associada a Coronavírus (covid-19), influenza etc.</li><li>Doenças de Chagas (aguda).</li><li>Poliomielite (Paralisia Flácida Aguda).</li><li>Varíola (Mpox).</li><li>Eventos de Saúde Pública (ameaça à saúde pública, surtos inéditos).</li></ul></div></div><div class="card-footer"><div class="card-btn"><label for="m3a3sinanfc1" class="fio-button fio-button-secondary return" aria-hidden="true"><span class="material-symbols-rounded">arrow_back</span></label></div></div></div></div></div></div></div>
+</div>
+<div class="col-12 col-md-6">
+<div class="flipcard"><div class="flip-card"><input type="checkbox" id="m3a3sinanfc2" class="more" aria-hidden="true" /><div class="flip-card-inner"><div class="card shadow flip-card-front fundo1"><div class="h-100 bg-transparent border-0 text-center"><div class="card-body justify-content-center d-flex flex-column"><span class="h5 card-title">Outras notificações (Semanais/Gerais)</span></div><div class="card-footer text-white"><div class="card-btn"><label for="m3a3sinanfc2" class="fio-button fio-button-primary" aria-hidden="true"><img src="../../media/templates/flipcard-icon-dark.svg" alt="" width="36" /> Confira</label></div></div></div></div><div class="card flip-card-back"><div class="h-100 bg-transparent border-0 text-center"><div class="card-body justify-content-center d-flex flex-column"><span class="h5">Outras notificações (Semanais/Gerais)</span><div class="scrollable text-start"><p class="small mb-2">Vigilância Contínua</p><ul class="mb-0 text-start"><li>Acidente de Trabalho: (grave, fatal e com exposição a material biológico).</li><li>Arboviroses: dengue, zika, chikungunya.</li><li>Violências: sexual, tentativa de suicídio, doméstica/outras violências.</li><li>Infecções Sexualmente Transmissíveis: HIV/AIDS, sífilis (adquirida, gestante e congênita).</li><li>Micobacterioses: tuberculose e hanseníase.</li><li>Intoxicações Exógenas (agrotóxicos, medicamentos etc.).</li><li>Óbito: materno e infantil.</li></ul></div></div><div class="card-footer"><div class="card-btn"><label for="m3a3sinanfc2" class="fio-button fio-button-secondary return" aria-hidden="true"><span class="material-symbols-rounded">arrow_back</span></label></div></div></div></div></div></div></div>
+</div>
+</div>
+</div>
+</div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-5"><p>Para a coleta de dados, o sistema utiliza instrumentos padronizados, sendo os principais a Ficha de Notificação e a Ficha de Investigação. A Ficha de Notificação é usada para registrar casos suspeitos ou confirmados de doenças da lista nacional e também para a Notificação Negativa, que é o procedimento por meio do qual as unidades informam a não ocorrência de doenças na semana epidemiológica, garantindo que o silêncio não seja confundido com falta de dados (Ministério da Saúde, 2007).</p></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-5"><p>Apesar de se tratar de um sistema consolidado e padronizado, por considerar diferentes agravos e doenças, com especificidades e demandas particulares, pode-se dizer que o SINAN se divide em uma série de subsistemas. Em geral, cada agravo tem sua própria ficha de notificação e gera um banco de dados único.</p></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-5"><p>Em resumo, os principais objetivos do SINAN são: apoiar o processo de investigação epidemiológica dos casos reportados, oferecer insumos na análise da situação de saúde da população, auxiliar no planejamento e na definição de prioridades de intervenções em Saúde Pública e facilitar a formulação e avaliação de políticas, programas e planos de saúde para contribuir na tomada de decisões.</p></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-5">
+<div class="box" data-box="Saiba Mais">
+<div class="card">
+<div class="card-header"><span class="icone material-symbols-rounded" aria-hidden="true"></span><span class="label">Saiba Mais</span></div>
+<div class="card-body">
+<p class="h6 heading__title mb-3"><strong>Saiba mais!</strong></p>
+<p class="mb-4">Saiba mais sobre os agravos de notificação compulsória e o papel do SINAN no <em>Guia de vigilância em saúde: volume 1</em>, <a href="https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/svsa/vigilancia/guia-de-vigilancia-em-saude-volume-1-6a-edicao/view" target="_blank" rel="noopener noreferrer">disponível aqui</a>.</p>
+<p class="mb-2"><strong>Figura 4. Guia de vigilância em saúde: volume 1.</strong></p>
+<figure class="lightbox aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600"><img class="img-fluid mx-auto d-block mb-2 rounded border" src="../../media/modulo3/aula3-fig4-guia-vigilancia-saude-vol1.png" alt="Capa da publicação Guia de vigilância em saúde, 6ª edição revisada, volume 1, Ministério da Saúde." loading="lazy" /></figure>
+<p class="figure-caption fonte small mb-0">Fonte: SAÚDE, M. da. <strong>Guia de vigilância em saúde</strong>. 6. ed. Brasília, DF: Ministério da Saúde, 2024. v. 1.</p>
+</div>
+</div>
+</div>
+</div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-4"><div class="heading__block"><h4 class="heading__title">Importância</h4></div></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-5"><p>O uso sistemático do SINAN permite o diagnóstico dinâmico da ocorrência de eventos de saúde na população, identificando riscos e subsidiando ações de prevenção e controle de doenças. O SINAN é uma das ferramentas mais importantes para a Vigilância Epidemiológica e Saúde Pública no Brasil. Ele é o sistema responsável por coletar, transmitir e disseminar dados gerados pela rotina do sistema de Vigilância Epidemiológica das três esferas de governo (municipal, estadual e federal).</p></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-5"><p>Entre os potenciais usos do SINAN destacam-se:</p><ul class="mb-0"><li>Possibilidade de identificação da realidade epidemiológica.</li><li>Oferta de subsídios para tomada de decisão.</li><li>Obrigatoriedade de vigilância de doenças de notificação compulsória.</li><li>Descentralização da informação.</li><li>Vigilância em saúde ambiental.</li><li>Investigação de surtos.</li></ul></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-5"><p>O SINAN é a ferramenta oficial e fundamental para registro, consolidação e análise de dados sobre doenças e agravos de notificação compulsória, subsidiando a tomada de decisão em saúde pública (Ministério da Saúde, 2024).</p></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-4"><div class="heading__block"><h4 class="heading__title">Dados coletados</h4></div></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-5"><p>A coleta de dados no SINAN é estruturada de maneira padronizada com o objetivo de garantir consistência e qualidade às informações epidemiológicas nas três esferas de governo. O processo fundamenta-se na utilização de instrumentos de coleta específicos, sendo a Ficha de Notificação o documento principal. Esse formulário deve ser impresso em duas vias pré-numeradas, de modo que a primeira via seja encaminhada para o local de digitação (caso a unidade não seja informatizada) e a segunda permaneça arquivada na unidade de saúde de origem.</p></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-5"><p>Essa ficha é empregada tanto para registrar casos suspeitos ou confirmados da maioria das doenças de notificação compulsória quanto para informar a ausência de doenças (notificação negativa). Para agravos que só são notificados após a confirmação diagnóstica, como tuberculose, hanseníase, Aids, sífilis congênita e doenças relacionadas ao trabalho, o sistema exige o uso da Ficha de Notificação/Investigação específica para cada doença (Ministério da Saúde, 2007).</p></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-5"><p>O SINAN coleta dados por dois tipos de fichas:</p><ul class="mb-0"><li><strong>Ficha de Notificação:</strong> utilizada para notificar individualmente casos suspeitos e/ou confirmados de agravos de notificação compulsória de interesse nacional, estadual ou municipal, bem como surtos ou agregados de casos e óbitos. Também é usada para notificação negativa (quando não ocorre nenhuma doença a ser notificada).</li><li><strong>Ficha de Investigação:</strong> deve ter a mesma numeração da ficha de notificação originária e complementa as informações iniciais, aprofundando a investigação do caso.</li></ul></div></div>
+<div class="row justify-content-center">
+<div class="col-12 col-md-10 col-lg-8">
+<div class="row g-4 mb-5">
+<div class="col-12 col-md-6">
+<div class="flipcard"><div class="flip-card"><input type="checkbox" id="m3a3sinandadosfc1" class="more" aria-hidden="true" /><div class="flip-card-inner"><div class="card shadow flip-card-front fundo1"><div class="h-100 bg-transparent border-0 text-center"><div class="card-body justify-content-center d-flex flex-column"><span class="h5 card-title">Dados gerais sobre o agravo e a notificação</span></div><div class="card-footer text-white"><div class="card-btn"><label for="m3a3sinandadosfc1" class="fio-button fio-button-primary" aria-hidden="true"><img src="../../media/templates/flipcard-icon-dark.svg" alt="" width="36" /> Confira</label></div></div></div></div><div class="card flip-card-back"><div class="h-100 bg-transparent border-0 text-center"><div class="card-body justify-content-center d-flex flex-column"><span class="h5">Dados gerais sobre o agravo e a notificação</span><div class="scrollable text-start"><ul class="mb-0 text-start"><li>Tipo e data da notificação.</li><li>Data dos primeiros sintomas.</li><li>Nome do agravo/doença notificado(a).</li><li>Tipo de notificação (individual ou surto).</li></ul></div></div><div class="card-footer"><div class="card-btn"><label for="m3a3sinandadosfc1" class="fio-button fio-button-secondary return" aria-hidden="true"><span class="material-symbols-rounded">arrow_back</span></label></div></div></div></div></div></div></div>
+</div>
+<div class="col-12 col-md-6">
+<div class="flipcard"><div class="flip-card"><input type="checkbox" id="m3a3sinandadosfc2" class="more" aria-hidden="true" /><div class="flip-card-inner"><div class="card shadow flip-card-front fundo1"><div class="h-100 bg-transparent border-0 text-center"><div class="card-body justify-content-center d-flex flex-column"><span class="h5 card-title">Dados do paciente</span></div><div class="card-footer text-white"><div class="card-btn"><label for="m3a3sinandadosfc2" class="fio-button fio-button-primary" aria-hidden="true"><img src="../../media/templates/flipcard-icon-dark.svg" alt="" width="36" /> Confira</label></div></div></div></div><div class="card flip-card-back"><div class="h-100 bg-transparent border-0 text-center"><div class="card-body justify-content-center d-flex flex-column"><span class="h5">Dados do paciente</span><div class="scrollable text-start"><ul class="mb-0 text-start"><li>Nome completo.</li><li>Data de nascimento e idade.</li><li>Sexo.</li><li>Escolaridade.</li><li>Zona de residência (urbana, rural etc.).</li><li>Endereço completo (logradouro, número, complemento, bairro, município, UF, CEP) e, se aplicável, nome da aldeia indígena.</li><li>Telefone de contato.</li><li>País de residência (se estrangeiro).</li></ul></div></div><div class="card-footer"><div class="card-btn"><label for="m3a3sinandadosfc2" class="fio-button fio-button-secondary return" aria-hidden="true"><span class="material-symbols-rounded">arrow_back</span></label></div></div></div></div></div></div></div>
+</div>
+<div class="col-12 col-md-6">
+<div class="flipcard"><div class="flip-card"><input type="checkbox" id="m3a3sinandadosfc3" class="more" aria-hidden="true" /><div class="flip-card-inner"><div class="card shadow flip-card-front fundo1"><div class="h-100 bg-transparent border-0 text-center"><div class="card-body justify-content-center d-flex flex-column"><span class="h5 card-title">Dados da unidade notificadora e atendimento</span></div><div class="card-footer text-white"><div class="card-btn"><label for="m3a3sinandadosfc3" class="fio-button fio-button-primary" aria-hidden="true"><img src="../../media/templates/flipcard-icon-dark.svg" alt="" width="36" /> Confira</label></div></div></div></div><div class="card flip-card-back"><div class="h-100 bg-transparent border-0 text-center"><div class="card-body justify-content-center d-flex flex-column"><span class="h5">Dados da unidade notificadora e atendimento</span><div class="scrollable text-start"><ul class="mb-0 text-start"><li>Nome e código da unidade de saúde (ou outra fonte notificadora).</li><li>Município e UF da unidade de saúde.</li><li>Nome e função do responsável pela investigação.</li></ul></div></div><div class="card-footer"><div class="card-btn"><label for="m3a3sinandadosfc3" class="fio-button fio-button-secondary return" aria-hidden="true"><span class="material-symbols-rounded">arrow_back</span></label></div></div></div></div></div></div></div>
+</div>
+<div class="col-12 col-md-6">
+<div class="flipcard"><div class="flip-card"><input type="checkbox" id="m3a3sinandadosfc4" class="more" aria-hidden="true" /><div class="flip-card-inner"><div class="card shadow flip-card-front fundo1"><div class="h-100 bg-transparent border-0 text-center"><div class="card-body justify-content-center d-flex flex-column"><span class="h5 card-title">Dados específicos da investigação</span></div><div class="card-footer text-white"><div class="card-btn"><label for="m3a3sinandadosfc4" class="fio-button fio-button-primary" aria-hidden="true"><img src="../../media/templates/flipcard-icon-dark.svg" alt="" width="36" /> Confira</label></div></div></div></div><div class="card flip-card-back"><div class="h-100 bg-transparent border-0 text-center"><div class="card-body justify-content-center d-flex flex-column"><span class="h5">Dados específicos da investigação</span><div class="scrollable text-start"><ul class="mb-0 text-start"><li>Informações detalhadas sobre a exposição, fatores de risco e condições específicas relacionadas à doença (por exemplo: tipo de animal peçonhento no caso de acidentes, características de lesões na hanseníase).</li><li>Classificação final do caso (confirmado, descartado etc.) e tipo de alta (cura, óbito etc.).</li><li>Dados de acompanhamento do caso.</li></ul></div></div><div class="card-footer"><div class="card-btn"><label for="m3a3sinandadosfc4" class="fio-button fio-button-secondary return" aria-hidden="true"><span class="material-symbols-rounded">arrow_back</span></label></div></div></div></div></div></div></div>
+</div>
+</div>
+</div>
+</div><div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-5"><p>A lista de doenças e agravos que exigem notificação compulsória é definida por portarias do Ministério da Saúde, mas estados e municípios podem incluir problemas de saúde adicionais de interesse local.</p></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-5"><p><strong>Figura 5 - Exemplo de ficha de notificação da Síndrome da Rubéola Congênita.</strong></p><figure class="lightbox aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600"><img class="img-fluid mx-auto d-block mb-3 rounded border" src="../../media/modulo3/aula3-fig5-ficha-rubeola-congenita.png" alt="Ficha de investigação do SINAN para Síndrome da Rubéola Congênita, com dados gerais, notificação individual, residência e dados complementares da criança." loading="lazy" /></figure><p class="figure-caption fonte small mb-0">Fonte: DATASUS. Acesso à Informação. Transferência de dados. SINAN. Agravos (2026).</p></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-4"><div class="heading__block"><h4 class="heading__title">Usos e disseminação</h4></div></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-5">
+<div class="accordion accordion-flush" id="m3a3-usos">
+<div class="accordion-item"><h5 class="accordion-header" id="m3a3-us-sinan-h"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#m3a3-us-sinan-c" aria-expanded="false">Sistema de Informação de Agravos de Notificação (SINAN)</button></h5><div id="m3a3-us-sinan-c" class="accordion-collapse collapse" data-bs-parent="#m3a3-usos"><div class="accordion-body"><p>O Sistema de Informação de Agravos de Notificação (SINAN) desempenha papel central na vigilância em saúde, operando não apenas como repositório de dados, mas como instrumento estratégico para a tomada de decisão. Seus usos são múltiplos e interconectados. Veja a seguir alguns exemplos de uso comuns.</p></div></div></div>
+<div class="accordion-item"><h5 class="accordion-header" id="m3a3-us0-h"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#m3a3-us0-c" aria-expanded="false">Análise do perfil de morbidade</button></h5><div id="m3a3-us0-c" class="accordion-collapse collapse" data-bs-parent="#m3a3-usos"><div class="accordion-body"><p>Análise do Perfil de Morbidade: permitem entender quais doenças estão afetando a população, onde e em que medida, identificando a realidade epidemiológica de uma área geográfica específica. Um exemplo recente dessa aplicação é o estudo de Veras e colaboradores (2023), que utilizou dados do sistema para traçar o perfil epidemiológico e a distribuição espacial da hanseníase, identificando clusters de transmissão ativa.</p></div></div></div>
+<div class="accordion-item"><h5 class="accordion-header" id="m3a3-us1-h"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#m3a3-us1-c" aria-expanded="false">Detecção e monitoramento de surtos e epidemias</button></h5><div id="m3a3-us1-c" class="accordion-collapse collapse" data-bs-parent="#m3a3-usos"><div class="accordion-body"><p>Detecção e Monitoramento de Surtos e Epidemias: o registro contínuo dos casos possibilita a detecção precoce de surtos e epidemias, permitindo uma resposta rápida e direcionada das autoridades de saúde. Essa utilidade foi verificada em análises recentes sobre arboviroses, conforme demonstrado por Mendes et al. (2025) ao avaliarem as tendências de incidência e letalidade da dengue em séries temporais interrompidas, fornecendo subsídios para o enfrentamento das epidemias recentes.</p></div></div></div>
+<div class="accordion-item"><h5 class="accordion-header" id="m3a3-us2-h"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#m3a3-us2-c" aria-expanded="false">Planejamento e definição de prioridades</button></h5><div id="m3a3-us2-c" class="accordion-collapse collapse" data-bs-parent="#m3a3-usos"><div class="accordion-body"><p>Planejamento e Definição de Prioridades: os dados auxiliam no planejamento das ações de saúde, na definição de prioridades de intervenção e na alocação de recursos, garantindo que as ações sejam direcionadas para os problemas mais urgentes.</p></div></div></div>
+<div class="accordion-item"><h5 class="accordion-header" id="m3a3-us3-h"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#m3a3-us3-c" aria-expanded="false">Avaliação de políticas e programas de saúde</button></h5><div id="m3a3-us3-c" class="accordion-collapse collapse" data-bs-parent="#m3a3-usos"><div class="accordion-body"><p>Avaliação de Políticas e Programas de Saúde: servem como base para avaliar o impacto e a eficácia das intervenções e programas de controle de doenças já implementados, como os de controle da tuberculose ou hanseníase. Estudos como o de Ferraz et al. (2024) destacam como painéis de monitoramento alimentados por dados epidemiológicos instrumentam gestores na vigilância e atenção à saúde, otimizando a capacidade governamental de resposta. O sistema também é a base para a Avaliação de Políticas e Programas de Saúde, permitindo mensurar o impacto de intervenções já implementadas. A pesquisa de Silva e Galvão (2024) exemplifica esse uso ao projetar a incidência de tuberculose até 2030, avaliando se as estratégias atuais são suficientes para cumprir as metas de erradicação da doença.</p></div></div></div>
+<div class="accordion-item"><h5 class="accordion-header" id="m3a3-us4-h"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#m3a3-us4-c" aria-expanded="false">Estudos e pesquisas científicas</button></h5><div id="m3a3-us4-c" class="accordion-collapse collapse" data-bs-parent="#m3a3-usos"><div class="accordion-body"><p>Estudos e Pesquisas Científicas: pesquisadores utilizam a base de dados do SINAN para a realização de estudos epidemiológicos e análises mais aprofundadas sobre as doenças de notificação compulsória. Um exemplo desse tipo de estudo foi o realizado por Lima, Corrêa e Uehara (2024), que investigaram a influência de indicadores socioeconômicos na distribuição da dengue.</p></div></div></div>
+<div class="accordion-item"><h5 class="accordion-header" id="m3a3-us5-h"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#m3a3-us5-c" aria-expanded="false">Promoção da saúde e prevenção</button></h5><div id="m3a3-us5-c" class="accordion-collapse collapse" data-bs-parent="#m3a3-usos"><div class="accordion-body"><p>Promoção da Saúde e Prevenção: a informação gerada ajuda a identificar riscos aos quais as pessoas estão sujeitas, orientando ações preventivas e de promoção da saúde, como discutido por Miranda e Garcia (2023) em trabalho sobre as perspectivas da vigilância em saúde do trabalhador para a redução de riscos e vulnerabilidades.</p></div></div></div>
+</div></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-5"><p>Os principais canais para obtenção de dados públicos do SINAN são:</p></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-5">
+<div class="accordion accordion-flush" id="m3a3-canais">
+<div class="accordion-item"><h5 class="accordion-header" id="m3a3-cn0-h"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#m3a3-cn0-c" aria-expanded="false">DATASUS</button></h5><div id="m3a3-cn0-c" class="accordion-collapse collapse" data-bs-parent="#m3a3-canais"><div class="accordion-body"><p>DATASUS: o departamento de informática do SUS é o principal repositório e canal de disseminação pública dos dados. Apor intermédio do DATASUS, os arquivos dissemináveis para tabulação, utilizando ferramentas como o TabNet e TabWin, ficam disponíveis para download e análise online.</p><p class='small text-muted'>Ao utilizar os microdados do SINAN, lembre-se de baixar o dicionário de dados, ficha e documentação específica para o agravo em questão.</p></div></div></div>
+<div class="accordion-item"><h5 class="accordion-header" id="m3a3-cn1-h"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#m3a3-cn1-c" aria-expanded="false">Boletins epidemiológicos</button></h5><div id="m3a3-cn1-c" class="accordion-collapse collapse" data-bs-parent="#m3a3-canais"><div class="accordion-body"><p>Boletins Epidemiológicos: o Ministério da Saúde, as secretarias estaduais e municipais de saúde publicam regularmente boletins epidemiológicos que utilizam os dados do SINAN para divulgar a situação das doenças no país, estados e municípios.</p></div></div></div>
+<div class="accordion-item"><h5 class="accordion-header" id="m3a3-cn2-h"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#m3a3-cn2-c" aria-expanded="false">Publicações oficiais</button></h5><div id="m3a3-cn2-c" class="accordion-collapse collapse" data-bs-parent="#m3a3-canais"><div class="accordion-body"><p>Publicações Oficiais: materiais informativos e relatórios técnicos elaborados pelas áreas técnicas do Ministério da Saúde são disponibilizados em suas páginas oficiais e na Biblioteca Virtual em Saúde (BVS).</p></div></div></div>
+</div></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-4"><div class="heading__block"><h4 class="heading__title">Qualidade</h4></div></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-5"><p>Para garantir a qualidade dos dados, o sistema possui rotinas para identificar e excluir notificações duplicadas e verificar a completude das informações (Ministério da Saúde, 2007). Mesmo assim um dos problemas identificados na bibliografia são problemas de cobertura ou subnotificação de casos.</p></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-5"><p>A qualidade dos dados coletados é heterogênea em todo o Brasil, sendo geralmente considerada de regular a boa, mas com presença de desafios persistentes. A qualidade dos dados do Sistema de Informação de Agravos de Notificação (SINAN) é uma peça-chave para a Vigilância Epidemiológica no Brasil, mas a literatura aponta desafios persistentes, principalmente quanto à completude (Geraldo et al., 2024; Paiva e Fonseca, 2023; Xavier et al., 2023).</p></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-4"><div class="heading__block"><h4 class="heading__title">Limitações</h4></div></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-5"><p>Apesar de suas potencialidades, o SINAN enfrenta desafios relacionados à qualidade dos dados e à demora no encerramento de casos, o que pode prejudicar as análises epidemiológicas. A garantia da qualidade dos dados e a notificação oportuna são essenciais para que o sistema atinja seu potencial máximo como ferramenta de Saúde Pública. A qualidade dos dados é frequentemente afetada por problemas operacionais, que incluem:</p><ul class="mb-0"><li>Subnotificação.</li><li>Falhas de preenchimento (incompletude).</li><li>Inconsistência de dados.</li><li>Duplicidade de registros.</li><li>Atraso na notificação.</li></ul></div></div>
+				</div></section>
+			</div>
+			<section><div class="container"><div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8"><div class="page-nav d-flex justify-content-evenly flex-wrap gap-3"><a class="fio-button fio-button-primary" href="topico2.html" rel="prev"><span class="material-symbols-rounded" aria-hidden="true">west</span> Tópico anterior</a><a class="fio-button fio-button-primary" href="topico4.html" rel="next">Próximo tópico <span class="material-symbols-rounded" aria-hidden="true">east</span></a></div></div></div></div></section>
+			<footer>
+			<div class="container-fluid">
+				<div class="row justify-content-center align-items-center linha-de-marcas">
+					<div class="col-12 col-md-auto">
+						<ul class="logos">
+							<li><img class="img-fluid logo1" src="../../media/logos/logo-cidacs.svg" alt="Logo do Centro de Integração de Dados e Conhecimentos para Saúde" /></li>
+							<li><img class="img-fluid logo2" src="../../media/logos/logo-cvf.svg" alt="Logo do Campus Virtual Fiocruz" /></li>
+							<li><img class="img-fluid logo3" src="../../media/logos/logo-fiocruz.svg" alt="Logo da Fiocruz" /></li>
+						</ul>
+					</div>
+					<div class="col-12 col-md-auto">
+						<ul class="logos principais align-self-end">
+							<li><img class="img-fluid logo4" src="../../media/logos/logo-sus-digital-cor.svg" alt="Logo do SUS Digital" /></li>
+							<li><img class="img-fluid logo5 d-none d-md-block" src="../../media/logos/logo-ms-gov-federal.svg" alt="Logos SUS 35 anos, Ministério da Saúde e Governo Federal" /></li>
+							<li><img class="img-fluid logo6 d-block d-md-none" src="../../media/logos/logo-ms-gov-federal-mobile.svg" alt="Logos SUS 35 anos, Ministério da Saúde e Governo Federal" /></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="../../source/bootstrap-5.1.3/js/bootstrap.bundle.min.js"></script>
+	<script type="text/javascript" src="../../assets/js/ResizeSensor.js"></script>
+	<script type="text/javascript" src="../../assets/js/sticky-sidebar.js"></script>
+	<script type="text/javascript" src="../../assets/js/sidebar.js"></script>
+	<script type="text/javascript">var sidebar = new StickySidebar(".sidebar", { topSpacing: 0, bottomSpacing: 0, containerSelector: ".main", innerWrapperSelector: ".sidebar__inner", minWidth: 991 });</script>
+	<script type="text/javascript" src="../../assets/js/scripts.js"></script>
+	<script type="text/javascript" src="../../assets/js/custom-anime.js"></script>
+	<script type="text/javascript" src="../../source/animate/aos/dist/aos.js"></script>
+	<script>AOS.init();</script>
+</body>
 </html>

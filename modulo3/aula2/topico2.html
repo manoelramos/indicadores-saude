@@ -1,1161 +1,249 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-	<head>
-		<!-- Required meta tags -->
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=yes" />
-		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-		<meta name="robots" content="noindex" />
-		<meta name="author" content="Fiocruz, Campus Virtual" />
-		<meta name="description" content="Curso Introdução à Análise de Dados para pesquisa no SUS" />
-		<meta name="keywords" content="Fiocruz Curso Introdução à Análise de Dados para pesquisa no SUS" />
-
-		<!-- Facebook Open Graph -->
-		<meta property="og:url" content="https://mooc.campusvirtual.fiocruz.br/rea/introducao-analise-dados-sus" />
-		<meta property="og:title" content="Campus Virtual Fiocruz | Curso Introdução à Análise de Dados para pesquisa no SUS" />
-		<meta property="og:description" content="Curso Introdução à Análise de Dados para pesquisa no SUS" />
-		<meta property="og:image" content="" />
-		<meta property="og:image:width" content="1080" />
-		<meta property="og:image:height" content="1080" />
-		<meta property="og:type" content="website" />
-
-		<!-- Twitter Cards -->
-		<meta name="twitter:card" content="summary_large_image" />
-		<meta name="twitter:title" content="Campus Virtual Fiocruz | Curso Introdução à Análise de Dados para pesquisa no SUS" />
-		<meta name="twitter:url" content="" />
-		<meta name="twitter:description" content="" />
-		<meta name="twitter:image:src" content="" />
-
-		<!-- Favicons and Touch Icons -->
-		<link rel="apple-touch-icon" sizes="57x57" href="../../media/icons/apple-icon-57x57.png" />
-		<link rel="apple-touch-icon" sizes="60x60" href="../../media/icons/apple-icon-60x60.png" />
-		<link rel="apple-touch-icon" sizes="72x72" href="../../media/icons/apple-icon-72x72.png" />
-		<link rel="apple-touch-icon" sizes="76x76" href="../../media/icons/apple-icon-76x76.png" />
-		<link rel="apple-touch-icon" sizes="114x114" href="../../media/icons/apple-icon-114x114.png" />
-		<link rel="apple-touch-icon" sizes="120x120" href="../../media/icons/apple-icon-120x120.png" />
-		<link rel="apple-touch-icon" sizes="144x144" href="../../media/icons/apple-icon-144x144.png" />
-		<link rel="apple-touch-icon" sizes="152x152" href="../../media/icons/apple-icon-152x152.png" />
-		<link rel="apple-touch-icon" sizes="180x180" href="../../media/icons/apple-icon-180x180.png" />
-
-		<link rel="icon" type="image/png" sizes="192x192" href="../../media/icons/android-icon-192x192.png" />
-		<link rel="icon" type="image/png" sizes="32x32" href="../../media/icons/favicon-32x32.png" />
-		<link rel="icon" type="image/png" sizes="96x96" href="../../media/icons/favicon-96x96.png" />
-		<link rel="icon" type="image/png" sizes="16x16" href="../../media/icons/favicon-16x16.png" />
-		<link rel="manifest" href="../media/icons/manifest.json" />
-
-		<meta name="msapplication-TileColor" content="#ffffff" />
-		<meta name="msapplication-TileImage" content="../../media/icons/ms-icon-144x144.png" />
-		<!-- <meta name="theme-color" content="#003066" /> -->
-		<meta name="theme-color" content="#001833" />
-
-		<title>Curso Introdução à Análise de Dados para pesquisa no SUS | Mod 3 | Aula 2</title>
-
-		<!-- Bootstrap CSS 5.1.3 -->
-		<link rel="stylesheet" href="../../source/bootstrap-5.1.3/css/bootstrap.min.css" />
-
-		<!-- Project CSS -->
-		<link rel="stylesheet" href="../../assets/css/style.css" />
-	</head>
-
-	<body>
-		<header class="header">
-			<div class="mobile-toggle-open">
-				<a class="mobile-toggle__button" tabindex="0" role="button">
-					<span class="icon material-symbols-rounded">read_more</span>
-				</a>
-			</div>
-			<div class="brand">
-				<img class="img-fluid logo-black" src="../../media/logos/header-fiocruz-campus-virtual.png" alt="Campus Virtual Fiocruz" />
-			</div>
-			<div class="title">
-				<h1>Introdução à Análise de Dados para pesquisa no SUS</h1>
-			</div>
-			<ul class="nav nav-pills">
-				<li class="nav-item"><a href="../../index.html" class="nav-link">Início</a></li>
-				<li class="nav-item"><a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#modal-creditos">Créditos</a></li>
-			</ul>
-		</header>
-		<div class="main">
-			<div class="sidebar" role="navigation">
-				<div class="sidebar__inner">
-					<div class="sidebar__group d-lg-none">
-						<div class="sidebar__group-item">
-							<div class="sidebar__header">
-								<span>Curso</span>
-								<a class="mobile-toggle-close" tabindex="0" role="button"><span class="icon material-symbols-rounded">read_more</span></a>
-							</div>
-						</div>
-						<div class="sidebar__group-item">
-							<div class="sidebar__title">
-								<h1>Introdução à Análise de Dados para pesquisa no SUS</h1>
-							</div>
-						</div>
-						<div class="sidebar__group-item">
-							<ul class="nav">
-								<li class="nav-item">
-									<a href="../../index.html" class="nav-link" tabindex="0"><span class="icon material-symbols-rounded" aria-hidden="true">home</span>Início</a>
-								</li>
-								<li class="nav-item">
-									<a href="#" class="nav-link" tabindex="0" data-bs-toggle="modal" data-bs-target="#modal-creditos"><span class="icon material-symbols-rounded" aria-hidden="true"> format_list_bulleted</span>Créditos</a>
-								</li>
-							</ul>
-						</div>
-					</div>
-
-					<div class="sidebar__group">
-						<div class="sidebar__group-item">
-							<div class="dropend">
-								<button id="dropdown-modulos" type="button" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside" data-bs-offset="0,30">
-									<span class="icon material-symbols-rounded" aria-hidden="true">grid_view</span>
-									<span class="label">Módulos</span>
-								</button>
-								<ul class="dropdown-menu" aria-labelledby="dropdown-modulos">
-									<li class="d-lg-none dropdown-menu__header">
-										<a class="dropdown-menu__back-button" tabindex="0" role="button"><span class="icon material-symbols-rounded">chevron_left</span> Voltar</a>
-										<a class="mobile-toggle-close" tabindex="0" role="button"><span class="icon material-symbols-rounded">read_more</span></a>
-									</li>
-									<li class="dropdown-menu__item">
-										<a class="dropdown-menu__item-link" tabindex="0" role="link" href="../../modulo1/aula1/topico1.html"><strong>Módulo 1</strong><br />A informação no SUS</a>
-									</li>
-									<li class="dropdown-menu__item">
-										<a class="dropdown-menu__item-link" tabindex="0" role="link" href="../../modulo2/aula1/topico1.html"><strong>Módulo 2</strong><br />Fontes de Dados Socioeconômicos e Demográficos: subsídios para a Saúde</a>
-									</li>
-									<li class="dropdown-menu__item">
-										<a class="dropdown-menu__item-link" tabindex="0" role="link" href="../../modulo3/aula1/topico1.html"><strong>Módulo 3</strong><br />Sistemas de Informação em Saúde</a>
-									</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<div class="divider">
-						<hr />
-					</div>
-					<div class="sidebar__group">
-						<div class="sidebar__group-item">
-							<span class="text module">Módulo <br class="d-none d-lg-block" /><span>3</span></span>
-						</div>
-						<div class="sidebar__group-item">
-							<div class="dropend">
-								<button type="button" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside" data-bs-offset="0,30">
-									<span class="icon material-symbols-rounded" aria-hidden="true">format_list_bulleted</span>
-									<span class="label">Conteúdo</span>
-								</button>
-								<ul class="dropdown-menu">
-									<li class="d-lg-none dropdown-menu__header">
-										<a class="dropdown-menu__back-button" tabindex="0" role="button"><span class="icon material-symbols-rounded">chevron_left</span> Voltar</a>
-										<a class="mobile-toggle-close" tabindex="0" role="button"><span class="icon material-symbols-rounded">read_more</span></a>
-									</li>
-									<li class="dropdown-menu__title">
-										<span class="label">Módulo 3</span>
-										<span class="title">Modelos estatísticos</span>
-									</li>
-
-									<li class="dropdown-menu__item">
-										<a class="dropdown-menu__item-link" tabindex="0" role="link" href="../aula1/topico1.html"><strong>Aula 1: </strong>Inferência Estatística</a>
-									</li>
-									<li class="dropdown-menu__item">
-										<a class="dropdown-menu__item-link" tabindex="0" role="link" href="../aula2/topico1.html"><strong>Aula 2: </strong>Modelos Estatísticos: lineares e não lineares</a>
-									</li>
-									<li class="dropdown-menu__item">
-										<a class="dropdown-menu__item-link" tabindex="0" role="link" href="../aula3/topico1.html"><strong>Aula 3: </strong>Dados com estruturas de dependência: multiníveis, séries temporais e espaciais e sobrevida</a>
-									</li>
-									<li class="dropdown-menu__item">
-										<a class="dropdown-menu__item-link" tabindex="0" role="link" href="../aula4/topico1.html"><strong>Aula 4: </strong>Aplicação dos modelos estatísticos</a>
-									</li>
-
-									<li class="dropdown-menu__item">
-										<a class="dropdown-menu__item-link" tabindex="0" role="link" href="../atividade.html"><strong>Atividade</strong></a>
-									</li>
-
-									<li class="dropdown-menu__item">
-										<a class="dropdown-menu__item-link" tabindex="0" role="link" href="../encerramento.html"><strong>Resumo do módulo</strong></a>
-									</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-
-					<div class="divider">
-						<hr />
-					</div>
-					<div class="sidebar__group">
-						<div class="sidebar__group-item">
-							<span class="text class">Aula 2</span>
-						</div>
-						<div class="sidebar__group-item">
-							<div class="dropend">
-								<button type="button" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside" data-bs-offset="0,30">
-									<span class="icon material-symbols-rounded" aria-hidden="true"> format_list_bulleted</span>
-									<span class="label">Tópicos</span>
-								</button>
-								<ul class="dropdown-menu">
-									<li class="d-lg-none dropdown-menu__header">
-										<a class="dropdown-menu__back-button" tabindex="0" role="button"><span class="icon material-symbols-rounded">chevron_left</span> Voltar</a>
-										<a class="mobile-toggle-close" tabindex="0" role="button"><span class="icon material-symbols-rounded">read_more</span></a>
-									</li>
-									<li class="dropdown-menu__title">
-										<span class="label">Aula 2</span>
-										<span class="title">Modelos Estatísticos: lineares e não lineares</span>
-									</li>
-									<li class="dropdown-menu__item">
-										<nav class="topic-list">
-											<a href="topico1.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico concluído" status="visited"> <span class="material-symbols-rounded"></span>Introdução</a>
-
-											<a href="topico2.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico concluído" status="visited"> <span class="material-symbols-rounded"></span>Modelos de regressão</a>
-
-											<a href="topico3.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico não concluído"><span class="material-symbols-rounded"></span>Modelos Aditivos Generalizados</a>
-										</nav>
-									</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<div class="divider">
-						<hr />
-					</div>
-					<div class="sidebar__group extra">
-						<div class="sidebar__group-item">
-							<button type="button" class="" data-bs-toggle="modal" data-bs-target="#modal-bibliografiaMod3">
-								<span class="icon material-symbols-rounded" aria-hidden="true"> menu_book</span>
-								<span class="label">Bibliografia</span>
-							</button>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="content">
-				<div id="page-title">
-					<div class="container">
-						<div class="row align-items-center hstify-content-center justify-content-xxl-start ms-lg-5">
-							<div class="col-12 col-md-10 col-lg-11">
-								<h2 class="title">
-									<span class="label">Módulo 3 | Aula 2</span>
-									<br />
-									Modelos Estatísticos: lineares e não lineares
-								</h2>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div id="page-content" class="">
-					<!-- Inserir o conteúdo aqui -->
-					<section>
-						<div class="container">
-							<div class="row justify-content-center">
-								<div class="col-12 col-md-10 col-lg-8 mb-5 pb-5">
-									<div class="heading__block">
-										<span class="small">Tópico 2</span>
-										<h3 class="heading__title">Modelos de regressão</h3>
-									</div>
-
-									<p>Os modelos de regressão são ferramentas estatísticas usadas para descrever a relação entre uma variável dependente (ou resposta) e uma ou mais variáveis independentes (ou preditoras). Eles permitem não só prever valores da variável dependente com base nas variáveis independentes, mas também examinar a força e a natureza dessas relações.  A variável dependente é também chamada de variável resposta ou desfecho, e a variável independente, de variável explicativa, preditora ou covariável. </p>
-
-									<p>Geralmente denotamos a variável dependente de Y e as k variáveis independentes de X<sub>1</sub>,X<sub>2</sub>,…,X<sub>k</sub>.  Os objetivos do estudo da regressão são avaliar uma possível associação de Y em relação a X e expressar matematicamente essa relação por meio de uma equação.</p>
-
-									<p>Os principais tipos de modelos de regressão utilizados na área da saúde são: regressão linear, regressão logística e regressão Poisson.</p>
-								</div>
-							</div>
-
-							<div class="row justify-content-center">
-								<div class="col-12 col-md-10 col-lg-8 mb-5">
-									<div class="heading__block">
-										<h4 class="heading__title">Regressão linear simples</h4>
-									</div>
-
-									<p>A regressão linear simples descreve a relação entre uma variável dependente e uma variável independente a partir de equações de linhas retas, por isso o termo linear. O termo simples é usado porque é utilizada apenas uma variável explicativa. O modelo assume que a relação entre a variável explicativa X e o desfecho Y é linear, expressa pela equação:</p>
-								</div>
-							</div>
-
-							<div class="row justify-content-center">
-								<div class="col-12 col-md-10 col-lg-8 mb-5">
-									<math display="block" style="color:#000; font-size:24px;">
-										<mi>Y</mi>
-										<mo>=</mo>
-										<msub>
-											<mi>&#x03B2;</mi>
-											<mn>0</mn>
-										</msub>
-										<mo>+</mo>
-										<msub>
-											<mi>&#x03B2;</mi>
-											<mn>1</mn>
-										</msub>
-										<mi>X</mi>
-										<mo>+</mo>
-										<mi>&#x03B5;</mi>
-									</math>
-								</div>
-							</div>
-
-							<div class="row justify-content-center">
-								<div class="col-12 col-md-10 col-lg-8 mb-5">
-									<p>Em que:</p>
-								</div>
-							</div>
-
-							<div class="row justify-content-center">
-								<div class="col-12 col-md-10 col-lg-8 mb-5">
-									<!-- Lista Não-Ordenada -->
-									<div class="list">
-										<ul class="list-group">
-											<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">β<sub>0</sub> é o intercepto (valor de Y quando X=0).</li>
-
-											<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" data-aos-delay="100">β<sub>1</sub> é o coeficiente angular (a inclinação da linha, que indica a mudança em Y para cada unidade de mudança em X).</li>
-
-											<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" data-aos-delay="200">ϵ é o termo de erro, que captura a variação em Y não explicada por X.</li>
-										</ul>
-									</div>
-								</div>
-							</div>
-
-							<div class="row justify-content-center">
-								<div class="col-12 col-md-10 col-lg-8 mb-5">
-									<p>A figura a seguir ilustra a equação da reta.</p>
-								</div>
-							</div>
-
-							<div class="row justify-content-center">
-								<div class="col-12 col-md-10 col-lg-8 mb-5">
-									<figure class="lightbox aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
-										<img class="img-fluid rounded mx-auto d-block mb-3" src="../../media/modulo3/aula2-img3.png" alt="" title="Fonte: https://www.alura.com.br/artigos/desvendando-a-regressao-linear. Acesso em: 25 jul. 2025." />
-										<figcaption class="figure-caption">Fonte: https://www.alura.com.br/artigos/desvendando-a-regressao-linear. Acesso em: 25 jul. 2025.</figcaption>
-									</figure>
-								</div>
-							</div>
-
-							<div class="row justify-content-center">
-								<div class="col-12 col-md-10 col-lg-8 mb-5 pb-5">
-									<!-- EXEMPLO -->
-									<div class="code-container aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="600">
-										<div class="heading__block">
-											<h5 class="heading__title">Exemplo</h5>
-										</div>
-										<p class="mt-5">Voltando ao exemplo da pressão sistólica e idade, já vimos que existe uma relação linear positiva entre elas, mas a relação não é perfeita. Nesse caso, a variável desfecho Y é a pressão sistólica e a variável explicativa X é a idade do paciente. A figura linha vermelha na imagem a seguir ilustra a equação da reta.</p>
-
-										<figure class="lightbox aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
-											<img class="img-fluid mx-auto d-block mb-3" src="../../media/modulo3/aula2-img4.png" alt="" title="Fonte: EElaborada por professores da ENSP (2025).">
-											<figcaption class="figure-caption fonte">Fonte: Elaborada por professores da ENSP (2025).</figcaption>
-										</figure>
-									</div>
-								</div>
-							</div>
-
-							<div class="row justify-content-center">
-								<div class="col-12 col-md-10 col-lg-8 mb-5">
-									<p>Existe uma dispersão dos pontos sugerindo que a variação da pressão sistólica não é explicada apenas pela idade. O método dos mínimos quadros é o método utilizado para estimar os coeficientes β<sub>0</sub> e β<sub>1</sub>, assim chamados porque garantem que a reta obtida é aquela na qual se tem as menores distâncias (ao quadrado) entre os valores observados (Y) e a própria reta. A figura a seguir ilustra a ideia do método dos mínimos quadrados. O objetivo é encontrar a reta que minimiza a soma dos resíduos (diferença entre o observado e o estimado pele reta) ao quadrado. </p>
-
-									<figure class="lightbox aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
-										<img class="img-fluid mx-auto d-block mb-3" src="../../media/modulo3/aula2-img5.png" alt="" title="Fonte: EElaborada por professores da ENSP (2025).">
-										<figcaption class="figure-caption fonte">Fonte: Elaborada por professores da ENSP (2025).</figcaption>
-									</figure>
-								</div>
-							</div>
-
-							<div class="row justify-content-center">
-								<div class="col-12 col-md-10 col-lg-8 mb-5">
-									<p>A partir de um software estatístico, podemos obter as estimativas de  β<sub>0</sub> e β<sub>1</sub>. No R, usando o comando <span class="color-tertiary-dark"><strong>lm</strong></span>. A equação da reta obtida é igual a:</p>
-								</div>
-							</div>
-
-							<div class="row justify-content-center">
-								<div class="col-12 col-md-10 col-lg-8 mb-5">
-									<math display="block" style="color:#000; font-size:24px;">
-										<mover>
-											<mi>Y</mi>
-											<mo>^</mo>
-										</mover>
-										<mo>=</mo>
-										<mn>98,71</mn>
-										<mo>+</mo>
-										<mn>0,97</mn>
-										<mi>X</mi>
-									</math>
-								</div>
-							</div>
-
-							<div class="row justify-content-center">
-								<div class="col-12 col-md-10 col-lg-8 mb-5">
-									<p><strong>Interpretação dos parâmetros:</strong></p>
-
-									<p>Intercepto: β<sub>0</sub> = 98,71, valor da pressão arterial sistólica quando idade (X=0). Nesse caso, a interpretação não faz sentido.</p>
-
-									<p>Inclinação da reta: β<sub>1</sub> = 0,97, cada ano a mais na idade corresponde a um aumento médio de 0,97 mmHg na pressão arterial sistólica.</p>
-
-									<p>Podemos verificar se existe associação estatisticamente significativa entre idade e pressão arterial. As hipóteses para a realização do teste são: </p>
-
-									<p>H<sub>0</sub>: β<sub>1</sub> = 0 </p>
-									<p>H<sub>1</sub>:  β<sub>1</sub> ≠ 0</p>
-
-									<p>O <span class="color-tertiary-dark"><strong>teste de Wald</strong></span> é utilizado para testar as hipóteses acima e a decisão pode ser tomada com base no p-valor obtido. Utilizando o R, obtemos um p-valor &lt; 0,001. Então, rejeitamos H<sub>0</sub>, ou seja, existe uma associação estatisticamente significativa em torno de 5% entre idade e pressão arterial. </p>
-
-									<p>A reta de regressão permite:</p>
-									
-								</div>
-							</div>
-
-							<div class="row justify-content-center">
-								<div class="col-12 col-md-10 col-lg-8 mb-5">
-									<!-- Lista Não-Ordenada -->
-									<div class="list">
-										<ul class="list-group">
-											<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">Representar a dependência de uma variável quantitativa em relação à outra por meio de uma equação simples.</li>
-
-											<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" data-aos-delay="100">Prever valores para a variável dependente de acordo com valores determinados (inclusive não observados) da variável independente, desde que estejam dentro da faixa de valores estudados. Por exemplo, podemos prever a pressão sistólica média de um paciente de 50 anos. </li>
-										</ul>
-									</div>
-								</div>
-							</div>
-
-							<div class="row justify-content-center">
-								<div class="col-12 col-md-10 col-lg-8 mb-5">
-									<math display="block" style="color:#000; font-size:24px;">
-										<mover>
-											<mi>Y</mi>
-											<mo>^</mo>
-										</mover>
-										<mo>=</mo>
-										<mn>98,71</mn>
-										<mo>+</mo>
-										<mn>0,97</mn>
-										<mo>&#x00D7;</mo>
-										<mn>50</mn>
-										<mo>=</mo>
-										<mn>147,21</mn>
-									</math>
-								</div>
-							</div>
-
-							<div class="row justify-content-center mt-5">
-								<div class="col-12 col-md-10 col-lg-8 mb-5">
-									<p>Os pressupostos do modelo de regressão linear são:</p>
-								</div>
-							</div>
-
-							<div class="row justify-content-center">
-								<div class="col-12 col-md-10 col-lg-8 mb-5">
-									<!-- Accordion -->
-									<div class="accordion accordion-flush" id="accordionExample2">
-										<div class="accordion-item">
-											<h5 class="accordion-header" id="heading1-item1">
-												<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1-item1" aria-expanded="true" aria-controls="collapse1-item1">Linearidade</button>
-											</h5>
-											<div id="collapse1-item1" class="accordion-collapse collapse" aria-labelledby="heading1-item1" data-bs-parent="">
-												<div class="accordion-body">
-													<p>A relação entre a variável dependente Y e a variável independente X deve ser linear.</p>
-												</div>
-											</div>
-										</div>
-
-										<div class="accordion-item">
-											<h5 class="accordion-header" id="heading1-item2">
-												<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1-item2" aria-expanded="false" aria-controls="collapse1-item2">Independência</button>
-											</h5>
-											<div id="collapse1-item2" class="accordion-collapse collapse" aria-labelledby="heading1-item2" data-bs-parent="">
-												<div class="accordion-body">
-													<p>Os erros devem ser independentes entre si.</p>
-												</div>
-											</div>
-										</div>
-
-										<div class="accordion-item">
-											<h5 class="accordion-header" id="heading1-item3">
-												<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1-item3" aria-expanded="false" aria-controls="collapse1-item3">Homocedasticidade</button>
-											</h5>
-											<div id="collapse1-item3" class="accordion-collapse collapse" aria-labelledby="heading1-item3" data-bs-parent="">
-												<div class="accordion-body">
-													<p>A variância dos erros deve ser constante ao longo de todos os valores da variável independente X.</p>
-												</div>
-											</div>
-										</div>
-
-										<div class="accordion-item">
-											<h5 class="accordion-header" id="heading1-item4">
-												<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1-item4" aria-expanded="false" aria-controls="collapse1-item4">Normalidade</button>
-											</h5>
-											<div id="collapse1-item4" class="accordion-collapse collapse" aria-labelledby="heading1-item4" data-bs-parent="">
-												<div class="accordion-body">
-													<p>Os resíduos do modelo devem ser normalmente distribuídos. Isso é especialmente importante para a validade de testes estatísticos e intervalos de confiança.</p>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-
-
-							<div class="row justify-content-center">
-								<div class="col-12 col-md-10 col-lg-8 mb-5">
-									<p>A qualidade de ajuste no modelo de regressão linear é avaliada pelo coeficiente de determinação denotado por R2, que é a proporção da variabilidade total observada de Y, explicada pela regressão. Quanto maior o R2, melhor a qualidade de ajuste do modelo. Existem várias técnicas para verificar os pressupostos e fazer diagnóstico dos modelos de regressão.</p>
-								</div>
-							</div>
-
-							<div class="row justify-content-center">
-								<div class="col-12 col-md-10 col-lg-8 mb-5">
-									<!-- Saiba Mais -->
-									<div class="saiba-mais">
-										<div class="row aos-init aos-animate" data-aos="fade-left" data-aos-easing="ease-out" data-aos-duration="600">
-											<div class="col-12 d-flex justify-content-center">
-												<button class="saiba-mais fio-button button-md fio-button-secondary collapsed" type="collapsed" data-bs-toggle="collapse" data-bs-target="#saiba-mais1" aria-expanded="false" aria-controls="saiba-mais1"><span class="icone material-symbols-rounded" aria-hidden="true"></span> Você sabia?</button>
-											</div>
-
-											<div class="col-12">
-												<div class="mt-3 collapse" id="saiba-mais1">
-													<p>Para saber mais sobre regressão linear simples, <a href='https://youtu.be/-gN3ohYHo0E?si=Ufh9ZwcFP_zAPEou' target='_blank' rel='noopener noreferrer'>assista este vídeo.</a>.</p>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-
-							<div class="row justify-content-center">
-								<div class="col-12 col-md-10 col-lg-8 mb-5 pb-5">
-									<!-- FAÇA VOCÊ MESMO -->
-									<div class="faca-voce-mesmo aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
-										<div class="olho-de-texto my-5">
-											<div class="heading__block">
-												<h5 class="heading__title">Faça você mesmo!</h5>
-											</div>
-											<p>É hora de praticar! No script <strong>modulo3aula2_atividades.R</strong> (Atividades 2 e 5), ajuste um modelo de regressão linear simples (PA ~ idade), interprete os coeficientes β<sub>0</sub> e β<sub>1</sub>, visualize a reta de regressão e avalie os pressupostos através dos gráficos de diagnóstico.</p>
-										</div>
-									</div>
-								</div>
-							</div>
-
-							<div class="row justify-content-center">
-								<div class="col-12 col-md-10 col-lg-8 mb-5">
-									<div class="heading__block">
-										<h4 class="heading__title">Regressão linear múltipla</h4>
-									</div>
-
-									<p>A regressão linear múltipla é uma extensão da regressão linear simples que permite modelar a relação entre uma variável dependente Y e várias variáveis independentes X<sub>1</sub>,X<sub>2</sub>,…,X<sub>k</sub>. A equação é:</p>
-								</div>
-							</div>
-
-							<div class="row justify-content-center">
-								<div class="col-12 col-md-10 col-lg-8 mb-5">
-									<math display="block" style="color:#000; font-size:24px;">
-										<mi>Y</mi>
-										<mo>=</mo>
-										<msub>
-											<mi>&#x03B2;</mi>
-											<mn>0</mn>
-										</msub>
-										<mo>+</mo>
-										<msub>
-											<mi>&#x03B2;</mi>
-											<mn>1</mn>
-										</msub>
-										<msub>
-											<mi>X</mi>
-											<mn>1</mn>
-										</msub>
-										<mo>+</mo>
-										<msub>
-											<mi>&#x03B2;</mi>
-											<mn>2</mn>
-										</msub>
-										<msub>
-											<mi>X</mi>
-											<mn>2</mn>
-										</msub>
-										<mo>+</mo>
-										<mo>&#x2026;</mo>
-										<mo>+</mo>
-										<msub>
-											<mi>&#x03B2;</mi>
-											<mi>k</mi>
-										</msub>
-										<msub>
-											<mi>X</mi>
-											<mi>k</mi>
-										</msub>
-										<mo>+</mo>
-										<mi>&#x03B5;</mi>
-									</math>
-								</div>
-							</div>
-
-							<div class="row justify-content-center">
-								<div class="col-12 col-md-10 col-lg-8 mb-5">
-									<p>Em que: </p>
-								</div>
-							</div>
-
-							<div class="row justify-content-center">
-								<div class="col-12 col-md-10 col-lg-8 mb-5">
-									<!-- Lista Não-Ordenada -->
-									<div class="list">
-										<ul class="list-group">
-											<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">β<sub>0</sub> é o intercepto (valor de Y quando X=0).</li>
-
-											<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" data-aos-delay="100">β<sub>j</sub> é a inclinação da reta que mede a mudança em Y para cada unidade de mudança em X<sub>j</sub>, j=1,...,k.</li>
-
-											<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" data-aos-delay="200">ϵ é o erro aleatório referente à variável Y, que não pode ser explicado pelas preditoras incluídas no modelo.</li>
-										</ul>
-									</div>
-								</div>
-							</div>
-
-							<div class="row justify-content-center">
-								<div class="col-12 col-md-10 col-lg-8 mb-5 pb-5">
-									<!-- EXEMPLO -->
-									<div class="code-container aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="600">
-										<div class="heading__block">
-											<h5 class="heading__title">Exemplo</h5>
-										</div>
-										<p class="mt-5">Voltando ao exemplo da pressão sistólica, suponha que, além de idade, temos informação sobre o sexo do paciente. Podemos ajustar um modelo de regressão linear múltipla considerando como variáveis explicativas idade (X<sub>1</sub>) e sexo (X<sub>2</sub>). A partir de um software estatístico, podemos obter as estimativas de β<sub>0</sub>, β<sub>1</sub>e β<sub>1</sub>. No R, usamos o comando <span class="color-tertiary-dark"><strong>lm</strong></span>. A equação da reta obtida é igual a:</p>
-
-										<math display="block" style="color:#000; font-size:24px;">
-											<mover>
-												<mi>Y</mi>
-												<mo>^</mo>
-											</mover>
-											<mo>=</mo>
-											<mn>101,03</mn>
-											<mo>+</mo>
-											<mn>0,95</mn>
-											<msub>
-												<mi>X</mi>
-												<mn>1</mn>
-											</msub>
-											<mo>-</mo>
-											<mn>2,41</mn>
-											<msub>
-												<mi>X</mi>
-												<mn>2</mn>
-											</msub>
-										</math>
-									</div>
-								</div>
-							</div>
-
-							<div class="row justify-content-center">
-								<div class="col-12 col-md-10 col-lg-8 mb-5 pb-5">
-									<p><strong>Interpretação dos parâmetros:</strong></p>
-
-									<p>β<sub>0</sub> = 101,03, valor da pressão arterial sistólica quando idade (X=0). Nesse caso, a interpretação não faz sentido.</p>
-
-									<p>β<sub>1</sub> = 0,95, cada ano a mais na idade corresponde a um aumento médio de 0,95 mmHg na pressão arterial sistólica, ajustado por sexo.</p>
-
-									<p>β<sub>2</sub> = -2,41, os homens têm redução média de 2,41 mmHg na pressão arterial sistólica, ajustado por idade. O modelo foi ajustado considerando-se o sexo feminino como categoria de referência.</p>
-
-									<p>Testes de hipóteses para verificar a significância dos coeficientes são similares aos testes do modelo de regressão linear simples. Assim como os pressupostos, a medida de qualidade de ajuste e os métodos de diagnóstico dos modelos de regressão linear simples e múltipla são similares.</p>
-								</div>
-							</div>
-
-							<div class="row justify-content-center">
-								<div class="col-12 col-md-10 col-lg-8 mb-5 pb-5">
-									<!-- FAÇA VOCÊ MESMO -->
-									<div class="faca-voce-mesmo aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
-										<div class="olho-de-texto my-5">
-											<div class="heading__block">
-												<h5 class="heading__title">Faça você mesmo!</h5>
-											</div>
-											<p>É hora de praticar! No script <strong>modulo3aula2_atividades.R</strong> (Atividade 3), ajuste um modelo de regressão múltipla (PA ~ idade + sexo), interprete os coeficientes ajustados e experimente incluir interação entre as variáveis.</p>
-										</div>
-									</div>
-								</div>
-							</div>
-							
-							<div class="row justify-content-center">
-								<div class="col-12 col-md-10 col-lg-8 mb-5">
-									<div class="heading__block">
-										<h4 class="heading__title">Regressão logística</h4>
-									</div>
-									
-									<p>O modelo de regressão logística avalia a relação entre uma variável dependente binária (ou dicotômica) e uma ou mais variáveis independentes. É útil quando o objetivo é modelar a probabilidade de o desfecho ocorrer ou, ainda, estimar a razão de chances, medida de associação bastante utilizada em epidemiologia. Alguns exemplos de variável binária de interesse na saúde: doente (sim/não), inatividade física (sim/não), obesidade (sim/não) etc. A codificação mais comum é atribuirmos os valores 0 e 1 para esse tipo de desfecho. O valor 1 indica “sucesso” e 0 “fracasso”. Por exemplo, se estamos interessados em estudar os fatores de risco associados a uma determinada doença, o “sucesso” será ter a doença e atribuímos o valor 1. O gráfico a seguir ilustra a vantagem da regressão logística para desfechos binários. A regressão logística utiliza a função logística (sigmoide) para modelar a probabilidade de um evento.</p>
-								</div>
-							</div>
-
-							<div class="row justify-content-center">
-								<div class="col-12 col-md-10 col-lg-8 mb-5">
-									<figure class="lightbox aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
-										<img class="img-fluid mx-auto d-block mb-3" src="../../media/modulo3/aula2-img6.png" alt="" title="Fonte: https://medium.com/@maithilijoshi6/a-comparison-between-linear-and-logistic-regression-8aea40867e2d. Acesso em: 25 jul. 2025. .">
-										<figcaption class="figure-caption fonte">Fonte: https://medium.com/@maithilijoshi6/a-comparison-between-linear-and-logistic-regression-8aea40867e2d. Acesso em: 25 jul. 2025.</figcaption>
-									</figure>
-								</div>
-							</div>
-
-							<div class="row justify-content-center">
-								<div class="col-12 col-md-10 col-lg-8 mb-5">
-									<p>Assim como no modelo de regressão linear, as variáveis independentes podem ser numéricas ou categóricas. A regressão logística examina como essas variáveis influenciam a probabilidade de ocorrência do evento: seja Y a variável desfecho com valores 0 e 1. Então, assumimos que Y tem uma distribuição de Bernoulli com parâmetro p. A regressão logística modela o <span class="color-tertiary-dark"><strong>logit</strong></span> da probabilidade como uma função linear das variáveis independentes</p>
-								</div>
-							</div>
-
-							<div class="row justify-content-center">
-								<div class="col-12 col-md-10 col-lg-8 mb-5">
-									<math display="block" style="color:#000; font-size:24px;">
-										<mrow>
-											<mi>log</mi>
-											<mo>(</mo>
-											<mfrac>
-											<mi>p</mi>
-											<mrow>
-												<mn>1</mn>
-												<mo>-</mo>
-												<mi>p</mi>
-											</mrow>
-											</mfrac>
-											<mo>)</mo>
-											<mo>=</mo>
-											<msub>
-											<mi>&#x03B2;</mi>
-											<mn>0</mn>
-											</msub>
-											<mo>+</mo>
-											<msub>
-											<mi>&#x03B2;</mi>
-											<mn>1</mn>
-											</msub>
-											<msub>
-											<mi>X</mi>
-											<mn>1</mn>
-											</msub>
-											<mo>+</mo>
-											<msub>
-											<mi>&#x03B2;</mi>
-											<mn>2</mn>
-											</msub>
-											<msub>
-											<mi>X</mi>
-											<mn>2</mn>
-											</msub>
-											<mo>+</mo>
-											<mo>&#x2026;</mo>
-											<mo>+</mo>
-											<msub>
-											<mi>&#x03B2;</mi>
-											<mi>k</mi>
-											</msub>
-											<msub>
-											<mi>X</mi>
-											<mi>k</mi>
-											</msub>
-										</mrow>
-									</math>
-								</div>
-							</div>
-
-							<div class="row justify-content-center">
-								<div class="col-12 col-md-10 col-lg-8 mb-5">
-									<p>Em que:</p>
-								</div>
-							</div>
-
-							<div class="row justify-content-center">
-								<div class="col-12 col-md-10 col-lg-8 mb-5">
-									<!-- Lista Não-Ordenada -->
-									<div class="list">
-										<ul class="list-group">
-											<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200"><span class="color-tertiary-dark"><strong>Logit</strong></span> é o logaritmo da razão de chances.  </li>
-
-											<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" data-aos-delay="100">β<sub>0</sub> é o intercepto e indica o logit da probabilidade de Y=1 quando todas as variáveis independentes são zero.</li>
-
-											<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" data-aos-delay="200">β<sub>j</sub> coeficiente que representa a mudança no logit da probabilidade de Y=1 para cada unidade de aumento na variável independente Xj. Na prática, podemos interpretar exponencial de β<sub>j</sub> como a razão de chances associada a X<sub>j</sub>.</li>
-										</ul>
-									</div>
-								</div>
-							</div>
-
-							<div class="row justify-content-center">
-								<div class="col-12 col-md-10 col-lg-8 mb-5 pb-5">
-									<!-- EXEMPLO -->
-									<div class="code-container aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="600">
-										<div class="heading__block">
-											<h5 class="heading__title">Exemplo</h5>
-										</div>
-										<p class="mt-5">Um estudo foi conduzido na população adulta com o objetivo de identificar fatores associados a autoavaliação de saúde (AAS) ruim. O desfecho AAS ruim foi categorizado em sim/não e as possíveis variáveis explicativas foram idade, sexo e inatividade física. Como o desfecho é binário e temos mais de uma variável explicativa, a regressão logística múltipla é adequada para responder ao objetivo do estudo. Utilizando-se um software estatístico é possível estimar os coeficientes β<sub>0</sub>, β<sub>1</sub>, β<sub>2</sub> e β<sub>3</sub>. No R, o comando <span class="color-tertiary-dark"><strong>glm</strong></span> com o argumento <span class="color-tertiary-dark"><strong>family=”binomial”</strong></span> é utilizado no ajuste do modelo de regressão logística. </p>
-
-										<p>A equação de regressão estimada foi igual a:</p>
-
-										<math class="my-5" display="block" style="color:#000; font-size:24px;">
-											<mover>
-												<mi>Y</mi>
-												<mo>^</mo>
-											</mover>
-											<mo>=</mo>
-											<mn>101,03</mn>
-											<mo>+</mo>
-											<mn>0,95</mn>
-											<msub>
-												<mi>X</mi>
-												<mn>1</mn>
-											</msub>
-											<mo>-</mo>
-											<mn>2,41</mn>
-											<msub>
-												<mi>X</mi>
-												<mn>2</mn>
-											</msub>
-										</math>
-
-										<p>Em que:</p>
-
-										<!-- Lista Não-Ordenada -->
-										<div class="list">
-											<ul class="list-group">
-												<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">X<sub>1</sub>: inatividade física (1 - sim, 0 - não).</li>
-
-												<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" data-aos-delay="100">X<sub>2</sub>: sexo (1 - feminino, 0 - masculino).</li>
-
-												<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" data-aos-delay="200">X<sub>3</sub>: idade numérica.</li>
-											</ul>
-										</div>
-									</div>
-								</div>
-							</div>
-
-							<div class="row justify-content-center">
-								<div class="col-12 col-md-10 col-lg-8 mb-5">
-									<p>As variáveis X<sub>1</sub> e X<sub>2</sub> são categóricas e as categorias de referências são, respectivamente, não inativo (ativo) e sexo masculino. A partir da equação é possível estimar probabilidade de autoavaliação de saúde ruim com base nas variáveis explicativas utilizadas. Por exemplo, suponha uma mulher inativa fisicamente de 75 anos, ou seja,  X<sub>1</sub> = 1, X<sub>2</sub> = 1 e X<sub>3</sub> = 75. Ao substituir na equação de regressão ajustada, obtemos uma probabilidade estimada de autoavaliação de saúde ruim de 0,119. Além de calcular probabilidades, podemos calcular a razão de chances (OR) e o respectivo intervalo de confiança de 95% (IC95%). A tabela a seguir apresenta os resultados.</p>
-								</div>
-							</div>
-
-							<div class="row justify-content-center">
-								<div class="col-12 col-md-10 col-lg-8 mb-5">
-									<figure class="lightbox aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
-										<img class="img-fluid rounded mx-auto d-block mb-3" src="../../media/modulo3/aula2-img7.png" alt="" title="Fonte: Elaborada pelo autor (2025)." />
-										<figcaption class="figure-caption">Fonte: Elaborada pelo autor (2025).</figcaption>
-									</figure>
-								</div>
-							</div>
-
-							<div class="row justify-content-center">
-								<div class="col-12 col-md-10 col-lg-8">
-									<p><strong>Interpretação:</strong></p>
-								</div>
-							</div>
-
-							<div class="row justify-content-center">
-								<div class="col-12 col-md-10 col-lg-8 mb-5">
-									<!-- Lista Não-Ordenada -->
-									<div class="list">
-										<ul class="list-group">
-											<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">A chance de pessoas inativas fisicamente autoavaliarem sua saúde como ruim é 1,93 vezes a chance de pessoas ativas fisicamente autoavaliarem sua saúde como ruim.</li>
-
-											<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" data-aos-delay="100">A chance de pessoas do sexo feminino autoavaliarem sua saúde como ruim é 2,39 vezes a chance de pessoas do sexo masculino autoavaliarem sua saúde como ruim. </li>
-
-											<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" data-aos-delay="200">O aumento de 1 ano na idade aumenta a chance de autoavaliação de saúde ruim em 1% (1,01-1).</li>
-										</ul>
-									</div>
-								</div>
-							</div>
-
-							<div class="row justify-content-center">
-								<div class="col-12 col-md-10 col-lg-8 mb-5 pb-5">
-									<!-- Saiba Mais -->
-									<div class="saiba-mais">
-										<div class="row aos-init aos-animate" data-aos="fade-left" data-aos-easing="ease-out" data-aos-duration="600">
-											<div class="col-12 d-flex justify-content-center">
-												<button class="saiba-mais fio-button button-md fio-button-secondary collapsed" type="collapsed" data-bs-toggle="collapse" data-bs-target="#saiba-mais2" aria-expanded="false" aria-controls="saiba-mais2"><span class="icone material-symbols-rounded" aria-hidden="true"></span> Você sabia?</button>
-											</div>
-
-											<div class="col-12">
-												<div class="mt-3 collapse" id="saiba-mais2">
-													<p>Para saber mais sobre a obtenção dos coeficientes e da OR no modelo de regressão logística, <a href='https://youtu.be/Qyg8jD2cWxA?si=dHUPJ_D64Eq0Hg99' target='_blank' rel='noopener noreferrer'>assista este vídeo.</a>.</p>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-
-							<div class="row justify-content-center">
-								<div class="col-12 col-md-10 col-lg-8 mb-5">
-									<p>O método de estimação por máxima verossimilhança é o principal método de estimação dos parâmetros do modelo de regressão logística. O teste de Wald é utilizado para testar a significância dos coeficientes do modelo e a Deviance para comparar os modelos ajustados. Existem também testes de diagnósticos específicos para avaliar os pressupostos do modelo. </p>
-								</div>
-							</div>
-
-							<div class="row justify-content-center">
-								<div class="col-12 col-md-10 col-lg-8 mb-5 pb-5">
-									<!-- FAÇA VOCÊ MESMO -->
-									<div class="faca-voce-mesmo aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
-										<div class="olho-de-texto my-5">
-											<div class="heading__block">
-												<h5 class="heading__title">Faça você mesmo!</h5>
-											</div>
-											<p>É hora de praticar! No script <strong>modulo3aula2_atividades.R</strong> (Atividade 4), ajuste um modelo de regressão logística para identificar fatores associados à hipertensão, calcule os Odds Ratios com IC 95% e faça predições de probabilidade para novos pacientes.</p>
-										</div>
-									</div>
-								</div>
-							</div>
-
-							<!-- <div class="row justify-content-center">
-								<div class="col-12 col-md-10 col-lg-8 mb-5 pb-5">
-									
-									<div class="saiba-mais">
-										<div class="row aos-init aos-animate" data-aos="fade-left" data-aos-easing="ease-out" data-aos-duration="600">
-											<div class="col-12 d-flex justify-content-center">
-												<button class="saiba-mais fio-button button-md fio-button-secondary collapsed" type="collapsed" data-bs-toggle="collapse" data-bs-target="#saiba-mais3" aria-expanded="false" aria-controls="saiba-mais3"><span class="icone material-symbols-rounded" aria-hidden="true"></span> Você sabia?</button>
-											</div>
-
-											<div class="col-12">
-												<div class="mt-3 collapse" id="saiba-mais3">
-													<p>Para saber mais sobre regressão logística, <a href='https://smolski.github.io/livroavancado/reglog.html#regressao-logistica-simples' target='_blank' rel='noopener noreferrer'>acesse aqui.</a>.</p>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div> -->
-
-							<div class="row justify-content-center">
-								<div class="col-12 col-md-10 col-lg-8 mb-5 pb-5">
-									<div class="heading__block">
-										<h4 class="heading__title">Regressão de Poisson</h4>
-									</div>
-
-									<p>O modelo de regressão de Poisson é utilizado para modelar a contagem de eventos que ocorrem em um intervalo de tempo ou espaço. É apropriado para dados em que a variável dependente é uma contagem, como o número de ocorrências de um evento em um determinado período ou localização geográfica. Alguns exemplos de dados de contagem de interesse na saúde: número de internações por doença respiratória por semana epidemiológica, casos de dengue por bairro no município do Rio de Janeiro, óbitos anuais por câncer de mama por estado. Observem que todos os eventos estão indexados por um período e/ou espaço.</p>
-
-									<p>As variáveis independentes podem ser numéricas ou categóricas. A regressão de Poisson avalia como essas variáveis influenciam a média ou a taxa de ocorrência dos eventos: seja Y a variável desfecho representando a contagem em um dado período ou espaço. Então, assumimos que Y tem uma distribuição Poisson com parâmetro λ. A regressão de Poisson modela o log da média ou taxa como uma função linear das variáveis independentes.</p>
-								</div>
-							</div>
-
-							<div class="row justify-content-center">
-								<div class="col-12 col-md-10 col-lg-8 mb-5">
-									<math display="block" style="color:#000; font-size:24px;">
-										<mrow>
-											<mi>log</mi>
-											<mo>(</mo>
-											<mi>&#x03BB;</mi>
-											<mo>)</mo>
-											<mo>=</mo>
-											<msub>
-											<mi>&#x03B2;</mi>
-											<mn>0</mn>
-											</msub>
-											<mo>+</mo>
-											<msub>
-											<mi>&#x03B2;</mi>
-											<mn>1</mn>
-											</msub>
-											<msub>
-											<mi>X</mi>
-											<mn>1</mn>
-											</msub>
-											<mo>+</mo>
-											<msub>
-											<mi>&#x03B2;</mi>
-											<mn>2</mn>
-											</msub>
-											<msub>
-											<mi>X</mi>
-											<mn>2</mn>
-											</msub>
-											<mo>+</mo>
-											<mo>&#x2026;</mo>
-											<mo>+</mo>
-											<msub>
-											<mi>&#x03B2;</mi>
-											<mi>k</mi>
-											</msub>
-											<msub>
-											<mi>X</mi>
-											<mi>k</mi>
-											</msub>
-										</mrow>
-									</math>
-								</div>
-							</div>
-
-							<div class="row justify-content-center">
-								<div class="col-12 col-md-10 col-lg-8">
-									<p>Em que:</p>
-								</div>
-							</div>
-
-							<div class="row justify-content-center">
-								<div class="col-12 col-md-10 col-lg-8 mb-5">
-									<!-- Lista Não-Ordenada -->
-									<div class="list">
-										<ul class="list-group">
-											<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">λ é a média esperada de Y.</li>
-
-											<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" data-aos-delay="100">β<sub>0</sub> é o intercepto.</li>
-
-											<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" data-aos-delay="200">β<sub>1</sub>, β<sub>2</sub>,…,β<sub>k</sub> são os coeficientes das variáveis independentes X<sub>1</sub>, X<sub>2</sub>,…,X<sub>k</sub>.</li>
-										</ul>
-									</div>
-								</div>
-							</div>
-
-							<div class="row justify-content-center">
-								<div class="col-12 col-md-10 col-lg-8 mb-5">
-									<p>Em muitas situações, queremos modelar a taxa e não a média. Nesse caso, devemos introduzir no modelo um termo denominado offset. Em geral, utilizamos o logaritmo da população ou do valor esperado. </p>
-								</div>
-							</div>
-
-							<div class="row justify-content-center">
-								<div class="col-12 col-md-10 col-lg-8 mb-5 pb-5">
-									<!-- Saiba Mais -->
-									<div class="saiba-mais">
-										<div class="row aos-init aos-animate" data-aos="fade-left" data-aos-easing="ease-out" data-aos-duration="600">
-											<div class="col-12 d-flex justify-content-center">
-												<button class="saiba-mais fio-button button-md fio-button-secondary collapsed" type="collapsed" data-bs-toggle="collapse" data-bs-target="#saiba-mais4" aria-expanded="false" aria-controls="saiba-mais4"><span class="icone material-symbols-rounded" aria-hidden="true"></span> Você sabia?</button>
-											</div>
-
-											<div class="col-12">
-												<div class="mt-3 collapse" id="saiba-mais4">
-													<p>Para saber mais sobre a regressão de Poisson, <a href='https://youtu.be/oR8ZF_Khg_E?si=WTAxgy-9NjEbekel' target='_blank' rel='noopener noreferrer'>assista este vídeo.</a>.</p>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-
-							<div class="row justify-content-center">
-								<div class="col-12 col-md-10 col-lg-8 mb-5 pb-5">
-									<!-- EXEMPLO -->
-									<div class="code-container aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="600">
-										<div class="heading__block">
-											<h5 class="heading__title">Exemplo</h5>
-										</div>
-										<p class="mt-5">Uma pesquisa foi realizada com o objetivo de avaliar a associação entre fatores climáticos e a incidência de dengue no município do Rio de Janeiro no período de 2001 a 2009. O desfecho foi o número de casos mensais de dengue e as variáveis explicativas climáticas foram temperatura mínima e precipitação acumulada. Como o desfecho representa uma contagem, a regressão de Poisson é adequada para responder ao objetivo do estudo. O logaritmo da população foi introduzido no modelo Poisson a partir de um termo denominado offset, e com isso modelamos a taxa em vez da contagem média. Ao exponenciarmos os coeficientes das variáveis climáticas teremos uma estimativa do Risco Relativo (RR). Utilizando-se um software estatístico é possível estimar os coeficientes β<sub>0</sub>, β<sub>1</sub> e β<sub>2</sub>. No R, o comando <span class="color-tertiary-dark"><strong>glm</strong></span> com o argumento <span class="color-tertiary-dark"><strong>family=”poisson”</strong></span> é utilizado no ajuste do modelo de regressão de Poisson. A tabela a seguir apresenta os RR e os respectivos intervalos de confiança de 95% estimados.</p>
-
-
-										<figure class="lightbox aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
-										<img class="img-fluid rounded mx-auto d-block mb-3" src="../../media/modulo3/aula2-img8.png" alt="" title="Fonte: Elaborada pelo autor (2025)." />
-										<figcaption class="figure-caption">Fonte: Elaborada pelo autor (2025).</figcaption>
-									</figure>
-									</div>
-								</div>
-							</div>
-
-							<div class="row justify-content-center">
-								<div class="col-12 col-md-10 col-lg-8">
-									<p><strong>Interpretação:</strong></p>
-								</div>
-							</div>
-
-							<div class="row justify-content-center">
-								<div class="col-12 col-md-10 col-lg-8 mb-5">
-									<!-- Lista Não-Ordenada -->
-									<div class="list">
-										<ul class="list-group">
-											<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">O aumento da temperatura mínima e da precipitação aumenta o risco de dengue.</li>
-
-											<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" data-aos-delay="100">O aumento de 1 °C na temperatura mínima acarretou aumento de aproximadamente 45% (1-1,452) no risco de dengue.</li>
-
-											<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" data-aos-delay="200">O aumento de 10mm na precipitação acarretou aumento de aproximadamente 0,06% no risco de dengue. </li>
-										</ul>
-									</div>
-								</div>
-							</div>
-
-							<div class="row justify-content-center">
-								<div class="col-12 col-md-10 col-lg-8">
-									<p>A regressão de Poisson assume que a média é igual à variância (λ). Se a variância observada nos dados for maior do que a média, isso é chamado de superdispersão, de modo que a regressão de Poisson padrão pode não ser apropriada. Uma alternativa seria utilizar a regressão Binomial Negativa.  Se houver um número excessivo de zeros na variável dependente, a regressão de Poisson pode não se ajustar bem. Nesse caso, pode-se considerar modelos como o modelo Poisson inflacionado de zeros (ZIP) e a Binomial Negativa inflacionada de zeros (ZINB). </p>
-
-									<p>O método de estimação por máxima verossimilhança é o principal método de estimação dos parâmetros do modelo de regressão de Poisson. O teste de Wald é utilizado para testar a significância dos coeficientes do modelo e a Deviance para comparar os modelos ajustados. Existem também testes de diagnósticos específicos para avaliar os pressupostos do modelo. </p>
-
-									<p>Os modelos de regressão logística, o modelo de regressão de Poisson e o modelo de regressão linear fazem parte de uma classe de modelos denominada Modelos Lineares Generalizados (GLM, do inglês <em>Generalized Linear Models</em>). Os GLMs são uma extensão dos modelos de regressão linear ao permitir que a variável dependente assuma outras distribuições de probabilidade, como a Binomial e Poisson. O GLM tem flexibilidade para modelar diferentes tipos de variáveis dependentes (contínuas, categóricas, contagens). </p>
-								</div>
-							</div>
-						</div>
-					</section>
-				</div>
-
-				<!-- Navegação da aula -->
-				<section>
-					<div class="container">
-						<div class="row justify-content-center">
-							<div class="col-12 col-md-10 col-lg-8">
-								<div class="page-nav d-flex justify-content-evenly">
-									<a class="fio-button fio-button-primary" href="topico1.html" rel="prev"><span class="material-symbols-rounded" aria-hidden="true">west</span> Tópico Anterior</a>
-									<a class="fio-button fio-button-primary" href="topico3.html" rel="next">Próximo tópico <span class="material-symbols-rounded" aria-hidden="true">east</span></a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
-			</div>
-
-			<footer>
-				<div class="container-fluid">
-					<div class="row justify-content-center align-items-center linha-de-marcas">
-						<div class="col-12 col-md-auto">
-							<ul class="logos">
-								<!-- <li class="realizacao"> -->
-								<li>
-									<img class="img-fluid logo1" src="../../media/logos/logo-cidacs.svg" alt="Logo do Centro de Integração de Dados e Conhecimentos para Saúde" height="" />
-								</li>
-
-								<li>
-									<img class="img-fluid logo2" src="../../media/logos/logo-cvf.svg" alt="Logo do Campus Virtual Fiocruz" height="" />
-								</li>
-
-								<li>
-									<img class="img-fluid logo3" src="../../media/logos/logo-fiocruz.svg" alt="Logo da Fiocruz" height="" />
-								</li>
-							</ul>
-						</div>
-
-						<div class="col-12 col-md-auto">
-							<ul class="logos principais align-self-end">
-								<li>
-									<img class="img-fluid logo4" src="../../media/logos/logo-sus-digital-cor.svg" alt="Logo do SUS Digital" height="" />
-								</li>
-
-								<li>
-									<img class="img-fluid logo5 d-none d-md-block" src="../../media/logos/logo-ms-gov-federal.svg" alt="Logos SUS 35 anos, Ministério da Saúde e Governo Federal" height="" />
-								</li>
-
-								<li>
-									<img class="img-fluid logo6 d-block d-md-none" src="../../media/logos/logo-ms-gov-federal-mobile.svg" alt="Logos SUS 35 anos, Ministério da Saúde e Governo Federal" height="" />
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</footer>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=yes" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="robots" content="noindex" />
+	<meta name="author" content="Fiocruz, Campus Virtual" />
+	<meta name="description" content="Curso Introdução à Análise de Dados para pesquisa no SUS" />
+	<link rel="apple-touch-icon" sizes="180x180" href="../../media/icons/apple-icon-180x180.png" />
+	<link rel="icon" type="image/png" sizes="32x32" href="../../media/icons/favicon-32x32.png" />
+	<link rel="manifest" href="../media/icons/manifest.json" />
+	<meta name="theme-color" content="#001833" />
+	<title>Curso Introdução à Análise de Dados para pesquisa no SUS | Mod 3 | Aula 2</title>
+	<link rel="stylesheet" href="../../source/bootstrap-5.1.3/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="../../assets/css/style.css" />
+</head>
+<body>
+	<header class="header">
+		<div class="mobile-toggle-open">
+			<a class="mobile-toggle__button" tabindex="0" role="button"><span class="icon material-symbols-rounded">read_more</span></a>
 		</div>
-
-		<!--  Bootstrap JS and Popper -->
-		<script src="../../source/bootstrap-5.1.3/js/bootstrap.bundle.min.js"></script>
-
-		<!-- Sticky Sidebar -->
-		<script type="text/javascript" src="../../assets/js/ResizeSensor.js"></script>
-		<script type="text/javascript" src="../../assets/js/sticky-sidebar.js"></script>
-		<script type="text/javascript" src="../../assets/js/sidebar.js"></script>
-
-		<script type="text/javascript">
-			var sidebar = new StickySidebar(".sidebar", {
-				topSpacing: 0,
-				bottomSpacing: 0,
-				containerSelector: ".main",
-				innerWrapperSelector: ".sidebar__inner",
-				minWidth: 991,
-			});
-		</script>
-
-		<!-- Code -->
-		<script src="../../assets/js/code.js"></script>
-
-		<!-- Swiper -->
-		<script src="../../assets/js/swiper-bundle.min.js"></script>
-		<script src="../../assets/js/swiper-init.js"></script>
-
-		<script type="text/javascript" src="../../assets/js/scripts.js"></script>
-		<script type="text/javascript" src="../../assets/js/custom-anime.js"></script>
-		<script type="text/javascript" src="../../source/animate/aos/dist/aos.js"></script>
-
-		<!-- Timeline horizontal -->
-		<script src="../../assets/js/timeline-horizontal/util.js"></script>
-		<!-- util functions included in the CodyHouse framework -->
-		<script src="../../assets/js/timeline-horizontal/swipe-content.js"></script>
-		<!-- A Vanilla JavaScript plugin to detect touch interactions -->
-		<script src="../../assets/js/timeline-horizontal/main.js"></script>
-		<!-- Start the Timeline -->
-		<script>
-			document.getElementsByTagName("html")[0].className += " js";
-		</script>
-
-		<script>
-			AOS.init();
-		</script>
-	</body>
+		<div class="brand">
+			<img class="img-fluid logo-black" src="../../media/logos/header-fiocruz-campus-virtual.png" alt="Campus Virtual Fiocruz" />
+		</div>
+		<div class="title"><h1>Introdução à Análise de Dados para pesquisa no SUS</h1></div>
+		<ul class="nav nav-pills">
+			<li class="nav-item"><a href="../../index.html" class="nav-link">Início</a></li>
+			<li class="nav-item"><a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#modal-creditos">Créditos</a></li>
+		</ul>
+	</header>
+	<div class="main">
+		<div class="sidebar" role="navigation">
+			<div class="sidebar__inner" style="position: relative">
+				<div class="sidebar__group d-lg-none">
+					<div class="sidebar__group-item">
+						<div class="sidebar__header">
+							<span>Curso</span>
+							<a class="mobile-toggle-close" tabindex="0" role="button"><span class="icon material-symbols-rounded">read_more</span></a>
+						</div>
+					</div>
+					<div class="sidebar__group-item"><div class="sidebar__title"><h1>Introdução à Análise de Dados para pesquisa no SUS</h1></div></div>
+					<div class="sidebar__group-item">
+						<ul class="nav">
+							<li class="nav-item"><a href="../../index.html" class="nav-link" tabindex="0"><span class="icon material-symbols-rounded" aria-hidden="true">home</span>Início</a></li>
+							<li class="nav-item"><a href="#" class="nav-link" tabindex="0" data-bs-toggle="modal" data-bs-target="#modal-creditos"><span class="icon material-symbols-rounded" aria-hidden="true">format_list_bulleted</span>Créditos</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="sidebar__group">
+					<div class="sidebar__group-item">
+						<div class="dropend">
+							<button id="dropdown-modulos" type="button" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside" data-bs-offset="0,30">
+								<span class="icon material-symbols-rounded" aria-hidden="true">grid_view</span><span class="label">Módulos</span>
+							</button>
+							<ul class="dropdown-menu" aria-labelledby="dropdown-modulos">
+								<li class="d-lg-none dropdown-menu__header">
+									<a class="dropdown-menu__back-button" tabindex="0" role="button"><span class="icon material-symbols-rounded">chevron_left</span> Voltar</a>
+									<a class="mobile-toggle-close" tabindex="0" role="button"><span class="icon material-symbols-rounded">read_more</span></a>
+								</li>
+								<li class="dropdown-menu__item"><a class="dropdown-menu__item-link" tabindex="0" role="link" href="../../modulo1/aula1/topico1.html"><strong>Módulo 1</strong><br />A informação no SUS</a></li>
+								<li class="dropdown-menu__item"><a class="dropdown-menu__item-link" tabindex="0" role="link" href="../../modulo2/aula1/topico1.html"><strong>Módulo 2</strong><br />Fontes de Dados Socioeconômicos e Demográficos: subsídios para a Saúde</a></li>
+								<li class="dropdown-menu__item"><a class="dropdown-menu__item-link" tabindex="0" role="link" href="../../modulo3/aula1/topico1.html"><strong>Módulo 3</strong><br />Sistemas de Informação em Saúde</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="divider"><hr /></div>
+				<div class="sidebar__group">
+					<div class="sidebar__group-item"><span class="text module">Módulo <br class="d-none d-lg-block" /><span>3</span></span></div>
+					<div class="sidebar__group-item">
+						<div class="dropend">
+							<button type="button" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside" data-bs-offset="0,30">
+								<span class="icon material-symbols-rounded" aria-hidden="true">apps</span><span class="label">Conteúdo</span>
+							</button>
+							<ul class="dropdown-menu">
+								<li class="d-lg-none dropdown-menu__header">
+									<a class="dropdown-menu__back-button" tabindex="0" role="button"><span class="icon material-symbols-rounded">chevron_left</span> Voltar</a>
+									<a class="mobile-toggle-close" tabindex="0" role="button"><span class="icon material-symbols-rounded">read_more</span></a>
+								</li>
+								<li class="dropdown-menu__title"><span class="label">Módulo 3</span><span class="title">Sistemas de Informação em Saúde</span></li>
+								<li class="dropdown-menu__item"><a class="dropdown-menu__item-link" tabindex="0" role="link" href="../aula1/topico1.html"><strong>Aula 1: </strong>Introdução aos Sistemas de Informação em Saúde e Sistemas de Informações de Estatísticas Vitais</a></li>
+								<li class="dropdown-menu__item"><a class="dropdown-menu__item-link" tabindex="0" role="link" href="../aula2/topico1.html"><strong>Aula 2: </strong>Sistemas de Informações de Produção</a></li>
+								<li class="dropdown-menu__item"><a class="dropdown-menu__item-link" tabindex="0" role="link" href="../aula3/topico1.html"><strong>Aula 3: </strong>Sistemas de Informações Epidemiológicas</a></li>
+								<li class="dropdown-menu__item"><a class="dropdown-menu__item-link" tabindex="0" role="link" href="../aula4/topico1.html"><strong>Aula 4: </strong>Sistemas de Informações de Gestão, Infraestrutura e Orçamento</a></li>
+								<li class="dropdown-menu__item"><a class="dropdown-menu__item-link" tabindex="0" role="link" href="../aula5/topico1.html"><strong>Aula 5: </strong>Acesso aos dados de Saúde</a></li>
+								<li class="dropdown-menu__item"><a class="dropdown-menu__item-link" tabindex="0" role="link" href="../atividade.html"><strong>Atividade</strong></a></li>
+								<li class="dropdown-menu__item"><a class="dropdown-menu__item-link" tabindex="0" role="link" href="../encerramento.html"><strong>Resumo do módulo</strong></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="divider"><hr /></div>
+				<div class="sidebar__group">
+					<div class="sidebar__group-item"><span class="text class">Aula 2</span></div>
+					<div class="sidebar__group-item">
+						<div class="dropend">
+							<button type="button" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside" data-bs-offset="0,30">
+								<span class="icon material-symbols-rounded" aria-hidden="true">format_list_bulleted</span><span class="label">Tópicos</span>
+							</button>
+							<ul class="dropdown-menu">
+								<li class="d-lg-none dropdown-menu__header">
+									<a class="dropdown-menu__back-button" tabindex="0" role="button"><span class="icon material-symbols-rounded">chevron_left</span> Voltar</a>
+									<a class="mobile-toggle-close" tabindex="0" role="button"><span class="icon material-symbols-rounded">read_more</span></a>
+								</li>
+								<li class="dropdown-menu__title"><span class="label">Aula 2</span><span class="title">Sistemas de Informações de Produção</span></li>
+								<li class="dropdown-menu__item">
+																							<nav class="topic-list">
+							<a href="topico1.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico concluído" status="visited"><span class="material-symbols-rounded"></span>Sobre esta aula</a>
+							<a href="topico2.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico concluído" status="visited"><span class="material-symbols-rounded"></span>Introdução aos SIS de produção</a>
+							<a href="topico3.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico não concluído" ><span class="material-symbols-rounded"></span>Sistema de Informações Hospitalares (SIH)</a>
+							<a href="topico4.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico não concluído" ><span class="material-symbols-rounded"></span>Sistema de Informações Ambulatoriais (SIA)</a>
+							<a href="topico5.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico não concluído" ><span class="material-symbols-rounded"></span>SIAB, SISAB e e-SUS APS</a>
+							<a href="topico6.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico não concluído" ><span class="material-symbols-rounded"></span>Referências</a>
+							</nav>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="divider"><hr /></div>
+				<div class="sidebar__group extra">
+					<div class="sidebar__group-item">
+						<button type="button" class="" data-bs-toggle="modal" data-bs-target="#modal-bibliografiaMod3">
+							<span class="icon material-symbols-rounded" aria-hidden="true">menu_book</span><span class="label">Bibliografia</span>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="content">
+			<div id="page-title"><div class="container"><div class="row align-items-center hstify-content-center justify-content-xxl-start ms-lg-5"><div class="col-12 col-md-10 col-lg-11"><h2 class="title"><span class="label">Módulo 3 | Aula 2</span><br />Sistemas de Informações de Produção</h2></div></div></div></div>
+			<div id="page-content" class="">
+				<section><div class="container">
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-5"><div class="heading__block"><span class="small">Tópico 2</span><h3 class="heading__title">Introdução aos SIS de produção</h3></div></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-5"><p>Para compreender os SIS administrativos ou de produção é necessário primeiramente situá-los no contexto dos Sistemas de Informação em Saúde (SIS). De modo geral, podemos classificar os SIS quanto à sua função original em dois grupos: administrativos e epidemiológicos.</p></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-5"><p>Diferentemente das estatísticas vitais (SIM e SINASC), os sistemas que exploraremos a seguir possuem uma natureza originalmente administrativa ou de produção. Isso quer dizer que eles foram concebidos para gerenciar o financiamento e a produção de serviços do SUS.</p></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-5"><p>Apesar disso, ao longo do tempo esses sistemas tornaram-se fontes indispensáveis de dados epidemiológicos. Por meio deles é possível analisar não apenas o volume e o valor das produções, mas também características de quem acessa os serviços, quais deles são mais acessados, realizar análises de qualidade e adequação e, de modo geral, estudar como a rede de saúde é utilizada.</p></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-5"><div class="lightbox aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600"><img class="img-fluid mx-auto d-block mb-3 rounded" src="../../media/modulo3/aula2-topico2-analise-dados-rede-saude.png" alt="Pessoa utilizando notebook com painéis de mapas e gráficos de barras para análise de dados." /></div></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-5"><p>Outra distinção essencial para esta aula é a unidade de análise. Enquanto as estatísticas vitais (SIM e SINASC) são centradas no indivíduo e em eventos únicos (nascimentos e óbitos), os sistemas administrativos são centrados em eventos que se repetem ao longo da vida. Isso significa que uma mesma pessoa pode gerar múltiplos registros se for internada diversas vezes ou se realizar vários procedimentos, como consultas médicas e exames.</p></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-5"><p>Para nos aprofundarmos nesses sistemas, é importante entender a dualidade entre o cenário hospitalar e o ambulatorial. A principal diferença entre os registros no âmbito ambulatorial e no hospitalar está na complexidade do cuidado e na necessidade de permanência (internação) do paciente no estabelecimento de saúde.</p></div></div>
+<div class="row justify-content-center">
+<div class="col-12 col-md-10 col-lg-8">
+<div class="row g-4 mb-5">
+<div class="col-12 col-md-6">
+<div class="flipcard"><div class="flip-card"><input type="checkbox" id="m3a2fc1" class="more" aria-hidden="true" /><div class="flip-card-inner"><div class="card shadow flip-card-front fundo1"><div class="h-100 bg-transparent border-0 text-center"><div class="card-body justify-content-center d-flex flex-column"><span class="h5 card-title">O cenário hospitalar</span></div><div class="card-footer text-white"><div class="card-btn"><label for="m3a2fc1" class="fio-button fio-button-primary" aria-hidden="true"><img src="../../media/templates/flipcard-icon-dark.svg" alt="" width="36" /> Confira</label></div></div></div></div><div class="card flip-card-back"><div class="h-100 bg-transparent border-0 text-center"><div class="card-body justify-content-center d-flex flex-column"><span class="h5">O cenário hospitalar</span><div class="scrollable text-start"><p>O cenário hospitalar refere-se, estritamente, às internações, que são registradas no Sistema de Informações Hospitalares (SIH). Uma internação geralmente ocorre quando o paciente ocupa um leito hospitalar por um período superior a 24 horas. As internações tendem a ter volume menor quando comparadas aos registros ambulatoriais. Isso se dá justamente por conta da maior complexidade dos casos registrados em hospitais. Quando comparado ao âmbito ambulatorial, a informação hospitalar costuma refletir casos de maior gravidade e mais alto custo.</p><p><button type="button" class="fio-button fio-button-primary" data-bs-toggle="modal" data-bs-target="#m3a2-ex-hosp">Ver exemplos</button></p></div></div><div class="card-footer"><div class="card-btn"><label for="m3a2fc1" class="fio-button fio-button-secondary return" aria-hidden="true"><span class="material-symbols-rounded">arrow_back</span></label></div></div></div></div></div></div></div>
+</div>
+<div class="col-12 col-md-6">
+<div class="flipcard"><div class="flip-card"><input type="checkbox" id="m3a2fc2" class="more" aria-hidden="true" /><div class="flip-card-inner"><div class="card shadow flip-card-front fundo1"><div class="h-100 bg-transparent border-0 text-center"><div class="card-body justify-content-center d-flex flex-column"><span class="h5 card-title">O cenário ambulatorial (SIA, SIAB/SISAB/e-SUS APS)</span></div><div class="card-footer text-white"><div class="card-btn"><label for="m3a2fc2" class="fio-button fio-button-primary" aria-hidden="true"><img src="../../media/templates/flipcard-icon-dark.svg" alt="" width="36" /> Confira</label></div></div></div></div><div class="card flip-card-back"><div class="h-100 bg-transparent border-0 text-center"><div class="card-body justify-content-center d-flex flex-column"><span class="h5">O cenário ambulatorial (SIA, SIAB/SISAB/e-SUS APS)</span><div class="scrollable text-start"><p>O cenário ambulatorial não abarca apenas consultas de rotina ou de baixa complexidade. No âmbito do SUS, o termo “ambulatorial” abarca tudo aquilo que não gera internações. Isso inclui vacinas, consultas médicas na Atenção Primária e até procedimentos de altíssima complexidade. Esses procedimentos podem estar registrados no SIA ou no SISAB/SIAB/e-SUS, dependendo do período em que ocorreram, do tipo de estabelecimento e outros fatores.</p><p><button type="button" class="fio-button fio-button-primary" data-bs-toggle="modal" data-bs-target="#m3a2-ex-amb">Ver exemplos</button></p></div></div><div class="card-footer"><div class="card-btn"><label for="m3a2fc2" class="fio-button fio-button-secondary return" aria-hidden="true"><span class="material-symbols-rounded">arrow_back</span></label></div></div></div></div></div></div></div>
+</div>
+</div>
+</div>
+</div>
+<div class="modal fade" id="m3a2-ex-hosp" tabindex="-1"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><h5 class="modal-title">Exemplos — hospitalar</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><p>Eventos agudos, complicações de condições crônicas, cirurgias complexas e partos.</p></div></div></div></div>
+<div class="modal fade" id="m3a2-ex-amb" tabindex="-1"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><h5 class="modal-title">Exemplos — ambulatorial</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><p>Ações de promoção, prevenção, diagnóstico (exames), terapias contínuas e atendimentos de urgência que não evoluem para internação, quimioterapia, hemodiálise e pequenas cirurgias.</p></div></div></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-5"><p>A seguir estudaremos alguns sistemas que armazenam, tratam e disseminam informações do cenário hospitalar e do ambulatorial. O SIH é um sistema que permite analisar o perfil de morbidade e características das internações, já o SIA capta os atendimentos que não exigem hospitalização. Um ponto importante no desenvolvimento desta aula será o estudo da informatização da Atenção Primária à Saúde (APS) no Brasil. Veremos como a transição do antigo Sistema de Informação da Atenção Básica (SIAB) para a atual estratégia e-SUS APS, que inaugura o Sistema de Informação em Saúde para Atenção Básica (SISAB), começa a evidenciar uma mudança de paradigma. Com a mudança, além dos avanços tecnológicos, deixamos de focar apenas na contagem de procedimentos, ou seja, na produção, para uma abordagem mais centrada no indivíduo e no território.</p></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-5"><p>Para conhecer o fluxo desses dados, será preciso se familiarizar com algumas ferramentas transversais, como a CID-10, a tabela unificada de procedimentos (SIGTAP) e o Cadastro Nacional de Estabelecimentos de Saúde (CNES).</p></div></div><div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-4"><div class="heading__block"><h4 class="heading__title">A CID-10</h4></div></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-5"><p>A Classificação Estatística Internacional de Doenças e Problemas Relacionados com a Saúde, Décima Revisão (CID-10), lançada no final da década de 1990, é uma ferramenta epidemiológica normativa desenvolvida pela Organização Mundial da Saúde (OMS). Essa classificação tem como objetivo principal padronizar internacionalmente a codificação de doenças, sinais, sintomas, achados anormais e causas externas (OMS, 1999). Com a padronização, a CID-10 permite comparar informações em nível mundial. Esse tipo de padronização é essencial, por exemplo, para detectar rapidamente emergências sanitárias. A CID-10 é composta por 22 capítulos e cada doença é representada por um código.</p></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-5">
+<div class="box" data-box="Saiba Mais">
+<div class="card">
+<div class="card-header"><span class="icone material-symbols-rounded" aria-hidden="true"></span><span class="label">Saiba Mais</span></div>
+<div class="card-body">
+<p class="h6 heading__title mb-3"><strong>Saiba mais!</strong></p>
+<p class="mb-0">Saiba mais sobre a CID-10: <a href="http://www2.datasus.gov.br/cid10/V2008/cid10.htm" target="_blank" rel="noopener noreferrer">navegue pelos 22 capítulos</a>.</p>
+</div>
+</div>
+</div>
+</div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-5"><p>Apesar de sua importância histórica, a CID-10 reflete o conhecimento daquela época. Posteriormente, a OMS lançou a CID-11, que passou a vigorar a partir de 2022, e traz uma estrutura totalmente digital, mais flexível e integrada. Atualmente, o Brasil encontra-se em fase de planejamento para essa transição, prevista para 2027.</p></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-5">
+<div class="box" data-box="Saiba Mais">
+<div class="card">
+<div class="card-header"><span class="icone material-symbols-rounded" aria-hidden="true"></span><span class="label">Saiba Mais</span></div>
+<div class="card-body">
+<p class="h6 heading__title mb-3"><strong>Explore a CID-11!</strong></p>
+<p class="mb-0">A versão de lançamento da CID-11 foi disponibilizada pela OMS de forma totalmente digital. Nessa versão foram criadas soluções como a combinação de códigos de extensão para detalhamento do agravo, além de novas seções sobre Distúrbios do Sono, Medicina Tradicional e Saúde Sexual. <a href="https://icd.who.int/browse/2025-01/mms/en" target="_blank" rel="noopener noreferrer">Clique aqui para explorar!</a></p>
+</div>
+</div>
+</div>
+</div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-4"><div class="heading__block"><h4 class="heading__title">O SIGTAP</h4></div></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-5"><p>Para operar os SIS corretamente, é imprescindível compreender o SIGTAP (Sistema de Gerenciamento da Tabela de Procedimentos, Medicamentos, Órteses/Próteses e Materiais Especiais do SUS). Esse sistema foi estabelecido pela Portaria nº 321/GM, de 8 de fevereiro de 2007, com o objetivo de unificar as antigas tabelas de procedimentos ambulatoriais e hospitalares para melhorar a informação em saúde e integrar as bases de dados, facilitando o planejamento, a regulação e a avaliação do sistema.</p></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-5"><p>O SIGTAP estabelece a nomenclatura e a codificação padronizada para todos os procedimentos do SUS. Ele também é a base para o cálculo dos valores a serem pagos aos prestadores de serviços.</p></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-4"><div class="heading__block"><h4 class="heading__title">Desvendando o SIGTAP Web</h4></div></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-4"><div class="heading__block"><h4 class="heading__title">Onde acessar?</h4></div></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-5"><p>O portal oficial para consulta é: <a href="http://sigtap.datasus.gov.br" target="_blank" rel="noopener noreferrer">http://sigtap.datasus.gov.br</a></p></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-4"><div class="heading__block"><h4 class="heading__title">Como navegar?</h4></div></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-5"><p>O SIGTAP organiza tudo em uma hierarquia de 10 dígitos:</p></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-5"><p>Grupo (1º dígito): a grande área (ex: 03 - Procedimentos Clínicos).</p></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-5"><p>Subgrupo (2º e 3º): a especialidade (ex: 03.01 - Consultas).</p></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-5"><p>Forma de Organização (4º ao 6º): o detalhamento (ex: 03.01.01 - Consultas Médicas).</p></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-5"><p>Sequencial (7º ao 10º): o procedimento específico.</p></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-4"><div class="heading__block"><h4 class="heading__title">O que você encontra?</h4></div></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-5"><p>Descrição: Nome e complexidade.</p></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-5"><p>Valores: Quanto o SUS paga por sua realização.</p></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-5"><p>Atributos: Idade e sexo do usuário adequados à realização do procedimento e  média de permanência hospitalar.</p></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-5"><p>Compatibilidades: Doenças CIDs (doenças) e profissionais (CBO) aceitam aquele código.</p></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-5"><p>Instrumento de Registro: BPA, AIH, RAAS.</p></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-4"><div class="heading__block"><h4 class="heading__title">O CNES</h4></div></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-5"><p>O CNES é a base de dados oficial de todos os estabelecimentos de saúde do país, sejam hospitais, clínicas, laboratórios, consultório e outros, independentemente de seu tipo de administração. Isso significa que nela estão registrados estabelecimentos de saúde, sejam eles públicos, privados ou filantrópicos. Sem o número do CNES, o estabelecimento funciona de forma irregular e não recebe pagamentos do SUS ou de operadoras de planos de saúde. Nesse sistema, estão disponíveis informações de leitos, equipamentos e serviços disponíveis e outras informações relevantes, como recursos humanos e infraestrutura.</p></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-5">
+<div class="box" data-box="Dica">
+<div class="card">
+<div class="card-header"><span class="icone material-symbols-rounded" aria-hidden="true"></span><span class="label">Dica</span></div>
+<div class="card-body">
+<p class="h6 heading__title mb-3"><strong>Dica!</strong></p>
+<p class="mb-0">Você pode consultar as informações de um estabelecimento pelo nome, atendimento pelo SUS, estado, município, tipo de gestão e natureza jurídica. Acesse: <a href="https://cnes.datasus.gov.br/" target="_blank" rel="noopener noreferrer">https://cnes.datasus.gov.br/</a></p>
+</div>
+</div>
+</div>
+</div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-5"><p>Observe o exemplo da Unidade Básica de Saúde, localizada em Manguinhos, Rio de Janeiro.</p></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-5"><p><strong>Figura 1 - Print de consulta no CNES realizada em 10/12 de 2025.</strong></p><figure class="lightbox aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600"><img class="img-fluid mx-auto d-block mb-3 rounded border" src="../../media/modulo3/aula2-fig1-cnes-consulta.png" alt="Captura de tela do CNES com dados de identificação da unidade SMS CF Victor Valla AP 31, em Manguinhos, Rio de Janeiro." loading="lazy" /></figure><p class="figure-caption fonte small mb-0">Fonte: CNES (2025).</p></div></div>
+				</motion></section>
+			</div>
+			<section><div class="container"><div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8"><div class="page-nav d-flex justify-content-evenly flex-wrap gap-3"><a class="fio-button fio-button-primary" href="topico1.html" rel="prev"><span class="material-symbols-rounded" aria-hidden="true">west</span> Tópico anterior</a><a class="fio-button fio-button-primary" href="topico3.html" rel="next">Próximo tópico <span class="material-symbols-rounded" aria-hidden="true">east</span></a></div></div></div></div></section>
+			<footer>
+			<div class="container-fluid">
+				<div class="row justify-content-center align-items-center linha-de-marcas">
+					<div class="col-12 col-md-auto">
+						<ul class="logos">
+							<li><img class="img-fluid logo1" src="../../media/logos/logo-cidacs.svg" alt="Logo do Centro de Integração de Dados e Conhecimentos para Saúde" /></li>
+							<li><img class="img-fluid logo2" src="../../media/logos/logo-cvf.svg" alt="Logo do Campus Virtual Fiocruz" /></li>
+							<li><img class="img-fluid logo3" src="../../media/logos/logo-fiocruz.svg" alt="Logo da Fiocruz" /></li>
+						</ul>
+					</div>
+					<div class="col-12 col-md-auto">
+						<ul class="logos principais align-self-end">
+							<li><img class="img-fluid logo4" src="../../media/logos/logo-sus-digital-cor.svg" alt="Logo do SUS Digital" /></li>
+							<li><img class="img-fluid logo5 d-none d-md-block" src="../../media/logos/logo-ms-gov-federal.svg" alt="Logos SUS 35 anos, Ministério da Saúde e Governo Federal" /></li>
+							<li><img class="img-fluid logo6 d-block d-md-none" src="../../media/logos/logo-ms-gov-federal-mobile.svg" alt="Logos SUS 35 anos, Ministério da Saúde e Governo Federal" /></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="../../source/bootstrap-5.1.3/js/bootstrap.bundle.min.js"></script>
+	<script type="text/javascript" src="../../assets/js/ResizeSensor.js"></script>
+	<script type="text/javascript" src="../../assets/js/sticky-sidebar.js"></script>
+	<script type="text/javascript" src="../../assets/js/sidebar.js"></script>
+	<script type="text/javascript">var sidebar = new StickySidebar(".sidebar", { topSpacing: 0, bottomSpacing: 0, containerSelector: ".main", innerWrapperSelector: ".sidebar__inner", minWidth: 991 });</script>
+	<script type="text/javascript" src="../../assets/js/scripts.js"></script>
+	<script type="text/javascript" src="../../assets/js/custom-anime.js"></script>
+	<script type="text/javascript" src="../../source/animate/aos/dist/aos.js"></script>
+	<script>AOS.init();</script>
+</body>
 </html>

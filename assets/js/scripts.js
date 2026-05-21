@@ -17,6 +17,43 @@ var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
 	return new bootstrap.Popover(popoverTriggerEl);
 });
 
+// Prioridades PNIIS: apenas um popover aberto por vez; fecha ao clicar fora
+(function () {
+	var container = document.querySelector('.pniis-prioridades');
+	if (!container) return;
+
+	var triggers = container.querySelectorAll('[data-bs-toggle="popover"]');
+
+	function hideAllPniisPopovers() {
+		triggers.forEach(function (el) {
+			var instance = bootstrap.Popover.getInstance(el);
+			if (instance) {
+				instance.hide();
+			}
+		});
+	}
+
+	triggers.forEach(function (triggerEl) {
+		triggerEl.addEventListener('show.bs.popover', function () {
+			triggers.forEach(function (otherEl) {
+				if (otherEl !== triggerEl) {
+					var instance = bootstrap.Popover.getInstance(otherEl);
+					if (instance) {
+						instance.hide();
+					}
+				}
+			});
+		});
+	});
+
+	document.addEventListener('click', function (event) {
+		if (event.target.closest('.pniis-prioridades__item') || event.target.closest('.popover')) {
+			return;
+		}
+		hideAllPniisPopovers();
+	});
+})();
+
 // //Swiper (inicialização)
 
 // //Type 1: Swiper Navigation

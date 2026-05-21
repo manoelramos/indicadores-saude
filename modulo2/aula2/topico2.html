@@ -68,7 +68,7 @@
 										<a class="mobile-toggle-close" tabindex="0" role="button"><span class="icon material-symbols-rounded">read_more</span></a>
 									</li>
 									<li class="dropdown-menu__item">
-										<a class="dropdown-menu__item-link" tabindex="0" role="link" href="../../modulo1/aula1/topico1.html"><strong>Módulo 1</strong><br />A informação no SUS</a>
+										<a class="dropdown-menu__item-link" tabindex="0" role="link" href="../../modulo1/aula1/topico1.html"><strong>Módulo 1</strong><br />Introdução à Informação em Saúde no SUS</a>
 									</li>
 									<li class="dropdown-menu__item">
 										<a class="dropdown-menu__item-link" tabindex="0" role="link" href="../../modulo2/aula1/topico1.html"><strong>Módulo 2</strong><br />Fontes de Dados Socioeconômicos e Demográficos: subsídios para a Saúde</a>
@@ -109,12 +109,6 @@
 									<li class="dropdown-menu__item">
 										<a class="dropdown-menu__item-link" tabindex="0" role="link" href="../aula3/topico1.html"><strong>Aula 3: </strong>Introdução às pesquisas amostrais e principais fontes de dados</a>
 									</li>
-									<li class="dropdown-menu__item">
-										<a class="dropdown-menu__item-link" tabindex="0" role="link" href="../atividade.html"><strong>Atividade</strong></a>
-									</li>
-									<li class="dropdown-menu__item">
-										<a class="dropdown-menu__item-link" tabindex="0" role="link" href="../encerramento.html"><strong>Resumo do módulo</strong></a>
-									</li>
 								</ul>
 							</div>
 						</div>
@@ -145,9 +139,11 @@
 
 											<a href="topico2.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico atual" status="visited"> <span class="material-symbols-rounded"></span>Introdução</a>
 
-											<a href="topico3.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico não concluído"> <span class="material-symbols-rounded"></span>O Censo Demográfico</a>
+											<a href="topico3.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico não concluído"> <span class="material-symbols-rounded"></span>Desafios e cuidados no uso dos dados</a>
 
-											<a href="topico4.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico não concluído"> <span class="material-symbols-rounded"></span>Referências</a>
+											<a href="topico4.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico não concluído"> <span class="material-symbols-rounded"></span>O Censo Demográfico</a>
+
+											<a href="topico5.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico não concluído"> <span class="material-symbols-rounded"></span>Referências</a>
 										</nav>
 									</li>
 								</ul>
@@ -196,27 +192,39 @@
 							<li class="list-group-item">Microdados da SIH (cada linha = um episódio de internação hospitalar, nesse caso a mesma pessoa pode aparecer várias vezes na mesma base).</li>
 						</ul></div>
 
-						<div class="heading__block mt-4"><p class="h6 heading__title">Vantagens</p></div>
+						<style>
+							.subtitulo-vd {
+								font-family: var(--fio-sys-typography-family-primary-semi-bold);
+								font-size: var(--fio-sys-typography-size-0);
+								font-weight: 600;
+								color: var(--fio-sys-color-primary-dark);
+								padding-left: var(--fio-sys-size-padding-lg);
+								margin-top: var(--fio-sys-size-margin-md);
+								margin-bottom: var(--fio-sys-size-margin-xs);
+							}
+						</style>
+
+						<p class="subtitulo-vd">Vantagens</p>
 						<div class="accordion accordion-flush mt-2" id="m2a2-micro-vant">
 							<div class="accordion-item">
 								<h5 class="accordion-header" id="m2a2-micro-v-h1"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#m2a2-micro-v-c1" aria-expanded="false" aria-controls="m2a2-micro-v-c1"><strong>Flexibilidade de análise</strong></button></h5>
-								<div id="m2a2-micro-v-c1" class="accordion-collapse collapse" aria-labelledby="m2a2-micro-v-h1" data-bs-parent="#m2a2-micro-vant"><div class="accordion-body"><p class="mb-0">permitem que os pesquisadores realizem análises personalizadas e explorem relações complexas entre variáveis, que não seriam possíveis com dados já resumidos.</p></div></div>
+								<div id="m2a2-micro-v-c1" class="accordion-collapse collapse" aria-labelledby="m2a2-micro-v-h1" data-bs-parent="#m2a2-micro-vant"><div class="accordion-body"><p class="mb-0">Permitem que os pesquisadores realizem análises personalizadas e explorem relações complexas entre variáveis, que não seriam possíveis com dados já resumidos.</p></div></div>
 							</div>
 							<div class="accordion-item">
 								<h5 class="accordion-header" id="m2a2-micro-v-h2"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#m2a2-micro-v-c2" aria-expanded="false" aria-controls="m2a2-micro-v-c2"><strong>Detalhe e precisão</strong></button></h5>
-								<div id="m2a2-micro-v-c2" class="accordion-collapse collapse" aria-labelledby="m2a2-micro-v-h2" data-bs-parent="#m2a2-micro-vant"><div class="accordion-body"><p class="mb-0">oferecem um nível granular de informação, essencial para estudos aprofundados e formulação de políticas específicas.</p></div></div>
+								<div id="m2a2-micro-v-c2" class="accordion-collapse collapse" aria-labelledby="m2a2-micro-v-h2" data-bs-parent="#m2a2-micro-vant"><div class="accordion-body"><p class="mb-0">Oferecem um nível granular de informação, essencial para estudos aprofundados e formulação de políticas específicas.</p></div></div>
 							</div>
 						</div>
 
-						<div class="heading__block mt-4"><p class="h6 heading__title">Desvantagens</p></div>
+						<p class="subtitulo-vd">Desvantagens</p>
 						<div class="accordion accordion-flush mt-2" id="m2a2-micro-desv">
 							<div class="accordion-item">
 								<h5 class="accordion-header" id="m2a2-micro-d-h1"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#m2a2-micro-d-c1" aria-expanded="false" aria-controls="m2a2-micro-d-c1"><strong>Risco de perda de sigilo</strong></button></h5>
-								<div id="m2a2-micro-d-c1" class="accordion-collapse collapse" aria-labelledby="m2a2-micro-d-h1" data-bs-parent="#m2a2-micro-desv"><div class="accordion-body"><p class="mb-0">exigem medidas rigorosas de anonimização para proteger a identidade dos informantes, porque pode conter dados sensíveis.</p></div></div>
+								<div id="m2a2-micro-d-c1" class="accordion-collapse collapse" aria-labelledby="m2a2-micro-d-h1" data-bs-parent="#m2a2-micro-desv"><div class="accordion-body"><p class="mb-0">Exigem medidas rigorosas de anonimização para proteger a identidade dos informantes, porque pode conter dados sensíveis.</p></div></div>
 							</div>
 							<div class="accordion-item">
 								<h5 class="accordion-header" id="m2a2-micro-d-h2"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#m2a2-micro-d-c2" aria-expanded="false" aria-controls="m2a2-micro-d-c2"><strong>Complexidade e tamanho da base de dados</strong></button></h5>
-								<div id="m2a2-micro-d-c2" class="accordion-collapse collapse" aria-labelledby="m2a2-micro-d-h2" data-bs-parent="#m2a2-micro-desv"><div class="accordion-body"><p class="mb-0">normalmente são arquivos grandes e complexos, exigindo software estatístico específico para as análises, maior capacidade de processamento e conhecimento técnico para serem manipulados corretamente.</p></div></div>
+								<div id="m2a2-micro-d-c2" class="accordion-collapse collapse" aria-labelledby="m2a2-micro-d-h2" data-bs-parent="#m2a2-micro-desv"><div class="accordion-body"><p class="mb-0">Normalmente são arquivos grandes e complexos, exigindo software estatístico específico para as análises, maior capacidade de processamento e conhecimento técnico para serem manipulados corretamente.</p></div></div>
 							</div>
 						</div>
 
@@ -228,31 +236,31 @@
 							<li class="list-group-item">Mortalidade por causa segundo o ano do óbito.</li>
 						</ul></div>
 
-						<div class="heading__block mt-4"><p class="h6 heading__title">Vantagens</p></div>
+						<p class="subtitulo-vd">Vantagens</p>
 						<div class="accordion accordion-flush mt-2" id="m2a2-agreg-vant">
 							<div class="accordion-item">
 								<h5 class="accordion-header" id="m2a2-ag-v-h1"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#m2a2-ag-v-c1" aria-expanded="false" aria-controls="m2a2-ag-v-c1"><strong>Acessibilidade e simplicidade</strong></button></h5>
-								<div id="m2a2-ag-v-c1" class="accordion-collapse collapse" aria-labelledby="m2a2-ag-v-h1" data-bs-parent="#m2a2-agreg-vant"><div class="accordion-body"><p class="mb-0">são mais fáceis de usar e interpretar, frequentemente vêm apresentados em tabelas, gráficos e relatórios prontos.</p></div></div>
+								<div id="m2a2-ag-v-c1" class="accordion-collapse collapse" aria-labelledby="m2a2-ag-v-h1" data-bs-parent="#m2a2-agreg-vant"><div class="accordion-body"><p class="mb-0">São mais fáceis de usar e interpretar, frequentemente vêm apresentados em tabelas, gráficos e relatórios prontos.</p></div></div>
 							</div>
 							<div class="accordion-item">
 								<h5 class="accordion-header" id="m2a2-ag-v-h2"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#m2a2-ag-v-c2" aria-expanded="false" aria-controls="m2a2-ag-v-c2"><strong>Segurança e privacidade</strong></button></h5>
-								<div id="m2a2-ag-v-c2" class="accordion-collapse collapse" aria-labelledby="m2a2-ag-v-h2" data-bs-parent="#m2a2-agreg-vant"><div class="accordion-body"><p class="mb-0">oferecem maior segurança em relação à privacidade, pois os dados individuais são diluídos na agregação, protegendo a identidade dos participantes.</p></div></div>
+								<div id="m2a2-ag-v-c2" class="accordion-collapse collapse" aria-labelledby="m2a2-ag-v-h2" data-bs-parent="#m2a2-agreg-vant"><div class="accordion-body"><p class="mb-0">Oferecem maior segurança em relação à privacidade, pois os dados individuais são diluídos na agregação, protegendo a identidade dos participantes.</p></div></div>
 							</div>
 							<div class="accordion-item">
 								<h5 class="accordion-header" id="m2a2-ag-v-h3"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#m2a2-ag-v-c3" aria-expanded="false" aria-controls="m2a2-ag-v-c3"><strong>Eficiência</strong></button></h5>
-								<div id="m2a2-ag-v-c3" class="accordion-collapse collapse" aria-labelledby="m2a2-ag-v-h3" data-bs-parent="#m2a2-agreg-vant"><div class="accordion-body"><p class="mb-0">arquivos de dados agregados são menores e mais rápidos de processar, facilitando análises gerais e comparações em larga escala.</p></div></div>
+								<div id="m2a2-ag-v-c3" class="accordion-collapse collapse" aria-labelledby="m2a2-ag-v-h3" data-bs-parent="#m2a2-agreg-vant"><div class="accordion-body"><p class="mb-0">Arquivos de dados agregados são menores e mais rápidos de processar, facilitando análises gerais e comparações em larga escala.</p></div></div>
 							</div>
 						</div>
 
-						<div class="heading__block mt-4"><p class="h6 heading__title">Desvantagens</p></div>
+						<p class="subtitulo-vd">Desvantagens</p>
 						<div class="accordion accordion-flush mt-2" id="m2a2-agreg-desv">
 							<div class="accordion-item">
 								<h5 class="accordion-header" id="m2a2-ag-d-h1"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#m2a2-ag-d-c1" aria-expanded="false" aria-controls="m2a2-ag-d-c1"><strong>Perda de detalhamento</strong></button></h5>
-								<div id="m2a2-ag-d-c1" class="accordion-collapse collapse" aria-labelledby="m2a2-ag-d-h1" data-bs-parent="#m2a2-agreg-desv"><div class="accordion-body"><p class="mb-0">a agregação resulta na perda de informações sobre as unidades individuais, impossibilitando análises mais detalhadas ou a identificação de padrões em subgrupos específicos.</p></div></div>
+								<div id="m2a2-ag-d-c1" class="accordion-collapse collapse" aria-labelledby="m2a2-ag-d-h1" data-bs-parent="#m2a2-agreg-desv"><div class="accordion-body"><p class="mb-0">A agregação resulta na perda de informações sobre as unidades individuais, impossibilitando análises mais detalhadas ou a identificação de padrões em subgrupos específicos.</p></div></div>
 							</div>
 							<div class="accordion-item">
 								<h5 class="accordion-header" id="m2a2-ag-d-h2"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#m2a2-ag-d-c2" aria-expanded="false" aria-controls="m2a2-ag-d-c2"><strong>Limitação nas análises</strong></button></h5>
-								<div id="m2a2-ag-d-c2" class="accordion-collapse collapse" aria-labelledby="m2a2-ag-d-h2" data-bs-parent="#m2a2-agreg-desv"><div class="accordion-body"><p class="mb-0">restringem os tipos de análises que podem ser feitas; por exemplo, não é possível redefinir as categorias de agregação ou cruzar variáveis de maneiras não previstas na agregação original.</p></div></div>
+								<div id="m2a2-ag-d-c2" class="accordion-collapse collapse" aria-labelledby="m2a2-ag-d-h2" data-bs-parent="#m2a2-agreg-desv"><div class="accordion-body"><p class="mb-0">Restringem os tipos de análises que podem ser feitas; por exemplo, não é possível redefinir as categorias de agregação ou cruzar variáveis de maneiras não previstas na agregação original.</p></div></div>
 							</div>
 						</div>
 
@@ -265,12 +273,8 @@
 							</div>
 						</div>
 
-						<div class="heading__block mt-5" id="sub-a2-t2-desafios"><p class="h6 heading__title">Desafios e cuidados no uso dos dados</p></div>
-						<p>O uso de dados populacionais no Brasil demanda atenção a diferenças metodológicas entre as bases, já que cada uma emprega conceitos, classificações e unidades de análise próprias, tornando indispensável a consulta de notas técnicas antes de comparar informações ou combinar registros de diferentes fontes.</p>
-						<p>Além das bases diferirem quanto ao nível de detalhamento (agregado ou microdado), como visto, muitas outras características devem ser observadas para não haver nenhum tipo de inconsistência na análise. A periodicidade de coleta pode variar bastante — do Censo, que é decenal, às atualizações mensais do DATASUS —, exigindo cuidado com datas de referência, distinção entre dados provisórios e consolidados e padronização temporal nas análises.</p>
-						<p>A qualidade das informações é outro ponto crítico, especialmente em bases administrativas sujeitas a sub-registro, erros de preenchimento e campos ignorados. Mudanças ao longo do tempo em códigos territoriais, categorias ou sistemas de classificação podem comprometer comparações históricas se não forem previamente harmonizadas. Estimativas amostrais e projeções também carregam incertezas que precisam ser consideradas, exigindo atenção aos intervalos de confiança e cautela em comparações.</p>
-						<p class="mb-0">Por fim, o tratamento de variáveis sensíveis requer rigor, com atenção aos princípios da <a href="https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm" target="_blank" rel="noopener noreferrer">Lei Geral de Proteção de Dados Pessoais (LGPD)</a>, e preferência por dados anonimizados ou agregados para garantir segurança, ética e proteção da privacidade.</p>
 					</div></div></div></section>
+
 				</div>
 				<section>
 					<div class="container">
@@ -288,10 +292,8 @@
 			<footer>
 				<div class="container-fluid">
 					<div class="row justify-content-center align-items-center linha-de-marcas">
-						<div class="col-12 col-md-auto">
-							<ul class="logos">
-								<li><img class="img-fluid logo3" src="../../media/logos/logo-fiocruz.svg" alt="Logo da Fiocruz" /></li>
-							</ul>
+						<div class="col-12 text-center py-3">
+							<img class="img-fluid regua-logos" src="../../media/logos/regua-de-logos.png" alt="Régua de logos: Campus Virtual Fiocruz, Fiocruz, SUS Digital, SUS 35 Anos, Ministério da Saúde e Governo do Brasil" />
 						</div>
 					</div>
 				</div>

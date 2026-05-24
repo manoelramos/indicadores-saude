@@ -2,7 +2,7 @@ const = {
 
     nome: Informação para o SUS: políticas e sistemas;
 
-    
+
 
 Módulo 1: Políticas Sociais e Informação
 Aula 1 – Informação para as políticas sociais
@@ -65,7 +65,7 @@ Aula 1 – Políticas para a Informação
 	Objetivos de aprendizagem
 	Apresentação
 	Sistemas de Informação em Saúde I
-	Sistema de Informações sobre Mortalidade (SIM)
+	Sistema de Informação sobre Mortalidade (SIM)
 	Coleta e processamento dos dados sobre mortalidade
 	Sistema de Informações sobre Nascidos Vivos (SINASC)
 	Cadastro Nacional de Estabelecimento de Saúde (CNES)
@@ -74,7 +74,7 @@ Aula 1 – Políticas para a Informação
 Aula 2 - Sistemas de Informação II (SIH, SINAN, SISAB, SIVEP)
 	Conteúdo da aula
 	Objetivos de aprendizagem
-	Introdução 
+	Introdução
 	Sistema de Informação de Internações Hospitalares (SIH/SUS)
 	Sistema de Gerenciamento da Tabela de Procedimentos, Medicamentos, Órteses/Próteses e Materiais Especiais do SUS (SIGTAP)
 	Sistema de Informações Ambulatoriais (SIA/SUS)
@@ -135,7 +135,7 @@ AULA 2 – Rede Nacional de Dados em Saúde
 	Evolução dos Comitês de Governança das TIC no Ministério da Saúde
 	Melhoria do Atendimento e Ferramentas de Análise
 	Considerações fiais – perspectivas futuras da RNDS na saúde pública.
-	
+
 
 AULA 3 – Fontes de dados digitais: barramentos de interoperabilidade
 	Objetivos de Aprendizagem
@@ -162,9 +162,9 @@ AULA 4 – Interoperabilidade para as políticas sociais: exemplos práticos
 	Objetivos da Infraestrutura Nacional de Dados
 	Rede Nacional de Dados em Saúde (RNDS)
 	Interoperabilidade em Saúde: integrando atenção e tecnologia no cuidado ao paciente.
-	Interoperabilidade na Atenção Primária, Secundária e Terciária. 
+	Interoperabilidade na Atenção Primária, Secundária e Terciária.
 	Interoperabilidade e o paciente: desafios e oportunidades.
-	Interoperabilidade e o futura da saúde no Brasil 
+	Interoperabilidade e o futura da saúde no Brasil
 	Conclusão
 
 }

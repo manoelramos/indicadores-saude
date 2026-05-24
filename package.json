@@ -1,0 +1,9 @@
+{
+	"name": "fonte-dados",
+	"version": "1.0.0",
+	"private": true,
+	"description": "Servidor local com atualizacao em tempo real via SSE",
+	"scripts": {
+		"start": "node realtime-server.js"
+	}
+}

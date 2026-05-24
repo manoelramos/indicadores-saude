@@ -51,6 +51,24 @@
 	padding: var(--fio-sys-size-padding-lg);
 }
 
+.modal .creditos-curso .h5 {
+	color: var(--fio-sys-color-primary-dark);
+}
+
+.modal .creditos-curso .creditos-modulo {
+	text-decoration: underline;
+	font-weight: 600;
+}
+
+.modal .creditos-curso .creditos-aula {
+	color: var(--fio-sys-color-neutral-dark, #333);
+}
+
+.modal .creditos-curso .creditos-ref {
+	font-size: 0.95rem;
+	line-height: 1.5;
+}
+
 .modal .modal-header .btn-close {
 	color: var(--_modal-color);
 }

@@ -36,6 +36,7 @@
 @import "components/video.css";
 @import "components/media.css";
 @import "components/exercise.css";
+@import "components/referencias.css";
 
 * {
   margin: 0;

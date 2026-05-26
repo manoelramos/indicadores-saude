@@ -1,0 +1,12 @@
+.referencias-aula .heading__title {
+	color: var(--fio-sys-color-primary-dark);
+}
+
+.referencias-aula .referencias-item {
+	font-size: 0.95rem;
+	line-height: 1.5;
+}
+
+.referencias-aula .referencias-item a {
+	word-break: break-word;
+}

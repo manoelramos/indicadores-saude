@@ -155,7 +155,9 @@ p:last-child {
 }
 
 #page-content ul,
-#page-content ul li {
+#page-content ul li,
+#page-content ol,
+#page-content ol li {
 	color: var(--fio-sys-color-neutral-extra-dark);
 	font-family: var(--fio-sys-typography-family-primary-regular);
 	font-size: var(--fio-sys-typography-size-0);

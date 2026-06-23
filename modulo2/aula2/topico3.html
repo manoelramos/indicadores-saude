@@ -1,221 +1,208 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=yes" />
-		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-		<meta name="robots" content="noindex" />
-		<meta name="author" content="Fiocruz, Campus Virtual" />
-		<title>Curso Fontes de Dados | Mod 2 | Aula 2</title>
-		<link rel="stylesheet" href="../../source/bootstrap-5.1.3/css/bootstrap.min.css" />
-		<link rel="stylesheet" href="../../assets/css/style.css" />
-	</head>
-	<body>
-		<header class="header">
-			<div class="mobile-toggle-open">
-				<a class="mobile-toggle__button" tabindex="0" role="button">
-					<span class="icon material-symbols-rounded">read_more</span>
-				</a>
-			</div>
-			<div class="brand">
-				<img class="img-fluid logo-black" src="../../media/logos/header-fiocruz-campus-virtual.png" alt="Campus Virtual Fiocruz" />
-			</div>
-			<div class="title">
-				<h1>Fontes de Dados e Sistemas de Informação para o SUS</h1>
-			</div>
-			<ul class="nav nav-pills">
-				<li class="nav-item"><a href="../../index.html" class="nav-link">Início</a></li>
-				<li class="nav-item"><a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#modal-creditos">Créditos</a></li>
-			</ul>
-		</header>
-		<div class="main">
-			<div class="sidebar" role="navigation">
-				<div class="sidebar__inner" style="position: relative">
-					<div class="sidebar__group d-lg-none">
-						<div class="sidebar__group-item">
-							<div class="sidebar__header">
-								<span>Curso</span>
-								<a class="mobile-toggle-close" tabindex="0" role="button"><span class="icon material-symbols-rounded">read_more</span></a>
-							</div>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=yes" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="robots" content="noindex" />
+	<meta name="author" content="Fiocruz, Campus Virtual" />
+	<meta name="description" content="Curso Indicadores para a saúde: aspectos teóricos e práticos" />
+	<link rel="apple-touch-icon" sizes="180x180" href="../../media/icons/apple-icon-180x180.png" />
+	<link rel="icon" type="image/png" sizes="32x32" href="../../media/icons/favicon-32x32.png" />
+	<link rel="manifest" href="../media/icons/manifest.json" />
+	<meta name="theme-color" content="#001833" />
+	<title>Curso Indicadores para a saúde: aspectos teóricos e práticos | Mod 2 | Aula 2</title>
+	<link rel="stylesheet" href="../../source/bootstrap-5.1.3/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="../../assets/css/style.css" />
+</head>
+<body>
+	<header class="header">
+		<div class="mobile-toggle-open"><a class="mobile-toggle__button" tabindex="0" role="button"><span class="icon material-symbols-rounded">read_more</span></a></div>
+		<div class="brand"><img class="img-fluid logo-black" src="../../media/logos/header-fiocruz-campus-virtual.png" alt="Campus Virtual Fiocruz" /></div>
+		<div class="title"><h1>Indicadores para a saúde: aspectos teóricos e práticos</h1></div>
+		<ul class="nav nav-pills">
+			<li class="nav-item"><a href="../../index.html" class="nav-link">Início</a></li>
+			<li class="nav-item"><a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#modal-creditos">Créditos</a></li>
+		</ul>
+	</header>
+	<div class="main">
+		<div class="sidebar" role="navigation">
+			<div class="sidebar__inner" style="position: relative">
+				<div class="sidebar__group d-lg-none">
+					<div class="sidebar__group-item">
+						<div class="sidebar__header">
+							<span>Curso</span>
+							<a class="mobile-toggle-close" tabindex="0" role="button"><span class="icon material-symbols-rounded">read_more</span></a>
 						</div>
-						<div class="sidebar__group-item">
-							<div class="sidebar__title">
-								<h1>Fontes de Dados e Sistemas de Informação para o SUS</h1>
-							</div>
-						</div>
-						<div class="sidebar__group-item">
-							<ul class="nav">
-								<li class="nav-item">
-									<a href="../../index.html" class="nav-link" tabindex="0"><span class="icon material-symbols-rounded" aria-hidden="true">home</span>Início</a>
+					</div>
+					<div class="sidebar__group-item"><div class="sidebar__title"><h1>Indicadores para a saúde: aspectos teóricos e práticos</h1></div></div>
+					<div class="sidebar__group-item">
+						<ul class="nav">
+							<li class="nav-item"><a href="../../index.html" class="nav-link" tabindex="0"><span class="icon material-symbols-rounded" aria-hidden="true">home</span>Início</a></li>
+							<li class="nav-item"><a href="#" class="nav-link" tabindex="0" data-bs-toggle="modal" data-bs-target="#modal-creditos"><span class="icon material-symbols-rounded" aria-hidden="true">format_list_bulleted</span>Créditos</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="sidebar__group">
+					<div class="sidebar__group-item">
+						<div class="dropend">
+							<button id="dropdown-modulos" type="button" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside" data-bs-offset="0,30">
+								<span class="icon material-symbols-rounded" aria-hidden="true">grid_view</span><span class="label">Módulos</span>
+							</button>
+							<ul class="dropdown-menu" aria-labelledby="dropdown-modulos">
+								<li class="d-lg-none dropdown-menu__header">
+									<a class="dropdown-menu__back-button" tabindex="0" role="button"><span class="icon material-symbols-rounded">chevron_left</span> Voltar</a>
+									<a class="mobile-toggle-close" tabindex="0" role="button"><span class="icon material-symbols-rounded">read_more</span></a>
 								</li>
-								<li class="nav-item">
-									<a href="#" class="nav-link" tabindex="0" data-bs-toggle="modal" data-bs-target="#modal-creditos"><span class="icon material-symbols-rounded" aria-hidden="true"> format_list_bulleted</span>Créditos</a>
-								</li>
+								<li class="dropdown-menu__item"><a class="dropdown-menu__item-link" tabindex="0" role="link" href="../../modulo1/aula1/topico1.html"><strong>Módulo 1</strong><br />Conceitos básicos em indicadores para a saúde</a></li>
+								<li class="dropdown-menu__item"><a class="dropdown-menu__item-link" tabindex="0" role="link" href="../../modulo2/aula1/topico1.html"><strong>Módulo 2</strong><br />Calculando indicadores</a></li>
+								<li class="dropdown-menu__item"><a class="dropdown-menu__item-link" tabindex="0" role="link" href="../../modulo3/aula1/topico1.html"><strong>Módulo 3</strong><br />Uso de indicadores</a></li>
 							</ul>
 						</div>
 					</div>
-
-					<div class="sidebar__group">
-						<div class="sidebar__group-item">
-							<div class="dropend">
-								<button id="dropdown-modulos" type="button" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside" data-bs-offset="0,30">
-									<span class="icon material-symbols-rounded" aria-hidden="true">grid_view</span>
-									<span class="label">Módulos</span>
-								</button>
-								<ul class="dropdown-menu" aria-labelledby="dropdown-modulos">
-									<li class="d-lg-none dropdown-menu__header">
-										<a class="dropdown-menu__back-button" tabindex="0" role="button"><span class="icon material-symbols-rounded">chevron_left</span> Voltar</a>
-										<a class="mobile-toggle-close" tabindex="0" role="button"><span class="icon material-symbols-rounded">read_more</span></a>
-									</li>
-									<li class="dropdown-menu__item">
-										<a class="dropdown-menu__item-link" tabindex="0" role="link" href="../../modulo1/aula1/topico1.html"><strong>Módulo 1</strong><br />Introdução à Informação em Saúde no SUS</a>
-									</li>
-									<li class="dropdown-menu__item">
-										<a class="dropdown-menu__item-link" tabindex="0" role="link" href="../../modulo2/aula1/topico1.html"><strong>Módulo 2</strong><br />Fontes de Dados Socioeconômicos e Demográficos: subsídios para a Saúde</a>
-									</li>
-									<li class="dropdown-menu__item">
-										<a class="dropdown-menu__item-link" tabindex="0" role="link" href="../../modulo3/aula1/topico1.html"><strong>Módulo 3</strong><br />Sistemas de Informação em Saúde</a>
-									</li>
-																<li class="dropdown-menu__item">
-									<a class="dropdown-menu__item-link" tabindex="0" role="link" href="../../modulo4/aula1/topico1.html"><strong>Módulo 4</strong><br />Interoperabilidade de Sistemas</a>
+				</div>
+				<div class="divider"><hr /></div>
+				<div class="sidebar__group">
+					<div class="sidebar__group-item"><span class="text module">Módulo <br class="d-none d-lg-block" /><span>2</span></span></div>
+					<div class="sidebar__group-item">
+						<div class="dropend">
+							<button type="button" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside" data-bs-offset="0,30">
+								<span class="icon material-symbols-rounded" aria-hidden="true">apps</span><span class="label">Conteúdo</span>
+							</button>
+							<ul class="dropdown-menu">
+								<li class="d-lg-none dropdown-menu__header">
+									<a class="dropdown-menu__back-button" tabindex="0" role="button"><span class="icon material-symbols-rounded">chevron_left</span> Voltar</a>
+									<a class="mobile-toggle-close" tabindex="0" role="button"><span class="icon material-symbols-rounded">read_more</span></a>
 								</li>
-</ul>
-							</div>
+								<li class="dropdown-menu__title"><span class="label">Módulo 2</span><span class="title">Calculando indicadores</span></li>
+								<li class="dropdown-menu__item"><a class="dropdown-menu__item-link" tabindex="0" role="link" href="../aula1/topico1.html"><strong>Aula 1: </strong>Dados, medidas e indicadores: valores absolutos e relativos</a></li>
+								<li class="dropdown-menu__item"><a class="dropdown-menu__item-link" tabindex="0" role="link" href="../aula2/topico1.html"><strong>Aula 2: </strong>Medidas relativas para a análise de dados de saúde</a></li>
+								<li class="dropdown-menu__item"><a class="dropdown-menu__item-link" tabindex="0" role="link" href="../aula3/topico1.html"><strong>Aula 3: </strong>Índices: conceitos, construção e usos</a></li>
+								<li class="dropdown-menu__item"><a class="dropdown-menu__item-link" tabindex="0" role="link" href="../aula4/topico1.html"><strong>Aula 4: </strong>Ficha de Qualificação de Indicadores</a></li>
+							</ul>
 						</div>
 					</div>
-					<div class="divider"><hr /></div>
-					<div class="sidebar__group">
-						<div class="sidebar__group-item">
-							<span class="text module">Módulo <br class="d-none d-lg-block" /><span>2</span></span>
-						</div>
-						<div class="sidebar__group-item">
-							<div class="dropend">
-								<button type="button" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside" data-bs-offset="0,30">
-									<span class="icon material-symbols-rounded" aria-hidden="true">apps</span>
-									<span class="label">Conteúdo</span>
-								</button>
-								<ul class="dropdown-menu">
-									<li class="d-lg-none dropdown-menu__header">
-										<a class="dropdown-menu__back-button" tabindex="0" role="button"><span class="icon material-symbols-rounded">chevron_left</span> Voltar</a>
-										<a class="mobile-toggle-close" tabindex="0" role="button"><span class="icon material-symbols-rounded">read_more</span></a>
-									</li>
-									<li class="dropdown-menu__title">
-										<span class="label">Módulo 2</span>
-										<span class="title">Fontes de Dados Socioeconômicos e Demográficos: subsídios para a Saúde</span>
-									</li>
-									<li class="dropdown-menu__item">
-										<a class="dropdown-menu__item-link" tabindex="0" role="link" href="../aula1/topico1.html"><strong>Aula 1: </strong>Importância para a Saúde Pública e principais instituições produtoras de dados populacionais no Brasil</a>
-									</li>
-									<li class="dropdown-menu__item">
-										<a class="dropdown-menu__item-link" tabindex="0" role="link" href="topico1.html"><strong>Aula 2: </strong>Dados populacionais e o Censo Demográfico</a>
-									</li>
-									<li class="dropdown-menu__item">
-										<a class="dropdown-menu__item-link" tabindex="0" role="link" href="../aula3/topico1.html"><strong>Aula 3: </strong>Introdução às pesquisas amostrais e principais fontes de dados</a>
-									</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<div class="divider"><hr /></div>
-					<div class="sidebar__group">
-						<div class="sidebar__group-item">
-							<span class="text class">Aula 2</span>
-						</div>
-						<div class="sidebar__group-item">
-							<div class="dropend">
-								<button type="button" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside" data-bs-offset="0,30">
-									<span class="icon material-symbols-rounded" aria-hidden="true"> format_list_bulleted</span>
-									<span class="label">Tópicos</span>
-								</button>
-								<ul class="dropdown-menu">
-									<li class="d-lg-none dropdown-menu__header">
-										<a class="dropdown-menu__back-button" tabindex="0" role="button"><span class="icon material-symbols-rounded">chevron_left</span> Voltar</a>
-										<a class="mobile-toggle-close" tabindex="0" role="button"><span class="icon material-symbols-rounded">read_more</span></a>
-									</li>
-									<li class="dropdown-menu__title">
-										<span class="label">Aula 2</span>
-										<span class="title">Dados populacionais e o Censo Demográfico</span>
-									</li>
-									<li class="dropdown-menu__item">
-										<nav class="topic-list">
-											<a href="topico1.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico concluído" status="visited"> <span class="material-symbols-rounded"></span>Sobre esta aula</a>
-
-											<a href="topico2.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico atual" status="visited"> <span class="material-symbols-rounded"></span>Introdução</a>
-
-											<a href="topico3.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico não concluído"> <span class="material-symbols-rounded"></span>Desafios e cuidados no uso dos dados</a>
-
-											<a href="topico4.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico não concluído"> <span class="material-symbols-rounded"></span>O Censo Demográfico</a>
-										
-							<a href="topico5.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico não concluído"><span class="material-symbols-rounded"></span>Referências</a></nav>
-									</li>
-								</ul>
-							</div>
+				</div>
+				<div class="divider"><hr /></div>
+				<div class="sidebar__group">
+					<div class="sidebar__group-item"><span class="text class">Aula 2</span></div>
+					<div class="sidebar__group-item">
+						<div class="dropend">
+							<button type="button" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside" data-bs-offset="0,30">
+								<span class="icon material-symbols-rounded" aria-hidden="true">format_list_bulleted</span><span class="label">Tópicos</span>
+							</button>
+							<ul class="dropdown-menu">
+								<li class="d-lg-none dropdown-menu__header">
+									<a class="dropdown-menu__back-button" tabindex="0" role="button"><span class="icon material-symbols-rounded">chevron_left</span> Voltar</a>
+									<a class="mobile-toggle-close" tabindex="0" role="button"><span class="icon material-symbols-rounded">read_more</span></a>
+								</li>
+								<li class="dropdown-menu__title"><span class="label">Aula 2</span><span class="title">Medidas relativas para a análise de dados de saúde</span></li>
+								<li class="dropdown-menu__item"><nav class="topic-list">
+							<a href="topico1.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico concluído" status="visited"><span class="material-symbols-rounded"></span>Sobre esta aula</a>
+							<a href="topico2.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico concluído" status="visited"><span class="material-symbols-rounded"></span>Tipos de medidas relativas</a>
+							<a href="topico3.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico não concluído"><span class="material-symbols-rounded"></span>Padronização de taxas</a>
+							<a href="topico4.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico não concluído"><span class="material-symbols-rounded"></span>Erros comuns na interpretação de indicadores</a>
+							<a href="topico5.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico não concluído"><span class="material-symbols-rounded"></span>Referências</a>
+							</nav></li>
+							</ul>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="content">
-				<div id="page-title">
-					<div class="container">
-						<div class="row align-items-center hstify-content-center justify-content-xxl-start ms-lg-5">
-							<div class="col-12 col-md-10 col-lg-11">
-								<h2 class="title">
-									<span class="label">Módulo 2 | Aula 2</span>
-									<br />
-									Dados populacionais e o Censo Demográfico
-								</h2>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div id="page-content" class="">
-
-					<section><div class="container"><div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-5">
-						<div class="heading__block"><span class="small">Tópico 3</span><h3 class="heading__title">Desafios e cuidados no uso dos dados</h3></div>
-						<p>O uso de dados populacionais no Brasil demanda atenção a diferenças metodológicas entre as bases, já que cada uma emprega conceitos, classificações e unidades de análise próprias, tornando indispensável a consulta de notas técnicas antes de comparar informações ou combinar registros de diferentes fontes.</p>
-						<p>Além das bases diferirem quanto ao nível de detalhamento (agregado ou microdado), como visto, muitas outras características devem ser observadas para não haver nenhum tipo de inconsistência na análise. A periodicidade de coleta pode variar bastante — do Censo, que é decenal, às atualizações mensais do DATASUS —, exigindo cuidado com datas de referência, distinção entre dados provisórios e consolidados e padronização temporal nas análises.</p>
-						<p>A qualidade das informações é outro ponto crítico, especialmente em bases administrativas sujeitas a sub-registro, erros de preenchimento e campos ignorados. Mudanças ao longo do tempo em códigos territoriais, categorias ou sistemas de classificação podem comprometer comparações históricas se não forem previamente harmonizadas. Estimativas amostrais e projeções também carregam incertezas que precisam ser consideradas, exigindo atenção aos intervalos de confiança e cautela em comparações.</p>
-						<p class="mb-0">Por fim, o tratamento de variáveis sensíveis requer rigor, com atenção aos princípios da <a href="https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm" target="_blank" rel="noopener noreferrer">Lei Geral de Proteção de Dados Pessoais (LGPD)</a>, e preferência por dados anonimizados ou agregados para garantir segurança, ética e proteção da privacidade.</p>
-
-					</div></div></div></section>
-				</div>
-				<section>
-					<div class="container">
-						<div class="row justify-content-center">
-							<div class="col-12 col-md-10 col-lg-8">
-								<div class="page-nav d-flex justify-content-evenly">
-									<a class="fio-button fio-button-primary" href="topico2.html" rel="prev"><span class="material-symbols-rounded" aria-hidden="true">west</span> Tópico anterior</a>
-									<a class="fio-button fio-button-primary" href="topico4.html" rel="next">Próximo tópico <span class="material-symbols-rounded" aria-hidden="true">east</span></a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
-			</div>
-			<footer>
-				<div class="container-fluid">
-					<div class="row justify-content-center align-items-center linha-de-marcas">
-						<div class="col-12 text-center py-3">
-							<img class="img-fluid regua-logos" src="../../media/logos/regua-de-logos.png" alt="Régua de logos: Campus Virtual Fiocruz, Fiocruz, SUS Digital, SUS 35 Anos, Ministério da Saúde e Governo do Brasil" />
-						</div>
-					</div>
-				</div>
-			</footer>
 		</div>
-
-		<script src="../../source/bootstrap-5.1.3/js/bootstrap.bundle.min.js"></script>
-		<script type="text/javascript" src="../../assets/js/ResizeSensor.js"></script>
-		<script type="text/javascript" src="../../assets/js/sticky-sidebar.js"></script>
-		<script type="text/javascript" src="../../assets/js/sidebar.js"></script>
-		<script type="text/javascript">
-			var sidebar = new StickySidebar(".sidebar", {
-				topSpacing: 0,
-				bottomSpacing: 0,
-				containerSelector: ".main",
-				innerWrapperSelector: ".sidebar__inner",
-				minWidth: 991,
-			});
-		</script>
-		<script type="text/javascript" src="../../assets/js/scripts.js"></script>
-	</body>
+		<div class="content">
+			<div id="page-title"><div class="container"><div class="row align-items-center hstify-content-center justify-content-xxl-start ms-lg-5"><div class="col-12 col-md-10 col-lg-11"><h2 class="title"><span class="label">Módulo 2 | Aula 2</span><br />Medidas relativas para a análise de dados de saúde</h2></div></div></div></div>
+			<div id="page-content" class="">
+				<section><div class="container">
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-5"><div class="heading__block"><span class="small">Tópico 3</span><h3 class="heading__title">Padronização de taxas</h3></div></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-4"><div class="heading__block"><h5 class="heading__title">Por que padronizar?</h5></div></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-5"><p>Como já foi discutido anteriormente, as taxas utilizadas em epidemiologia e saúde pública podem ser fortemente influenciadas pela estrutura da população analisada, especialmente pela distribuição etária, mas também por sexo, raça/cor ou outras características demográficas.</p></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-5"><p>Populações com maior proporção de idosos, por exemplo, tendem a apresentar taxas de mortalidade mais elevadas, independentemente das reais condições de saúde. Assim, comparar diretamente taxas entre populações com perfis distintos pode levar a interpretações equivocadas.</p></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-5"><p>A padronização é um procedimento estatístico que visa eliminar o efeito dessas diferenças estruturais, permitindo comparações mais justas entre populações ou entre diferentes períodos temporais. Em outras palavras, busca-se responder à pergunta:</p></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-4"><div class="heading__block"><h6 class="heading__title">“Qual seria a taxa observada se todas as populações tivessem a mesma composição demográfica?”</h6></div></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-5"><p>Sem a padronização, diferenças aparentes podem refletir apenas variações demográficas, e não diferenças reais no risco ou na ocorrência do evento.</p></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-4"><div class="heading__block"><h5 class="heading__title">Tipos de taxas e comparabilidade</h5></div></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-5"><p>Antes de compreender a padronização, é importante revisar os principais tipos de taxas e entender suas implicações para comparação entre populações:</p></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8"><div class="row g-4 mb-5"><div class="col-12 col-md-4"><div class="flipcard"><div class="flip-card"><input type="checkbox" id="m2a2fc1" class="more" aria-hidden="true" /><div class="flip-card-inner"><div class="card shadow flip-card-front fundo1"><div class="h-100 bg-transparent border-0 text-center"><div class="card-body justify-content-center d-flex flex-column"><span class="h5 card-title">Taxa bruta</span></div><div class="card-footer text-white"><div class="card-btn"><label for="m2a2fc1" class="fio-button fio-button-primary" aria-hidden="true"><img src="../../media/templates/flipcard-icon-dark.svg" alt="" width="36" /> Confira</label></div></div></div></div><div class="card flip-card-back"><div class="h-100 bg-transparent border-0 text-center"><div class="card-body justify-content-center d-flex flex-column"><div class="scrollable text-start"><p class='mb-0'><strong>Taxa bruta:</strong> razão entre o total de eventos ocorridos em uma população e o total da população em risco. Não considera diferenças na composição etária ou demográfica. Por isso, quando populações possuem estruturas diferentes (por exemplo, uma população mais envelhecida que outra), a taxa bruta pode levar a comparações inadequadas.</p></div></div><div class="card-footer"><div class="card-btn"><label for="m2a2fc1" class="fio-button fio-button-secondary return" aria-hidden="true"><span class="material-symbols-rounded">arrow_back</span></label></div></div></div></div></div></div></div></div><div class="col-12 col-md-4"><div class="flipcard"><div class="flip-card"><input type="checkbox" id="m2a2fc2" class="more" aria-hidden="true" /><div class="flip-card-inner"><div class="card shadow flip-card-front fundo1"><div class="h-100 bg-transparent border-0 text-center"><div class="card-body justify-content-center d-flex flex-column"><span class="h5 card-title">Taxa específica</span></div><div class="card-footer text-white"><div class="card-btn"><label for="m2a2fc2" class="fio-button fio-button-primary" aria-hidden="true"><img src="../../media/templates/flipcard-icon-dark.svg" alt="" width="36" /> Confira</label></div></div></div></div><div class="card flip-card-back"><div class="h-100 bg-transparent border-0 text-center"><div class="card-body justify-content-center d-flex flex-column"><div class="scrollable text-start"><p class='mb-0'><strong>Taxa específica:</strong> calculada dentro de subgrupos bem definidos (por idade, sexo, faixa etária, entre outros). Ao analisar grupos homogêneos, reduz a influência da estrutura demográfica global da população e permite comparações mais adequadas entre grupos equivalentes.</p></div></div><div class="card-footer"><div class="card-btn"><label for="m2a2fc2" class="fio-button fio-button-secondary return" aria-hidden="true"><span class="material-symbols-rounded">arrow_back</span></label></div></div></div></div></div></div></div></div><div class="col-12 col-md-4"><div class="flipcard"><div class="flip-card"><input type="checkbox" id="m2a2fc3" class="more" aria-hidden="true" /><div class="flip-card-inner"><div class="card shadow flip-card-front fundo1"><div class="h-100 bg-transparent border-0 text-center"><div class="card-body justify-content-center d-flex flex-column"><span class="h5 card-title">Taxa padronizada</span></div><div class="card-footer text-white"><div class="card-btn"><label for="m2a2fc3" class="fio-button fio-button-primary" aria-hidden="true"><img src="../../media/templates/flipcard-icon-dark.svg" alt="" width="36" /> Confira</label></div></div></div></div><div class="card flip-card-back"><div class="h-100 bg-transparent border-0 text-center"><div class="card-body justify-content-center d-flex flex-column"><div class="scrollable text-start"><p class='mb-0'><strong>Taxa padronizada:</strong> taxa ajustada para eliminar o efeito das diferenças na estrutura demográfica entre populações. Representa o valor que seria observado caso todas as populações tivessem a mesma composição (por exemplo, mesma distribuição etária). Seu principal objetivo é permitir comparações mais justas entre populações distintas.</p></div></div><div class="card-footer"><div class="card-btn"><label for="m2a2fc3" class="fio-button fio-button-secondary return" aria-hidden="true"><span class="material-symbols-rounded">arrow_back</span></label></div></div></div></div></div></div></div></div></div></div></div><div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-5"><p>Comparações diretas entre taxas podem ser distorcidas por diferenças na estrutura etária ou demográfica das populações. A padronização busca eliminar esse efeito. Esse procedimento é especialmente importante na comparação de indicadores de mortalidade e morbidade, pois apresentam forte associação com a idade.</p></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-5"><p>Mas como, na prática, eliminamos esse efeito da estrutura etária? É isso que veremos na próxima seção sobre métodos de padronização.</p></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-4"><div class="heading__block"><h5 class="heading__title">Métodos de padronização</h5></div></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-5"><p>Os dois métodos mais utilizados de padronização de taxas são:</p></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-5"><div class="list"><ul class="list-group"><li class="list-group-item" list-style="default">Padronização direta;</li><li class="list-group-item" list-style="default">Padronização indireta.</li></ul></div></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-5"><p>A escolha do método depende principalmente da disponibilidade dos dados e da estabilidade das taxas específicas. Em situações em que as taxas por faixa etária são confiáveis e baseadas em populações suficientemente grandes, o método direto é preferível. Quando isso não ocorre, opta-se, em geral, pelo método indireto.</p></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-4"><div class="heading__block"><h5 class="heading__title">Método direto de padronização</h5></div></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-5"><p>No método direto de padronização:</p></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-5"><div class="list"><ul class="list-group"><li class="list-group-item" list-style="default">Assume-se que as taxas específicas da população em estudo são confiáveis;</li><li class="list-group-item" list-style="default">Utiliza-se uma população-padrão como referência comum.</li></ul></div></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-5"><p>Esse método consiste em aplicar as taxas específicas da população estudada a uma população-padrão, estimando quantos eventos ocorreriam caso ambas tivessem a mesma distribuição etária.</p></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-5"><p>Para realizar a padronização, é necessário escolher uma população-padrão, que servirá como referência comum. Essa população-padrão pode ser real, como uma das populações envolvidas na comparação, ou a de um outro país, ou ser fictícia, como por exemplo, a média ou a soma das populações envolvidas na análise.</p></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-5"><p>O resultado obtido corresponde a uma taxa hipotética, que representa o valor que seria observado se a população estudada tivesse a mesma estrutura etária da população-padrão. Após a padronização, a taxa pode ser maior ou menor que a taxa bruta, justamente porque o efeito da estrutura etária foi removido.</p></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-4"><div class="heading__block"><h6 class="heading__title">Passo a passo do método direto (exemplo por faixa etária)</h6></div></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-5"><ol><li>Calcular as taxas específicas por faixa etária na população de estudo;</li><li>Aplicar essas taxas à população-padrão;</li><li>Calcular o número esperado de eventos em cada faixa etária;</li><li>Somar os eventos esperados;</li><li>Dividir o total de eventos esperados pelo total da população-padrão, obtendo a taxa padronizada.</li></ol></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-4"><div class="heading__block"><h5 class="heading__title">Exemplo prático</h5></div></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-5"><p>A pergunta aqui é:</p></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-4"><div class="heading__block"><h5 class="heading__title">Qual dos países tem melhores condições de saúde, considerando o risco de óbito?</h5></div></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-5"><p class='mb-2'><strong>Tabela 1: População e total de óbitos segundo faixas etárias. Brasil e Portugal, 2024.</strong></p><div class="table-responsive"><table class="table table-sm table-bordered align-middle mb-0"><thead><tr class="bg-primary text-white"><th scope="col" rowspan="2">Faixa etária</th><th scope="col" colspan="2" class="text-center">Brasil</th><th scope="col" colspan="2" class="text-center">Portugal</th></tr><tr class='bg-primary text-white'><th scope="col" class="text-end">População</th><th scope="col" class="text-end">Óbitos</th><th scope="col" class="text-end">População</th><th scope="col" class="text-end">Óbitos</th></tr></thead><tbody><tr><td>0 – 19</td><td class="text-end">59.026.342</td><td class="text-end">54.723</td><td class="text-end">1.365.204</td><td class="text-end">471</td></tr><tr><td>20 – 59</td><td class="text-end">121.387.791</td><td class="text-end">381.236</td><td class="text-end">6.783.020</td><td class="text-end">9.802</td></tr><tr><td>60 +</td><td class="text-end">34.169.617</td><td class="text-end">1.092.243</td><td class="text-end">2.901.412</td><td class="text-end">90.878</td></tr><tr><td>Total</td><td class="text-end">214.583.750</td><td class="text-end">1.528.202</td><td class="text-end">11.049.635</td><td class="text-end">101.151</td></tr></tbody></table></div><p class="figure-caption fonte small mt-2 mb-0">Obs.: Dados fictícios. Fonte: Elaborado pelos autores.</p></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-5"><p>Para avaliar o risco de óbito de cada país vamos calcular a Taxa Bruta de Mortalidade (TBM) por mil habitantes:</p></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-5"><div class="text-center"><p class="d-flex align-items-center justify-content-center flex-wrap gap-2 mb-4"><span>TBM<sub>Brasil</sub> =</span><span class="d-inline-flex flex-column align-items-stretch text-center px-2" style="min-width: 7.5rem; line-height: 1.2;"><span>1.528.202</span><span style="border-top: 1px solid currentColor;"></span><span>214.583.750</span></span><span>× 1.000 = 7,1</span><span class="material-symbols-rounded" aria-hidden="true" style="color: #2b6cb0; font-size: 2.5rem; font-variation-settings: 'FILL' 1;">south</span></p><p class="d-flex align-items-center justify-content-center flex-wrap gap-2 mb-4"><span>TBM<sub>Portugal</sub> =</span><span class="d-inline-flex flex-column align-items-stretch text-center px-2" style="min-width: 7.5rem; line-height: 1.2;"><span>101.151</span><span style="border-top: 1px solid currentColor;"></span><span>11.049.635</span></span><span>× 1.000 = 9,2</span><span class="material-symbols-rounded" aria-hidden="true" style="color: #e67e22; font-size: 2.5rem; font-variation-settings: 'FILL' 1;">north</span></p></div></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-5"><p><strong>Taxa Bruta de Mortalidade maior em Portugal &gt; Maior risco de óbito em Portugal &gt; Sugere melhores condições de saúde no Brasil</strong></p></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-5"><p>Contudo, sabemos que a mortalidade é influenciada pela faixa etária da população, então, vamos avaliar as taxas específicas de mortalidade por faixa etária:</p></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-5"><p class='mb-2'><strong>Tabela 2: Taxas específicas de mortalidade (por mil habitantes) segundo faixa etária. Brasil e Portugal, 2024.</strong></p><div class="table-responsive"><table class="table table-sm table-bordered align-middle mb-0"><thead><tr class="bg-primary text-white"><th scope="col" rowspan="2">Faixa etária</th><th scope="col" colspan="2" class="text-center">Taxa específica (/1.000)</th></tr><tr class='bg-primary text-white'><th scope="col" class="text-end">Brasil <span class="material-symbols-rounded align-middle" aria-hidden="true" style="color: #e67e22; font-size: 1.25rem; font-variation-settings: 'FILL' 1;">north</span></th><th scope="col" class="text-end">Portugal <span class="material-symbols-rounded align-middle" aria-hidden="true" style="color: #2b6cb0; font-size: 1.25rem; font-variation-settings: 'FILL' 1;">south</span></th></tr></thead><tbody><tr><td>0 – 19</td><td class='text-end'>0,9</td><td class='text-end'>0,3</td></tr><tr><td>20 – 59</td><td class='text-end'>3,1</td><td class='text-end'>1,4</td></tr><tr><td>60 +</td><td class='text-end'>32,0</td><td class='text-end'>31,3</td></tr></tbody></table></div><p class="figure-caption fonte small mt-2 mb-0">Fonte: Elaborado pelo autor.</p></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-5"><p>Taxas específicas maiores no Brasil em todas as faixas etárias &gt; Maior risco de óbito no Brasil em todas as faixas etárias &gt; Sugere melhores condições de saúde em Portugal</p></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-5"><p>Ficamos com uma discordância entre as análises baseadas nas taxas brutas e específicas. O que fazer? Vamos olhar a distribuição da população por faixa etária nos dois países:</p></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-5"><p class='mb-2'><strong>Tabela 3: Distribuição populacional segundo faixa etária. Brasil e Portugal, 2024.</strong></p><div class="table-responsive"><table class="table table-sm table-bordered align-middle mb-0"><thead><tr class="bg-primary text-white"><th scope="col" rowspan="2">Faixa etária</th><th scope="col" colspan="2" class="text-center">Brasil</th><th scope="col" colspan="2" class="text-center">Portugal</th></tr><tr class='bg-primary text-white'><th scope="col" class="text-end">População</th><th scope="col" class="text-end">%</th><th scope="col" class="text-end">População</th><th scope="col" class="text-end">%</th></tr></thead><tbody><tr><td>0 – 19</td><td class="text-end">59.026.342</td><td class="text-end">27,5</td><td class="text-end">1.365.204</td><td class="text-end">12,4</td></tr><tr><td>20 – 59</td><td class="text-end">121.387.791</td><td class="text-end">56,6</td><td class="text-end">6.783.020</td><td class="text-end">61,4</td></tr><tr><td>60 +</td><td class="text-end">34.169.617</td><td class="text-end">15,9</td><td class="text-end">2.901.412</td><td class="text-end">26,3</td></tr><tr><td>Total</td><td class="text-end">214.583.750</td><td class="text-end">100,0</td><td class="text-end">11.049.635</td><td class="text-end">100,0</td></tr></tbody></table></div><p class="figure-caption fonte small mt-2 mb-0">Fonte: Elaborado pelo autor.</p></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-5"><p>As populações apresentam diferenças na estrutura etária. O Brasil tem a população mais jovem do que a de Portugal, desta forma, para comparar os dois países de forma adequada é necessário padronizar as taxas. Como temos a informação de óbito detalhada por faixa etária para os dois países, podemos aplicar o método direto de padronização.</p></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-4"><div class="heading__block"><h5 class="heading__title">Padronizando pelo método direto</h5></div></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-5"><p>Para facilitar, vamos utilizar como população-padrão a do Brasil de 2024 (a mesma considerada na comparação). Para calcular a Taxa de Mortalidade Padronizada (TMP) de Portugal precisamos calcular o total de óbitos esperados, considerando a população padrão.</p></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-5"><p class='mb-2'><strong>Tabela 4: População-padrão (Brasil), taxa específica de mortalidade e óbitos esperados de Portugal por faixa etária, 2024.</strong></p><div class="table-responsive"><table class="table table-sm table-bordered align-middle mb-0"><thead><tr class="bg-primary text-white"><th scope="col">Faixa etária</th><th scope="col" class="text-end">População-padrão<br />(Brasil)</th><th scope="col" class="text-end">Taxa específica<br />de Portugal<br />(por mil hab.)</th><th scope="col" class="text-end">Óbitos esperados<br />para Portugal</th></tr></thead><tbody><tr><td>0 – 19</td><td class="text-end">59.026.342</td><td class="text-end">0,3</td><td class="text-end">17.708</td></tr><tr><td>20 – 59</td><td class="text-end">121.387.791</td><td class="text-end">1,4</td><td class="text-end">169.943</td></tr><tr><td>60 +</td><td class="text-end">34.169.617</td><td class="text-end">31,3</td><td class="text-end">1.069.509</td></tr><tr><td>Total</td><td class="text-end">214.583.750</td><td class="text-end">–</td><td class="text-end">1.257.160</td></tr></tbody></table></div><p class="figure-caption fonte small mt-2 mb-0">Fonte: Elaborado pelo autor.</p></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-5"><div class="text-center"><p class="d-flex align-items-center justify-content-center flex-wrap gap-2 mb-4"><span>TMP<sub>Portugal</sub> =</span><span class="d-inline-flex flex-column align-items-stretch text-center px-2" style="min-width: 7.5rem; line-height: 1.2;"><span>1.257.160</span><span style="border-top: 1px solid currentColor;"></span><span>214.583.750</span></span><span>× 1.000 = 5,9</span></p></div></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-5"><p>Como o Brasil foi a população padrão devemos comparar o valor padronizado de Portugal com o valor bruto do Brasil, não há necessidade de padronizá-lo.</p></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-5"><p class="mb-3"><strong>Taxa de mortalidade (Brasil) = 7,1 por mil hab.</strong> <span class="material-symbols-rounded align-middle" aria-hidden="true" style="color: #e67e22; font-size: 2rem; font-variation-settings: 'FILL' 1;">north</span></p></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-5"><p class="mb-3"><strong>Taxa de mortalidade padronizada (Portugal) = 5,9 por mil hab.</strong> <span class="material-symbols-rounded align-middle" aria-hidden="true" style="color: #2b6cb0; font-size: 2rem; font-variation-settings: 'FILL' 1;">south</span></p></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-5"><p>Essa taxa simula uma situação na qual a estrutura etária da população de Portugal seria idêntica à do Brasil em 2024, mantendo-se as taxas específicas por idade observadas em Portugal.</p></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-5"><p>Com estes resultados concluímos que, comparando as taxas padronizadas por faixa etária, o <strong>Brasil apresentou o maior risco de óbito</strong>, e consequentemente <strong>piores condições de saúde, comparado à Portugal</strong> no ano avaliado.</p></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-5"><p>Se tivéssemos comparado as taxas brutas, Portugal teria apresentado risco maior de óbito em 2024 (Brasil: 7,1/1.000 hab.; Portugal: 9,2/1.000 hab.) e estaríamos interpretando erroneamente a relação entre Brasil e Portugal.</p></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-4"><div class="heading__block"><h5 class="heading__title">Método indireto de padronização</h5></div></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-5"><p>O método indireto de padronização é indicado quando:</p></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-5"><div class="list"><ul class="list-group"><li class="list-group-item" list-style="default">Não se dispõe de taxas específicas confiáveis na população em estudo;</li><li class="list-group-item" list-style="default">Apenas o total de eventos é conhecido;</li><li class="list-group-item" list-style="default">Os contingentes populacionais são pequenos, o que gera instabilidade nas taxas específicas.</li></ul></div></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-5"><p>Nessas situações, em vez de utilizar as taxas da população estudada, utilizam-se as taxas específicas da população-padrão. Essas taxas são então aplicadas à estrutura etária da população em estudo, permitindo calcular o número esperado de eventos.</p></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-5"><p>A partir dessa comparação entre eventos observados e esperados, obtém-se, em geral, a Razão de Mortalidade Padronizada (RMP) ou indicador equivalente.</p></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-5"><p>Esse método é especialmente útil em análises de pequenas áreas geográficas, serviços de saúde específicos ou populações reduzidas, nas quais as taxas específicas apresentam grande variabilidade.</p></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-4"><div class="heading__block"><h5 class="heading__title">Exemplo prático</h5></div></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-5"><p>Vamos manter a mesma pergunta do exemplo anterior:</p></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-4"><div class="heading__block"><h5 class="heading__title">Qual dos países tem melhores condições de saúde, considerando o risco de óbito?</h5></div></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-5"><p>Porém agora, vamos supor que não temos a informação sobre os óbitos por faixa etária, apenas o total de óbitos de Portugal.</p></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-5"><p class='mb-2'><strong>Tabela 5: População e total de óbitos segundo faixas etárias. Brasil e Portugal, 2024.</strong></p><div class="table-responsive"><table class="table table-sm table-bordered align-middle mb-0"><thead><tr class="bg-primary text-white"><th scope="col" rowspan="2">Faixa etária</th><th scope="col" colspan="2" class="text-center">Brasil</th><th scope="col" colspan="2" class="text-center">Portugal</th></tr><tr class='bg-primary text-white'><th scope="col" class="text-end">População</th><th scope="col" class="text-end">Óbitos</th><th scope="col" class="text-end">População</th><th scope="col" class="text-end">Óbitos</th></tr></thead><tbody><tr><td>0 – 19</td><td class="text-end">59.026.342</td><td class="text-end">54.723</td><td class="text-end">1.365.204</td><td class="text-end">–</td></tr><tr><td>20 – 59</td><td class="text-end">121.387.791</td><td class="text-end">381.236</td><td class="text-end">6.783.020</td><td class="text-end">–</td></tr><tr><td>60 +</td><td class="text-end">34.169.617</td><td class="text-end">1.092.243</td><td class="text-end">2.901.412</td><td class="text-end">–</td></tr><tr><td>Total</td><td class="text-end">214.583.750</td><td class="text-end">1.528.202</td><td class="text-end">11.049.635</td><td class="text-end">101.151</td></tr></tbody></table></div><p class="figure-caption fonte small mt-2 mb-0">Obs.: Dados fictícios. Fonte: Elaborado pelo autor.</p></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-5"><p>Como faríamos para comparar, sabendo que há necessidade de padronização por conta da diferença na estrutura etária da população?</p></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-5"><p>Em situações como esta aplicamos o método indireto de padronização.</p></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-4"><div class="heading__block"><h5 class="heading__title">Padronizando pelo método indireto</h5></div></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-5"><p>Neste caso, aplicamos a taxa específica da população padrão (Brasil) na população de Portugal para encontrar os óbitos esperados e calcular a Razão de Mortalidade Padronizada (RMP):</p></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-5"><p class='mb-2'><strong>Tabela 6: Taxa específica de mortalidade da população-padrão (Brasil), população e óbitos esperados de Portugal, 2024.</strong></p><div class="table-responsive"><table class="table table-sm table-bordered align-middle mb-0"><thead><tr class="bg-primary text-white"><th scope="col">Faixa etária</th><th scope="col" class="text-end">Taxa específica da<br />população-padrão (Brasil)<br />(por mil hab.)</th><th scope="col" class="text-end">População<br />de Portugal</th><th scope="col" class="text-end">Óbitos esperados<br />para Portugal</th></tr></thead><tbody><tr><td>0 – 19</td><td class="text-end">0,9</td><td class="text-end">1.365.204</td><td class="text-end">1.229</td></tr><tr><td>20 – 59</td><td class="text-end">3,1</td><td class="text-end">6.783.020</td><td class="text-end">21.027</td></tr><tr><td>60 +</td><td class="text-end">32,0</td><td class="text-end">2.901.412</td><td class="text-end">92.845</td></tr><tr><td>Total</td><td class="text-end">–</td><td class="text-end">11.049.635</td><td class="text-end">115.101</td></tr></tbody></table></div><p class="figure-caption fonte small mt-2 mb-0">Fonte: Elaborado pelo autor.</p></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-5"><div class="text-center"><p class="d-flex align-items-center justify-content-center flex-wrap gap-2 mb-4"><span>RMP<sub>Portugal</sub> =</span><span class="d-inline-flex flex-column align-items-stretch text-center px-2" style="min-width: 9rem; line-height: 1.2;"><span>óbitos observados</span><span style="border-top: 1px solid currentColor;"></span><span>óbitos esperados</span></span><span>× 100 =</span><span class="d-inline-flex flex-column align-items-stretch text-center px-2" style="min-width: 7.5rem; line-height: 1.2;"><span>101.151</span><span style="border-top: 1px solid currentColor;"></span><span>115.101</span></span><span>× 100 = 88%</span></p></div></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-5"><p>Este resultado é interpretado da seguinte forma: para cada 88 óbitos observados em Portugal no ano 2024, dadas as condições de saúde lá vigentes, espera-se a ocorrência de 100 óbitos, caso a população de Portugal estivesse exposta às condições de saúde existentes no Brasil, neste mesmo ano.</p></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-5"><p>Conclui-se assim, que o <strong>Brasil tem maior risco de óbito</strong>, e consequentemente, <strong>piores condições de saúde do que em Portugal</strong> no ano de 2024.</p></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-4"><div class="heading__block"><h5 class="heading__title">Conclusões sobre padronização</h5></div></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-5"><div class="list"><ul class="list-group"><li class="list-group-item" list-style="default">Duas populações podem apresentar taxas específicas de mortalidade idênticas, mas, se tiverem distribuições etárias diferentes, produzirão taxas brutas distintas.</li><li class="list-group-item" list-style="default">Em contextos de envelhecimento populacional, a taxa bruta de mortalidade de um país pode aumentar mesmo que suas taxas específicas permaneçam estáveis. Isso não significa, necessariamente, piora nas condições de saúde, mas sim mudança na estrutura etária.</li><li class="list-group-item" list-style="default">A padronização é o procedimento que permite controlar esse efeito da estrutura demográfica, tornando as comparações mais adequadas.</li><li class="list-group-item" list-style="default">A escolha entre padronização direta e indireta depende das informações disponíveis e da estabilidade das taxas específicas.</li><li class="list-group-item" list-style="default">Os resultados obtidos pelos métodos direto e indireto não são idênticos, pois partem de pressupostos distintos:<ul class='mb-0 mt-2 ps-3'><li>A padronização direta utiliza uma população-padrão;</li><li>A padronização indireta utiliza um conjunto de taxas específicas padrão.</li></ul></li><li class="list-group-item" list-style="default">Não existe um método perfeito para comparar taxas entre populações distintas. Entretanto, quando há informação detalhada e taxas específicas estáveis, a padronização direta é geralmente preferível por permitir comparações mais consistentes entre múltiplas populações.</li></ul></div></div></div>
+				</div></section>
+			</div>
+			<section><div class="container"><div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8"><div class="page-nav d-flex justify-content-evenly flex-wrap gap-3"><a class="fio-button fio-button-primary" href="topico2.html" rel="prev"><span class="material-symbols-rounded" aria-hidden="true">west</span> Tópico anterior</a><a class="fio-button fio-button-primary" href="topico4.html" rel="next">Próximo tópico <span class="material-symbols-rounded" aria-hidden="true">east</span></a></div></div></div></div></section>
+		</div>
+		<footer>
+			<div class="container-fluid">
+				<div class="row justify-content-center align-items-center linha-de-marcas">
+					<div class="col-12 text-center py-3">
+						<img class="img-fluid regua-logos" src="../../media/logos/regua-de-logos.png" alt="Régua de logos: Campus Virtual Fiocruz, Fiocruz, SUS Digital, SUS 35 Anos, Ministério da Saúde e Governo do Brasil" />
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="../../source/bootstrap-5.1.3/js/bootstrap.bundle.min.js"></script>
+	<script type="text/javascript" src="../../assets/js/ResizeSensor.js"></script>
+	<script type="text/javascript" src="../../assets/js/sticky-sidebar.js"></script>
+	<script type="text/javascript" src="../../assets/js/sidebar.js"></script>
+	<script type="text/javascript">var sidebar = new StickySidebar(".sidebar", { topSpacing: 0, bottomSpacing: 0, containerSelector: ".main", innerWrapperSelector: ".sidebar__inner", minWidth: 991 });</script>
+	<script type="text/javascript" src="../../assets/js/scripts.js"></script>
+	<script type="text/javascript" src="../../assets/js/custom-anime.js"></script>
+	<script type="text/javascript" src="../../source/animate/aos/dist/aos.js"></script>
+	<script>AOS.init();</script>
+</body>
 </html>

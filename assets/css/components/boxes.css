@@ -114,7 +114,14 @@
 	padding:0;
 }
 
-.box[data-box='Atenção'] .card .card-body p {
+#page-content .box[data-box='Atenção'] .card .card-body p,
+#page-content .box[data-box='Atenção'] .card .card-body ul,
+#page-content .box[data-box='Atenção'] .card .card-body li,
+#page-content .box[data-box='Atenção'] .card .card-body strong {
+	color: var(--fio-sys-color-neutral-white);
+}
+
+#page-content .box[data-box='Atenção'] .card .card-body ul li::marker {
 	color: var(--fio-sys-color-neutral-white);
 }
 

@@ -390,7 +390,18 @@
 /* SIDEBAR DESKTOP */
 
 @media (min-width: 992px) {
+	.main::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		width: 120px;
+		background-color: var(--fio-sys-color-accent-medium);
+		z-index: 90;
+	}
 	.sidebar {
+		background-color: transparent;
 		float: left;
 		max-width: 120px;
 		position: relative;
@@ -399,6 +410,7 @@
 		z-index: 100;
 	}
 	.sidebar .sidebar__inner {
+		background-color: transparent;
 		padding: 92px 0 12px;
 	}
 	.sidebar .divider hr {

@@ -1,311 +1,204 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=yes" />
-		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-		<meta name="robots" content="noindex" />
-		<meta name="author" content="Fiocruz, Campus Virtual" />
-		<title>Curso Fontes de Dados | Mod 2 | Aula 2</title>
-		<link rel="stylesheet" href="../../source/bootstrap-5.1.3/css/bootstrap.min.css" />
-		<link rel="stylesheet" href="../../assets/css/style.css" />
-	</head>
-	<body>
-		<header class="header">
-			<div class="mobile-toggle-open">
-				<a class="mobile-toggle__button" tabindex="0" role="button">
-					<span class="icon material-symbols-rounded">read_more</span>
-				</a>
-			</div>
-			<div class="brand">
-				<img class="img-fluid logo-black" src="../../media/logos/header-fiocruz-campus-virtual.png" alt="Campus Virtual Fiocruz" />
-			</div>
-			<div class="title">
-				<h1>Fontes de Dados e Sistemas de Informação para o SUS</h1>
-			</div>
-			<ul class="nav nav-pills">
-				<li class="nav-item"><a href="../../index.html" class="nav-link">Início</a></li>
-				<li class="nav-item"><a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#modal-creditos">Créditos</a></li>
-			</ul>
-		</header>
-		<div class="main">
-			<div class="sidebar" role="navigation">
-				<div class="sidebar__inner" style="position: relative">
-					<div class="sidebar__group d-lg-none">
-						<div class="sidebar__group-item">
-							<div class="sidebar__header">
-								<span>Curso</span>
-								<a class="mobile-toggle-close" tabindex="0" role="button"><span class="icon material-symbols-rounded">read_more</span></a>
-							</div>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=yes" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="robots" content="noindex" />
+	<meta name="author" content="Fiocruz, Campus Virtual" />
+	<meta name="description" content="Curso Indicadores para a saúde: aspectos teóricos e práticos" />
+	<link rel="apple-touch-icon" sizes="180x180" href="../../media/icons/apple-icon-180x180.png" />
+	<link rel="icon" type="image/png" sizes="32x32" href="../../media/icons/favicon-32x32.png" />
+	<link rel="manifest" href="../media/icons/manifest.json" />
+	<meta name="theme-color" content="#001833" />
+	<title>Curso Indicadores para a saúde: aspectos teóricos e práticos | Mod 2 | Aula 2</title>
+	<link rel="stylesheet" href="../../source/bootstrap-5.1.3/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="../../assets/css/style.css" />
+</head>
+<body>
+	<header class="header">
+		<div class="mobile-toggle-open"><a class="mobile-toggle__button" tabindex="0" role="button"><span class="icon material-symbols-rounded">read_more</span></a></div>
+		<div class="brand"><img class="img-fluid logo-black" src="../../media/logos/header-fiocruz-campus-virtual.png" alt="Campus Virtual Fiocruz" /></div>
+		<div class="title"><h1>Indicadores para a saúde: aspectos teóricos e práticos</h1></div>
+		<ul class="nav nav-pills">
+			<li class="nav-item"><a href="../../index.html" class="nav-link">Início</a></li>
+			<li class="nav-item"><a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#modal-creditos">Créditos</a></li>
+		</ul>
+	</header>
+	<div class="main">
+		<div class="sidebar" role="navigation">
+			<div class="sidebar__inner" style="position: relative">
+				<div class="sidebar__group d-lg-none">
+					<div class="sidebar__group-item">
+						<div class="sidebar__header">
+							<span>Curso</span>
+							<a class="mobile-toggle-close" tabindex="0" role="button"><span class="icon material-symbols-rounded">read_more</span></a>
 						</div>
-						<div class="sidebar__group-item">
-							<div class="sidebar__title">
-								<h1>Fontes de Dados e Sistemas de Informação para o SUS</h1>
-							</div>
-						</div>
-						<div class="sidebar__group-item">
-							<ul class="nav">
-								<li class="nav-item">
-									<a href="../../index.html" class="nav-link" tabindex="0"><span class="icon material-symbols-rounded" aria-hidden="true">home</span>Início</a>
+					</div>
+					<div class="sidebar__group-item"><div class="sidebar__title"><h1>Indicadores para a saúde: aspectos teóricos e práticos</h1></div></div>
+					<div class="sidebar__group-item">
+						<ul class="nav">
+							<li class="nav-item"><a href="../../index.html" class="nav-link" tabindex="0"><span class="icon material-symbols-rounded" aria-hidden="true">home</span>Início</a></li>
+							<li class="nav-item"><a href="#" class="nav-link" tabindex="0" data-bs-toggle="modal" data-bs-target="#modal-creditos"><span class="icon material-symbols-rounded" aria-hidden="true">format_list_bulleted</span>Créditos</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="sidebar__group">
+					<div class="sidebar__group-item">
+						<div class="dropend">
+							<button id="dropdown-modulos" type="button" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside" data-bs-offset="0,30">
+								<span class="icon material-symbols-rounded" aria-hidden="true">grid_view</span><span class="label">Módulos</span>
+							</button>
+							<ul class="dropdown-menu" aria-labelledby="dropdown-modulos">
+								<li class="d-lg-none dropdown-menu__header">
+									<a class="dropdown-menu__back-button" tabindex="0" role="button"><span class="icon material-symbols-rounded">chevron_left</span> Voltar</a>
+									<a class="mobile-toggle-close" tabindex="0" role="button"><span class="icon material-symbols-rounded">read_more</span></a>
 								</li>
-								<li class="nav-item">
-									<a href="#" class="nav-link" tabindex="0" data-bs-toggle="modal" data-bs-target="#modal-creditos"><span class="icon material-symbols-rounded" aria-hidden="true"> format_list_bulleted</span>Créditos</a>
-								</li>
+								<li class="dropdown-menu__item"><a class="dropdown-menu__item-link" tabindex="0" role="link" href="../../modulo1/aula1/topico1.html"><strong>Módulo 1</strong><br />Conceitos básicos em indicadores para a saúde</a></li>
+								<li class="dropdown-menu__item"><a class="dropdown-menu__item-link" tabindex="0" role="link" href="../../modulo2/aula1/topico1.html"><strong>Módulo 2</strong><br />Calculando indicadores</a></li>
+								<li class="dropdown-menu__item"><a class="dropdown-menu__item-link" tabindex="0" role="link" href="../../modulo3/aula1/topico1.html"><strong>Módulo 3</strong><br />Uso de indicadores</a></li>
 							</ul>
 						</div>
 					</div>
-
-					<div class="sidebar__group">
-						<div class="sidebar__group-item">
-							<div class="dropend">
-								<button id="dropdown-modulos" type="button" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside" data-bs-offset="0,30">
-									<span class="icon material-symbols-rounded" aria-hidden="true">grid_view</span>
-									<span class="label">Módulos</span>
-								</button>
-								<ul class="dropdown-menu" aria-labelledby="dropdown-modulos">
-									<li class="d-lg-none dropdown-menu__header">
-										<a class="dropdown-menu__back-button" tabindex="0" role="button"><span class="icon material-symbols-rounded">chevron_left</span> Voltar</a>
-										<a class="mobile-toggle-close" tabindex="0" role="button"><span class="icon material-symbols-rounded">read_more</span></a>
-									</li>
-									<li class="dropdown-menu__item">
-										<a class="dropdown-menu__item-link" tabindex="0" role="link" href="../../modulo1/aula1/topico1.html"><strong>Módulo 1</strong><br />Introdução à Informação em Saúde no SUS</a>
-									</li>
-									<li class="dropdown-menu__item">
-										<a class="dropdown-menu__item-link" tabindex="0" role="link" href="../../modulo2/aula1/topico1.html"><strong>Módulo 2</strong><br />Fontes de Dados Socioeconômicos e Demográficos: subsídios para a Saúde</a>
-									</li>
-									<li class="dropdown-menu__item">
-										<a class="dropdown-menu__item-link" tabindex="0" role="link" href="../../modulo3/aula1/topico1.html"><strong>Módulo 3</strong><br />Sistemas de Informação em Saúde</a>
-									</li>
-																<li class="dropdown-menu__item">
-									<a class="dropdown-menu__item-link" tabindex="0" role="link" href="../../modulo4/aula1/topico1.html"><strong>Módulo 4</strong><br />Interoperabilidade de Sistemas</a>
+				</div>
+				<div class="divider"><hr /></div>
+				<div class="sidebar__group">
+					<div class="sidebar__group-item"><span class="text module">Módulo <br class="d-none d-lg-block" /><span>2</span></span></div>
+					<div class="sidebar__group-item">
+						<div class="dropend">
+							<button type="button" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside" data-bs-offset="0,30">
+								<span class="icon material-symbols-rounded" aria-hidden="true">apps</span><span class="label">Conteúdo</span>
+							</button>
+							<ul class="dropdown-menu">
+								<li class="d-lg-none dropdown-menu__header">
+									<a class="dropdown-menu__back-button" tabindex="0" role="button"><span class="icon material-symbols-rounded">chevron_left</span> Voltar</a>
+									<a class="mobile-toggle-close" tabindex="0" role="button"><span class="icon material-symbols-rounded">read_more</span></a>
 								</li>
-</ul>
-							</div>
+								<li class="dropdown-menu__title"><span class="label">Módulo 2</span><span class="title">Calculando indicadores</span></li>
+								<li class="dropdown-menu__item"><a class="dropdown-menu__item-link" tabindex="0" role="link" href="../aula1/topico1.html"><strong>Aula 1: </strong>Dados, medidas e indicadores: valores absolutos e relativos</a></li>
+								<li class="dropdown-menu__item"><a class="dropdown-menu__item-link" tabindex="0" role="link" href="../aula2/topico1.html"><strong>Aula 2: </strong>Medidas relativas para a análise de dados de saúde</a></li>
+								<li class="dropdown-menu__item"><a class="dropdown-menu__item-link" tabindex="0" role="link" href="../aula3/topico1.html"><strong>Aula 3: </strong>Índices: conceitos, construção e usos</a></li>
+								<li class="dropdown-menu__item"><a class="dropdown-menu__item-link" tabindex="0" role="link" href="../aula4/topico1.html"><strong>Aula 4: </strong>Ficha de Qualificação de Indicadores</a></li>
+							</ul>
 						</div>
 					</div>
-					<div class="divider"><hr /></div>
-					<div class="sidebar__group">
-						<div class="sidebar__group-item">
-							<span class="text module">Módulo <br class="d-none d-lg-block" /><span>2</span></span>
-						</div>
-						<div class="sidebar__group-item">
-							<div class="dropend">
-								<button type="button" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside" data-bs-offset="0,30">
-									<span class="icon material-symbols-rounded" aria-hidden="true">apps</span>
-									<span class="label">Conteúdo</span>
-								</button>
-								<ul class="dropdown-menu">
-									<li class="d-lg-none dropdown-menu__header">
-										<a class="dropdown-menu__back-button" tabindex="0" role="button"><span class="icon material-symbols-rounded">chevron_left</span> Voltar</a>
-										<a class="mobile-toggle-close" tabindex="0" role="button"><span class="icon material-symbols-rounded">read_more</span></a>
-									</li>
-									<li class="dropdown-menu__title">
-										<span class="label">Módulo 2</span>
-										<span class="title">Fontes de Dados Socioeconômicos e Demográficos: subsídios para a Saúde</span>
-									</li>
-									<li class="dropdown-menu__item">
-										<a class="dropdown-menu__item-link" tabindex="0" role="link" href="../aula1/topico1.html"><strong>Aula 1: </strong>Importância para a Saúde Pública e principais instituições produtoras de dados populacionais no Brasil</a>
-									</li>
-									<li class="dropdown-menu__item">
-										<a class="dropdown-menu__item-link" tabindex="0" role="link" href="topico1.html"><strong>Aula 2: </strong>Dados populacionais e o Censo Demográfico</a>
-									</li>
-									<li class="dropdown-menu__item">
-										<a class="dropdown-menu__item-link" tabindex="0" role="link" href="../aula3/topico1.html"><strong>Aula 3: </strong>Introdução às pesquisas amostrais e principais fontes de dados</a>
-									</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<div class="divider"><hr /></div>
-					<div class="sidebar__group">
-						<div class="sidebar__group-item">
-							<span class="text class">Aula 2</span>
-						</div>
-						<div class="sidebar__group-item">
-							<div class="dropend">
-								<button type="button" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside" data-bs-offset="0,30">
-									<span class="icon material-symbols-rounded" aria-hidden="true"> format_list_bulleted</span>
-									<span class="label">Tópicos</span>
-								</button>
-								<ul class="dropdown-menu">
-									<li class="d-lg-none dropdown-menu__header">
-										<a class="dropdown-menu__back-button" tabindex="0" role="button"><span class="icon material-symbols-rounded">chevron_left</span> Voltar</a>
-										<a class="mobile-toggle-close" tabindex="0" role="button"><span class="icon material-symbols-rounded">read_more</span></a>
-									</li>
-									<li class="dropdown-menu__title">
-										<span class="label">Aula 2</span>
-										<span class="title">Dados populacionais e o Censo Demográfico</span>
-									</li>
-									<li class="dropdown-menu__item">
-										<nav class="topic-list">
-											<a href="topico1.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico concluído" status="visited"> <span class="material-symbols-rounded"></span>Sobre esta aula</a>
-
-											<a href="topico2.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico atual" status="visited"> <span class="material-symbols-rounded"></span>Introdução</a>
-
-											<a href="topico3.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico não concluído"> <span class="material-symbols-rounded"></span>Desafios e cuidados no uso dos dados</a>
-
-											<a href="topico4.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico não concluído"> <span class="material-symbols-rounded"></span>O Censo Demográfico</a>
-										
-							<a href="topico5.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico não concluído"><span class="material-symbols-rounded"></span>Referências</a></nav>
-									</li>
-								</ul>
-							</div>
+				</div>
+				<div class="divider"><hr /></div>
+				<div class="sidebar__group">
+					<div class="sidebar__group-item"><span class="text class">Aula 2</span></div>
+					<div class="sidebar__group-item">
+						<div class="dropend">
+							<button type="button" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside" data-bs-offset="0,30">
+								<span class="icon material-symbols-rounded" aria-hidden="true">format_list_bulleted</span><span class="label">Tópicos</span>
+							</button>
+							<ul class="dropdown-menu">
+								<li class="d-lg-none dropdown-menu__header">
+									<a class="dropdown-menu__back-button" tabindex="0" role="button"><span class="icon material-symbols-rounded">chevron_left</span> Voltar</a>
+									<a class="mobile-toggle-close" tabindex="0" role="button"><span class="icon material-symbols-rounded">read_more</span></a>
+								</li>
+								<li class="dropdown-menu__title"><span class="label">Aula 2</span><span class="title">Medidas relativas para a análise de dados de saúde</span></li>
+								<li class="dropdown-menu__item"><nav class="topic-list">
+							<a href="topico1.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico concluído" status="visited"><span class="material-symbols-rounded"></span>Sobre esta aula</a>
+							<a href="topico2.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico não concluído"><span class="material-symbols-rounded"></span>Tipos de medidas relativas</a>
+							<a href="topico3.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico não concluído"><span class="material-symbols-rounded"></span>Padronização de taxas</a>
+							<a href="topico4.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico não concluído"><span class="material-symbols-rounded"></span>Erros comuns na interpretação de indicadores</a>
+							<a href="topico5.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico não concluído"><span class="material-symbols-rounded"></span>Referências</a>
+							</nav></li>
+							</ul>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="content">
-				<div id="page-title">
-					<div class="container">
-						<div class="row align-items-center hstify-content-center justify-content-xxl-start ms-lg-5">
-							<div class="col-12 col-md-10 col-lg-11">
-								<h2 class="title">
-									<span class="label">Módulo 2 | Aula 2</span>
-									<br />
-									Dados populacionais e o Censo Demográfico
-								</h2>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div id="page-content" class="">
-
-					<section><div class="container"><div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-5">
-						<div class="heading__block"><span class="small">Tópico 2</span><h3 class="heading__title">Introdução</h3></div>
-						<p>Os dados populacionais (demográficos e socioeconômicos) são fundamentais para análises de situações de saúde, planejamento de políticas públicas, vigilância epidemiológica, estudos de desigualdades e avaliação de programas. No Brasil, diversas instituições produzem e disponibilizam bases consolidadas e microdados anonimizados que permitem análises em diferentes níveis de desagregação territorial e temporal.</p>
-
-						<div class="heading__block mt-5" id="sub-a2-t2-tipos"><p class="h6 heading__title">Tipos de dados: agregados e microdados</p></div>
-						<p>A principal diferença entre microdados e dados agregados reside no nível de detalhamento: microdados são registros individuais e brutos, enquanto dados agregados são resumos ou cálculos estatísticos baseados nesses dados individuais.</p>
-
-						<div class="heading__block mt-4"><p class="h6 heading__title">Microdados</p></div>
-						<p>Os microdados consistem no menor nível de desagregação de dados de uma pesquisa, preservando a informação original de cada unidade de coleta (como um indivíduo, domicílio ou empresa). Exemplos:</p>
-						<div class="list"><ul class="list-group">
-							<li class="list-group-item">Microdados da PNS (cada linha = um indivíduo).</li>
-							<li class="list-group-item">Microdados do SIM (cada linha = um óbito).</li>
-							<li class="list-group-item">Microdados da SIH (cada linha = um episódio de internação hospitalar, nesse caso a mesma pessoa pode aparecer várias vezes na mesma base).</li>
-						</ul></div>
-
-						<style>
-							.subtitulo-vd {
-								font-family: var(--fio-sys-typography-family-primary-semi-bold);
-								font-size: var(--fio-sys-typography-size-0);
-								font-weight: 600;
-								color: var(--fio-sys-color-primary-dark);
-								padding-left: var(--fio-sys-size-padding-lg);
-								margin-top: var(--fio-sys-size-margin-md);
-								margin-bottom: var(--fio-sys-size-margin-xs);
-							}
-						</style>
-
-						<p class="subtitulo-vd">Vantagens</p>
-						<div class="accordion accordion-flush mt-2" id="m2a2-micro-vant">
-							<div class="accordion-item">
-								<h5 class="accordion-header" id="m2a2-micro-v-h1"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#m2a2-micro-v-c1" aria-expanded="false" aria-controls="m2a2-micro-v-c1"><strong>Flexibilidade de análise</strong></button></h5>
-								<div id="m2a2-micro-v-c1" class="accordion-collapse collapse" aria-labelledby="m2a2-micro-v-h1" data-bs-parent="#m2a2-micro-vant"><div class="accordion-body"><p class="mb-0">Permitem que os pesquisadores realizem análises personalizadas e explorem relações complexas entre variáveis, que não seriam possíveis com dados já resumidos.</p></div></div>
-							</div>
-							<div class="accordion-item">
-								<h5 class="accordion-header" id="m2a2-micro-v-h2"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#m2a2-micro-v-c2" aria-expanded="false" aria-controls="m2a2-micro-v-c2"><strong>Detalhe e precisão</strong></button></h5>
-								<div id="m2a2-micro-v-c2" class="accordion-collapse collapse" aria-labelledby="m2a2-micro-v-h2" data-bs-parent="#m2a2-micro-vant"><div class="accordion-body"><p class="mb-0">Oferecem um nível granular de informação, essencial para estudos aprofundados e formulação de políticas específicas.</p></div></div>
-							</div>
-						</div>
-
-						<p class="subtitulo-vd">Desvantagens</p>
-						<div class="accordion accordion-flush mt-2" id="m2a2-micro-desv">
-							<div class="accordion-item">
-								<h5 class="accordion-header" id="m2a2-micro-d-h1"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#m2a2-micro-d-c1" aria-expanded="false" aria-controls="m2a2-micro-d-c1"><strong>Risco de perda de sigilo</strong></button></h5>
-								<div id="m2a2-micro-d-c1" class="accordion-collapse collapse" aria-labelledby="m2a2-micro-d-h1" data-bs-parent="#m2a2-micro-desv"><div class="accordion-body"><p class="mb-0">Exigem medidas rigorosas de anonimização para proteger a identidade dos informantes, porque pode conter dados sensíveis.</p></div></div>
-							</div>
-							<div class="accordion-item">
-								<h5 class="accordion-header" id="m2a2-micro-d-h2"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#m2a2-micro-d-c2" aria-expanded="false" aria-controls="m2a2-micro-d-c2"><strong>Complexidade e tamanho da base de dados</strong></button></h5>
-								<div id="m2a2-micro-d-c2" class="accordion-collapse collapse" aria-labelledby="m2a2-micro-d-h2" data-bs-parent="#m2a2-micro-desv"><div class="accordion-body"><p class="mb-0">Normalmente são arquivos grandes e complexos, exigindo software estatístico específico para as análises, maior capacidade de processamento e conhecimento técnico para serem manipulados corretamente.</p></div></div>
-							</div>
-						</div>
-
-						<div class="heading__block mt-5"><p class="h6 heading__title">Dados agregados</p></div>
-						<p>Dados agregados são dados resultantes da combinação ou sumarização de dados individuais em grupos, categorias ou regiões. Exemplos:</p>
-						<div class="list"><ul class="list-group">
-							<li class="list-group-item">População por município e faixa etária.</li>
-							<li class="list-group-item">Taxa de analfabetismo do estado de São Paulo.</li>
-							<li class="list-group-item">Mortalidade por causa segundo o ano do óbito.</li>
-						</ul></div>
-
-						<p class="subtitulo-vd">Vantagens</p>
-						<div class="accordion accordion-flush mt-2" id="m2a2-agreg-vant">
-							<div class="accordion-item">
-								<h5 class="accordion-header" id="m2a2-ag-v-h1"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#m2a2-ag-v-c1" aria-expanded="false" aria-controls="m2a2-ag-v-c1"><strong>Acessibilidade e simplicidade</strong></button></h5>
-								<div id="m2a2-ag-v-c1" class="accordion-collapse collapse" aria-labelledby="m2a2-ag-v-h1" data-bs-parent="#m2a2-agreg-vant"><div class="accordion-body"><p class="mb-0">São mais fáceis de usar e interpretar, frequentemente vêm apresentados em tabelas, gráficos e relatórios prontos.</p></div></div>
-							</div>
-							<div class="accordion-item">
-								<h5 class="accordion-header" id="m2a2-ag-v-h2"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#m2a2-ag-v-c2" aria-expanded="false" aria-controls="m2a2-ag-v-c2"><strong>Segurança e privacidade</strong></button></h5>
-								<div id="m2a2-ag-v-c2" class="accordion-collapse collapse" aria-labelledby="m2a2-ag-v-h2" data-bs-parent="#m2a2-agreg-vant"><div class="accordion-body"><p class="mb-0">Oferecem maior segurança em relação à privacidade, pois os dados individuais são diluídos na agregação, protegendo a identidade dos participantes.</p></div></div>
-							</div>
-							<div class="accordion-item">
-								<h5 class="accordion-header" id="m2a2-ag-v-h3"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#m2a2-ag-v-c3" aria-expanded="false" aria-controls="m2a2-ag-v-c3"><strong>Eficiência</strong></button></h5>
-								<div id="m2a2-ag-v-c3" class="accordion-collapse collapse" aria-labelledby="m2a2-ag-v-h3" data-bs-parent="#m2a2-agreg-vant"><div class="accordion-body"><p class="mb-0">Arquivos de dados agregados são menores e mais rápidos de processar, facilitando análises gerais e comparações em larga escala.</p></div></div>
-							</div>
-						</div>
-
-						<p class="subtitulo-vd">Desvantagens</p>
-						<div class="accordion accordion-flush mt-2" id="m2a2-agreg-desv">
-							<div class="accordion-item">
-								<h5 class="accordion-header" id="m2a2-ag-d-h1"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#m2a2-ag-d-c1" aria-expanded="false" aria-controls="m2a2-ag-d-c1"><strong>Perda de detalhamento</strong></button></h5>
-								<div id="m2a2-ag-d-c1" class="accordion-collapse collapse" aria-labelledby="m2a2-ag-d-h1" data-bs-parent="#m2a2-agreg-desv"><div class="accordion-body"><p class="mb-0">A agregação resulta na perda de informações sobre as unidades individuais, impossibilitando análises mais detalhadas ou a identificação de padrões em subgrupos específicos.</p></div></div>
-							</div>
-							<div class="accordion-item">
-								<h5 class="accordion-header" id="m2a2-ag-d-h2"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#m2a2-ag-d-c2" aria-expanded="false" aria-controls="m2a2-ag-d-c2"><strong>Limitação nas análises</strong></button></h5>
-								<div id="m2a2-ag-d-c2" class="accordion-collapse collapse" aria-labelledby="m2a2-ag-d-h2" data-bs-parent="#m2a2-agreg-desv"><div class="accordion-body"><p class="mb-0">Restringem os tipos de análises que podem ser feitas; por exemplo, não é possível redefinir as categorias de agregação ou cruzar variáveis de maneiras não previstas na agregação original.</p></div></div>
-							</div>
-						</div>
-
-						<div class="box mt-5" data-box="Para refletir">
-							<div class="card">
-								<div class="card-header"><span class="icone material-symbols-rounded" aria-hidden="true"></span><span class="label">Para refletir</span></div>
-								<div class="card-body">
-									<p class="mb-0">Pense em uma pergunta de pesquisa e identifique se necessita de microdados ou apenas de tabelas agregadas para respondê-la.</p>
-								</div>
-							</div>
-						</div>
-
-					</div></div></div></section>
-
-				</div>
-				<section>
-					<div class="container">
-						<div class="row justify-content-center">
-							<div class="col-12 col-md-10 col-lg-8">
-								<div class="page-nav d-flex justify-content-evenly">
-									<a class="fio-button fio-button-primary" href="topico1.html" rel="prev"><span class="material-symbols-rounded" aria-hidden="true">west</span> Tópico anterior</a>
-									<a class="fio-button fio-button-primary" href="topico3.html" rel="next">Próximo tópico <span class="material-symbols-rounded" aria-hidden="true">east</span></a>
-</div>
-							</div>
-						</div>
-					</div>
-				</section>
-			</div>
-			<footer>
-				<div class="container-fluid">
-					<div class="row justify-content-center align-items-center linha-de-marcas">
-						<div class="col-12 text-center py-3">
-							<img class="img-fluid regua-logos" src="../../media/logos/regua-de-logos.png" alt="Régua de logos: Campus Virtual Fiocruz, Fiocruz, SUS Digital, SUS 35 Anos, Ministério da Saúde e Governo do Brasil" />
-						</div>
-					</div>
-				</div>
-			</footer>
 		</div>
-
-		<script src="../../source/bootstrap-5.1.3/js/bootstrap.bundle.min.js"></script>
-		<script type="text/javascript" src="../../assets/js/ResizeSensor.js"></script>
-		<script type="text/javascript" src="../../assets/js/sticky-sidebar.js"></script>
-		<script type="text/javascript" src="../../assets/js/sidebar.js"></script>
-		<script type="text/javascript">
-			var sidebar = new StickySidebar(".sidebar", {
-				topSpacing: 0,
-				bottomSpacing: 0,
-				containerSelector: ".main",
-				innerWrapperSelector: ".sidebar__inner",
-				minWidth: 991,
-			});
-		</script>
-		<script type="text/javascript" src="../../assets/js/scripts.js"></script>
-	</body>
+		<div class="content">
+			<div id="page-title"><div class="container"><div class="row align-items-center hstify-content-center justify-content-xxl-start ms-lg-5"><div class="col-12 col-md-10 col-lg-11"><h2 class="title"><span class="label">Módulo 2 | Aula 2</span><br />Medidas relativas para a análise de dados de saúde</h2></div></div></div></div>
+			<div id="page-content" class="">
+				<section><div class="container">
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-5"><div class="heading__block"><span class="small">Tópico 2</span><h3 class="heading__title">Tipos de medidas relativas</h3></div></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-5"><p>A análise adequada de fenômenos em saúde depende não apenas da disponibilidade de dados, mas, sobretudo, da escolha correta das medidas utilizadas para expressá-los. Entre as medidas relativas, temos as proporções, razões e taxas, que são amplamente empregadas em epidemiologia, vigilância em saúde e gestão de serviços por permitirem estimar frequência, risco e intensidade de eventos.</p></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-5"><p>No entanto, diferenças conceituais entre esses formatos, bem como a necessidade de padronização de taxas, são frequentemente negligenciadas na prática, o que pode comprometer comparações entre populações e períodos distintos. Além disso, o uso inadequado de valores absolutos ou relativos pode levar a interpretações equivocadas e decisões mal fundamentadas.</p></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-5"><p>Esta aula aborda esses aspectos, apresentando os principais tipos de medidas relativas, os fundamentos da padronização de taxas e os erros mais comuns na interpretação de indicadores de saúde.</p></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-4"><div class="heading__block"><h5 class="heading__title">Proporções</h5></div></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-4"><div class="heading__block"><h5 class="heading__title">O que são proporções?</h5></div></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-5"><p>A proporção é um tipo de medida relativa em que o numerador está contido no denominador. Em outras palavras, expressa a relação entre uma parte e o todo, sendo o numerador sempre um subconjunto do denominador. Do ponto de vista conceitual, as proporções descrevem a estrutura interna de um conjunto e respondem à pergunta fundamental:</p></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-4"><div class="heading__block"><h6 class="heading__title">“Qual fração do total apresenta determinada característica?”</h6></div></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-5"><p>As proporções não expressam risco nem velocidade de ocorrência de eventos, mas sim a participação relativa de um grupo ou característica dentro de um total. Geralmente, são apresentadas na forma de percentual (%).</p></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-4"><div class="heading__block"><h6 class="heading__title">Forma de cálculo</h6></div></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-5"><p>A estrutura básica do cálculo é:</p></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-5"><p><strong>Proporção = (parte ÷ total) × 100</strong></p></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-4"><div class="heading__block"><h6 class="heading__title">Exemplo</h6></div></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-5"><ul><li>60 mulheres entre 150 pacientes atendidos em uma unidade de saúde:<br />(60 ÷ 150) × 100 = 40%</li></ul></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-5"><div class="table-responsive"><table class="table table-sm table-bordered align-middle mb-0"><thead><tr class="bg-primary text-white"><th scope="col">Usos</th><th scope="col">Limitações</th></tr></thead><tbody><tr><td><ul class="mb-0 ps-3"><li>Analisar perfil sociodemográfico;</li><li>Avaliar distribuição de características em uma população;</li><li>Monitorar cobertura de serviços;</li><li>Examinar a composição de eventos ou procedimentos;</li><li>Descrever a estrutura de grupos populacionais.</li></ul></td><td><ul class="mb-0 ps-3"><li>Não expressam risco de adoecer ou morrer;</li><li>Não incorporam o fator tempo;</li><li>Dependem fortemente da qualidade do denominador;</li><li>Não permitem inferir velocidade ou probabilidade de ocorrência de eventos.</li></ul></td></tr></tbody></table></div></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-5"><p>Em síntese, as proporções oferecem uma visão clara da participação relativa dos eventos dentro de um todo, constituindo um recurso essencial para descrever e compreender a composição de fenômenos em saúde.</p></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-4"><div class="heading__block"><h5 class="heading__title">Razão</h5></div></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-4"><div class="heading__block"><h5 class="heading__title">O que é razão?</h5></div></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-5"><p>A razão é uma medida relativa que expressa a relação entre duas grandezas distintas, nas quais o numerador não está contido no denominador. Diferentemente da proporção, as duas partes comparadas pertencem a conjuntos diferentes. Do ponto de vista conceitual, a razão responde à pergunta:</p></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-4"><div class="heading__block"><h6 class="heading__title">“Quanto de um grupo existe em relação a outro?”</h6></div></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-5"><p>As razões são utilizadas para comparar magnitudes entre grupos e não para estimar risco ou frequência de eventos ao longo do tempo.</p></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-4"><div class="heading__block"><h6 class="heading__title">Forma de cálculo</h6></div></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-5"><p>A estrutura geral é:</p></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-5"><p><strong>Razão = quantidade A ÷ quantidade B</strong></p></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-5"><p>Pode ser expressa como número simples ou acompanhada de texto explicativo.</p></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-4"><div class="heading__block"><h6 class="heading__title">Exemplo</h6></div></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-5"><ul><li>Razão entre número de leitos hospitalares (300) por habitante (150.000) em uma cidade:<br />(300 ÷ 150.000) = 0,002. Interpretação: há 2 leitos para cada 1.000 habitantes.</li></ul></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-5"><p>Assim como as proporções, as razões são essencialmente descritivas e devem ser utilizadas com cautela em análises epidemiológicas.</p></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-5"><div class="table-responsive"><table class="table table-sm table-bordered align-middle mb-0"><thead><tr class="bg-primary text-white"><th scope="col">Usos</th><th scope="col">Limitações</th></tr></thead><tbody><tr><td><ul class="mb-0 ps-3"><li>Comparar grupos populacionais;</li><li>Expressar disponibilidade de recursos;</li><li>Avaliar relações entre categorias distintas;</li><li>Analisar desigualdades estruturais.</li></ul></td><td><ul class="mb-0 ps-3"><li>Não expressam risco;</li><li>Não incorporam o fator tempo;</li><li>Dependem da qualidade dos dois componentes comparados;</li><li>Podem ser interpretadas erroneamente como proporções ou taxas.</li></ul></td></tr></tbody></table></div></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-4"><div class="heading__block"><h5 class="heading__title">Taxas</h5></div></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-4"><div class="heading__block"><h5 class="heading__title">O que são taxas?</h5></div></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-5"><p>As taxas são medidas relativas que expressam a ocorrência de eventos em uma população ao longo do tempo. Diferenciam-se das proporções e razões por incorporarem explicitamente a dimensão temporal e uma população exposta ao risco. Do ponto de vista conceitual, as taxas respondem à pergunta:</p></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-4"><div class="heading__block"><h6 class="heading__title">“Com que frequência um evento ocorre em determinada população e período?”</h6></div></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-5"><p>São amplamente utilizadas em epidemiologia para estimar risco e monitorar a dinâmica de doenças e agravos.</p></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-4"><div class="heading__block"><h6 class="heading__title">Forma de cálculo</h6></div></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-5"><p><strong>Taxa = (número de eventos ÷ população exposta) × constante</strong></p></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-5"><p>A constante (1.000, 10.000 ou 100.000) é definida conforme o tipo de evento, visando facilitar a interpretação.</p></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-4"><div class="heading__block"><h6 class="heading__title">Exemplos</h6></div></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-5"><ul><li>50 óbitos em uma população de 80.000 habitantes em um ano:<br />(50 ÷ 80.000) × 100.000 = 62,5 óbitos por 100.000 habitantes</li></ul></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-5"><div class="table-responsive"><table class="table table-sm table-bordered align-middle mb-0"><thead><tr class="bg-primary text-white"><th scope="col">Usos</th><th scope="col">Limitações</th></tr></thead><tbody><tr><td><ul class="mb-0 ps-3"><li>Estimar risco de adoecimento ou morte;</li><li>Comparar territórios e grupos populacionais;</li><li>Acompanhar tendências temporais;</li><li>Subsidiar ações de vigilância epidemiológica;</li><li>Orientar políticas públicas.</li></ul></td><td><ul class="mb-0 ps-3"><li>Dependem fortemente da qualidade do numerador e do denominador;</li><li>Podem ser influenciadas por flutuações aleatórias em populações pequenas;</li><li>Exigem atenção à escolha correta da população exposta;</li><li>Frequentemente necessitam de padronização para comparações adequadas.</li></ul></td></tr></tbody></table></div></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-5"><p>Entre os indicadores calculados sob a forma de taxas mais utilizados em epidemiologia destacam-se a <strong>incidência e a prevalência</strong>, que, embora frequentemente confundidas, expressam dimensões distintas do processo saúde-doença.</p></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-4"><div class="heading__block"><h5 class="heading__title">Incidência</h5></div></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-4"><div class="heading__block"><h5 class="heading__title">O que é incidência?</h5></div></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-5"><p>A incidência é uma medida epidemiológica que expressa o número de casos novos de uma determinada condição em uma população definida durante um período específico. Trata-se de uma forma particular de taxa, pois incorpora explicitamente o fator tempo e a população exposta ao risco. Refere-se ao número de casos novos de uma condição em uma população definida durante determinado período, sendo especialmente útil para avaliar o risco de adoecimento e a dinâmica de transmissão de agravos. Do ponto de vista conceitual, a incidência responde à pergunta:</p></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-4"><div class="heading__block"><h6 class="heading__title">“Quantas pessoas adoeceram em determinado período?”</h6></div></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-5"><p>É a principal medida utilizada para estimar risco e avaliar a dinâmica de ocorrência de doenças e agravos.</p></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-4"><div class="heading__block"><h6 class="heading__title">Forma de cálculo</h6></div></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-5"><p><strong>Incidência = (número de casos novos ÷ população exposta) × constante</strong></p></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-5"><p>A constante (1.000, 10.000 ou 100.000) é escolhida conforme a frequência do evento.</p></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-4"><div class="heading__block"><h6 class="heading__title">Exemplo</h6></div></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-5"><ul><li>120 casos novos de tuberculose em uma população de 200.000 habitantes:<br />(120 ÷ 200.000) × 100.000 = 60 casos por 100.000 habitantes</li></ul></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-5"><div class="table-responsive"><table class="table table-sm table-bordered align-middle mb-0"><thead><tr class="bg-primary text-white"><th scope="col">Usos</th><th scope="col">Limitações</th></tr></thead><tbody><tr><td><ul class="mb-0 ps-3"><li>Estimar risco de adoecimento;</li><li>Monitorar a ocorrência de agravos ao longo do tempo;</li><li>Identificar surtos e epidemias;</li><li>Avaliar efetividade de ações de prevenção;</li><li>Apoiar decisões em vigilância epidemiológica.</li></ul></td><td><ul class="mb-0 ps-3"><li>Depende de sistemas de notificação sensíveis e oportunos;</li><li>Pode ser subestimada em contextos de subdiagnóstico;</li><li>Exige definição clara da população exposta;</li><li>É influenciada por mudanças nos critérios diagnósticos ou na vigilância.</li></ul></td></tr></tbody></table></div></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-4"><div class="heading__block"><h5 class="heading__title">Prevalência</h5></div></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-4"><div class="heading__block"><h5 class="heading__title">O que é prevalência?</h5></div></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-5"><p>A prevalência expressa o total de casos existentes (novos e antigos) de uma condição em uma população definida, em um ponto específico do tempo ou em determinado período. Diferentemente da incidência, a prevalência não mede risco, mas sim a carga da doença na população; enquanto a incidência está relacionada aos determinantes do adoecimento, a prevalência é influenciada tanto pela incidência quanto pela duração da doença, sendo particularmente relevante para o planejamento assistencial e a organização da rede de cuidados. Do ponto de vista conceitual, a prevalência responde à pergunta:</p></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-4"><div class="heading__block"><h6 class="heading__title">“Quantas pessoas convivem com essa condição neste momento?”</h6></div></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-4"><div class="heading__block"><h6 class="heading__title">Forma de cálculo</h6></div></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-5"><p><strong>Prevalência = (total de casos existentes ÷ população total) × constante</strong></p></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-5"><p>Geralmente expressa em percentual ou por 1.000 ou 100.000 habitantes.</p></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-4"><div class="heading__block"><h6 class="heading__title">Exemplo</h6></div></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-5"><ul><li>500 pessoas com diabetes em uma população de 10.000 habitantes:<br />(500 ÷ 10.000) × 100 = 5%</li></ul></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-5"><div class="table-responsive"><table class="table table-sm table-bordered align-middle mb-0"><thead><tr class="bg-primary text-white"><th scope="col">Usos</th><th scope="col">Limitações</th></tr></thead><tbody><tr><td><ul class="mb-0 ps-3"><li>Estimar carga de doenças crônicas;</li><li>Planejar serviços assistenciais;</li><li>Dimensionar necessidade de medicamentos e acompanhamento;</li><li>Avaliar impacto de condições de longa duração;</li><li>Apoiar organização da rede de cuidados.</li></ul></td><td><ul class="mb-0 ps-3"><li>Não informa sobre risco de adoecimento;</li><li>É influenciada tanto pela incidência quanto pela duração da doença;</li><li>Pode ser afetada por óbitos ou curas;</li><li>Depende da qualidade do diagnóstico e do registro dos casos.</li></ul></td></tr></tbody></table></div></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-5"><p class='mb-2'><strong>Quadro 1: Quadro comparativo — Quando usar cada tipo de indicador.</strong></p><div class="table-responsive"><table class="table table-sm table-bordered align-middle mb-0"><thead><tr class="bg-primary text-white"><th scope="col">Tipo de indicador</th><th scope="col">Quando utilizar</th><th scope="col">Objetivo principal</th><th scope="col">Exemplo de aplicação na saúde</th><th scope="col">Atenção / Limitação</th></tr></thead><tbody><tr><th scope="row">Valor absoluto</th><td>Quando se deseja conhecer o volume total de eventos.</td><td>Dimensionar magnitude bruta do problema.</td><td>Número de óbitos maternos em um município.</td><td>Não permite comparação entre populações de tamanhos diferentes.</td></tr><tr><th scope="row">Proporção</th><td>Quando se analisa composição ou distribuição de eventos.</td><td>Avaliar participação de um grupo dentro do total.</td><td>Proporção de cesarianas; proporção de gestantes com ≥7 consultas.</td><td>Não mede risco nem considera tempo.</td></tr><tr><th scope="row">Razão</th><td>Quando se comparam grupos distintos.</td><td>Identificar desigualdades ou relações estruturais.</td><td>Razão médico/habitante; razão homens/mulheres.</td><td>Pode ser abstrata para público leigo; não expressa probabilidade.</td></tr><tr><th scope="row">Taxa</th><td>Quando se deseja medir ocorrência ao longo do tempo.</td><td>Estimar risco de adoecimento ou morte.</td><td>Taxa de mortalidade infantil; taxa de incidência de TB.</td><td>Depende da qualidade dos dados e da definição correta da população.</td></tr><tr><th scope="row">Prevalência</th><td>Quando o foco é a carga total da doença.</td><td>Planejar serviços e recursos assistenciais.</td><td>Prevalência de diabetes ou hipertensão.</td><td>Não diferencia casos novos de antigos.</td></tr><tr><th scope="row">Incidência</th><td>Quando o interesse é surgimento de novos casos.</td><td>Avaliar risco e dinâmica de transmissão.</td><td>Incidência de dengue ou COVID-19.</td><td>Requer acompanhamento temporal adequado.</td></tr><tr><th scope="row">Taxa padronizada</th><td>Quando se comparam populações com estruturas demográficas diferentes.</td><td>Garantir comparabilidade justa.</td><td>Mortalidade entre regiões com diferentes perfis etários.</td><td>Exige dados mais detalhados e pode ser metodologicamente mais complexa.</td></tr></tbody></table></div><p class="figure-caption fonte small mt-2 mb-0">Fonte: Elaborado pelo autor.</p></div></div>
+				</div></section>
+			</div>
+			<section><div class="container"><div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8"><div class="page-nav d-flex justify-content-evenly flex-wrap gap-3"><a class="fio-button fio-button-primary" href="topico1.html" rel="prev"><span class="material-symbols-rounded" aria-hidden="true">west</span> Tópico anterior</a><a class="fio-button fio-button-primary" href="topico3.html" rel="next">Próximo tópico <span class="material-symbols-rounded" aria-hidden="true">east</span></a></div></div></div></div></section>
+		</div>
+		<footer>
+			<div class="container-fluid">
+				<div class="row justify-content-center align-items-center linha-de-marcas">
+					<div class="col-12 text-center py-3">
+						<img class="img-fluid regua-logos" src="../../media/logos/regua-de-logos.png" alt="Régua de logos: Campus Virtual Fiocruz, Fiocruz, SUS Digital, SUS 35 Anos, Ministério da Saúde e Governo do Brasil" />
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="../../source/bootstrap-5.1.3/js/bootstrap.bundle.min.js"></script>
+	<script type="text/javascript" src="../../assets/js/ResizeSensor.js"></script>
+	<script type="text/javascript" src="../../assets/js/sticky-sidebar.js"></script>
+	<script type="text/javascript" src="../../assets/js/sidebar.js"></script>
+	<script type="text/javascript">var sidebar = new StickySidebar(".sidebar", { topSpacing: 0, bottomSpacing: 0, containerSelector: ".main", innerWrapperSelector: ".sidebar__inner", minWidth: 991 });</script>
+	<script type="text/javascript" src="../../assets/js/scripts.js"></script>
+	<script type="text/javascript" src="../../assets/js/custom-anime.js"></script>
+	<script type="text/javascript" src="../../source/animate/aos/dist/aos.js"></script>
+	<script>AOS.init();</script>
+</body>
 </html>

@@ -202,6 +202,14 @@
 	text-align: left;
 }
 
+.flipcard .flip-card-back .card-body .card-title {
+	display: block;
+	width: 100%;
+	margin-bottom: 1rem;
+	text-align: center;
+	color: var(--fio-sys-color-primary-extra-dark);
+}
+
 .flipcard .flip-card-back .card-footer {
 	background-color: #fff;
 	border-top: transparent;

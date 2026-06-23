@@ -10,3 +10,12 @@
 .referencias-aula .referencias-item a {
 	word-break: break-word;
 }
+
+.referencias-aula .list-group-item {
+	font-size: 0.95rem;
+	line-height: 1.5;
+}
+
+.referencias-aula .list-group-item a {
+	word-break: break-word;
+}

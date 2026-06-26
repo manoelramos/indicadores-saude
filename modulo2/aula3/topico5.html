@@ -1,217 +1,142 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=yes" />
-		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-		<meta name="robots" content="noindex" />
-		<meta name="author" content="Fiocruz, Campus Virtual" />
-		<title>Curso Fontes de Dados | Mod 2 | Aula 3</title>
-		<link rel="stylesheet" href="../../source/bootstrap-5.1.3/css/bootstrap.min.css" />
-		<link rel="stylesheet" href="../../assets/css/style.css" />
-	</head>
-	<body>
-		<header class="header">
-			<div class="mobile-toggle-open">
-				<a class="mobile-toggle__button" tabindex="0" role="button">
-					<span class="icon material-symbols-rounded">read_more</span>
-				</a>
-			</div>
-			<div class="brand">
-				<img class="img-fluid logo-black" src="../../media/logos/header-fiocruz-campus-virtual.png" alt="Campus Virtual Fiocruz" />
-			</div>
-			<div class="title">
-				<h1>Indicadores para a saúde: aspectos teóricos e práticos</h1>
-			</div>
-			<ul class="nav nav-pills">
-				<li class="nav-item"><a href="../../index.html" class="nav-link">Início</a></li>
-				<li class="nav-item"><a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#modal-creditos">Créditos</a></li>
-			</ul>
-		</header>
-		<div class="main">
-			<div class="sidebar" role="navigation">
-				<div class="sidebar__inner" style="position: relative">
-					<div class="sidebar__group d-lg-none">
-						<div class="sidebar__group-item">
-							<div class="sidebar__header">
-								<span>Curso</span>
-								<a class="mobile-toggle-close" tabindex="0" role="button"><span class="icon material-symbols-rounded">read_more</span></a>
-							</div>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=yes" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="robots" content="noindex" />
+	<meta name="author" content="Fiocruz, Campus Virtual" />
+	<meta name="description" content="Curso Indicadores para a saúde: aspectos teóricos e práticos" />
+	<link rel="apple-touch-icon" sizes="180x180" href="../../media/icons/apple-icon-180x180.png" />
+	<link rel="icon" type="image/png" sizes="32x32" href="../../media/icons/favicon-32x32.png" />
+	<link rel="manifest" href="../media/icons/manifest.json" />
+	<meta name="theme-color" content="#001833" />
+	<title>Curso Indicadores para a saúde: aspectos teóricos e práticos | Mod 2 | Aula 3</title>
+	<link rel="stylesheet" href="../../source/bootstrap-5.1.3/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="../../assets/css/style.css" />
+</head>
+<body>
+	<header class="header">
+		<div class="mobile-toggle-open"><a class="mobile-toggle__button" tabindex="0" role="button"><span class="icon material-symbols-rounded">read_more</span></a></div>
+		<div class="brand"><img class="img-fluid logo-black" src="../../media/logos/header-fiocruz-campus-virtual.png" alt="Campus Virtual Fiocruz" /></div>
+		<div class="title"><h1>Indicadores para a saúde: aspectos teóricos e práticos</h1></div>
+		<ul class="nav nav-pills">
+			<li class="nav-item"><a href="../../index.html" class="nav-link">Início</a></li>
+			<li class="nav-item"><a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#modal-creditos">Créditos</a></li>
+		</ul>
+	</header>
+	<div class="main">
+		<div class="sidebar" role="navigation">
+			<div class="sidebar__inner" style="position: relative">
+				<div class="sidebar__group d-lg-none">
+					<div class="sidebar__group-item">
+						<div class="sidebar__header">
+							<span>Curso</span>
+							<a class="mobile-toggle-close" tabindex="0" role="button"><span class="icon material-symbols-rounded">read_more</span></a>
 						</div>
-						<div class="sidebar__group-item">
-							<div class="sidebar__title">
-								<h1>Indicadores para a saúde: aspectos teóricos e práticos</h1>
-							</div>
-						</div>
-						<div class="sidebar__group-item">
-							<ul class="nav">
-								<li class="nav-item">
-									<a href="../../index.html" class="nav-link" tabindex="0"><span class="icon material-symbols-rounded" aria-hidden="true">home</span>Início</a>
+					</div>
+					<div class="sidebar__group-item"><div class="sidebar__title"><h1>Indicadores para a saúde: aspectos teóricos e práticos</h1></div></div>
+					<div class="sidebar__group-item">
+						<ul class="nav">
+							<li class="nav-item"><a href="../../index.html" class="nav-link" tabindex="0"><span class="icon material-symbols-rounded" aria-hidden="true">home</span>Início</a></li>
+							<li class="nav-item"><a href="#" class="nav-link" tabindex="0" data-bs-toggle="modal" data-bs-target="#modal-creditos"><span class="icon material-symbols-rounded" aria-hidden="true">format_list_bulleted</span>Créditos</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="sidebar__group">
+					<div class="sidebar__group-item">
+						<div class="dropend">
+							<button id="dropdown-modulos" type="button" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside" data-bs-offset="0,30">
+								<span class="icon material-symbols-rounded" aria-hidden="true">grid_view</span><span class="label">Módulos</span>
+							</button>
+							<ul class="dropdown-menu" aria-labelledby="dropdown-modulos">
+								<li class="d-lg-none dropdown-menu__header">
+									<a class="dropdown-menu__back-button" tabindex="0" role="button"><span class="icon material-symbols-rounded">chevron_left</span> Voltar</a>
+									<a class="mobile-toggle-close" tabindex="0" role="button"><span class="icon material-symbols-rounded">read_more</span></a>
 								</li>
-								<li class="nav-item">
-									<a href="#" class="nav-link" tabindex="0" data-bs-toggle="modal" data-bs-target="#modal-creditos"><span class="icon material-symbols-rounded" aria-hidden="true"> format_list_bulleted</span>Créditos</a>
-								</li>
+								<li class="dropdown-menu__item"><a class="dropdown-menu__item-link" tabindex="0" role="link" href="../../modulo1/aula1/topico1.html"><strong>Módulo 1</strong><br />Conceitos básicos em indicadores para a saúde</a></li>
+								<li class="dropdown-menu__item"><a class="dropdown-menu__item-link" tabindex="0" role="link" href="../../modulo2/aula1/topico1.html"><strong>Módulo 2</strong><br />Calculando indicadores</a></li>
+								<li class="dropdown-menu__item"><a class="dropdown-menu__item-link" tabindex="0" role="link" href="../../modulo3/aula1/topico1.html"><strong>Módulo 3</strong><br />Uso de indicadores</a></li>
 							</ul>
 						</div>
 					</div>
-
-					<div class="sidebar__group">
-						<div class="sidebar__group-item">
-							<div class="dropend">
-								<button id="dropdown-modulos" type="button" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside" data-bs-offset="0,30">
-									<span class="icon material-symbols-rounded" aria-hidden="true">grid_view</span>
-									<span class="label">Módulos</span>
-								</button>
-								<ul class="dropdown-menu" aria-labelledby="dropdown-modulos">
-									<li class="d-lg-none dropdown-menu__header">
-										<a class="dropdown-menu__back-button" tabindex="0" role="button"><span class="icon material-symbols-rounded">chevron_left</span> Voltar</a>
-										<a class="mobile-toggle-close" tabindex="0" role="button"><span class="icon material-symbols-rounded">read_more</span></a>
-									</li>
-									<li class="dropdown-menu__item">
-										<a class="dropdown-menu__item-link" tabindex="0" role="link" href="../../modulo1/aula1/topico1.html"><strong>Módulo 1</strong><br />Conceitos básicos em indicadores para a saúde</a>
-									</li>
-									<li class="dropdown-menu__item">
-										<a class="dropdown-menu__item-link" tabindex="0" role="link" href="../../modulo2/aula1/topico1.html"><strong>Módulo 2</strong><br />Calculando indicadores</a>
-									</li>
-									<li class="dropdown-menu__item">
-										<a class="dropdown-menu__item-link" tabindex="0" role="link" href="../../modulo3/aula1/topico1.html"><strong>Módulo 3</strong><br />Sistemas de Informação em Saúde</a>
-									</li>
-																<li class="dropdown-menu__item">
-									<a class="dropdown-menu__item-link" tabindex="0" role="link" href="../../modulo4/aula1/topico1.html"><strong>Módulo 4</strong><br />Interoperabilidade de Sistemas</a>
+				</div>
+				<div class="divider"><hr /></div>
+				<div class="sidebar__group">
+					<div class="sidebar__group-item"><span class="text module">Módulo <br class="d-none d-lg-block" /><span>2</span></span></div>
+					<div class="sidebar__group-item">
+						<div class="dropend">
+							<button type="button" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside" data-bs-offset="0,30">
+								<span class="icon material-symbols-rounded" aria-hidden="true">apps</span><span class="label">Conteúdo</span>
+							</button>
+							<ul class="dropdown-menu">
+								<li class="d-lg-none dropdown-menu__header">
+									<a class="dropdown-menu__back-button" tabindex="0" role="button"><span class="icon material-symbols-rounded">chevron_left</span> Voltar</a>
+									<a class="mobile-toggle-close" tabindex="0" role="button"><span class="icon material-symbols-rounded">read_more</span></a>
 								</li>
-</ul>
-							</div>
+								<li class="dropdown-menu__title"><span class="label">Módulo 2</span><span class="title">Calculando indicadores</span></li>
+								<li class="dropdown-menu__item"><a class="dropdown-menu__item-link" tabindex="0" role="link" href="../aula1/topico1.html"><strong>Aula 1: </strong>Dados, medidas e indicadores: valores absolutos e relativos</a></li>
+								<li class="dropdown-menu__item"><a class="dropdown-menu__item-link" tabindex="0" role="link" href="../aula2/topico1.html"><strong>Aula 2: </strong>Medidas relativas para a análise de dados de saúde</a></li>
+								<li class="dropdown-menu__item"><a class="dropdown-menu__item-link" tabindex="0" role="link" href="topico1.html"><strong>Aula 3: </strong>Índices: conceitos, construção e usos</a></li>
+								<li class="dropdown-menu__item"><a class="dropdown-menu__item-link" tabindex="0" role="link" href="../aula4/topico1.html"><strong>Aula 4: </strong>Ficha de Qualificação de Indicadores</a></li>
+							</ul>
 						</div>
 					</div>
-					<div class="divider"><hr /></div>
-					<div class="sidebar__group">
-						<div class="sidebar__group-item">
-							<span class="text module">Módulo <br class="d-none d-lg-block" /><span>2</span></span>
-						</div>
-						<div class="sidebar__group-item">
-							<div class="dropend">
-								<button type="button" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside" data-bs-offset="0,30">
-									<span class="icon material-symbols-rounded" aria-hidden="true">apps</span>
-									<span class="label">Conteúdo</span>
-								</button>
-								<ul class="dropdown-menu">
-									<li class="d-lg-none dropdown-menu__header">
-										<a class="dropdown-menu__back-button" tabindex="0" role="button"><span class="icon material-symbols-rounded">chevron_left</span> Voltar</a>
-										<a class="mobile-toggle-close" tabindex="0" role="button"><span class="icon material-symbols-rounded">read_more</span></a>
-									</li>
-									<li class="dropdown-menu__title">
-										<span class="label">Módulo 2</span>
-										<span class="title">Calculando indicadores</span>
-									</li>
-									<li class="dropdown-menu__item">
-										<a class="dropdown-menu__item-link" tabindex="0" role="link" href="../aula1/topico1.html"><strong>Aula 1: </strong>Dados, medidas e indicadores: valores absolutos e relativos</a>
-									</li>
-									<li class="dropdown-menu__item">
-										<a class="dropdown-menu__item-link" tabindex="0" role="link" href="../aula2/topico1.html"><strong>Aula 2: </strong>Medidas relativas para a análise de dados de saúde</a>
-									</li>
-									<li class="dropdown-menu__item">
-										<a class="dropdown-menu__item-link" tabindex="0" role="link" href="topico1.html"><strong>Aula 3: </strong>Introdução às pesquisas amostrais e principais fontes de dados</a>
-									</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<div class="divider"><hr /></div>
-					<div class="sidebar__group">
-						<div class="sidebar__group-item">
-							<span class="text class">Aula 3</span>
-						</div>
-						<div class="sidebar__group-item">
-							<div class="dropend">
-								<button type="button" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside" data-bs-offset="0,30">
-									<span class="icon material-symbols-rounded" aria-hidden="true"> format_list_bulleted</span>
-									<span class="label">Tópicos</span>
-								</button>
-								<ul class="dropdown-menu">
-									<li class="d-lg-none dropdown-menu__header">
-										<a class="dropdown-menu__back-button" tabindex="0" role="button"><span class="icon material-symbols-rounded">chevron_left</span> Voltar</a>
-										<a class="mobile-toggle-close" tabindex="0" role="button"><span class="icon material-symbols-rounded">read_more</span></a>
-									</li>
-									<li class="dropdown-menu__title">
-										<span class="label">Aula 3</span>
-										<span class="title">Introdução às pesquisas amostrais e principais fontes de dados</span>
-									</li>
-									<li class="dropdown-menu__item">
-										<nav class="topic-list">
-													<a href="topico1.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico atual" status="visited"> <span class="material-symbols-rounded"></span>Sobre esta aula</a>
-
-													<a href="topico2.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico não concluído"> <span class="material-symbols-rounded"></span>Conceitos Fundamentais</a>
-
-											<a href="topico3.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico não concluído"> <span class="material-symbols-rounded"></span>Importância das pesquisas amostrais para a Saúde Pública</a>
-
-											<a href="topico4.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico não concluído"> <span class="material-symbols-rounded"></span>Principais Pesquisas Amostrais no Brasil</a>
-											<a href="topico5.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico não concluído"> <span class="material-symbols-rounded"></span>Atividade formativa</a>
-										
-							<a href="topico6.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico não concluído"><span class="material-symbols-rounded"></span>Referências</a></nav>
-									</li>
-								</ul>
-							</div>
+				</div>
+				<div class="divider"><hr /></div>
+				<div class="sidebar__group">
+					<div class="sidebar__group-item"><span class="text class">Aula 3</span></div>
+					<div class="sidebar__group-item">
+						<div class="dropend">
+							<button type="button" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside" data-bs-offset="0,30">
+								<span class="icon material-symbols-rounded" aria-hidden="true">format_list_bulleted</span><span class="label">Tópicos</span>
+							</button>
+							<ul class="dropdown-menu">
+								<li class="d-lg-none dropdown-menu__header">
+									<a class="dropdown-menu__back-button" tabindex="0" role="button"><span class="icon material-symbols-rounded">chevron_left</span> Voltar</a>
+									<a class="mobile-toggle-close" tabindex="0" role="button"><span class="icon material-symbols-rounded">read_more</span></a>
+								</li>
+								<li class="dropdown-menu__title"><span class="label">Aula 3</span><span class="title">Índices: conceitos, construção e usos</span></li>
+								<li class="dropdown-menu__item"><nav class="topic-list">
+							<a href="topico1.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico concluído" status="visited"><span class="material-symbols-rounded"></span>Sobre esta aula</a>
+							<a href="topico2.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico concluído" status="visited"><span class="material-symbols-rounded"></span>O que é um índice?</a>
+							<a href="topico3.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico concluído" status="visited"><span class="material-symbols-rounded"></span>Como construir um índice?</a>
+							<a href="topico4.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico concluído" status="visited"><span class="material-symbols-rounded"></span>Vantagens e desvantagens no uso de índices</a>
+							<a href="topico5.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico atual" status="visited"><span class="material-symbols-rounded"></span>Referências</a>
+							</nav></li>
+							</ul>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="content">
-				<div id="page-title">
-					<div class="container">
-						<div class="row align-items-center hstify-content-center justify-content-xxl-start ms-lg-5">
-							<div class="col-12 col-md-10 col-lg-11">
-								<h2 class="title">
-									<span class="label">Módulo 2 | Aula 3</span>
-									<br />
-									Introdução às pesquisas amostrais e principais fontes de dados
-								</h2>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div id="page-content" class="">
+		</div>
+		<div class="content">
+			<div id="page-title"><div class="container"><div class="row align-items-center hstify-content-center justify-content-xxl-start ms-lg-5"><div class="col-12 col-md-10 col-lg-11"><h2 class="title"><span class="label">Módulo 2 | Aula 3</span><br />Índices: conceitos, construção e usos</h2></div></div></div></div>
+			<div id="page-content" class="">
 				<section><div class="container">
-<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-4"><div class="heading__block"><span class="small">Tópico 5</span><h3 class="heading__title">Atividade formativa</h3></div></div></div>
-<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-4"><p>Responda às três questões a seguir para revisar os principais conceitos deste módulo. Selecione uma alternativa e clique em <strong>Conferir</strong> para ver se acertou e ler o feedback.</p></div></div>
-<div class="row justify-content-center mb-5"><div class="col-12 col-md-10 col-lg-8"><div class="exercise" data-exercise="one"><div class="card"><div class="card-header">Questão 1</div><div class="card-body"><div class="exercise__question"><p>Por que os dados demográficos e socioeconômicos são considerados fundamentais para o planejamento em Saúde Pública?</p></div><div class="exercise__answers"><ul><li class="answer__option" data-feedback="Incorreta. Os dados demográficos e socioeconômicos não se limitam a indicadores econômicos, pois incluem idade, sexo, escolaridade, renda e outras informações essenciais." tabindex="0"><p>a) Porque permitem calcular apenas indicadores econômicos.</p></li><li class="answer__option" data-feedback="Correta. Parabéns! Os dados demográficos e socioeconômicos são essenciais para planejar, monitorar e avaliar ações e políticas de saúde. Eles permitem dimensionar unidades, ajustar a oferta de serviços conforme o perfil populacional, definir metas realistas e garantir maior equidade na alocação de recursos, evitando decisões intuitivas e fortalecendo o planejamento baseado em evidências." tabindex="0" correct><p>b) Porque ajudam a definir políticas baseadas em evidências, a dimensionar serviços e a distribuir recursos de forma equitativa.</p></li><li class="answer__option" data-feedback="Incorreta. Esses dados têm aplicação direta na gestão, ajudando a orientar metas, recursos, equipes e a organização dos serviços." tabindex="0"><p>c) Porque servem apenas para estudos acadêmicos, sem aplicação prática na gestão.</p></li><li class="answer__option" data-feedback="Incorreta. Natalidade e mortalidade são apenas dois de muitos indicadores possíveis obtidos a partir desses dados." tabindex="0"><p>d) Porque indicam exclusivamente a taxa de natalidade e mortalidade.</p></li><li class="answer__option" data-feedback="Incorreta. Os dados não servem apenas para estimar a população; também permitem segmentar perfis, monitorar resultados e ajustar serviços." tabindex="0"><p>e) Porque são utilizados apenas para estimar a população total do país.</p></li></ul></div></div><div class="card-footer"><div class="exercise__submit"><span class="exercise__submit--feedback d-none"></span><button class="fio-button fio-button-primary" type="submit" disabled>Conferir</button></div></div></div></div></div></div>
-<div class="row justify-content-center mb-5"><div class="col-12 col-md-10 col-lg-8"><div class="exercise" data-exercise="one"><div class="card"><div class="card-header">Questão 2</div><div class="card-body"><div class="exercise__question"><p>Qual é o principal objetivo do Censo Demográfico realizado pelo IBGE?</p></div><div class="exercise__answers"><ul><li class="answer__option" data-feedback="Incorreta. O Censo não atualiza dados mensalmente; ele é uma operação pontual (normalmente de dez em dez anos) e não contínua." tabindex="0"><p>a) Atualizar mensalmente os dados populacionais para monitoramento contínuo.</p></li><li class="answer__option" data-feedback="Correta. Parabéns! O Censo Demográfico é uma das mais importantes pesquisas estatísticas do mundo. Seu objetivo é contar e descrever a população, oferecendo informações detalhadas sobre características demográficas, sociais e econômicas, fundamentais para planejamento de políticas públicas e análises populacionais." tabindex="0" correct><p>b) Contar e descrever a população do país em um determinado momento, fornecendo um retrato detalhado das características demográficas, sociais e econômicas.</p></li><li class="answer__option" data-feedback="Incorreta. O Censo não se limita a estimativas amostrais; ele envolve coleta presencial em todo o território." tabindex="0"><p>c) Realizar somente estimativas amostrais para projeções populacionais futuras sem coleta presencial.</p></li><li class="answer__option" data-feedback="Incorreta. O Censo não investiga apenas indicadores de saúde; ele abrange características demográficas, sociais e econômicas." tabindex="0"><p>d) Investigar exclusivamente indicadores de saúde para subsidiar políticas públicas.</p></li><li class="answer__option" data-feedback="Incorreta. O Censo não se restringe às áreas urbanas; ele cobre áreas urbanas, rurais e outros tipos de territórios." tabindex="0"><p>e) Mapear apenas áreas urbanas para planejamento de infraestrutura.</p></li></ul></div></div><div class="card-footer"><div class="exercise__submit"><span class="exercise__submit--feedback d-none"></span><button class="fio-button fio-button-primary" type="submit" disabled>Conferir</button></div></div></div></div></div></div>
-<div class="row justify-content-center mb-5"><div class="col-12 col-md-10 col-lg-8"><div class="exercise" data-exercise="one"><div class="card"><div class="card-header">Questão 3</div><div class="card-body"><div class="exercise__question"><p>Em pesquisas amostrais, o termo “população-alvo” refere-se a:</p></div><div class="exercise__answers"><ul><li class="answer__option" data-feedback="Incorreta. A população-alvo é o universo que se deseja estudar; inclui tanto os indivíduos que participam da amostra quanto aqueles que não foram selecionados ou que recusaram. A alternativa confunde amostra (participantes efetivos) com população-alvo." tabindex="0"><p>a) Apenas aos indivíduos que efetivamente participam da pesquisa.</p></li><li class="answer__option" data-feedback="Incorreta. Essa alternativa descreve a amostra ou os respondentes selecionados por um método probabilístico (ex.: sorteio), não a população-alvo. A população-alvo é mais ampla e é o grupo para o qual se pretende generalizar os resultados." tabindex="0"><p>b) Aos respondentes selecionados após sorteio aleatório.</p></li><li class="answer__option" data-feedback="Correta. Define precisamente o conceito de população-alvo: o universo de interesse da pesquisa — ou seja, o conjunto de indivíduos sobre os quais se deseja fazer inferências a partir dos resultados da amostra." tabindex="0" correct><p>c) Ao conjunto total de indivíduos para os quais os resultados serão inferidos.</p></li><li class="answer__option" data-feedback="Incorreta. Indivíduos substituídos por recusas fazem parte da logística de campo e da gestão de não resposta, mas não correspondem ao conceito de população-alvo. Eles são potenciais participantes que foram trocados na seleção da amostra." tabindex="0"><p>d) Aos indivíduos substituídos por recusas.</p></li><li class="answer__option" data-feedback="Incorreta. O grupo de entrevistadores é a equipe de campo responsável pela coleta de dados; não é o universo de interesse da pesquisa e, portanto, não constitui a população-alvo." tabindex="0"><p>e) Ao grupo de entrevistadores responsáveis pela coleta.</p></li></ul></div></div><div class="card-footer"><div class="exercise__submit"><span class="exercise__submit--feedback d-none"></span><button class="fio-button fio-button-primary" type="submit" disabled>Conferir</button></div></div></div></div></div></div>
+<div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 mb-5"><div class="referencias-aula"><div class="heading__block"><span class="small">Tópico 5</span><h3 class="heading__title">Referências</h3></div><div class="list"><ul class="list-group"><li class="list-group-item" list-style="default">ALBUQUERQUE C, MARTINS M. Indicadores de desempenho no Sistema Único de Saúde: uma avaliação dos avanços e lacunas. <strong>Saúde em Debate</strong>; 41(n. spe): 118-137, 2017.</li><li class="list-group-item" list-style="default">BRASIL. Ministério da Saúde. <strong>IDSUS: Índice de Desempenho do Sistema Único de Saúde. Ano 1.</strong> Brasília: Ministério da Saúde, 2014, 50 pp. Disponível em: <a href="http://idsus.saude.gov.br/documentos/IDSUS_Texto_Base_13-03-14.pdf" target="_blank" rel="noopener noreferrer">http://idsus.saude.gov.br/documentos/IDSUS_Texto_Base_13-03-14.pdf</a>. Acesso em 22 fevereiro 2026.</li><li class="list-group-item" list-style="default">CARVALHO, C.C.; et al. Análise comparativa de classificações de vulnerabilidade para municípios g100. <strong>Revista Brasileira de Estudos de População - REBEP</strong>, v. 40, p. 1-20, 2023. Disponível em: <a href="https://www.scielo.br/j/rbepop/a/x3WRtg5F7LyLwtgszQtxhxx/?format=html&lang=pt#" target="_blank" rel="noopener noreferrer">https://www.scielo.br/j/rbepop/a/x3WRtg5F7LyLwtgszQtxhxx/?format=html&lang=pt#</a>. Acesso em 22 fevereiro 2026.</li><li class="list-group-item" list-style="default">CEBES - Centro Brasileiro de Estudos de Saúde. Divulgação do Índice de Desempenho do SUS repercute na academia. 7 de mar. de 2012. Disponível em: <a href="https://cebes.org.br/divulgacao-do-indice-de-desempenho-do-sus-repercute-naacademia/10482/" target="_blank" rel="noopener noreferrer">https://cebes.org.br/divulgacao-do-indice-de-desempenho-do-sus-repercute-naacademia/10482/</a>. Acesso em 22 fevereiro 2026.</li><li class="list-group-item" list-style="default">FRIEBEL, R.; STEVENTON, A. Composite measures of healthcare quality: sensible in theory, problematic in practice. <strong>BMJ Qual Saf.</strong> Editorial, 17 set. 2018. Disponível em: <a href="https://qualitysafety.bmj.com/content/early/2018/09/16/bmjqs-2018-008280.info" target="_blank" rel="noopener noreferrer">https://qualitysafety.bmj.com/content/early/2018/09/16/bmjqs-2018-008280.info</a>. Acesso em 22 fevereiro 2026.</li><li class="list-group-item" list-style="default">GUIMARÃES, J. R. S.; JANNUZZI, P. IDH, indicadores sintéticos e suas aplicações em políticas públicas: uma análise crítica. <strong>Revista Brasileira De Estudos Urbanos E Regionais</strong>, 7(1), 73, 2005. <a href="https://doi.org/10.22296/2317-1529.2005v7n1p73" target="_blank" rel="noopener noreferrer">https://doi.org/10.22296/2317-1529.2005v7n1p73</a>. Acesso em 22 fevereiro 2026.</li><li class="list-group-item" list-style="default">IPEA - Instituto de Pesquisa Econômica Aplicada. <strong>Atlas da Vulnerabilidade Social.</strong> Disponível em: <a href="http://ivs.ipea.gov.br/" target="_blank" rel="noopener noreferrer">http://ivs.ipea.gov.br/</a>. Acesso em 22 fevereiro 2026.</li><li class="list-group-item" list-style="default">IPEA - Instituto de Pesquisa Econômica Aplicada. Vulnerabilidade social no Brasil: conceitos, métodos e primeiros resultados para municípios e regiões metropolitanas brasileiras. <strong>Texto para discussão 2364</strong> / Instituto de Pesquisa Econômica Aplicada. Brasília, Rio de Janeiro: Ipea, 2018. ISSN 1415-4765. Disponível em: <a href="https://ivs.ipea.gov.br/api/cockpit/storage/uploads/publicacoes/td_2364b.pdf" target="_blank" rel="noopener noreferrer">https://ivs.ipea.gov.br/api/cockpit/storage/uploads/publicacoes/td_2364b.pdf</a>. Acesso em 22 fevereiro 2026.</li><li class="list-group-item" list-style="default">JANNUZZI, Paulo de Martino. <strong>Indicadores sociais no Brasil.</strong> Campinas, SP: Editora Alínea, 2017. 6a. Edição, 3a. Impressão, 2024.</li><li class="list-group-item" list-style="default">OECD. <strong>Handbook on Constructing Composite Indicators: methodology and user guide.</strong> OECD, 2008. Disponível em: <a href="https://www.oecd.org/els/soc/handbookonconstructingcompositeindicatorsmethodologyanduserguide.htm" target="_blank" rel="noopener noreferrer">https://www.oecd.org/els/soc/handbookonconstructingcompositeindicatorsmethodologyanduserguide.htm</a>. Acesso em 22 fevereiro 2026.</li><li class="list-group-item" list-style="default">OLIVEIRA, L.; PASSADOR, C. Considérations sur l'indice de performance du Système unique de santé (SUS) au Brésil. <strong>Santé Publique</strong>, vol. 26, p. 829-836, 2014. Disponível em: <a href="https://www.cairn.info/revue-sante-publique-2014-6-page829.htm" target="_blank" rel="noopener noreferrer">https://www.cairn.info/revue-sante-publique-2014-6-page829.htm</a>. Acesso em: 22 fevereiro 2026.</li><li class="list-group-item" list-style="default">PNUD – Programa das Nações Unidas para o Desenvolvimento. <strong>Atlas do Desenvolvimento Humano no Brasil.</strong> Disponível em: <a href="http://www.atlasbrasil.org.br/" target="_blank" rel="noopener noreferrer">http://www.atlasbrasil.org.br/</a>. Acesso em 22 fevereiro 2026.</li><li class="list-group-item" list-style="default">PNUD – Programa das Nações Unidas para o Desenvolvimento. <strong>O Índice de Desenvolvimento Humano Municipal Brasileiro.</strong> Série Atlas do Desenvolvimento Humano no Brasil. Brasília: PNUD, Ipea, FJP, 2013. ISBN: 978-85-7811-171-7. Disponível em: <a href="http://www.atlasbrasil.org.br/acervo/biblioteca" target="_blank" rel="noopener noreferrer">http://www.atlasbrasil.org.br/acervo/biblioteca</a>. Acesso em 22 fevereiro 2026.</li></ul></div></div></div></div>
 				</div></section>
 			</div>
-			<section>
-					<div class="container">
-						<div class="row justify-content-center">
-							<div class="col-12 col-md-10 col-lg-8">
-								<div class="page-nav d-flex justify-content-evenly flex-wrap gap-3"><a class="fio-button fio-button-primary" href="topico4.html" rel="prev"><span class="material-symbols-rounded" aria-hidden="true">west</span> Tópico anterior</a><a class="fio-button fio-button-primary" href="topico6.html" rel="next">Referências <span class="material-symbols-rounded" aria-hidden="true">east</span></a></div>
-							</div>
-						</div>
-					</div>
-				</section>
-			</div>
-			<footer>
-				<div class="container-fluid">
-					<div class="row justify-content-center align-items-center linha-de-marcas">
-						<div class="col-12 text-center py-3">
-							<img class="img-fluid regua-logos" src="../../media/logos/regua-de-logos.png" alt="Régua de logos: Campus Virtual Fiocruz, Fiocruz, SUS Digital, SUS 35 Anos, Ministério da Saúde e Governo do Brasil" />
-						</div>
+			<section><div class="container"><div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8"><div class="page-nav d-flex justify-content-evenly flex-wrap gap-3"><a class="fio-button fio-button-primary" href="topico4.html" rel="prev"><span class="material-symbols-rounded" aria-hidden="true">west</span> Tópico anterior</a><a class="fio-button fio-button-primary" href="../aula4/topico1.html" rel="next">Próxima aula <span class="material-symbols-rounded" aria-hidden="true">east</span></a></div></div></div></div></section>
+		</div>
+		<footer>
+			<div class="container-fluid">
+				<div class="row justify-content-center align-items-center linha-de-marcas">
+					<div class="col-12 text-center py-3">
+						<img class="img-fluid regua-logos" src="../../media/logos/regua-de-logos.png" alt="Régua de logos: Campus Virtual Fiocruz, Fiocruz, SUS Digital, SUS 35 Anos, Ministério da Saúde e Governo do Brasil" />
 					</div>
 				</div>
-			</footer>
-		</div>
-		<script src="../../source/bootstrap-5.1.3/js/bootstrap.bundle.min.js"></script>
-		<script type="text/javascript" src="../../assets/js/ResizeSensor.js"></script>
-		<script type="text/javascript" src="../../assets/js/sticky-sidebar.js"></script>
-		<script type="text/javascript" src="../../assets/js/sidebar.js"></script>
-		<script type="text/javascript">
-			var sidebar = new StickySidebar(".sidebar", {
-				topSpacing: 0,
-				bottomSpacing: 0,
-				containerSelector: ".main",
-				innerWrapperSelector: ".sidebar__inner",
-				minWidth: 991,
-			});
-		</script>
-		<script type="text/javascript" src="../../assets/js/scripts.js"></script>
-	<script type="text/javascript" src="../../assets/js/exercise.js"></script>
-	</body>
+			</div>
+		</footer>
+	</div>
+	<script src="../../source/bootstrap-5.1.3/js/bootstrap.bundle.min.js"></script>
+	<script type="text/javascript" src="../../assets/js/ResizeSensor.js"></script>
+	<script type="text/javascript" src="../../assets/js/sticky-sidebar.js"></script>
+	<script type="text/javascript" src="../../assets/js/sidebar.js"></script>
+	<script type="text/javascript">var sidebar = new StickySidebar(".sidebar", { topSpacing: 0, bottomSpacing: 0, containerSelector: ".main", innerWrapperSelector: ".sidebar__inner", minWidth: 991 });</script>
+	<script type="text/javascript" src="../../assets/js/scripts.js"></script>
+	<script type="text/javascript" src="../../assets/js/custom-anime.js"></script>
+	<script type="text/javascript" src="../../source/animate/aos/dist/aos.js"></script>
+	<script>AOS.init();</script>
+</body>
 </html>

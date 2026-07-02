@@ -390,7 +390,15 @@
 /* SIDEBAR DESKTOP */
 
 @media (min-width: 992px) {
-	.main::before {
+	.main:not(.main-home) {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: flex-start;
+		position: relative;
+		min-height: calc(100vh - 80px);
+	}
+
+	.main:not(.main-home)::before {
 		content: '';
 		position: absolute;
 		top: 0;
@@ -398,16 +406,39 @@
 		bottom: 0;
 		width: 120px;
 		background-color: var(--fio-sys-color-accent-medium);
-		z-index: 90;
+		z-index: 0;
+		pointer-events: none;
 	}
+
+	.main:not(.main-home) > .sidebar,
+	.main:not(.main-home) > .content,
+	.main:not(.main-home) > footer {
+		position: relative;
+		z-index: 1;
+	}
+
+	.main:not(.main-home) > footer {
+		flex: 0 0 100%;
+		width: calc(100% - 120px);
+		margin-left: 120px;
+	}
+
 	.sidebar {
 		background-color: transparent;
-		float: left;
+		float: none;
+		flex: 0 0 120px;
 		max-width: 120px;
 		position: relative;
 		translate: none;
 		width: 120px;
 		z-index: 100;
+	}
+
+	.main:not(.main-home) .content {
+		flex: 1 1 calc(100% - 120px);
+		width: calc(100% - 120px);
+		margin-left: 0;
+		min-width: 0;
 	}
 	.sidebar .sidebar__inner {
 		background-color: transparent;

@@ -424,6 +424,12 @@ body#curso2 footer {
 	border-bottom-color: var(--fio-sys-color-primary-medium-contrast);
 }
 
+@media (min-width: 992px) {
+	body#curso2 footer {
+		margin-left: 0;
+	}
+}
+
 footer .logo6 {
 	height: 300px !important;
 }
